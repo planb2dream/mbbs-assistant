@@ -138,7 +138,7 @@
         if (!mine.length) { row('Offline files', 'None saved yet'); return; }
         return caches.open(mine[0]).then(function (c) { return c.keys(); }).then(function (reqs) {
           row('Offline files saved', reqs.length + ' files');
-          row('Offline ready', reqs.length >= 17 ? 'Yes' : 'No');
+          row('Offline ready', reqs.length >= 18 ? 'Yes' : 'No');
         });
       }));
     }

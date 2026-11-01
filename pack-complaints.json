@@ -1,0 +1,3331 @@
+{
+ "symptoms": [
+  {
+   "id": "fever",
+   "lbl": "Fever",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine",
+    "paediatrics",
+    "emergency",
+    "pulmonology",
+    "rheumatology",
+    "infectious-diseases",
+    "oncology",
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "cough",
+   "lbl": "Cough",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine",
+    "paediatrics",
+    "ent",
+    "cardiology",
+    "pulmonology",
+    "infectious-diseases",
+    "oncology",
+    "radiology",
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "sob",
+   "lbl": "Breathlessness",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine",
+    "paediatrics",
+    "emergency",
+    "cardiology",
+    "pulmonology",
+    "nephrology",
+    "anaesthesiology",
+    "radiology"
+   ]
+  },
+  {
+   "id": "chest_pain",
+   "lbl": "Chest pain",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine",
+    "emergency",
+    "cardiology",
+    "pulmonology",
+    "radiology"
+   ]
+  },
+  {
+   "id": "headache",
+   "lbl": "Headache",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine",
+    "paediatrics",
+    "ent",
+    "ophthalmology",
+    "emergency",
+    "neurology",
+    "neurosurgery",
+    "infectious-diseases",
+    "radiology"
+   ]
+  },
+  {
+   "id": "abd_pain",
+   "lbl": "Abdominal pain",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine",
+    "general-surgery",
+    "obgyn",
+    "paediatrics",
+    "gastroenterology",
+    "urology",
+    "radiology"
+   ]
+  },
+  {
+   "id": "vomiting",
+   "lbl": "Vomiting",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine",
+    "general-surgery",
+    "paediatrics",
+    "neurosurgery",
+    "gastroenterology"
+   ]
+  },
+  {
+   "id": "diarrhoea",
+   "lbl": "Diarrhoea",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine",
+    "paediatrics",
+    "gastroenterology",
+    "infectious-diseases",
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_fatigue_or_weakness",
+   "lbl": "Fatigue or weakness",
+   "systems": [
+    "General",
+    "Cardiovascular",
+    "Genitourinary",
+    "Endocrine",
+    "Musculoskeletal",
+    "General / Infectious",
+    "Public Health"
+   ],
+   "depts": [
+    "general-medicine",
+    "cardiology",
+    "nephrology",
+    "endocrinology",
+    "rheumatology",
+    "oncology",
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_weight_loss",
+   "lbl": "Weight loss",
+   "systems": [
+    "General",
+    "Surgical",
+    "Respiratory",
+    "Gastrointestinal",
+    "Endocrine",
+    "General / Infectious"
+   ],
+   "depts": [
+    "general-medicine",
+    "general-surgery",
+    "pulmonology",
+    "gastroenterology",
+    "endocrinology",
+    "infectious-diseases",
+    "oncology"
+   ]
+  },
+  {
+   "id": "c_weight_gain",
+   "lbl": "Weight gain",
+   "systems": [
+    "General",
+    "Endocrine"
+   ],
+   "depts": [
+    "general-medicine",
+    "endocrinology"
+   ]
+  },
+  {
+   "id": "c_loss_of_appetite",
+   "lbl": "Loss of appetite",
+   "systems": [
+    "General",
+    "Gastrointestinal"
+   ],
+   "depts": [
+    "general-medicine",
+    "gastroenterology"
+   ]
+  },
+  {
+   "id": "c_dizziness",
+   "lbl": "Dizziness",
+   "systems": [
+    "General",
+    "Cardiovascular"
+   ],
+   "depts": [
+    "general-medicine",
+    "cardiology"
+   ]
+  },
+  {
+   "id": "c_fainting",
+   "lbl": "Fainting",
+   "systems": [
+    "General",
+    "Emergency",
+    "Cardiovascular"
+   ],
+   "depts": [
+    "general-medicine",
+    "emergency",
+    "cardiology"
+   ]
+  },
+  {
+   "id": "c_palpitations",
+   "lbl": "Palpitations",
+   "systems": [
+    "General",
+    "Emergency",
+    "Cardiovascular",
+    "Endocrine"
+   ],
+   "depts": [
+    "general-medicine",
+    "emergency",
+    "cardiology",
+    "endocrinology"
+   ]
+  },
+  {
+   "id": "c_swelling_of_feet",
+   "lbl": "Swelling of feet",
+   "systems": [
+    "General",
+    "Cardiovascular"
+   ],
+   "depts": [
+    "general-medicine",
+    "cardiology"
+   ]
+  },
+  {
+   "id": "c_generalised_swelling",
+   "lbl": "Generalised swelling",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine"
+   ]
+  },
+  {
+   "id": "c_jaundice",
+   "lbl": "Jaundice",
+   "systems": [
+    "General",
+    "Surgical",
+    "Gastrointestinal",
+    "General / Infectious"
+   ],
+   "depts": [
+    "general-medicine",
+    "general-surgery",
+    "gastroenterology",
+    "infectious-diseases",
+    "oncology",
+    "radiology"
+   ]
+  },
+  {
+   "id": "c_body_aches",
+   "lbl": "Body aches",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine"
+   ]
+  },
+  {
+   "id": "joint_pain",
+   "lbl": "Joint pain",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine",
+    "orthopaedics",
+    "rheumatology",
+    "infectious-diseases",
+    "radiology"
+   ]
+  },
+  {
+   "id": "c_burning_urination",
+   "lbl": "Burning urination",
+   "systems": [
+    "General",
+    "Genitourinary",
+    "General / Infectious"
+   ],
+   "depts": [
+    "general-medicine",
+    "nephrology",
+    "infectious-diseases",
+    "urology"
+   ]
+  },
+  {
+   "id": "c_increased_thirst",
+   "lbl": "Increased thirst",
+   "systems": [
+    "General",
+    "Endocrine",
+    "Public Health"
+   ],
+   "depts": [
+    "general-medicine",
+    "endocrinology",
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_frequent_urination",
+   "lbl": "Frequent urination",
+   "systems": [
+    "General",
+    "Endocrine",
+    "Genitourinary"
+   ],
+   "depts": [
+    "general-medicine",
+    "endocrinology",
+    "urology"
+   ]
+  },
+  {
+   "id": "c_constipation",
+   "lbl": "Constipation",
+   "systems": [
+    "General",
+    "Surgical",
+    "Paediatric",
+    "Gastrointestinal"
+   ],
+   "depts": [
+    "general-medicine",
+    "general-surgery",
+    "paediatrics",
+    "gastroenterology"
+   ]
+  },
+  {
+   "id": "c_blood_in_stool",
+   "lbl": "Blood in stool",
+   "systems": [
+    "General",
+    "Surgical",
+    "Gastrointestinal",
+    "General / Infectious"
+   ],
+   "depts": [
+    "general-medicine",
+    "general-surgery",
+    "gastroenterology",
+    "oncology"
+   ]
+  },
+  {
+   "id": "c_black_stools",
+   "lbl": "Black stools",
+   "systems": [
+    "General",
+    "Gastrointestinal"
+   ],
+   "depts": [
+    "general-medicine",
+    "gastroenterology"
+   ]
+  },
+  {
+   "id": "c_vomiting_blood",
+   "lbl": "Vomiting blood",
+   "systems": [
+    "General",
+    "Surgical",
+    "Emergency",
+    "Gastrointestinal"
+   ],
+   "depts": [
+    "general-medicine",
+    "general-surgery",
+    "emergency",
+    "gastroenterology"
+   ]
+  },
+  {
+   "id": "c_difficulty_swallowing",
+   "lbl": "Difficulty swallowing",
+   "systems": [
+    "General",
+    "Surgical",
+    "ENT",
+    "Neurological",
+    "Gastrointestinal",
+    "General / Infectious"
+   ],
+   "depts": [
+    "general-medicine",
+    "general-surgery",
+    "ent",
+    "neurology",
+    "gastroenterology",
+    "oncology"
+   ]
+  },
+  {
+   "id": "c_heartburn",
+   "lbl": "Heartburn",
+   "systems": [
+    "General",
+    "Gastrointestinal"
+   ],
+   "depts": [
+    "general-medicine",
+    "gastroenterology"
+   ]
+  },
+  {
+   "id": "c_excessive_sweating",
+   "lbl": "Excessive sweating",
+   "systems": [
+    "General",
+    "Dermatological",
+    "Cardiovascular",
+    "Endocrine"
+   ],
+   "depts": [
+    "general-medicine",
+    "dermatology",
+    "cardiology",
+    "endocrinology"
+   ]
+  },
+  {
+   "id": "itch",
+   "lbl": "Itching",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine",
+    "dermatology",
+    "nephrology"
+   ]
+  },
+  {
+   "id": "rash_skin",
+   "lbl": "Skin rash",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine",
+    "paediatrics",
+    "dermatology",
+    "rheumatology",
+    "infectious-diseases",
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_anxiety",
+   "lbl": "Anxiety",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine"
+   ]
+  },
+  {
+   "id": "c_sleep_problems",
+   "lbl": "Sleep problems",
+   "systems": [
+    "General",
+    "Psychiatric",
+    "Neurological"
+   ],
+   "depts": [
+    "general-medicine",
+    "psychiatry",
+    "neurology"
+   ]
+  },
+  {
+   "id": "c_memory_loss",
+   "lbl": "Memory loss",
+   "systems": [
+    "General",
+    "Neurological"
+   ],
+   "depts": [
+    "general-medicine",
+    "neurology"
+   ]
+  },
+  {
+   "id": "c_seizures",
+   "lbl": "Seizures",
+   "systems": [
+    "General",
+    "Emergency",
+    "Neurological"
+   ],
+   "depts": [
+    "general-medicine",
+    "emergency",
+    "neurology",
+    "neurosurgery"
+   ]
+  },
+  {
+   "id": "c_weakness_of_limbs",
+   "lbl": "Weakness of limbs",
+   "systems": [
+    "General",
+    "Neurological"
+   ],
+   "depts": [
+    "general-medicine",
+    "neurology"
+   ]
+  },
+  {
+   "id": "c_numbness_or_tingling",
+   "lbl": "Numbness or tingling",
+   "systems": [
+    "General",
+    "Neurological"
+   ],
+   "depts": [
+    "general-medicine",
+    "neurology"
+   ]
+  },
+  {
+   "id": "back_pain",
+   "lbl": "Back pain",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine",
+    "orthopaedics",
+    "neurology",
+    "neurosurgery",
+    "rheumatology",
+    "anaesthesiology",
+    "radiology"
+   ]
+  },
+  {
+   "id": "c_neck_pain",
+   "lbl": "Neck pain",
+   "systems": [
+    "General",
+    "Musculoskeletal",
+    "Neurological",
+    "Anaesthesia / Pain"
+   ],
+   "depts": [
+    "general-medicine",
+    "orthopaedics",
+    "neurology",
+    "neurosurgery",
+    "anaesthesiology"
+   ]
+  },
+  {
+   "id": "c_lump_or_swelling",
+   "lbl": "Lump or swelling",
+   "systems": [
+    "General",
+    "General / Infectious"
+   ],
+   "depts": [
+    "general-medicine",
+    "oncology",
+    "radiology"
+   ]
+  },
+  {
+   "id": "c_easy_bruising_or_bleeding",
+   "lbl": "Easy bruising or bleeding",
+   "systems": [
+    "General"
+   ],
+   "depts": [
+    "general-medicine"
+   ]
+  },
+  {
+   "id": "c_night_sweats",
+   "lbl": "Night sweats",
+   "systems": [
+    "General",
+    "Respiratory",
+    "General / Infectious"
+   ],
+   "depts": [
+    "general-medicine",
+    "pulmonology",
+    "infectious-diseases",
+    "oncology"
+   ]
+  },
+  {
+   "id": "c_abdominal_distension",
+   "lbl": "Abdominal distension",
+   "systems": [
+    "Surgical",
+    "Gastrointestinal"
+   ],
+   "depts": [
+    "general-surgery",
+    "gastroenterology"
+   ]
+  },
+  {
+   "id": "c_anal_pain",
+   "lbl": "Anal pain",
+   "systems": [
+    "Surgical",
+    "Gastrointestinal"
+   ],
+   "depts": [
+    "general-surgery",
+    "gastroenterology"
+   ]
+  },
+  {
+   "id": "c_anal_swelling_or_lump",
+   "lbl": "Anal swelling or lump",
+   "systems": [
+    "Surgical"
+   ],
+   "depts": [
+    "general-surgery"
+   ]
+  },
+  {
+   "id": "c_groin_swelling",
+   "lbl": "Groin swelling",
+   "systems": [
+    "Surgical"
+   ],
+   "depts": [
+    "general-surgery"
+   ]
+  },
+  {
+   "id": "c_neck_swelling",
+   "lbl": "Neck swelling",
+   "systems": [
+    "Surgical",
+    "ENT",
+    "Endocrine",
+    "General"
+   ],
+   "depts": [
+    "general-surgery",
+    "ent",
+    "endocrinology",
+    "radiology"
+   ]
+  },
+  {
+   "id": "c_breast_lump",
+   "lbl": "Breast lump",
+   "systems": [
+    "Surgical",
+    "Obstetric / Gynaecological",
+    "General / Infectious"
+   ],
+   "depts": [
+    "general-surgery",
+    "obgyn",
+    "oncology"
+   ]
+  },
+  {
+   "id": "c_painful_swelling_or_abscess",
+   "lbl": "Painful swelling or abscess",
+   "systems": [
+    "Surgical"
+   ],
+   "depts": [
+    "general-surgery"
+   ]
+  },
+  {
+   "id": "skin_ulcer",
+   "lbl": "Skin ulcer / non-healing wound",
+   "systems": [
+    "Surgical"
+   ],
+   "depts": [
+    "general-surgery"
+   ]
+  },
+  {
+   "id": "c_injury_or_trauma",
+   "lbl": "Injury or trauma",
+   "systems": [
+    "Surgical",
+    "General"
+   ],
+   "depts": [
+    "general-surgery",
+    "radiology"
+   ]
+  },
+  {
+   "id": "c_burns",
+   "lbl": "Burns",
+   "systems": [
+    "Surgical",
+    "Emergency",
+    "Medico-legal"
+   ],
+   "depts": [
+    "general-surgery",
+    "emergency",
+    "forensic-medicine"
+   ]
+  },
+  {
+   "id": "c_varicose_veins",
+   "lbl": "Varicose veins",
+   "systems": [
+    "Surgical"
+   ],
+   "depts": [
+    "general-surgery"
+   ]
+  },
+  {
+   "id": "c_leg_pain_on_walking",
+   "lbl": "Leg pain on walking",
+   "systems": [
+    "Surgical",
+    "Cardiovascular"
+   ],
+   "depts": [
+    "general-surgery",
+    "cardiology"
+   ]
+  },
+  {
+   "id": "c_cold_pale_limb",
+   "lbl": "Cold pale limb",
+   "systems": [
+    "Surgical"
+   ],
+   "depts": [
+    "general-surgery"
+   ]
+  },
+  {
+   "id": "c_umbilical_swelling",
+   "lbl": "Umbilical swelling",
+   "systems": [
+    "Surgical"
+   ],
+   "depts": [
+    "general-surgery"
+   ]
+  },
+  {
+   "id": "c_scrotal_swelling",
+   "lbl": "Scrotal swelling",
+   "systems": [
+    "Surgical",
+    "Genitourinary"
+   ],
+   "depts": [
+    "general-surgery",
+    "urology"
+   ]
+  },
+  {
+   "id": "c_urinary_retention",
+   "lbl": "Urinary retention",
+   "systems": [
+    "Surgical",
+    "Genitourinary"
+   ],
+   "depts": [
+    "general-surgery",
+    "urology"
+   ]
+  },
+  {
+   "id": "c_blood_in_urine",
+   "lbl": "Blood in urine",
+   "systems": [
+    "Surgical",
+    "Genitourinary",
+    "General / Infectious",
+    "General"
+   ],
+   "depts": [
+    "general-surgery",
+    "nephrology",
+    "oncology",
+    "urology",
+    "radiology"
+   ]
+  },
+  {
+   "id": "c_nipple_discharge",
+   "lbl": "Nipple discharge",
+   "systems": [
+    "Surgical"
+   ],
+   "depts": [
+    "general-surgery"
+   ]
+  },
+  {
+   "id": "skin_lump",
+   "lbl": "Skin lump",
+   "systems": [
+    "Surgical"
+   ],
+   "depts": [
+    "general-surgery"
+   ]
+  },
+  {
+   "id": "c_shoulder_pain",
+   "lbl": "Shoulder pain",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "orthopaedics"
+   ]
+  },
+  {
+   "id": "c_knee_pain",
+   "lbl": "Knee pain",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "orthopaedics"
+   ]
+  },
+  {
+   "id": "c_hip_pain",
+   "lbl": "Hip pain",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "orthopaedics"
+   ]
+  },
+  {
+   "id": "c_limb_injury_or_fracture",
+   "lbl": "Limb injury or fracture",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "orthopaedics"
+   ]
+  },
+  {
+   "id": "c_joint_swelling",
+   "lbl": "Joint swelling",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "orthopaedics",
+    "rheumatology"
+   ]
+  },
+  {
+   "id": "c_joint_deformity",
+   "lbl": "Joint deformity",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "orthopaedics"
+   ]
+  },
+  {
+   "id": "c_limping",
+   "lbl": "Limping",
+   "systems": [
+    "Musculoskeletal",
+    "Paediatric"
+   ],
+   "depts": [
+    "orthopaedics",
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "c_limb_weakness",
+   "lbl": "Limb weakness",
+   "systems": [
+    "Musculoskeletal",
+    "Neurological"
+   ],
+   "depts": [
+    "orthopaedics",
+    "neurosurgery"
+   ]
+  },
+  {
+   "id": "c_numbness_or_tingling_in_hands",
+   "lbl": "Numbness or tingling in hands",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "orthopaedics"
+   ]
+  },
+  {
+   "id": "c_heel_pain",
+   "lbl": "Heel pain",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "orthopaedics",
+    "rheumatology"
+   ]
+  },
+  {
+   "id": "c_wrist_or_hand_pain",
+   "lbl": "Wrist or hand pain",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "orthopaedics"
+   ]
+  },
+  {
+   "id": "c_reduced_joint_movement",
+   "lbl": "Reduced joint movement",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "orthopaedics"
+   ]
+  },
+  {
+   "id": "c_muscle_pain",
+   "lbl": "Muscle pain",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "orthopaedics",
+    "rheumatology"
+   ]
+  },
+  {
+   "id": "c_bone_pain",
+   "lbl": "Bone pain",
+   "systems": [
+    "Musculoskeletal",
+    "Endocrine",
+    "General / Infectious"
+   ],
+   "depts": [
+    "orthopaedics",
+    "endocrinology",
+    "oncology"
+   ]
+  },
+  {
+   "id": "c_swelling_of_limb",
+   "lbl": "Swelling of limb",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "orthopaedics"
+   ]
+  },
+  {
+   "id": "c_fall",
+   "lbl": "Fall",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "orthopaedics"
+   ]
+  },
+  {
+   "id": "c_missed_period",
+   "lbl": "Missed period",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_vaginal_bleeding",
+   "lbl": "Vaginal bleeding",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_heavy_periods",
+   "lbl": "Heavy periods",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_irregular_periods",
+   "lbl": "Irregular periods",
+   "systems": [
+    "Obstetric / Gynaecological",
+    "Endocrine"
+   ],
+   "depts": [
+    "obgyn",
+    "endocrinology"
+   ]
+  },
+  {
+   "id": "c_painful_periods",
+   "lbl": "Painful periods",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_pelvic_pain",
+   "lbl": "Pelvic pain",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_vaginal_discharge",
+   "lbl": "Vaginal discharge",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_vaginal_itching",
+   "lbl": "Vaginal itching",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_bleeding_after_menopause",
+   "lbl": "Bleeding after menopause",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_difficulty_conceiving",
+   "lbl": "Difficulty conceiving",
+   "systems": [
+    "Obstetric / Gynaecological",
+    "Genitourinary"
+   ],
+   "depts": [
+    "obgyn",
+    "urology"
+   ]
+  },
+  {
+   "id": "c_nausea_and_vomiting_in_pregnancy",
+   "lbl": "Nausea and vomiting in pregnancy",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_reduced_fetal_movements",
+   "lbl": "Reduced fetal movements",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_leaking_of_fluid_in_pregnancy",
+   "lbl": "Leaking of fluid in pregnancy",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_labour_pain",
+   "lbl": "Labour pain",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_bleeding_in_pregnancy",
+   "lbl": "Bleeding in pregnancy",
+   "systems": [
+    "Obstetric / Gynaecological",
+    "Emergency"
+   ],
+   "depts": [
+    "obgyn",
+    "emergency"
+   ]
+  },
+  {
+   "id": "c_swelling_in_pregnancy",
+   "lbl": "Swelling in pregnancy",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_headache_or_visual_disturbance_in_pregnancy",
+   "lbl": "Headache or visual disturbance in pregnancy",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_breast_pain",
+   "lbl": "Breast pain",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_abdominal_lump",
+   "lbl": "Abdominal lump",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_urine_leakage",
+   "lbl": "Urine leakage",
+   "systems": [
+    "Obstetric / Gynaecological",
+    "Genitourinary"
+   ],
+   "depts": [
+    "obgyn",
+    "urology"
+   ]
+  },
+  {
+   "id": "c_something_coming_down_in_vagina",
+   "lbl": "Something coming down in vagina",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_hot_flushes",
+   "lbl": "Hot flushes",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_excess_hair_growth",
+   "lbl": "Excess hair growth",
+   "systems": [
+    "Obstetric / Gynaecological",
+    "Endocrine"
+   ],
+   "depts": [
+    "obgyn",
+    "endocrinology"
+   ]
+  },
+  {
+   "id": "c_bleeding_after_delivery",
+   "lbl": "Bleeding after delivery",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_fever_after_delivery",
+   "lbl": "Fever after delivery",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_breastfeeding_problems",
+   "lbl": "Breastfeeding problems",
+   "systems": [
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "obgyn"
+   ]
+  },
+  {
+   "id": "c_fast_breathing",
+   "lbl": "Fast breathing",
+   "systems": [
+    "Paediatric"
+   ],
+   "depts": [
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "c_poor_feeding",
+   "lbl": "Poor feeding",
+   "systems": [
+    "Paediatric"
+   ],
+   "depts": [
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "c_excessive_crying",
+   "lbl": "Excessive crying",
+   "systems": [
+    "Paediatric"
+   ],
+   "depts": [
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "c_poor_weight_gain",
+   "lbl": "Poor weight gain",
+   "systems": [
+    "Paediatric",
+    "Public Health"
+   ],
+   "depts": [
+    "paediatrics",
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_developmental_delay",
+   "lbl": "Developmental delay",
+   "systems": [
+    "Paediatric"
+   ],
+   "depts": [
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "c_convulsions",
+   "lbl": "Convulsions",
+   "systems": [
+    "Paediatric"
+   ],
+   "depts": [
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "c_newborn_jaundice",
+   "lbl": "Newborn jaundice",
+   "systems": [
+    "Paediatric"
+   ],
+   "depts": [
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "ear_pain",
+   "lbl": "Ear pain",
+   "systems": [
+    "Paediatric"
+   ],
+   "depts": [
+    "paediatrics",
+    "ent"
+   ]
+  },
+  {
+   "id": "sore_throat",
+   "lbl": "Sore throat",
+   "systems": [
+    "Paediatric"
+   ],
+   "depts": [
+    "paediatrics",
+    "ent"
+   ]
+  },
+  {
+   "id": "nasal_block",
+   "lbl": "Nasal blockage",
+   "systems": [
+    "Paediatric"
+   ],
+   "depts": [
+    "paediatrics",
+    "ent"
+   ]
+  },
+  {
+   "id": "c_bedwetting",
+   "lbl": "Bedwetting",
+   "systems": [
+    "Paediatric"
+   ],
+   "depts": [
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "c_short_stature",
+   "lbl": "Short stature",
+   "systems": [
+    "Paediatric",
+    "Endocrine"
+   ],
+   "depts": [
+    "paediatrics",
+    "endocrinology"
+   ]
+  },
+  {
+   "id": "c_pallor",
+   "lbl": "Pallor",
+   "systems": [
+    "Paediatric",
+    "General / Infectious",
+    "Public Health"
+   ],
+   "depts": [
+    "paediatrics",
+    "oncology",
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_swelling",
+   "lbl": "Swelling",
+   "systems": [
+    "Paediatric"
+   ],
+   "depts": [
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "c_poor_school_performance",
+   "lbl": "Poor school performance",
+   "systems": [
+    "Paediatric"
+   ],
+   "depts": [
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "c_behaviour_problems",
+   "lbl": "Behaviour problems",
+   "systems": [
+    "Paediatric"
+   ],
+   "depts": [
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "c_passing_less_urine",
+   "lbl": "Passing less urine",
+   "systems": [
+    "Paediatric"
+   ],
+   "depts": [
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "c_bluish_discolouration",
+   "lbl": "Bluish discolouration",
+   "systems": [
+    "Paediatric"
+   ],
+   "depts": [
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "c_hearing_loss",
+   "lbl": "Hearing loss",
+   "systems": [
+    "ENT"
+   ],
+   "depts": [
+    "ent"
+   ]
+  },
+  {
+   "id": "c_ear_discharge",
+   "lbl": "Ear discharge",
+   "systems": [
+    "ENT"
+   ],
+   "depts": [
+    "ent"
+   ]
+  },
+  {
+   "id": "c_ringing_in_ears",
+   "lbl": "Ringing in ears",
+   "systems": [
+    "ENT"
+   ],
+   "depts": [
+    "ent"
+   ]
+  },
+  {
+   "id": "c_vertigo",
+   "lbl": "Vertigo",
+   "systems": [
+    "ENT",
+    "Neurological"
+   ],
+   "depts": [
+    "ent",
+    "neurology"
+   ]
+  },
+  {
+   "id": "c_nasal_discharge",
+   "lbl": "Nasal discharge",
+   "systems": [
+    "ENT"
+   ],
+   "depts": [
+    "ent"
+   ]
+  },
+  {
+   "id": "c_nosebleed",
+   "lbl": "Nosebleed",
+   "systems": [
+    "ENT"
+   ],
+   "depts": [
+    "ent"
+   ]
+  },
+  {
+   "id": "c_sneezing",
+   "lbl": "Sneezing",
+   "systems": [
+    "ENT"
+   ],
+   "depts": [
+    "ent"
+   ]
+  },
+  {
+   "id": "c_loss_of_smell",
+   "lbl": "Loss of smell",
+   "systems": [
+    "ENT"
+   ],
+   "depts": [
+    "ent"
+   ]
+  },
+  {
+   "id": "c_hoarseness",
+   "lbl": "Hoarseness",
+   "systems": [
+    "ENT",
+    "Respiratory",
+    "General / Infectious"
+   ],
+   "depts": [
+    "ent",
+    "pulmonology",
+    "oncology"
+   ]
+  },
+  {
+   "id": "c_snoring",
+   "lbl": "Snoring",
+   "systems": [
+    "ENT"
+   ],
+   "depts": [
+    "ent"
+   ]
+  },
+  {
+   "id": "c_facial_pain",
+   "lbl": "Facial pain",
+   "systems": [
+    "ENT"
+   ],
+   "depts": [
+    "ent"
+   ]
+  },
+  {
+   "id": "c_foreign_body_in_ear_nose_or_throat",
+   "lbl": "Foreign body in ear, nose or throat",
+   "systems": [
+    "ENT"
+   ],
+   "depts": [
+    "ent"
+   ]
+  },
+  {
+   "id": "c_mouth_ulcers",
+   "lbl": "Mouth ulcers",
+   "systems": [
+    "ENT",
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "ent",
+    "rheumatology"
+   ]
+  },
+  {
+   "id": "c_facial_swelling",
+   "lbl": "Facial swelling",
+   "systems": [
+    "ENT"
+   ],
+   "depts": [
+    "ent"
+   ]
+  },
+  {
+   "id": "c_facial_weakness",
+   "lbl": "Facial weakness",
+   "systems": [
+    "ENT",
+    "Neurological"
+   ],
+   "depts": [
+    "ent",
+    "neurology"
+   ]
+  },
+  {
+   "id": "red_eye",
+   "lbl": "Red eye",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology",
+    "rheumatology",
+    "infectious-diseases"
+   ]
+  },
+  {
+   "id": "vision_loss",
+   "lbl": "Loss of vision",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology",
+    "neurology",
+    "neurosurgery"
+   ]
+  },
+  {
+   "id": "c_blurred_vision",
+   "lbl": "Blurred vision",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology"
+   ]
+  },
+  {
+   "id": "c_eye_pain",
+   "lbl": "Eye pain",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology"
+   ]
+  },
+  {
+   "id": "c_watering_of_eyes",
+   "lbl": "Watering of eyes",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology"
+   ]
+  },
+  {
+   "id": "c_eye_discharge",
+   "lbl": "Eye discharge",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology"
+   ]
+  },
+  {
+   "id": "c_itchy_eyes",
+   "lbl": "Itchy eyes",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology"
+   ]
+  },
+  {
+   "id": "c_double_vision",
+   "lbl": "Double vision",
+   "systems": [
+    "Ophthalmological",
+    "Neurological"
+   ],
+   "depts": [
+    "ophthalmology",
+    "neurology"
+   ]
+  },
+  {
+   "id": "c_flashes_or_floaters",
+   "lbl": "Flashes or floaters",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology"
+   ]
+  },
+  {
+   "id": "c_night_blindness",
+   "lbl": "Night blindness",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology"
+   ]
+  },
+  {
+   "id": "c_eye_injury",
+   "lbl": "Eye injury",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology"
+   ]
+  },
+  {
+   "id": "c_swollen_eyelid",
+   "lbl": "Swollen eyelid",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology"
+   ]
+  },
+  {
+   "id": "c_drooping_eyelid",
+   "lbl": "Drooping eyelid",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology"
+   ]
+  },
+  {
+   "id": "c_squint",
+   "lbl": "Squint",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology"
+   ]
+  },
+  {
+   "id": "c_sensitivity_to_light",
+   "lbl": "Sensitivity to light",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology"
+   ]
+  },
+  {
+   "id": "c_halos_around_lights",
+   "lbl": "Halos around lights",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology"
+   ]
+  },
+  {
+   "id": "c_foreign_body_sensation_in_eye",
+   "lbl": "Foreign body sensation in eye",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology"
+   ]
+  },
+  {
+   "id": "c_bulging_eye",
+   "lbl": "Bulging eye",
+   "systems": [
+    "Ophthalmological"
+   ],
+   "depts": [
+    "ophthalmology"
+   ]
+  },
+  {
+   "id": "c_warts",
+   "lbl": "Warts",
+   "systems": [
+    "Dermatological"
+   ],
+   "depts": [
+    "dermatology"
+   ]
+  },
+  {
+   "id": "c_dandruff",
+   "lbl": "Dandruff",
+   "systems": [
+    "Dermatological"
+   ],
+   "depts": [
+    "dermatology"
+   ]
+  },
+  {
+   "id": "c_cracked_feet",
+   "lbl": "Cracked feet",
+   "systems": [
+    "Dermatological"
+   ],
+   "depts": [
+    "dermatology"
+   ]
+  },
+  {
+   "id": "c_sun_sensitivity",
+   "lbl": "Sun sensitivity",
+   "systems": [
+    "Dermatological",
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "dermatology",
+    "rheumatology"
+   ]
+  },
+  {
+   "id": "c_skin_thickening",
+   "lbl": "Skin thickening",
+   "systems": [
+    "Dermatological"
+   ],
+   "depts": [
+    "dermatology"
+   ]
+  },
+  {
+   "id": "c_itchy_scalp",
+   "lbl": "Itchy scalp",
+   "systems": [
+    "Dermatological"
+   ],
+   "depts": [
+    "dermatology"
+   ]
+  },
+  {
+   "id": "c_painful_skin_lesions",
+   "lbl": "Painful skin lesions",
+   "systems": [
+    "Dermatological"
+   ],
+   "depts": [
+    "dermatology"
+   ]
+  },
+  {
+   "id": "low_mood",
+   "lbl": "Low mood",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry",
+    "endocrinology"
+   ]
+  },
+  {
+   "id": "c_anxiety_or_worry",
+   "lbl": "Anxiety or worry",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_panic_attacks",
+   "lbl": "Panic attacks",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_irritability_or_anger",
+   "lbl": "Irritability or anger",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_hearing_voices",
+   "lbl": "Hearing voices",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_suspiciousness_or_false_beliefs",
+   "lbl": "Suspiciousness or false beliefs",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_elevated_or_excited_mood",
+   "lbl": "Elevated or excited mood",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_memory_problems",
+   "lbl": "Memory problems",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_confusion",
+   "lbl": "Confusion",
+   "systems": [
+    "Psychiatric",
+    "Neurological"
+   ],
+   "depts": [
+    "psychiatry",
+    "neurology"
+   ]
+  },
+  {
+   "id": "c_alcohol_use_problem",
+   "lbl": "Alcohol use problem",
+   "systems": [
+    "Psychiatric",
+    "Public Health"
+   ],
+   "depts": [
+    "psychiatry",
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_drug_use_problem",
+   "lbl": "Drug use problem",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_thoughts_of_self_harm",
+   "lbl": "Thoughts of self-harm",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_fears_or_phobias",
+   "lbl": "Fears or phobias",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_repetitive_thoughts_or_rituals",
+   "lbl": "Repetitive thoughts or rituals",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_unexplained_physical_complaints",
+   "lbl": "Unexplained physical complaints",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_abnormal_behaviour",
+   "lbl": "Abnormal behaviour",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_poor_concentration",
+   "lbl": "Poor concentration",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_child_behaviour_problems",
+   "lbl": "Child behaviour problems",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_withdrawal_symptoms",
+   "lbl": "Withdrawal symptoms",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_distress_after_trauma",
+   "lbl": "Distress after trauma",
+   "systems": [
+    "Psychiatric"
+   ],
+   "depts": [
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "c_unconsciousness",
+   "lbl": "Unconsciousness",
+   "systems": [
+    "Emergency"
+   ],
+   "depts": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "c_road_traffic_accident",
+   "lbl": "Road traffic accident",
+   "systems": [
+    "Emergency",
+    "Medico-legal"
+   ],
+   "depts": [
+    "emergency",
+    "forensic-medicine"
+   ]
+  },
+  {
+   "id": "c_fall_or_injury",
+   "lbl": "Fall or injury",
+   "systems": [
+    "Emergency"
+   ],
+   "depts": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "c_poisoning_or_overdose",
+   "lbl": "Poisoning or overdose",
+   "systems": [
+    "Emergency"
+   ],
+   "depts": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "c_snake_or_animal_bite",
+   "lbl": "Snake or animal bite",
+   "systems": [
+    "Emergency",
+    "General / Infectious",
+    "Public Health"
+   ],
+   "depts": [
+    "emergency",
+    "infectious-diseases",
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_severe_abdominal_pain",
+   "lbl": "Severe abdominal pain",
+   "systems": [
+    "Emergency"
+   ],
+   "depts": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "c_bleeding",
+   "lbl": "Bleeding",
+   "systems": [
+    "Emergency",
+    "General / Infectious"
+   ],
+   "depts": [
+    "emergency",
+    "oncology"
+   ]
+  },
+  {
+   "id": "c_severe_allergic_reaction",
+   "lbl": "Severe allergic reaction",
+   "systems": [
+    "Emergency"
+   ],
+   "depts": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "c_head_injury",
+   "lbl": "Head injury",
+   "systems": [
+    "Emergency",
+    "Neurological"
+   ],
+   "depts": [
+    "emergency",
+    "neurosurgery"
+   ]
+  },
+  {
+   "id": "c_drowning",
+   "lbl": "Drowning",
+   "systems": [
+    "Emergency"
+   ],
+   "depts": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "c_electric_shock",
+   "lbl": "Electric shock",
+   "systems": [
+    "Emergency"
+   ],
+   "depts": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "c_heat_stroke",
+   "lbl": "Heat stroke",
+   "systems": [
+    "Emergency"
+   ],
+   "depts": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "c_sudden_weakness",
+   "lbl": "Sudden weakness",
+   "systems": [
+    "Emergency"
+   ],
+   "depts": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "c_altered_behaviour",
+   "lbl": "Altered behaviour",
+   "systems": [
+    "Emergency"
+   ],
+   "depts": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "c_choking",
+   "lbl": "Choking",
+   "systems": [
+    "Emergency"
+   ],
+   "depts": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "c_suicide_attempt",
+   "lbl": "Suicide attempt",
+   "systems": [
+    "Emergency"
+   ],
+   "depts": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "c_dehydration",
+   "lbl": "Dehydration",
+   "systems": [
+    "Emergency"
+   ],
+   "depts": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "c_breathless_lying_flat",
+   "lbl": "Breathless lying flat",
+   "systems": [
+    "Cardiovascular"
+   ],
+   "depts": [
+    "cardiology"
+   ]
+  },
+  {
+   "id": "c_blue_lips",
+   "lbl": "Blue lips",
+   "systems": [
+    "Cardiovascular"
+   ],
+   "depts": [
+    "cardiology"
+   ]
+  },
+  {
+   "id": "c_high_blood_pressure_reading",
+   "lbl": "High blood pressure reading",
+   "systems": [
+    "Cardiovascular",
+    "Genitourinary",
+    "Public Health"
+   ],
+   "depts": [
+    "cardiology",
+    "nephrology",
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_tremor",
+   "lbl": "Tremor",
+   "systems": [
+    "Neurological",
+    "Endocrine"
+   ],
+   "depts": [
+    "neurology",
+    "endocrinology"
+   ]
+  },
+  {
+   "id": "c_difficulty_walking",
+   "lbl": "Difficulty walking",
+   "systems": [
+    "Neurological"
+   ],
+   "depts": [
+    "neurology",
+    "neurosurgery"
+   ]
+  },
+  {
+   "id": "c_speech_difficulty",
+   "lbl": "Speech difficulty",
+   "systems": [
+    "Neurological"
+   ],
+   "depts": [
+    "neurology"
+   ]
+  },
+  {
+   "id": "c_loss_of_consciousness",
+   "lbl": "Loss of consciousness",
+   "systems": [
+    "Neurological"
+   ],
+   "depts": [
+    "neurology"
+   ]
+  },
+  {
+   "id": "c_involuntary_movements",
+   "lbl": "Involuntary movements",
+   "systems": [
+    "Neurological"
+   ],
+   "depts": [
+    "neurology"
+   ]
+  },
+  {
+   "id": "c_slowness_of_movement",
+   "lbl": "Slowness of movement",
+   "systems": [
+    "Neurological"
+   ],
+   "depts": [
+    "neurology"
+   ]
+  },
+  {
+   "id": "c_muscle_wasting",
+   "lbl": "Muscle wasting",
+   "systems": [
+    "Neurological"
+   ],
+   "depts": [
+    "neurology"
+   ]
+  },
+  {
+   "id": "c_neck_stiffness",
+   "lbl": "Neck stiffness",
+   "systems": [
+    "Neurological"
+   ],
+   "depts": [
+    "neurology"
+   ]
+  },
+  {
+   "id": "c_leg_pain_radiating_from_back",
+   "lbl": "Leg pain radiating from back",
+   "systems": [
+    "Neurological"
+   ],
+   "depts": [
+    "neurosurgery"
+   ]
+  },
+  {
+   "id": "c_bladder_or_bowel_disturbance",
+   "lbl": "Bladder or bowel disturbance",
+   "systems": [
+    "Neurological"
+   ],
+   "depts": [
+    "neurosurgery"
+   ]
+  },
+  {
+   "id": "c_swelling_on_head_or_spine",
+   "lbl": "Swelling on head or spine",
+   "systems": [
+    "Neurological"
+   ],
+   "depts": [
+    "neurosurgery"
+   ]
+  },
+  {
+   "id": "c_drowsiness",
+   "lbl": "Drowsiness",
+   "systems": [
+    "Neurological"
+   ],
+   "depts": [
+    "neurosurgery"
+   ]
+  },
+  {
+   "id": "c_enlarged_head_in_infant",
+   "lbl": "Enlarged head in infant",
+   "systems": [
+    "Neurological"
+   ],
+   "depts": [
+    "neurosurgery"
+   ]
+  },
+  {
+   "id": "c_wheeze",
+   "lbl": "Wheeze",
+   "systems": [
+    "Respiratory"
+   ],
+   "depts": [
+    "pulmonology"
+   ]
+  },
+  {
+   "id": "c_coughing_blood",
+   "lbl": "Coughing blood",
+   "systems": [
+    "Respiratory",
+    "General / Infectious"
+   ],
+   "depts": [
+    "pulmonology",
+    "oncology"
+   ]
+  },
+  {
+   "id": "c_sputum_production",
+   "lbl": "Sputum production",
+   "systems": [
+    "Respiratory"
+   ],
+   "depts": [
+    "pulmonology"
+   ]
+  },
+  {
+   "id": "c_snoring_or_sleep_apnoea",
+   "lbl": "Snoring or sleep apnoea",
+   "systems": [
+    "Respiratory"
+   ],
+   "depts": [
+    "pulmonology"
+   ]
+  },
+  {
+   "id": "c_chest_tightness",
+   "lbl": "Chest tightness",
+   "systems": [
+    "Respiratory"
+   ],
+   "depts": [
+    "pulmonology"
+   ]
+  },
+  {
+   "id": "c_swelling_of_face",
+   "lbl": "Swelling of face",
+   "systems": [
+    "Respiratory"
+   ],
+   "depts": [
+    "pulmonology"
+   ]
+  },
+  {
+   "id": "c_swelling_of_face_or_feet",
+   "lbl": "Swelling of face or feet",
+   "systems": [
+    "Genitourinary"
+   ],
+   "depts": [
+    "nephrology"
+   ]
+  },
+  {
+   "id": "c_reduced_urine",
+   "lbl": "Reduced urine",
+   "systems": [
+    "Genitourinary"
+   ],
+   "depts": [
+    "nephrology"
+   ]
+  },
+  {
+   "id": "c_frothy_urine",
+   "lbl": "Frothy urine",
+   "systems": [
+    "Genitourinary"
+   ],
+   "depts": [
+    "nephrology"
+   ]
+  },
+  {
+   "id": "c_flank_pain",
+   "lbl": "Flank pain",
+   "systems": [
+    "Genitourinary"
+   ],
+   "depts": [
+    "nephrology",
+    "urology"
+   ]
+  },
+  {
+   "id": "c_nausea_and_vomiting",
+   "lbl": "Nausea and vomiting",
+   "systems": [
+    "Genitourinary"
+   ],
+   "depts": [
+    "nephrology"
+   ]
+  },
+  {
+   "id": "c_night_time_urination",
+   "lbl": "Night-time urination",
+   "systems": [
+    "Genitourinary"
+   ],
+   "depts": [
+    "nephrology",
+    "urology"
+   ]
+  },
+  {
+   "id": "c_painful_swallowing",
+   "lbl": "Painful swallowing",
+   "systems": [
+    "Gastrointestinal"
+   ],
+   "depts": [
+    "gastroenterology"
+   ]
+  },
+  {
+   "id": "c_bloating",
+   "lbl": "Bloating",
+   "systems": [
+    "Gastrointestinal"
+   ],
+   "depts": [
+    "gastroenterology"
+   ]
+  },
+  {
+   "id": "c_nausea",
+   "lbl": "Nausea",
+   "systems": [
+    "Gastrointestinal"
+   ],
+   "depts": [
+    "gastroenterology"
+   ]
+  },
+  {
+   "id": "c_pale_fatty_stools",
+   "lbl": "Pale fatty stools",
+   "systems": [
+    "Gastrointestinal"
+   ],
+   "depts": [
+    "gastroenterology"
+   ]
+  },
+  {
+   "id": "c_itching_around_anus",
+   "lbl": "Itching around anus",
+   "systems": [
+    "Gastrointestinal"
+   ],
+   "depts": [
+    "gastroenterology"
+   ]
+  },
+  {
+   "id": "c_swelling_of_abdomen",
+   "lbl": "Swelling of abdomen",
+   "systems": [
+    "Gastrointestinal"
+   ],
+   "depts": [
+    "gastroenterology"
+   ]
+  },
+  {
+   "id": "c_belching",
+   "lbl": "Belching",
+   "systems": [
+    "Gastrointestinal"
+   ],
+   "depts": [
+    "gastroenterology"
+   ]
+  },
+  {
+   "id": "c_heat_intolerance",
+   "lbl": "Heat intolerance",
+   "systems": [
+    "Endocrine"
+   ],
+   "depts": [
+    "endocrinology"
+   ]
+  },
+  {
+   "id": "c_cold_intolerance",
+   "lbl": "Cold intolerance",
+   "systems": [
+    "Endocrine"
+   ],
+   "depts": [
+    "endocrinology"
+   ]
+  },
+  {
+   "id": "c_delayed_puberty",
+   "lbl": "Delayed puberty",
+   "systems": [
+    "Endocrine"
+   ],
+   "depts": [
+    "endocrinology"
+   ]
+  },
+  {
+   "id": "hair_loss",
+   "lbl": "Hair loss",
+   "systems": [
+    "Endocrine"
+   ],
+   "depts": [
+    "endocrinology",
+    "rheumatology"
+   ]
+  },
+  {
+   "id": "c_muscle_weakness",
+   "lbl": "Muscle weakness",
+   "systems": [
+    "Endocrine",
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "endocrinology",
+    "rheumatology"
+   ]
+  },
+  {
+   "id": "c_easy_bruising",
+   "lbl": "Easy bruising",
+   "systems": [
+    "Endocrine"
+   ],
+   "depts": [
+    "endocrinology"
+   ]
+  },
+  {
+   "id": "c_erectile_dysfunction",
+   "lbl": "Erectile dysfunction",
+   "systems": [
+    "Endocrine",
+    "Genitourinary"
+   ],
+   "depts": [
+    "endocrinology",
+    "urology"
+   ]
+  },
+  {
+   "id": "c_milky_nipple_discharge",
+   "lbl": "Milky nipple discharge",
+   "systems": [
+    "Endocrine"
+   ],
+   "depts": [
+    "endocrinology"
+   ]
+  },
+  {
+   "id": "c_dry_skin_and_constipation",
+   "lbl": "Dry skin and constipation",
+   "systems": [
+    "Endocrine"
+   ],
+   "depts": [
+    "endocrinology"
+   ]
+  },
+  {
+   "id": "c_morning_stiffness",
+   "lbl": "Morning stiffness",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "rheumatology"
+   ]
+  },
+  {
+   "id": "c_dry_eyes_or_mouth",
+   "lbl": "Dry eyes or mouth",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "rheumatology"
+   ]
+  },
+  {
+   "id": "c_fingers_turning_white_or_blue_in_cold",
+   "lbl": "Fingers turning white or blue in cold",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "rheumatology"
+   ]
+  },
+  {
+   "id": "c_swollen_fingers",
+   "lbl": "Swollen fingers",
+   "systems": [
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "rheumatology"
+   ]
+  },
+  {
+   "id": "c_prolonged_fever",
+   "lbl": "Prolonged fever",
+   "systems": [
+    "General / Infectious"
+   ],
+   "depts": [
+    "infectious-diseases"
+   ]
+  },
+  {
+   "id": "c_genital_discharge",
+   "lbl": "Genital discharge",
+   "systems": [
+    "General / Infectious"
+   ],
+   "depts": [
+    "infectious-diseases"
+   ]
+  },
+  {
+   "id": "genital_lesion",
+   "lbl": "Genital lesion",
+   "systems": [
+    "General / Infectious"
+   ],
+   "depts": [
+    "infectious-diseases"
+   ]
+  },
+  {
+   "id": "c_swollen_glands",
+   "lbl": "Swollen glands",
+   "systems": [
+    "General / Infectious"
+   ],
+   "depts": [
+    "infectious-diseases",
+    "oncology"
+   ]
+  },
+  {
+   "id": "c_wound_infection",
+   "lbl": "Wound infection",
+   "systems": [
+    "General / Infectious"
+   ],
+   "depts": [
+    "infectious-diseases"
+   ]
+  },
+  {
+   "id": "c_mouth_ulcers_or_white_patches",
+   "lbl": "Mouth ulcers or white patches",
+   "systems": [
+    "General / Infectious"
+   ],
+   "depts": [
+    "infectious-diseases"
+   ]
+  },
+  {
+   "id": "c_non_healing_ulcer",
+   "lbl": "Non-healing ulcer",
+   "systems": [
+    "General / Infectious"
+   ],
+   "depts": [
+    "oncology"
+   ]
+  },
+  {
+   "id": "c_abdominal_swelling",
+   "lbl": "Abdominal swelling",
+   "systems": [
+    "General / Infectious"
+   ],
+   "depts": [
+    "oncology"
+   ]
+  },
+  {
+   "id": "c_change_in_bowel_habit",
+   "lbl": "Change in bowel habit",
+   "systems": [
+    "General / Infectious"
+   ],
+   "depts": [
+    "oncology"
+   ]
+  },
+  {
+   "id": "c_persistent_headache",
+   "lbl": "Persistent headache",
+   "systems": [
+    "General / Infectious"
+   ],
+   "depts": [
+    "oncology"
+   ]
+  },
+  {
+   "id": "c_mole_change",
+   "lbl": "Mole change",
+   "systems": [
+    "General / Infectious"
+   ],
+   "depts": [
+    "oncology"
+   ]
+  },
+  {
+   "id": "c_cancer_pain",
+   "lbl": "Cancer pain",
+   "systems": [
+    "General / Infectious",
+    "Anaesthesia / Pain"
+   ],
+   "depts": [
+    "oncology",
+    "anaesthesiology"
+   ]
+  },
+  {
+   "id": "c_urgency_to_urinate",
+   "lbl": "Urgency to urinate",
+   "systems": [
+    "Genitourinary"
+   ],
+   "depts": [
+    "urology"
+   ]
+  },
+  {
+   "id": "c_weak_urine_stream",
+   "lbl": "Weak urine stream",
+   "systems": [
+    "Genitourinary"
+   ],
+   "depts": [
+    "urology"
+   ]
+  },
+  {
+   "id": "c_scrotal_pain",
+   "lbl": "Scrotal pain",
+   "systems": [
+    "Genitourinary"
+   ],
+   "depts": [
+    "urology"
+   ]
+  },
+  {
+   "id": "c_penile_discharge",
+   "lbl": "Penile discharge",
+   "systems": [
+    "Genitourinary"
+   ],
+   "depts": [
+    "urology"
+   ]
+  },
+  {
+   "id": "c_penile_lesion",
+   "lbl": "Penile lesion",
+   "systems": [
+    "Genitourinary"
+   ],
+   "depts": [
+    "urology"
+   ]
+  },
+  {
+   "id": "c_lower_abdominal_pain",
+   "lbl": "Lower abdominal pain",
+   "systems": [
+    "Genitourinary"
+   ],
+   "depts": [
+    "urology"
+   ]
+  },
+  {
+   "id": "c_passing_stones_or_gravel",
+   "lbl": "Passing stones or gravel",
+   "systems": [
+    "Genitourinary"
+   ],
+   "depts": [
+    "urology"
+   ]
+  },
+  {
+   "id": "c_foamy_urine",
+   "lbl": "Foamy urine",
+   "systems": [
+    "Genitourinary"
+   ],
+   "depts": [
+    "urology"
+   ]
+  },
+  {
+   "id": "c_tight_foreskin",
+   "lbl": "Tight foreskin",
+   "systems": [
+    "Genitourinary"
+   ],
+   "depts": [
+    "urology"
+   ]
+  },
+  {
+   "id": "c_post_operative_pain",
+   "lbl": "Post-operative pain",
+   "systems": [
+    "Anaesthesia / Pain"
+   ],
+   "depts": [
+    "anaesthesiology"
+   ]
+  },
+  {
+   "id": "c_chronic_pain",
+   "lbl": "Chronic pain",
+   "systems": [
+    "Anaesthesia / Pain"
+   ],
+   "depts": [
+    "anaesthesiology"
+   ]
+  },
+  {
+   "id": "c_difficulty_breathing_after_surgery",
+   "lbl": "Difficulty breathing after surgery",
+   "systems": [
+    "Anaesthesia / Pain"
+   ],
+   "depts": [
+    "anaesthesiology"
+   ]
+  },
+  {
+   "id": "c_nausea_and_vomiting_after_surgery",
+   "lbl": "Nausea and vomiting after surgery",
+   "systems": [
+    "Anaesthesia / Pain"
+   ],
+   "depts": [
+    "anaesthesiology"
+   ]
+  },
+  {
+   "id": "c_headache_after_spinal_anaesthesia",
+   "lbl": "Headache after spinal anaesthesia",
+   "systems": [
+    "Anaesthesia / Pain"
+   ],
+   "depts": [
+    "anaesthesiology"
+   ]
+  },
+  {
+   "id": "c_nerve_pain",
+   "lbl": "Nerve pain",
+   "systems": [
+    "Anaesthesia / Pain"
+   ],
+   "depts": [
+    "anaesthesiology"
+   ]
+  },
+  {
+   "id": "c_fever_after_surgery",
+   "lbl": "Fever after surgery",
+   "systems": [
+    "Anaesthesia / Pain"
+   ],
+   "depts": [
+    "anaesthesiology"
+   ]
+  },
+  {
+   "id": "c_shivering",
+   "lbl": "Shivering",
+   "systems": [
+    "Anaesthesia / Pain"
+   ],
+   "depts": [
+    "anaesthesiology"
+   ]
+  },
+  {
+   "id": "c_delayed_waking_after_anaesthesia",
+   "lbl": "Delayed waking after anaesthesia",
+   "systems": [
+    "Anaesthesia / Pain"
+   ],
+   "depts": [
+    "anaesthesiology"
+   ]
+  },
+  {
+   "id": "c_worm_infestation",
+   "lbl": "Worm infestation",
+   "systems": [
+    "Public Health"
+   ],
+   "depts": [
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_antenatal_care_visit",
+   "lbl": "Antenatal care visit",
+   "systems": [
+    "Public Health"
+   ],
+   "depts": [
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_immunisation_query",
+   "lbl": "Immunisation query",
+   "systems": [
+    "Public Health"
+   ],
+   "depts": [
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_tobacco_use",
+   "lbl": "Tobacco use",
+   "systems": [
+    "Public Health"
+   ],
+   "depts": [
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_cough_with_dust_exposure",
+   "lbl": "Cough with dust exposure",
+   "systems": [
+    "Public Health"
+   ],
+   "depts": [
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_contact_with_tb",
+   "lbl": "Contact with TB",
+   "systems": [
+    "Public Health"
+   ],
+   "depts": [
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_cluster_of_diarrhoea_cases",
+   "lbl": "Cluster of diarrhoea cases",
+   "systems": [
+    "Public Health"
+   ],
+   "depts": [
+    "community-medicine"
+   ]
+  },
+  {
+   "id": "c_assault_injury",
+   "lbl": "Assault injury",
+   "systems": [
+    "Medico-legal"
+   ],
+   "depts": [
+    "forensic-medicine"
+   ]
+  },
+  {
+   "id": "c_sexual_assault",
+   "lbl": "Sexual assault",
+   "systems": [
+    "Medico-legal"
+   ],
+   "depts": [
+    "forensic-medicine"
+   ]
+  },
+  {
+   "id": "c_suspected_poisoning",
+   "lbl": "Suspected poisoning",
+   "systems": [
+    "Medico-legal"
+   ],
+   "depts": [
+    "forensic-medicine"
+   ]
+  },
+  {
+   "id": "c_hanging_or_strangulation",
+   "lbl": "Hanging or strangulation",
+   "systems": [
+    "Medico-legal"
+   ],
+   "depts": [
+    "forensic-medicine"
+   ]
+  },
+  {
+   "id": "c_firearm_or_sharp_weapon_injury",
+   "lbl": "Firearm or sharp-weapon injury",
+   "systems": [
+    "Medico-legal"
+   ],
+   "depts": [
+    "forensic-medicine"
+   ]
+  },
+  {
+   "id": "c_alcohol_intoxication",
+   "lbl": "Alcohol intoxication",
+   "systems": [
+    "Medico-legal"
+   ],
+   "depts": [
+    "forensic-medicine"
+   ]
+  },
+  {
+   "id": "c_age_estimation_request",
+   "lbl": "Age estimation request",
+   "systems": [
+    "Medico-legal"
+   ],
+   "depts": [
+    "forensic-medicine"
+   ]
+  },
+  {
+   "id": "c_unnatural_death_examination",
+   "lbl": "Unnatural death examination",
+   "systems": [
+    "Medico-legal"
+   ],
+   "depts": [
+    "forensic-medicine"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "g_sudden",
+   "lbl": "Sudden onset",
+   "text": "Did it start suddenly (within minutes to hours)?",
+   "why": "Sudden onset often points to vascular, traumatic or acute inflammatory causes.",
+   "sys": "General (all complaints)",
+   "when": [
+    "*"
+   ]
+  },
+  {
+   "id": "g_progressive",
+   "lbl": "Getting worse over time",
+   "text": "Is it getting steadily worse?",
+   "why": "Progression helps separate self-limiting from serious disease.",
+   "sys": "General (all complaints)",
+   "when": [
+    "*"
+   ]
+  },
+  {
+   "id": "g_previous",
+   "lbl": "Similar episodes before",
+   "text": "Has the patient had similar episodes before?",
+   "why": "Recurrence suggests a chronic or relapsing cause.",
+   "sys": "General (all complaints)",
+   "when": [
+    "*"
+   ]
+  },
+  {
+   "id": "g_treated",
+   "lbl": "Treatment already taken",
+   "text": "Has any treatment been taken, and did it help?",
+   "why": "Response to treatment and prior drugs affect interpretation.",
+   "sys": "General (all complaints)",
+   "when": [
+    "*"
+   ]
+  },
+  {
+   "id": "g_night",
+   "lbl": "Wakes from sleep",
+   "text": "Does it wake the patient from sleep?",
+   "why": "Night symptoms can signal more serious pathology.",
+   "sys": "General (all complaints)",
+   "when": [
+    "*"
+   ]
+  },
+  {
+   "id": "g_family",
+   "lbl": "Others with similar illness",
+   "text": "Are family members or neighbours similarly ill?",
+   "why": "Suggests infection, food/water or environmental source.",
+   "sys": "General (all complaints)",
+   "when": [
+    "*"
+   ]
+  },
+  {
+   "id": "g_travel",
+   "lbl": "Recent travel",
+   "text": "Any recent travel, especially to an endemic area?",
+   "why": "Exposure history for infection.",
+   "sys": "General (all complaints)",
+   "when": [
+    "*"
+   ]
+  },
+  {
+   "id": "g_newdrug",
+   "lbl": "Recent new medicine",
+   "text": "Any new medicine started recently?",
+   "why": "Drug side effects can cause many symptoms.",
+   "sys": "General (all complaints)",
+   "when": [
+    "*"
+   ]
+  },
+  {
+   "id": "g_injury",
+   "lbl": "Preceded by injury",
+   "text": "Did it follow an injury or fall?",
+   "why": "Trauma changes the differential completely.",
+   "sys": "General (all complaints)",
+   "when": [
+    "*"
+   ]
+  }
+ ],
+ "exam": [],
+ "diseases": [],
+ "flags": []
+}

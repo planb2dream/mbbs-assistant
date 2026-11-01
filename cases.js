@@ -156,7 +156,7 @@
     function tDdx() {
       var dd = Engine.differential(c, stage), g = dd.groups;
       return '<div class="seg"><button data-act="stage" data-v="1" class="' + (stage === 1 ? 'on' : '') + '">History only</button><button data-act="stage" data-v="2" class="' + (stage === 2 ? 'on' : '') + '">History + exam</button></div>' +
-        (dd.list.length ? '' : '<div class="notice warn">Select a presenting complaint to start the differential.</div>') +
+        (dd.list.length ? '' : '<div class="notice warn">' + (dd.norules.length ? 'No diagnostic rules written yet for: ' + esc(dd.norules.join(', ')) + '. The history and examination tabs still work; use your own clinical reasoning.' : 'Select a presenting complaint to start the differential.') + '</div>') +
         (dd.next.length ? '<div class="notice ok"><b>Most useful next steps:</b><ul>' + dd.next.map(function (n) { return '<li>' + esc(n) + '</li>'; }).join('') + '</ul></div>' : '') +
         (dd.why.length ? '<div class="notice warn"><b>Why this is still uncertain:</b><ul>' + dd.why.map(function (n) { return '<li>' + esc(n) + '</li>'; }).join('') + '</ul></div>' : '') +
         group('Cannot-miss conditions', g.cm, 'Shown whenever a related complaint is present, even if ranked low.') +

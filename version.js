@@ -1,2 +1,2 @@
 // CHANGE THIS NUMBER every time you update any file.
-var APP_VERSION = "0.3.0";
+var APP_VERSION = "0.4.0";

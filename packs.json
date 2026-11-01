@@ -1,5 +1,6 @@
 {
  "packs": [
+  "pack-complaints.json",
   "pack-dermatology.json"
  ],
  "note": "Add one file per department here. Each pack has symptoms, questions, exam, diseases, flags."

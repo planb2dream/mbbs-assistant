@@ -17,7 +17,11 @@ var Engine = (function () {
       var d = { s: a[0], d: a[1], r: a[2] };
       return Promise.all(a[3].packs.map(function (f) { return fetch(f).then(function (r) { return r.json(); }); })).then(function (ps) {
         ps.forEach(function (p) {
-          (p.symptoms || []).forEach(function (x) { d.s.symptoms.push(x); });
+          (p.symptoms || []).forEach(function (x) {
+            var ex = d.s.symptoms.filter(function (y) { return y.id === x.id; })[0];
+            if (!ex) { d.s.symptoms.push(x); return; }
+            x.depts.forEach(function (dp) { if (ex.depts.indexOf(dp) < 0) ex.depts.push(dp); });
+          });
           (p.questions || []).forEach(function (x) { d.s.questions.push(x); });
           (p.exam || []).forEach(function (x) { d.s.exam.push(x); });
           (p.diseases || []).forEach(function (x) { d.d.diseases.push(x); });
@@ -50,6 +54,7 @@ var Engine = (function () {
     return D.s.questions.filter(function (q) {
       if (q.sex && q.sex !== sx) return false;
       if (!q.when.length) return true;
+      if (q.when.indexOf('*') >= 0) return sel.length > 0;
       return q.when.some(function (w) { return sel.indexOf(w) >= 0; });
     });
   }
@@ -87,11 +92,14 @@ var Engine = (function () {
     var acc = {};
     res.slice(0, 5).forEach(function (r) { r.missing.forEach(function (m) { acc[m.k] = (acc[m.k] || 0) + m.w; }); });
     var next = Object.keys(acc).sort(function (a, b) { return acc[b] - acc[a]; }).slice(0, 3).map(function (k) { return Q[k].text || L[k]; });
-    var why = [];
+    var why = [], norules = selected(c).filter(function (s) {
+      return !D.d.diseases.some(function (x) { return x.triggers.indexOf(s.id) >= 0; });
+    }).map(function (s) { return s.lbl; });
+    if (norules.length) why.push('No diagnostic rules written yet for: ' + norules.join(', ') + '. Use your own history and examination reasoning for these.');
     if (res.length > 1 && res[0].score - res[1].score <= 2) why.push('The top two possibilities carry similar weight.');
     var cov = coverage(c); if (cov.unanswered.length) why.push(cov.unanswered.length + ' applicable question(s) not yet answered.');
     if (stage === 2 && !Object.keys(c.findings || {}).some(function (k) { return c.findings[k].src === 'e'; })) why.push('No examination findings entered yet.');
-    return { list: res, groups: g, next: next, why: why };
+    return { list: res, groups: g, next: next, why: why, norules: norules };
   }
   function redFlags(c) {
     var v = view(c, 2), p = c.patient || {}, vt = c.vitals || {}, out = [];
