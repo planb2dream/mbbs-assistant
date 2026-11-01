@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f3b44">
+  <meta name="description" content="Offline MBBS clinical history-taking and differential diagnosis learning tool">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>MBBS Clinical Assistant</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-title" id="topbar-title">MBBS Clinical Assistant</div>
+    <div class="net-pill" id="net-pill" role="status">Checking…</div>
+  </header>
+
+  <div class="update-banner" id="update-banner" hidden>
+    <span>A new version is ready.</span>
+    <button class="btn btn-small" id="update-now">Update now</button>
+  </div>
+
+  <main id="screen" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="Main navigation">
+    <a href="#home" data-tab="home">Home</a>
+    <a href="#new-patient" data-tab="new-patient">New case</a>
+    <a href="#saved-cases" data-tab="saved-cases">Cases</a>
+    <a href="#learning" data-tab="learning">Learn</a>
+    <a href="#settings" data-tab="settings">Settings</a>
+  </nav>
+
+  <script src="version.js"></script>
+  <script src="database.js"></script>
+  <script src="engines.js"></script>
+  <script src="cases.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

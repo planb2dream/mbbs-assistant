@@ -1,0 +1,31 @@
+{
+  "version": "0.1.0",
+  "note": "To add a department later, add one more line here. No code changes needed.",
+  "departments": [
+    { "id": "general-medicine", "name": "General Medicine" },
+    { "id": "general-surgery", "name": "General Surgery" },
+    { "id": "orthopaedics", "name": "Orthopaedics" },
+    { "id": "obgyn", "name": "Obstetrics and Gynaecology" },
+    { "id": "paediatrics", "name": "Paediatrics" },
+    { "id": "ent", "name": "ENT" },
+    { "id": "ophthalmology", "name": "Ophthalmology" },
+    { "id": "dermatology", "name": "Dermatology" },
+    { "id": "psychiatry", "name": "Psychiatry" },
+    { "id": "emergency", "name": "Emergency Medicine" },
+    { "id": "cardiology", "name": "Cardiology" },
+    { "id": "neurology", "name": "Neurology" },
+    { "id": "neurosurgery", "name": "Neurosurgery" },
+    { "id": "pulmonology", "name": "Pulmonology" },
+    { "id": "nephrology", "name": "Nephrology" },
+    { "id": "gastroenterology", "name": "Gastroenterology" },
+    { "id": "endocrinology", "name": "Endocrinology" },
+    { "id": "rheumatology", "name": "Rheumatology" },
+    { "id": "infectious-diseases", "name": "Infectious Diseases" },
+    { "id": "oncology", "name": "Oncology" },
+    { "id": "urology", "name": "Urology" },
+    { "id": "anaesthesiology", "name": "Anaesthesiology" },
+    { "id": "radiology", "name": "Radiology" },
+    { "id": "community-medicine", "name": "Community Medicine" },
+    { "id": "forensic-medicine", "name": "Forensic Medicine" }
+  ]
+}
