@@ -2,15 +2,138 @@
  "version": "0.2.0",
  "note": "Educational alert rules. A flag means 'assess urgently', never 'diagnosis made'. Absence of a flag is NOT reassurance.",
  "flags": [
-  {"id":"rf_sob","text":"Severe breathlessness","all":["sob_severe"]},
-  {"id":"rf_acs","text":"Chest pain with features suggesting acute coronary syndrome: urgent ECG and senior review","all":["cp_exertional"]},
-  {"id":"rf_dissect","text":"Sudden tearing chest pain to the back: consider aortic dissection","all":["cp_tearing_back"]},
-  {"id":"rf_sah","text":"Thunderclap / worst-ever headache: consider subarachnoid haemorrhage","all":["ha_thunderclap"]},
-  {"id":"rf_neuro","text":"New neurological deficit with headache","all":["ha_neuro_deficit"]},
-  {"id":"rf_bleed","text":"Headache after head injury or on anticoagulants: consider intracranial bleed","all":["ha_trauma_anticoag"]},
-  {"id":"rf_mening","text":"Fever with neck stiffness or altered consciousness: consider meningitis/encephalitis/sepsis","all":["fever"],"anyOf":["neck_stiff_sym","neck_stiff_sign","confusion"]},
-  {"id":"rf_pe","text":"Sudden breathlessness with VTE risk or pleuritic pain/haemoptysis: consider pulmonary embolism","all":["sob_sudden"],"anyOf":["recent_immob","leg_swelling_unilateral","cp_pleuritic","hemoptysis"]},
-  {"id":"rf_ectopic","text":"Abdominal pain with missed period: exclude ectopic pregnancy urgently","all":["abd_pain","ap_missed_period"],"sex":"F"},
-  {"id":"rf_suicide","text":"Thoughts of self-harm or suicide: assess risk and safety now","all":["suicidal"]}
+  {
+   "id": "rf_sob",
+   "text": "Severe breathlessness",
+   "all": [
+    "sob_severe"
+   ]
+  },
+  {
+   "id": "rf_acs",
+   "text": "Chest pain with features suggesting acute coronary syndrome: urgent ECG and senior review",
+   "all": [
+    "cp_exertional"
+   ]
+  },
+  {
+   "id": "rf_dissect",
+   "text": "Sudden tearing chest pain to the back: consider aortic dissection",
+   "all": [
+    "cp_tearing_back"
+   ]
+  },
+  {
+   "id": "rf_sah",
+   "text": "Thunderclap / worst-ever headache: consider subarachnoid haemorrhage",
+   "all": [
+    "ha_thunderclap"
+   ]
+  },
+  {
+   "id": "rf_neuro",
+   "text": "New neurological deficit with headache",
+   "all": [
+    "ha_neuro_deficit"
+   ]
+  },
+  {
+   "id": "rf_bleed",
+   "text": "Headache after head injury or on anticoagulants: consider intracranial bleed",
+   "all": [
+    "ha_trauma_anticoag"
+   ]
+  },
+  {
+   "id": "rf_mening",
+   "text": "Fever with neck stiffness or altered consciousness: consider meningitis/encephalitis/sepsis",
+   "all": [
+    "fever"
+   ],
+   "anyOf": [
+    "neck_stiff_sym",
+    "neck_stiff_sign",
+    "confusion"
+   ]
+  },
+  {
+   "id": "rf_pe",
+   "text": "Sudden breathlessness with VTE risk or pleuritic pain/haemoptysis: consider pulmonary embolism",
+   "all": [
+    "sob_sudden"
+   ],
+   "anyOf": [
+    "recent_immob",
+    "leg_swelling_unilateral",
+    "cp_pleuritic",
+    "hemoptysis"
+   ]
+  },
+  {
+   "id": "rf_ectopic",
+   "text": "Abdominal pain with missed period: exclude ectopic pregnancy urgently",
+   "all": [
+    "abd_pain",
+    "ap_missed_period"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "rf_suicide",
+   "text": "Thoughts of self-harm or suicide: assess risk and safety now",
+   "all": [
+    "suicidal"
+   ]
+  },
+  {
+   "id": "rf_sjs",
+   "text": "Rash with mouth/eye/genital sores or skin peeling: consider severe drug reaction (SJS/TEN)",
+   "all": [
+    "mucosal_involve"
+   ]
+  },
+  {
+   "id": "rf_anaph",
+   "text": "Lip/tongue/throat swelling or breathing difficulty: possible anaphylaxis",
+   "all": [
+    "face_swelling"
+   ]
+  },
+  {
+   "id": "rf_airway",
+   "text": "Noisy breathing, drooling or breathing difficulty with throat/nose symptoms: airway emergency",
+   "all": [
+    "stridor"
+   ]
+  },
+  {
+   "id": "rf_cauda",
+   "text": "Possible cauda equina syndrome: urgent assessment",
+   "all": [
+    "saddle_bladder"
+   ]
+  },
+  {
+   "id": "rf_angle",
+   "text": "Severe eye pain with halos/nausea: possible acute angle-closure glaucoma",
+   "all": [
+    "eye_pain_severe"
+   ]
+  },
+  {
+   "id": "rf_vis",
+   "text": "Sudden loss of vision: urgent ophthalmology assessment",
+   "all": [
+    "sudden_vision_loss"
+   ]
+  },
+  {
+   "id": "rf_septic",
+   "text": "Hot swollen joint with fever: exclude septic arthritis urgently",
+   "all": [
+    "joint_hot_swollen_sym",
+    "fever"
+   ]
+  }
  ]
 }

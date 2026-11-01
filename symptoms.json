@@ -1,67 +1,1192 @@
 {
  "version": "0.2.0",
  "symptoms": [
-  {"id":"cough","lbl":"Cough","systems":["Respiratory","ENT","Cardiovascular","Gastrointestinal","General / Infectious"]},
-  {"id":"fever","lbl":"Fever","systems":["General / Infectious","Respiratory","Neurological","Gastrointestinal","Haematological"]},
-  {"id":"sob","lbl":"Breathlessness","systems":["Respiratory","Cardiovascular","Haematological"]},
-  {"id":"chest_pain","lbl":"Chest pain","systems":["Cardiovascular","Respiratory","Gastrointestinal","Musculoskeletal"]},
-  {"id":"headache","lbl":"Headache","systems":["Neurological","Ophthalmological","ENT","General / Infectious","Cardiovascular","Musculoskeletal"]},
-  {"id":"abd_pain","lbl":"Abdominal pain","systems":["Gastrointestinal","Genitourinary","Obstetric / Gynaecological"]},
-  {"id":"vomiting","lbl":"Vomiting","systems":["Gastrointestinal","Neurological","General / Infectious"]},
-  {"id":"diarrhoea","lbl":"Diarrhoea","systems":["Gastrointestinal","General / Infectious"]}
+  {
+   "id": "cough",
+   "lbl": "Cough",
+   "systems": [
+    "Respiratory",
+    "ENT",
+    "Cardiovascular",
+    "Gastrointestinal",
+    "General / Infectious"
+   ],
+   "depts": [
+    "general-medicine",
+    "emergency",
+    "pulmonology",
+    "infectious-diseases",
+    "community-medicine",
+    "paediatrics",
+    "cardiology",
+    "ent",
+    "oncology"
+   ]
+  },
+  {
+   "id": "fever",
+   "lbl": "Fever",
+   "systems": [
+    "General / Infectious",
+    "Respiratory",
+    "Neurological",
+    "Gastrointestinal",
+    "Haematological"
+   ],
+   "depts": [
+    "general-medicine",
+    "emergency",
+    "infectious-diseases",
+    "community-medicine",
+    "paediatrics",
+    "pulmonology",
+    "rheumatology",
+    "oncology"
+   ]
+  },
+  {
+   "id": "sob",
+   "lbl": "Breathlessness",
+   "systems": [
+    "Respiratory",
+    "Cardiovascular",
+    "Haematological"
+   ],
+   "depts": [
+    "general-medicine",
+    "emergency",
+    "pulmonology",
+    "cardiology",
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "chest_pain",
+   "lbl": "Chest pain",
+   "systems": [
+    "Cardiovascular",
+    "Respiratory",
+    "Gastrointestinal",
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "general-medicine",
+    "emergency",
+    "cardiology",
+    "pulmonology"
+   ]
+  },
+  {
+   "id": "headache",
+   "lbl": "Headache",
+   "systems": [
+    "Neurological",
+    "Ophthalmological",
+    "ENT",
+    "General / Infectious",
+    "Cardiovascular",
+    "Musculoskeletal"
+   ],
+   "depts": [
+    "general-medicine",
+    "emergency",
+    "neurology",
+    "neurosurgery",
+    "ent",
+    "ophthalmology",
+    "psychiatry",
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "abd_pain",
+   "lbl": "Abdominal pain",
+   "systems": [
+    "Gastrointestinal",
+    "Genitourinary",
+    "Obstetric / Gynaecological"
+   ],
+   "depts": [
+    "general-medicine",
+    "general-surgery",
+    "emergency",
+    "gastroenterology",
+    "obgyn",
+    "urology",
+    "paediatrics",
+    "nephrology"
+   ]
+  },
+  {
+   "id": "vomiting",
+   "lbl": "Vomiting",
+   "systems": [
+    "Gastrointestinal",
+    "Neurological",
+    "General / Infectious"
+   ],
+   "depts": [
+    "general-medicine",
+    "general-surgery",
+    "emergency",
+    "gastroenterology",
+    "paediatrics",
+    "neurology",
+    "obgyn"
+   ]
+  },
+  {
+   "id": "diarrhoea",
+   "lbl": "Diarrhoea",
+   "systems": [
+    "Gastrointestinal",
+    "General / Infectious"
+   ],
+   "depts": [
+    "general-medicine",
+    "gastroenterology",
+    "infectious-diseases",
+    "community-medicine",
+    "paediatrics",
+    "emergency"
+   ]
+  },
+  {
+   "id": "rash_skin",
+   "lbl": "Skin rash / lesion",
+   "systems": [
+    "Dermatological",
+    "General / Infectious"
+   ],
+   "depts": [
+    "dermatology",
+    "general-medicine",
+    "paediatrics",
+    "infectious-diseases",
+    "rheumatology",
+    "emergency"
+   ]
+  },
+  {
+   "id": "itch",
+   "lbl": "Itching",
+   "systems": [
+    "Dermatological"
+   ],
+   "depts": [
+    "dermatology",
+    "general-medicine",
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "sore_throat",
+   "lbl": "Sore throat",
+   "systems": [
+    "ENT",
+    "General / Infectious"
+   ],
+   "depts": [
+    "ent",
+    "general-medicine",
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "ear_pain",
+   "lbl": "Ear pain",
+   "systems": [
+    "ENT"
+   ],
+   "depts": [
+    "ent",
+    "general-medicine",
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "nasal_block",
+   "lbl": "Nasal blockage / discharge",
+   "systems": [
+    "ENT",
+    "Respiratory"
+   ],
+   "depts": [
+    "ent",
+    "general-medicine",
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "red_eye",
+   "lbl": "Red / painful eye",
+   "systems": [
+    "Ophthalmological",
+    "Neurological"
+   ],
+   "depts": [
+    "ophthalmology",
+    "emergency",
+    "general-medicine"
+   ]
+  },
+  {
+   "id": "vision_loss",
+   "lbl": "Loss or blurring of vision",
+   "systems": [
+    "Ophthalmological",
+    "Neurological",
+    "Cardiovascular"
+   ],
+   "depts": [
+    "ophthalmology",
+    "neurology",
+    "emergency",
+    "general-medicine"
+   ]
+  },
+  {
+   "id": "joint_pain",
+   "lbl": "Joint pain / swelling",
+   "systems": [
+    "Musculoskeletal",
+    "General / Infectious"
+   ],
+   "depts": [
+    "orthopaedics",
+    "rheumatology",
+    "general-medicine",
+    "emergency"
+   ]
+  },
+  {
+   "id": "back_pain",
+   "lbl": "Back pain",
+   "systems": [
+    "Musculoskeletal",
+    "Neurological",
+    "Genitourinary"
+   ],
+   "depts": [
+    "orthopaedics",
+    "neurosurgery",
+    "neurology",
+    "rheumatology",
+    "general-medicine",
+    "emergency"
+   ]
+  },
+  {
+   "id": "low_mood",
+   "lbl": "Low mood / loss of interest",
+   "systems": [
+    "Psychiatric",
+    "Endocrine"
+   ],
+   "depts": [
+    "psychiatry",
+    "general-medicine",
+    "community-medicine"
+   ]
+  }
  ],
  "questions": [
-  {"id":"productive","lbl":"Productive cough (sputum)","text":"Is the cough bringing up sputum?","why":"Sputum favours lower respiratory infection or airway disease.","sys":"Respiratory","when":["cough"]},
-  {"id":"cough_gt3w","lbl":"Cough longer than 3 weeks","text":"Has the cough lasted more than 3 weeks?","why":"Prolonged cough raises TB and other chronic causes.","sys":"Respiratory","when":["cough"]},
-  {"id":"hemoptysis","lbl":"Coughing blood","text":"Any blood in the sputum?","why":"Haemoptysis needs TB, PE, cancer and bronchiectasis considered.","sys":"Respiratory","when":["cough","sob"]},
-  {"id":"wheeze_sym","lbl":"Wheeze","text":"Any wheeze or whistling breathing?","why":"Suggests airway obstruction (asthma/COPD).","sys":"Respiratory","when":["cough","sob"]},
-  {"id":"smoker","lbl":"Smoking / biomass smoke exposure","text":"Smoking, or long exposure to cooking-fire smoke or dust?","why":"Major risk factor for COPD and lung disease.","sys":"Respiratory","when":["cough","sob"]},
-  {"id":"night_sweats","lbl":"Night sweats","text":"Drenching sweats at night?","why":"Infection (TB) and malignancy question.","sys":"General / Infectious","when":["cough","fever"]},
-  {"id":"weight_loss","lbl":"Weight loss","text":"Unintentional weight loss?","why":"Chronic infection or malignancy question.","sys":"General / Infectious","when":["cough","fever"]},
-  {"id":"tb_contact","lbl":"TB contact","text":"Contact with someone with TB, or past TB?","why":"Exposure raises TB probability in India.","sys":"General / Infectious","when":["cough","fever"]},
-  {"id":"orthopnoea","lbl":"Breathless lying flat","text":"Worse breathlessness lying flat, or waking breathless at night?","why":"Typical of heart failure.","sys":"Cardiovascular","when":["cough","sob"]},
-  {"id":"pedal_oedema","lbl":"Ankle swelling","text":"Swelling of both ankles/feet?","why":"Heart, kidney or liver cause question.","sys":"Cardiovascular","when":["cough","sob"]},
-  {"id":"postnasal","lbl":"Nasal discharge / postnasal drip","text":"Runny or blocked nose, or mucus dripping down the throat?","why":"Upper airway cause of cough.","sys":"ENT","when":["cough"]},
-  {"id":"cough_after_eating","lbl":"Cough after eating","text":"Does coughing or choking happen while or after eating or drinking?","why":"May suggest aspiration or swallowing problem.","sys":"Gastrointestinal","when":["cough"]},
-  {"id":"fever_chills","lbl":"Fever with chills/rigors","text":"High fever with shaking chills?","why":"Typical teaching feature of malaria; also bacterial infection.","sys":"General / Infectious","when":["fever"]},
-  {"id":"fever_prolonged","lbl":"Fever more than 5 days","text":"Has the fever lasted more than 5 days, rising stepwise?","why":"Prolonged fever raises enteric fever, TB and others.","sys":"General / Infectious","when":["fever"]},
-  {"id":"rash","lbl":"Rash","text":"Any new skin rash?","why":"Rash helps separate dengue, meningococcal illness and viral fevers.","sys":"Dermatological","when":["fever"]},
-  {"id":"retro_orbital","lbl":"Pain behind eyes / severe body ache","text":"Pain behind the eyes or severe body and joint aches?","why":"Common dengue presentation.","sys":"Ophthalmological","when":["fever"]},
-  {"id":"mosquito_area","lbl":"Mosquito exposure / endemic area","text":"Lives in or travelled to an area with dengue or malaria, or mosquito bites?","why":"Exposure history for vector-borne disease.","sys":"General / Infectious","when":["fever"]},
-  {"id":"neck_stiff_sym","lbl":"Neck pain/stiffness","text":"Pain or stiffness in the neck?","why":"Meningeal irritation is a cannot-miss feature.","sys":"Neurological","when":["fever","headache"]},
-  {"id":"photophobia","lbl":"Light sensitivity","text":"Does bright light hurt the eyes or worsen the headache?","why":"Seen in migraine and meningitis.","sys":"Ophthalmological","when":["fever","headache"]},
-  {"id":"confusion","lbl":"Confusion / drowsiness","text":"Any confusion, drowsiness or behaviour change?","why":"Altered consciousness is a danger sign.","sys":"Neurological","when":["fever","headache"]},
-  {"id":"sob_severe","lbl":"Severe breathlessness at rest","text":"Too breathless to speak full sentences, or breathless at rest?","why":"Danger sign needing urgent assessment.","sys":"Respiratory","when":["sob","cough"]},
-  {"id":"sob_sudden","lbl":"Sudden-onset breathlessness","text":"Did breathlessness start suddenly (minutes to hours)?","why":"Sudden onset raises PE, pneumothorax, acute heart problems.","sys":"Respiratory","when":["sob"]},
-  {"id":"recent_immob","lbl":"Recent surgery/immobility/long travel","text":"Recent surgery, long bed rest or long travel?","why":"Risk factor for venous thromboembolism.","sys":"Haematological","when":["sob","chest_pain"]},
-  {"id":"leg_swelling_unilateral","lbl":"One swollen painful leg","text":"Swelling and pain in one leg only?","why":"Possible deep vein thrombosis.","sys":"Haematological","when":["sob","chest_pain"]},
-  {"id":"cp_exertional","lbl":"Pressure-type chest pain (exertion/rest, spreading to arm/jaw)","text":"Is the pain a heavy pressure or tightness, brought on by effort or at rest, spreading to arm, jaw or back?","why":"Typical ischaemic cardiac pain features.","sys":"Cardiovascular","when":["chest_pain"]},
-  {"id":"cp_sweating","lbl":"Sweating with chest pain","text":"Sweating, nausea or feeling of doom with the pain?","why":"Autonomic features support ACS.","sys":"Cardiovascular","when":["chest_pain"]},
-  {"id":"cp_pleuritic","lbl":"Pain worse on deep breath","text":"Is the pain sharp and worse on deep breath or coughing?","why":"Pleuritic pain: pneumonia, PE, pleurisy, pneumothorax.","sys":"Respiratory","when":["chest_pain","cough","sob"]},
-  {"id":"cp_tearing_back","lbl":"Sudden tearing pain to the back","text":"Sudden severe tearing pain spreading to the back?","why":"Aortic dissection is a cannot-miss cause.","sys":"Cardiovascular","when":["chest_pain"]},
-  {"id":"ha_thunderclap","lbl":"Sudden worst-ever headache","text":"Did the headache reach maximum severity within about a minute, or is it the worst ever?","why":"Thunderclap headache needs urgent exclusion of bleeding.","sys":"Neurological","when":["headache"]},
-  {"id":"ha_unilateral","lbl":"One-sided throbbing headache","text":"One-sided, throbbing headache with nausea, repeated in past?","why":"Typical migraine pattern.","sys":"Neurological","when":["headache"]},
-  {"id":"ha_neuro_deficit","lbl":"Weakness/numbness/speech or vision problem","text":"Any weakness, numbness, speech trouble, double vision or seizure?","why":"Focal deficit means structural or vascular cause until proven otherwise.","sys":"Neurological","when":["headache"]},
-  {"id":"ha_trauma_anticoag","lbl":"Head injury or on blood thinners","text":"Recent head injury, or taking warfarin/other blood thinners?","why":"Raises risk of intracranial bleeding.","sys":"Neurological","when":["headache"]},
-  {"id":"ha_progressive","lbl":"Progressively worsening headache","text":"Is the headache steadily worsening over days to weeks, worse in the morning or on coughing?","why":"Possible raised intracranial pressure.","sys":"Neurological","when":["headache"]},
-  {"id":"ap_rif","lbl":"Pain moved to right lower abdomen","text":"Did pain start near the navel and move to the right lower abdomen?","why":"Classic appendicitis migration.","sys":"Gastrointestinal","when":["abd_pain"]},
-  {"id":"ap_missed_period","lbl":"Missed period / possible pregnancy","text":"Is a period late or missed, or could she be pregnant?","why":"Ectopic pregnancy must be excluded in women of reproductive age.","sys":"Obstetric / Gynaecological","when":["abd_pain"],"sex":"F"},
-  {"id":"ap_vaginal_bleed","lbl":"Vaginal bleeding","text":"Any vaginal bleeding?","why":"Supports ectopic or other gynaecological cause.","sys":"Obstetric / Gynaecological","when":["abd_pain"],"sex":"F"},
-  {"id":"d_contaminated","lbl":"Contaminated food/water exposure","text":"Street food, untreated water, or others ill after the same meal?","why":"Faeco-oral infection exposure.","sys":"Gastrointestinal","when":["abd_pain","vomiting","diarrhoea","fever"]},
-  {"id":"d_bloody","lbl":"Blood in stool","text":"Blood or mucus in the stool?","why":"Suggests invasive infection or inflammatory bowel disease.","sys":"Gastrointestinal","when":["diarrhoea"]},
-  {"id":"suicidal","lbl":"Thoughts of self-harm","text":"Has the patient had thoughts of harming themselves or ending their life?","why":"Safety question applies in any consultation.","sys":"Psychiatric","when":[]}
+  {
+   "id": "productive",
+   "lbl": "Productive cough (sputum)",
+   "text": "Is the cough bringing up sputum?",
+   "why": "Sputum favours lower respiratory infection or airway disease.",
+   "sys": "Respiratory",
+   "when": [
+    "cough"
+   ]
+  },
+  {
+   "id": "cough_gt3w",
+   "lbl": "Cough longer than 3 weeks",
+   "text": "Has the cough lasted more than 3 weeks?",
+   "why": "Prolonged cough raises TB and other chronic causes.",
+   "sys": "Respiratory",
+   "when": [
+    "cough"
+   ]
+  },
+  {
+   "id": "hemoptysis",
+   "lbl": "Coughing blood",
+   "text": "Any blood in the sputum?",
+   "why": "Haemoptysis needs TB, PE, cancer and bronchiectasis considered.",
+   "sys": "Respiratory",
+   "when": [
+    "cough",
+    "sob"
+   ]
+  },
+  {
+   "id": "wheeze_sym",
+   "lbl": "Wheeze",
+   "text": "Any wheeze or whistling breathing?",
+   "why": "Suggests airway obstruction (asthma/COPD).",
+   "sys": "Respiratory",
+   "when": [
+    "cough",
+    "sob"
+   ]
+  },
+  {
+   "id": "smoker",
+   "lbl": "Smoking / biomass smoke exposure",
+   "text": "Smoking, or long exposure to cooking-fire smoke or dust?",
+   "why": "Major risk factor for COPD and lung disease.",
+   "sys": "Respiratory",
+   "when": [
+    "cough",
+    "sob"
+   ]
+  },
+  {
+   "id": "night_sweats",
+   "lbl": "Night sweats",
+   "text": "Drenching sweats at night?",
+   "why": "Infection (TB) and malignancy question.",
+   "sys": "General / Infectious",
+   "when": [
+    "cough",
+    "fever"
+   ]
+  },
+  {
+   "id": "weight_loss",
+   "lbl": "Weight loss",
+   "text": "Unintentional weight loss?",
+   "why": "Chronic infection or malignancy question.",
+   "sys": "General / Infectious",
+   "when": [
+    "cough",
+    "fever"
+   ]
+  },
+  {
+   "id": "tb_contact",
+   "lbl": "TB contact",
+   "text": "Contact with someone with TB, or past TB?",
+   "why": "Exposure raises TB probability in India.",
+   "sys": "General / Infectious",
+   "when": [
+    "cough",
+    "fever"
+   ]
+  },
+  {
+   "id": "orthopnoea",
+   "lbl": "Breathless lying flat",
+   "text": "Worse breathlessness lying flat, or waking breathless at night?",
+   "why": "Typical of heart failure.",
+   "sys": "Cardiovascular",
+   "when": [
+    "cough",
+    "sob"
+   ]
+  },
+  {
+   "id": "pedal_oedema",
+   "lbl": "Ankle swelling",
+   "text": "Swelling of both ankles/feet?",
+   "why": "Heart, kidney or liver cause question.",
+   "sys": "Cardiovascular",
+   "when": [
+    "cough",
+    "sob"
+   ]
+  },
+  {
+   "id": "postnasal",
+   "lbl": "Nasal discharge / postnasal drip",
+   "text": "Runny or blocked nose, or mucus dripping down the throat?",
+   "why": "Upper airway cause of cough.",
+   "sys": "ENT",
+   "when": [
+    "cough"
+   ]
+  },
+  {
+   "id": "cough_after_eating",
+   "lbl": "Cough after eating",
+   "text": "Does coughing or choking happen while or after eating or drinking?",
+   "why": "May suggest aspiration or swallowing problem.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "cough"
+   ]
+  },
+  {
+   "id": "fever_chills",
+   "lbl": "Fever with chills/rigors",
+   "text": "High fever with shaking chills?",
+   "why": "Typical teaching feature of malaria; also bacterial infection.",
+   "sys": "General / Infectious",
+   "when": [
+    "fever"
+   ]
+  },
+  {
+   "id": "fever_prolonged",
+   "lbl": "Fever more than 5 days",
+   "text": "Has the fever lasted more than 5 days, rising stepwise?",
+   "why": "Prolonged fever raises enteric fever, TB and others.",
+   "sys": "General / Infectious",
+   "when": [
+    "fever"
+   ]
+  },
+  {
+   "id": "rash",
+   "lbl": "Rash",
+   "text": "Any new skin rash?",
+   "why": "Rash helps separate dengue, meningococcal illness and viral fevers.",
+   "sys": "Dermatological",
+   "when": [
+    "fever"
+   ]
+  },
+  {
+   "id": "retro_orbital",
+   "lbl": "Pain behind eyes / severe body ache",
+   "text": "Pain behind the eyes or severe body and joint aches?",
+   "why": "Common dengue presentation.",
+   "sys": "Ophthalmological",
+   "when": [
+    "fever"
+   ]
+  },
+  {
+   "id": "mosquito_area",
+   "lbl": "Mosquito exposure / endemic area",
+   "text": "Lives in or travelled to an area with dengue or malaria, or mosquito bites?",
+   "why": "Exposure history for vector-borne disease.",
+   "sys": "General / Infectious",
+   "when": [
+    "fever"
+   ]
+  },
+  {
+   "id": "neck_stiff_sym",
+   "lbl": "Neck pain/stiffness",
+   "text": "Pain or stiffness in the neck?",
+   "why": "Meningeal irritation is a cannot-miss feature.",
+   "sys": "Neurological",
+   "when": [
+    "fever",
+    "headache"
+   ]
+  },
+  {
+   "id": "photophobia",
+   "lbl": "Light sensitivity",
+   "text": "Does bright light hurt the eyes or worsen the headache?",
+   "why": "Seen in migraine and meningitis.",
+   "sys": "Ophthalmological",
+   "when": [
+    "fever",
+    "headache",
+    "red_eye"
+   ]
+  },
+  {
+   "id": "confusion",
+   "lbl": "Confusion / drowsiness",
+   "text": "Any confusion, drowsiness or behaviour change?",
+   "why": "Altered consciousness is a danger sign.",
+   "sys": "Neurological",
+   "when": [
+    "fever",
+    "headache"
+   ]
+  },
+  {
+   "id": "sob_severe",
+   "lbl": "Severe breathlessness at rest",
+   "text": "Too breathless to speak full sentences, or breathless at rest?",
+   "why": "Danger sign needing urgent assessment.",
+   "sys": "Respiratory",
+   "when": [
+    "sob",
+    "cough"
+   ]
+  },
+  {
+   "id": "sob_sudden",
+   "lbl": "Sudden-onset breathlessness",
+   "text": "Did breathlessness start suddenly (minutes to hours)?",
+   "why": "Sudden onset raises PE, pneumothorax, acute heart problems.",
+   "sys": "Respiratory",
+   "when": [
+    "sob"
+   ]
+  },
+  {
+   "id": "recent_immob",
+   "lbl": "Recent surgery/immobility/long travel",
+   "text": "Recent surgery, long bed rest or long travel?",
+   "why": "Risk factor for venous thromboembolism.",
+   "sys": "Haematological",
+   "when": [
+    "sob",
+    "chest_pain"
+   ]
+  },
+  {
+   "id": "leg_swelling_unilateral",
+   "lbl": "One swollen painful leg",
+   "text": "Swelling and pain in one leg only?",
+   "why": "Possible deep vein thrombosis.",
+   "sys": "Haematological",
+   "when": [
+    "sob",
+    "chest_pain"
+   ]
+  },
+  {
+   "id": "cp_exertional",
+   "lbl": "Pressure-type chest pain (exertion/rest, spreading to arm/jaw)",
+   "text": "Is the pain a heavy pressure or tightness, brought on by effort or at rest, spreading to arm, jaw or back?",
+   "why": "Typical ischaemic cardiac pain features.",
+   "sys": "Cardiovascular",
+   "when": [
+    "chest_pain"
+   ]
+  },
+  {
+   "id": "cp_sweating",
+   "lbl": "Sweating with chest pain",
+   "text": "Sweating, nausea or feeling of doom with the pain?",
+   "why": "Autonomic features support ACS.",
+   "sys": "Cardiovascular",
+   "when": [
+    "chest_pain"
+   ]
+  },
+  {
+   "id": "cp_pleuritic",
+   "lbl": "Pain worse on deep breath",
+   "text": "Is the pain sharp and worse on deep breath or coughing?",
+   "why": "Pleuritic pain: pneumonia, PE, pleurisy, pneumothorax.",
+   "sys": "Respiratory",
+   "when": [
+    "chest_pain",
+    "cough",
+    "sob"
+   ]
+  },
+  {
+   "id": "cp_tearing_back",
+   "lbl": "Sudden tearing pain to the back",
+   "text": "Sudden severe tearing pain spreading to the back?",
+   "why": "Aortic dissection is a cannot-miss cause.",
+   "sys": "Cardiovascular",
+   "when": [
+    "chest_pain"
+   ]
+  },
+  {
+   "id": "ha_thunderclap",
+   "lbl": "Sudden worst-ever headache",
+   "text": "Did the headache reach maximum severity within about a minute, or is it the worst ever?",
+   "why": "Thunderclap headache needs urgent exclusion of bleeding.",
+   "sys": "Neurological",
+   "when": [
+    "headache"
+   ]
+  },
+  {
+   "id": "ha_unilateral",
+   "lbl": "One-sided throbbing headache",
+   "text": "One-sided, throbbing headache with nausea, repeated in past?",
+   "why": "Typical migraine pattern.",
+   "sys": "Neurological",
+   "when": [
+    "headache"
+   ]
+  },
+  {
+   "id": "ha_neuro_deficit",
+   "lbl": "Weakness/numbness/speech or vision problem",
+   "text": "Any weakness, numbness, speech trouble, double vision or seizure?",
+   "why": "Focal deficit means structural or vascular cause until proven otherwise.",
+   "sys": "Neurological",
+   "when": [
+    "headache"
+   ]
+  },
+  {
+   "id": "ha_trauma_anticoag",
+   "lbl": "Head injury or on blood thinners",
+   "text": "Recent head injury, or taking warfarin/other blood thinners?",
+   "why": "Raises risk of intracranial bleeding.",
+   "sys": "Neurological",
+   "when": [
+    "headache"
+   ]
+  },
+  {
+   "id": "ha_progressive",
+   "lbl": "Progressively worsening headache",
+   "text": "Is the headache steadily worsening over days to weeks, worse in the morning or on coughing?",
+   "why": "Possible raised intracranial pressure.",
+   "sys": "Neurological",
+   "when": [
+    "headache"
+   ]
+  },
+  {
+   "id": "ap_rif",
+   "lbl": "Pain moved to right lower abdomen",
+   "text": "Did pain start near the navel and move to the right lower abdomen?",
+   "why": "Classic appendicitis migration.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "abd_pain"
+   ]
+  },
+  {
+   "id": "ap_missed_period",
+   "lbl": "Missed period / possible pregnancy",
+   "text": "Is a period late or missed, or could she be pregnant?",
+   "why": "Ectopic pregnancy must be excluded in women of reproductive age.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "abd_pain"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "ap_vaginal_bleed",
+   "lbl": "Vaginal bleeding",
+   "text": "Any vaginal bleeding?",
+   "why": "Supports ectopic or other gynaecological cause.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "abd_pain"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "d_contaminated",
+   "lbl": "Contaminated food/water exposure",
+   "text": "Street food, untreated water, or others ill after the same meal?",
+   "why": "Faeco-oral infection exposure.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "abd_pain",
+    "vomiting",
+    "diarrhoea",
+    "fever"
+   ]
+  },
+  {
+   "id": "d_bloody",
+   "lbl": "Blood in stool",
+   "text": "Blood or mucus in the stool?",
+   "why": "Suggests invasive infection or inflammatory bowel disease.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "diarrhoea"
+   ]
+  },
+  {
+   "id": "suicidal",
+   "lbl": "Thoughts of self-harm",
+   "text": "Has the patient had thoughts of harming themselves or ending their life?",
+   "why": "Safety question applies in any consultation.",
+   "sys": "Psychiatric",
+   "when": []
+  },
+  {
+   "id": "itch_night",
+   "lbl": "Itching worse at night",
+   "text": "Is the itching worse at night?",
+   "why": "Typical of scabies.",
+   "sys": "Dermatological",
+   "when": [
+    "itch",
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "itch_contacts",
+   "lbl": "Others at home itching",
+   "text": "Are others at home or close contacts also itching?",
+   "why": "Clustering suggests scabies or other contagious skin disease.",
+   "sys": "Dermatological",
+   "when": [
+    "itch",
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "wheals",
+   "lbl": "Itchy wheals that come and go",
+   "text": "Are there raised itchy wheals that appear and fade within hours?",
+   "why": "Transient wheals point to urticaria.",
+   "sys": "Dermatological",
+   "when": [
+    "itch",
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "ring_shaped",
+   "lbl": "Ring-shaped scaly patch",
+   "text": "Is the patch ring-shaped with a scaly edge?",
+   "why": "Typical of dermatophyte infection.",
+   "sys": "Dermatological",
+   "when": [
+    "itch",
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "atopy",
+   "lbl": "Personal/family asthma, hay fever or eczema",
+   "text": "Any personal or family history of asthma, hay fever or eczema?",
+   "why": "Atopy supports eczema.",
+   "sys": "Dermatological",
+   "when": [
+    "itch",
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "skin_painful_hot",
+   "lbl": "Red, hot, painful spreading skin",
+   "text": "Is the skin red, hot, painful and spreading?",
+   "why": "Suggests bacterial skin infection.",
+   "sys": "Dermatological",
+   "when": [
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "new_drug",
+   "lbl": "New medicine in last 2 weeks",
+   "text": "Started any new medicine in the last 2 weeks?",
+   "why": "Drug reactions follow new medicines.",
+   "sys": "Dermatological",
+   "when": [
+    "rash_skin",
+    "itch"
+   ]
+  },
+  {
+   "id": "mucosal_involve",
+   "lbl": "Mouth/eye/genital sores or skin peeling",
+   "text": "Sores in mouth, eyes or genitals, or skin peeling off?",
+   "why": "Mucosal involvement is a danger sign for severe drug reactions.",
+   "sys": "Dermatological",
+   "when": [
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "face_swelling",
+   "lbl": "Lip/tongue/throat swelling or breathing difficulty",
+   "text": "Swelling of lips, tongue or throat, or difficulty breathing?",
+   "why": "Possible anaphylaxis.",
+   "sys": "Dermatological",
+   "when": [
+    "rash_skin",
+    "itch"
+   ]
+  },
+  {
+   "id": "painful_swallow",
+   "lbl": "Painful swallowing",
+   "text": "Is swallowing painful?",
+   "why": "Supports throat infection.",
+   "sys": "ENT",
+   "when": [
+    "sore_throat"
+   ]
+  },
+  {
+   "id": "trismus",
+   "lbl": "Cannot open mouth fully / muffled voice",
+   "text": "Difficulty opening the mouth, or a muffled \"hot potato\" voice?",
+   "why": "Raises peritonsillar abscess.",
+   "sys": "ENT",
+   "when": [
+    "sore_throat"
+   ]
+  },
+  {
+   "id": "stridor",
+   "lbl": "Noisy breathing / drooling / difficulty breathing",
+   "text": "Noisy breathing, drooling, or difficulty breathing?",
+   "why": "Possible airway compromise.",
+   "sys": "ENT",
+   "when": [
+    "sore_throat",
+    "nasal_block"
+   ]
+  },
+  {
+   "id": "ear_discharge",
+   "lbl": "Ear discharge",
+   "text": "Any discharge from the ear?",
+   "why": "Helps separate otitis types.",
+   "sys": "ENT",
+   "when": [
+    "ear_pain"
+   ]
+  },
+  {
+   "id": "hearing_loss",
+   "lbl": "Reduced hearing",
+   "text": "Is hearing reduced on that side?",
+   "why": "Common in middle-ear disease.",
+   "sys": "ENT",
+   "when": [
+    "ear_pain"
+   ]
+  },
+  {
+   "id": "pinna_pain",
+   "lbl": "Pain on pulling the ear",
+   "text": "Is the pain worse when the outer ear is pulled?",
+   "why": "Suggests otitis externa.",
+   "sys": "ENT",
+   "when": [
+    "ear_pain"
+   ]
+  },
+  {
+   "id": "facial_pain",
+   "lbl": "Facial pain/pressure",
+   "text": "Facial pain or pressure, worse bending forward?",
+   "why": "Suggests sinusitis.",
+   "sys": "ENT",
+   "when": [
+    "nasal_block"
+   ]
+  },
+  {
+   "id": "eye_discharge",
+   "lbl": "Sticky eye discharge",
+   "text": "Sticky or watery discharge from the eye?",
+   "why": "Supports conjunctivitis.",
+   "sys": "Ophthalmological",
+   "when": [
+    "red_eye"
+   ]
+  },
+  {
+   "id": "eye_pain_severe",
+   "lbl": "Severe eye pain with halos/nausea",
+   "text": "Severe eye pain with halos around lights, nausea or vomiting?",
+   "why": "Possible acute angle-closure glaucoma.",
+   "sys": "Ophthalmological",
+   "when": [
+    "red_eye"
+   ]
+  },
+  {
+   "id": "sudden_vision_loss",
+   "lbl": "Sudden loss of vision",
+   "text": "Did vision go suddenly (minutes to hours)?",
+   "why": "Sudden loss is vision-threatening until proven otherwise.",
+   "sys": "Ophthalmological",
+   "when": [
+    "vision_loss",
+    "red_eye"
+   ]
+  },
+  {
+   "id": "vision_curtain",
+   "lbl": "Curtain/shadow, flashes or floaters",
+   "text": "A curtain or shadow over vision, or new flashes/floaters?",
+   "why": "Suggests retinal detachment.",
+   "sys": "Ophthalmological",
+   "when": [
+    "vision_loss"
+   ]
+  },
+  {
+   "id": "joint_hot_swollen_sym",
+   "lbl": "Hot swollen joint",
+   "text": "Is one joint hot, red and swollen?",
+   "why": "Possible septic arthritis or crystal arthritis.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "joint_pain"
+   ]
+  },
+  {
+   "id": "joint_morning_stiff",
+   "lbl": "Morning stiffness over 1 hour",
+   "text": "Morning stiffness lasting more than an hour?",
+   "why": "Inflammatory arthritis feature.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "joint_pain"
+   ]
+  },
+  {
+   "id": "joint_multiple",
+   "lbl": "Several small joints, both sides",
+   "text": "Are several small joints affected on both sides?",
+   "why": "Pattern of rheumatoid arthritis.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "joint_pain"
+   ]
+  },
+  {
+   "id": "mech_activity",
+   "lbl": "Worse with activity, better with rest",
+   "text": "Is the pain worse with activity and better with rest?",
+   "why": "Mechanical pattern.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "joint_pain",
+    "back_pain"
+   ]
+  },
+  {
+   "id": "back_radiation",
+   "lbl": "Pain below knee / leg numbness",
+   "text": "Does pain travel below the knee, or is there leg tingling or numbness?",
+   "why": "Suggests nerve root involvement.",
+   "sys": "Neurological",
+   "when": [
+    "back_pain"
+   ]
+  },
+  {
+   "id": "saddle_bladder",
+   "lbl": "Groin/buttock numbness or new bladder/bowel/leg weakness",
+   "text": "Numbness around groin or buttocks, new bladder or bowel trouble, or new leg weakness?",
+   "why": "Cauda equina emergency.",
+   "sys": "Neurological",
+   "when": [
+    "back_pain"
+   ]
+  },
+  {
+   "id": "back_trauma_cancer",
+   "lbl": "Back pain with trauma, cancer, weight loss or night pain",
+   "text": "Back pain after injury, with known cancer, weight loss, or pain at night?",
+   "why": "Serious spinal causes.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "back_pain"
+   ]
+  },
+  {
+   "id": "mood_gt2w",
+   "lbl": "Low mood/loss of interest over 2 weeks",
+   "text": "Has low mood or loss of interest lasted more than 2 weeks?",
+   "why": "Duration matters for a depressive episode.",
+   "sys": "Psychiatric",
+   "when": [
+    "low_mood"
+   ]
+  },
+  {
+   "id": "sleep_appetite",
+   "lbl": "Sleep/appetite change",
+   "text": "Changes in sleep or appetite?",
+   "why": "Common in depression.",
+   "sys": "Psychiatric",
+   "when": [
+    "low_mood"
+   ]
+  },
+  {
+   "id": "substance",
+   "lbl": "Alcohol / drug use",
+   "text": "Regular alcohol or drug use?",
+   "why": "Substance use can cause or worsen low mood.",
+   "sys": "Psychiatric",
+   "when": [
+    "low_mood"
+   ]
+  }
  ],
  "exam": [
-  {"id":"crackles","lbl":"Crackles on chest auscultation","sys":"Respiratory"},
-  {"id":"bronchial_bs","lbl":"Bronchial breathing","sys":"Respiratory"},
-  {"id":"wheeze_sign","lbl":"Wheeze on auscultation","sys":"Respiratory"},
-  {"id":"raised_jvp","lbl":"Raised JVP","sys":"Cardiovascular"},
-  {"id":"oedema_sign","lbl":"Pitting pedal oedema","sys":"Cardiovascular"},
-  {"id":"neck_stiff_sign","lbl":"Neck stiffness on examination","sys":"Neurological"},
-  {"id":"rif_tender","lbl":"Right iliac fossa tenderness","sys":"Abdominal"},
-  {"id":"guarding","lbl":"Guarding / rigidity","sys":"Abdominal"},
-  {"id":"hsm","lbl":"Enlarged liver or spleen","sys":"Abdominal"},
-  {"id":"dehydrated","lbl":"Signs of dehydration","sys":"General"},
-  {"id":"pallor","lbl":"Pallor","sys":"General"}
+  {
+   "id": "crackles",
+   "lbl": "Crackles on chest auscultation",
+   "sys": "Respiratory",
+   "when": [
+    "cough",
+    "sob",
+    "chest_pain",
+    "fever"
+   ]
+  },
+  {
+   "id": "bronchial_bs",
+   "lbl": "Bronchial breathing",
+   "sys": "Respiratory",
+   "when": [
+    "cough",
+    "sob",
+    "chest_pain",
+    "fever"
+   ]
+  },
+  {
+   "id": "wheeze_sign",
+   "lbl": "Wheeze on auscultation",
+   "sys": "Respiratory",
+   "when": [
+    "cough",
+    "sob"
+   ]
+  },
+  {
+   "id": "raised_jvp",
+   "lbl": "Raised JVP",
+   "sys": "Cardiovascular",
+   "when": [
+    "sob",
+    "cough",
+    "chest_pain"
+   ]
+  },
+  {
+   "id": "oedema_sign",
+   "lbl": "Pitting pedal oedema",
+   "sys": "Cardiovascular",
+   "when": [
+    "sob",
+    "cough"
+   ]
+  },
+  {
+   "id": "neck_stiff_sign",
+   "lbl": "Neck stiffness on examination",
+   "sys": "Neurological",
+   "when": [
+    "fever",
+    "headache"
+   ]
+  },
+  {
+   "id": "rif_tender",
+   "lbl": "Right iliac fossa tenderness",
+   "sys": "Abdominal",
+   "when": [
+    "abd_pain"
+   ]
+  },
+  {
+   "id": "guarding",
+   "lbl": "Guarding / rigidity",
+   "sys": "Abdominal",
+   "when": [
+    "abd_pain"
+   ]
+  },
+  {
+   "id": "hsm",
+   "lbl": "Enlarged liver or spleen",
+   "sys": "Abdominal",
+   "when": [
+    "fever",
+    "abd_pain"
+   ]
+  },
+  {
+   "id": "dehydrated",
+   "lbl": "Signs of dehydration",
+   "sys": "General",
+   "when": [
+    "vomiting",
+    "diarrhoea",
+    "fever",
+    "abd_pain"
+   ]
+  },
+  {
+   "id": "pallor",
+   "lbl": "Pallor",
+   "sys": "General",
+   "when": []
+  },
+  {
+   "id": "burrows",
+   "lbl": "Burrows / lesions in finger webs, wrists",
+   "sys": "Dermatological",
+   "when": [
+    "itch",
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "scaly_ring",
+   "lbl": "Ring-shaped scaly plaque with central clearing",
+   "sys": "Dermatological",
+   "when": [
+    "itch",
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "warm_tender_skin",
+   "lbl": "Warm, tender, erythematous skin",
+   "sys": "Dermatological",
+   "when": [
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "mucosal_lesion",
+   "lbl": "Mucosal erosions / skin detachment",
+   "sys": "Dermatological",
+   "when": [
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "tonsil_exudate",
+   "lbl": "Tonsillar exudate",
+   "sys": "ENT",
+   "when": [
+    "sore_throat"
+   ]
+  },
+  {
+   "id": "tm_bulging",
+   "lbl": "Red bulging tympanic membrane",
+   "sys": "ENT",
+   "when": [
+    "ear_pain"
+   ]
+  },
+  {
+   "id": "pinna_tender",
+   "lbl": "Tenderness on pulling pinna / tragus",
+   "sys": "ENT",
+   "when": [
+    "ear_pain"
+   ]
+  },
+  {
+   "id": "joint_hot_swollen_sign",
+   "lbl": "Joint warm, swollen, painful on movement",
+   "sys": "Musculoskeletal",
+   "when": [
+    "joint_pain"
+   ]
+  },
+  {
+   "id": "slr_pos",
+   "lbl": "Straight-leg raise reproduces leg pain",
+   "sys": "Musculoskeletal",
+   "when": [
+    "back_pain"
+   ]
+  }
  ]
 }

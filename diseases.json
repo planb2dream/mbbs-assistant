@@ -1,24 +1,758 @@
 {
- "meta": {"version":"0.2.0","reviewDate":"Not yet reviewed","validation":"NOT clinically validated. Educational teaching summaries; weights are heuristic ordering aids, NOT probabilities.","source":"General undergraduate teaching knowledge. Reviewer must attach exact textbook/guideline citations before any use beyond learning.","population":"Adults unless stated; paediatric and pregnancy-specific rules are not yet included.","limits":"Few diseases and symptoms only. Absent features never exclude a disease."},
+ "meta": {
+  "version": "0.2.0",
+  "reviewDate": "Not yet reviewed",
+  "validation": "NOT clinically validated. Educational teaching summaries; weights are heuristic ordering aids, NOT probabilities.",
+  "source": "General undergraduate teaching knowledge. Reviewer must attach exact textbook/guideline citations before any use beyond learning.",
+  "population": "Adults unless stated; paediatric and pregnancy-specific rules are not yet included.",
+  "limits": "Few diseases and symptoms only. Absent features never exclude a disease."
+ },
  "diseases": [
-  {"id":"pneumonia","name":"Community-acquired pneumonia","cm":false,"triggers":["cough","fever","sob","chest_pain"],"f":{"cough":1,"fever":2,"productive":2,"cp_pleuritic":2,"sob":1,"crackles":3,"bronchial_bs":3},"inv":"Chest X-ray, CBC, oxygen saturation, CRP; cultures if severe.","tool":"CURB-65/CRB-65 estimate severity after pneumonia is diagnosed; they are not diagnostic.","alt":"Pulmonary TB, pulmonary embolism, heart failure, lung cancer"},
-  {"id":"bronchitis","name":"Acute bronchitis / viral chest infection","cm":false,"triggers":["cough"],"f":{"cough":2,"productive":1,"postnasal":1,"fever":1},"inv":"Usually clinical; chest X-ray if pneumonia is suspected.","tool":"Diagnosis of exclusion: pneumonia, TB and asthma must be considered first.","alt":"Pneumonia, asthma, TB"},
-  {"id":"tb","name":"Pulmonary tuberculosis","cm":false,"triggers":["cough","fever"],"f":{"cough_gt3w":3,"weight_loss":2,"night_sweats":2,"hemoptysis":2,"tb_contact":2,"fever":1,"cough":1},"inv":"Sputum smear/CBNAAT (Xpert), chest X-ray, HIV test, per national TB programme guidance.","tool":"Follow NTEP presumptive-TB criteria; no scoring rule is used here.","alt":"Lung cancer, bronchiectasis, pneumonia, fungal infection"},
-  {"id":"obstructive","name":"Asthma / COPD (airway obstruction)","cm":false,"triggers":["cough","sob"],"f":{"wheeze_sym":3,"wheeze_sign":3,"sob":2,"cough":1,"smoker":1},"inv":"Peak flow, SpO2, chest X-ray; spirometry when stable.","tool":"GOLD/GINA define diagnosis and severity; apply separately.","alt":"Heart failure, PE, pneumonia"},
-  {"id":"hf","name":"Heart failure","cm":false,"triggers":["sob","cough"],"f":{"orthopnoea":3,"pedal_oedema":2,"raised_jvp":3,"oedema_sign":2,"crackles":1,"sob":2,"age_over_60":1,"cough":1},"inv":"ECG, chest X-ray, NT-proBNP, echocardiography, renal function.","tool":"None applied.","alt":"Pneumonia, COPD, PE, renal or liver disease"},
-  {"id":"pe","name":"Pulmonary embolism","cm":true,"triggers":["sob","chest_pain"],"f":{"sob_sudden":3,"cp_pleuritic":2,"recent_immob":3,"leg_swelling_unilateral":3,"hemoptysis":1,"sob":1,"pregnant":1},"inv":"Clinical probability assessment, D-dimer where appropriate, CT pulmonary angiography or V/Q scan, ECG.","tool":"Wells score and PERC are validated for suspected PE in specific outpatient/ED populations only; pregnancy needs a different pathway.","alt":"Pneumonia, ACS, pneumothorax, heart failure"},
-  {"id":"acs","name":"Acute coronary syndrome","cm":true,"triggers":["chest_pain"],"f":{"cp_exertional":4,"cp_sweating":2,"sob":1,"chest_pain":1,"age_over_60":1},"inv":"Immediate ECG, serial troponin, risk stratification per local protocol.","tool":"HEART score is for undifferentiated chest pain in emergency settings; use only in its intended population.","alt":"PE, aortic dissection, pericarditis, GERD, musculoskeletal pain"},
-  {"id":"dissection","name":"Aortic dissection","cm":true,"triggers":["chest_pain"],"f":{"cp_tearing_back":4,"chest_pain":1},"inv":"Urgent senior decision on CT aortography; ECG; BP in both arms.","tool":"None applied.","alt":"ACS, PE, pneumothorax"},
-  {"id":"dengue","name":"Dengue fever","cm":false,"triggers":["fever"],"f":{"fever":2,"retro_orbital":2,"mosquito_area":2,"rash":1,"vomiting":1,"abd_pain":1},"inv":"CBC with platelets and haematocrit, NS1 antigen or IgM, liver enzymes; watch warning signs.","tool":"Use national dengue case definitions and warning-sign checklist.","alt":"Malaria, enteric fever, viral fever, leptospirosis"},
-  {"id":"malaria","name":"Malaria","cm":true,"triggers":["fever"],"f":{"fever_chills":3,"mosquito_area":2,"fever":1,"hsm":2,"pallor":1},"inv":"Peripheral smear and/or rapid diagnostic test, CBC.","tool":"None applied. Any fever in an endemic area needs testing.","alt":"Dengue, enteric fever, sepsis"},
-  {"id":"enteric","name":"Enteric (typhoid) fever","cm":false,"triggers":["fever"],"f":{"fever_prolonged":3,"d_contaminated":2,"abd_pain":1,"diarrhoea":1,"hsm":1,"fever":1},"inv":"Blood culture (best early), CBC. Widal test has limited reliability.","tool":"None applied.","alt":"Malaria, dengue, TB, brucellosis"},
-  {"id":"meningitis","name":"Meningitis / encephalitis","cm":true,"triggers":["fever","headache"],"f":{"fever":2,"headache":1,"neck_stiff_sym":2,"neck_stiff_sign":4,"photophobia":1,"confusion":3},"inv":"Urgent senior review, blood cultures, lumbar puncture when safe (imaging first if criteria met).","tool":"None applied.","alt":"Sepsis, cerebral malaria, SAH, migraine"},
-  {"id":"sah","name":"Subarachnoid haemorrhage","cm":true,"triggers":["headache"],"f":{"ha_thunderclap":5,"neck_stiff_sign":1,"vomiting":1,"ha_neuro_deficit":1},"inv":"Urgent non-contrast CT head; further tests per senior.","tool":"Ottawa SAH rule applies only to alert adults with new severe non-traumatic headache.","alt":"Migraine, meningitis, intracranial haemorrhage"},
-  {"id":"sol","name":"Intracranial mass or bleed / raised ICP","cm":true,"triggers":["headache"],"f":{"ha_progressive":2,"ha_neuro_deficit":3,"ha_trauma_anticoag":3,"vomiting":1,"confusion":1},"inv":"CT or MRI brain; fundoscopy for papilloedema.","tool":"None applied.","alt":"Migraine, meningitis, SAH"},
-  {"id":"migraine","name":"Migraine","cm":false,"triggers":["headache"],"f":{"ha_unilateral":3,"photophobia":2,"vomiting":1,"headache":1},"inv":"Clinical diagnosis; imaging only if red flags.","tool":"ICHD criteria define migraine; apply separately.","alt":"Tension headache, SAH, meningitis"},
-  {"id":"appendicitis","name":"Acute appendicitis","cm":false,"triggers":["abd_pain"],"f":{"ap_rif":3,"rif_tender":3,"fever":1,"vomiting":1,"guarding":2,"abd_pain":1},"inv":"CBC, CRP, ultrasound or CT per age/local practice; pregnancy test in women.","tool":"Alvarado/AIR scores exist; verify their populations before use.","alt":"Ectopic pregnancy, gastroenteritis, ureteric colic, ovarian pathology"},
-  {"id":"ectopic","name":"Ectopic pregnancy","cm":true,"sex":"F","triggers":["abd_pain"],"f":{"ap_missed_period":4,"ap_vaginal_bleed":2,"abd_pain":1,"pregnant":1},"inv":"Urgent β-hCG and transvaginal ultrasound; check haemodynamics.","tool":"None applied.","alt":"Appendicitis, miscarriage, ovarian torsion"},
-  {"id":"gastro","name":"Acute gastroenteritis","cm":false,"triggers":["diarrhoea","vomiting"],"f":{"diarrhoea":2,"vomiting":2,"d_contaminated":2,"fever":1,"dehydrated":1,"abd_pain":1},"inv":"Usually clinical; assess dehydration; stool tests if bloody or persistent.","tool":"Use WHO dehydration assessment.","alt":"Enteric fever, appendicitis, inflammatory bowel disease"},
-  {"id":"uri","name":"Viral upper respiratory infection","cm":false,"triggers":["cough","fever"],"f":{"cough":1,"fever":1,"postnasal":3},"inv":"Usually none.","tool":"None applied.","alt":"Bronchitis, pneumonia, influenza, dengue"}
+  {
+   "id": "pneumonia",
+   "name": "Community-acquired pneumonia",
+   "cm": false,
+   "triggers": [
+    "cough",
+    "fever",
+    "sob",
+    "chest_pain"
+   ],
+   "f": {
+    "cough": 1,
+    "fever": 2,
+    "productive": 2,
+    "cp_pleuritic": 2,
+    "sob": 1,
+    "crackles": 3,
+    "bronchial_bs": 3
+   },
+   "inv": "Chest X-ray, CBC, oxygen saturation, CRP; cultures if severe.",
+   "tool": "CURB-65/CRB-65 estimate severity after pneumonia is diagnosed; they are not diagnostic.",
+   "alt": "Pulmonary TB, pulmonary embolism, heart failure, lung cancer"
+  },
+  {
+   "id": "bronchitis",
+   "name": "Acute bronchitis / viral chest infection",
+   "cm": false,
+   "triggers": [
+    "cough"
+   ],
+   "f": {
+    "cough": 2,
+    "productive": 1,
+    "postnasal": 1,
+    "fever": 1
+   },
+   "inv": "Usually clinical; chest X-ray if pneumonia is suspected.",
+   "tool": "Diagnosis of exclusion: pneumonia, TB and asthma must be considered first.",
+   "alt": "Pneumonia, asthma, TB"
+  },
+  {
+   "id": "tb",
+   "name": "Pulmonary tuberculosis",
+   "cm": false,
+   "triggers": [
+    "cough",
+    "fever"
+   ],
+   "f": {
+    "cough_gt3w": 3,
+    "weight_loss": 2,
+    "night_sweats": 2,
+    "hemoptysis": 2,
+    "tb_contact": 2,
+    "fever": 1,
+    "cough": 1
+   },
+   "inv": "Sputum smear/CBNAAT (Xpert), chest X-ray, HIV test, per national TB programme guidance.",
+   "tool": "Follow NTEP presumptive-TB criteria; no scoring rule is used here.",
+   "alt": "Lung cancer, bronchiectasis, pneumonia, fungal infection"
+  },
+  {
+   "id": "obstructive",
+   "name": "Asthma / COPD (airway obstruction)",
+   "cm": false,
+   "triggers": [
+    "cough",
+    "sob"
+   ],
+   "f": {
+    "wheeze_sym": 3,
+    "wheeze_sign": 3,
+    "sob": 2,
+    "cough": 1,
+    "smoker": 1
+   },
+   "inv": "Peak flow, SpO2, chest X-ray; spirometry when stable.",
+   "tool": "GOLD/GINA define diagnosis and severity; apply separately.",
+   "alt": "Heart failure, PE, pneumonia"
+  },
+  {
+   "id": "hf",
+   "name": "Heart failure",
+   "cm": false,
+   "triggers": [
+    "sob",
+    "cough"
+   ],
+   "f": {
+    "orthopnoea": 3,
+    "pedal_oedema": 2,
+    "raised_jvp": 3,
+    "oedema_sign": 2,
+    "crackles": 1,
+    "sob": 2,
+    "age_over_60": 1,
+    "cough": 1
+   },
+   "inv": "ECG, chest X-ray, NT-proBNP, echocardiography, renal function.",
+   "tool": "None applied.",
+   "alt": "Pneumonia, COPD, PE, renal or liver disease"
+  },
+  {
+   "id": "pe",
+   "name": "Pulmonary embolism",
+   "cm": true,
+   "triggers": [
+    "sob",
+    "chest_pain"
+   ],
+   "f": {
+    "sob_sudden": 3,
+    "cp_pleuritic": 2,
+    "recent_immob": 3,
+    "leg_swelling_unilateral": 3,
+    "hemoptysis": 1,
+    "sob": 1,
+    "pregnant": 1
+   },
+   "inv": "Clinical probability assessment, D-dimer where appropriate, CT pulmonary angiography or V/Q scan, ECG.",
+   "tool": "Wells score and PERC are validated for suspected PE in specific outpatient/ED populations only; pregnancy needs a different pathway.",
+   "alt": "Pneumonia, ACS, pneumothorax, heart failure"
+  },
+  {
+   "id": "acs",
+   "name": "Acute coronary syndrome",
+   "cm": true,
+   "triggers": [
+    "chest_pain"
+   ],
+   "f": {
+    "cp_exertional": 4,
+    "cp_sweating": 2,
+    "sob": 1,
+    "chest_pain": 1,
+    "age_over_60": 1
+   },
+   "inv": "Immediate ECG, serial troponin, risk stratification per local protocol.",
+   "tool": "HEART score is for undifferentiated chest pain in emergency settings; use only in its intended population.",
+   "alt": "PE, aortic dissection, pericarditis, GERD, musculoskeletal pain"
+  },
+  {
+   "id": "dissection",
+   "name": "Aortic dissection",
+   "cm": true,
+   "triggers": [
+    "chest_pain"
+   ],
+   "f": {
+    "cp_tearing_back": 4,
+    "chest_pain": 1
+   },
+   "inv": "Urgent senior decision on CT aortography; ECG; BP in both arms.",
+   "tool": "None applied.",
+   "alt": "ACS, PE, pneumothorax"
+  },
+  {
+   "id": "dengue",
+   "name": "Dengue fever",
+   "cm": false,
+   "triggers": [
+    "fever"
+   ],
+   "f": {
+    "fever": 2,
+    "retro_orbital": 2,
+    "mosquito_area": 2,
+    "rash": 1,
+    "vomiting": 1,
+    "abd_pain": 1
+   },
+   "inv": "CBC with platelets and haematocrit, NS1 antigen or IgM, liver enzymes; watch warning signs.",
+   "tool": "Use national dengue case definitions and warning-sign checklist.",
+   "alt": "Malaria, enteric fever, viral fever, leptospirosis"
+  },
+  {
+   "id": "malaria",
+   "name": "Malaria",
+   "cm": true,
+   "triggers": [
+    "fever"
+   ],
+   "f": {
+    "fever_chills": 3,
+    "mosquito_area": 2,
+    "fever": 1,
+    "hsm": 2,
+    "pallor": 1
+   },
+   "inv": "Peripheral smear and/or rapid diagnostic test, CBC.",
+   "tool": "None applied. Any fever in an endemic area needs testing.",
+   "alt": "Dengue, enteric fever, sepsis"
+  },
+  {
+   "id": "enteric",
+   "name": "Enteric (typhoid) fever",
+   "cm": false,
+   "triggers": [
+    "fever"
+   ],
+   "f": {
+    "fever_prolonged": 3,
+    "d_contaminated": 2,
+    "abd_pain": 1,
+    "diarrhoea": 1,
+    "hsm": 1,
+    "fever": 1
+   },
+   "inv": "Blood culture (best early), CBC. Widal test has limited reliability.",
+   "tool": "None applied.",
+   "alt": "Malaria, dengue, TB, brucellosis"
+  },
+  {
+   "id": "meningitis",
+   "name": "Meningitis / encephalitis",
+   "cm": true,
+   "triggers": [
+    "fever",
+    "headache"
+   ],
+   "f": {
+    "fever": 2,
+    "headache": 1,
+    "neck_stiff_sym": 2,
+    "neck_stiff_sign": 4,
+    "photophobia": 1,
+    "confusion": 3
+   },
+   "inv": "Urgent senior review, blood cultures, lumbar puncture when safe (imaging first if criteria met).",
+   "tool": "None applied.",
+   "alt": "Sepsis, cerebral malaria, SAH, migraine"
+  },
+  {
+   "id": "sah",
+   "name": "Subarachnoid haemorrhage",
+   "cm": true,
+   "triggers": [
+    "headache"
+   ],
+   "f": {
+    "ha_thunderclap": 5,
+    "neck_stiff_sign": 1,
+    "vomiting": 1,
+    "ha_neuro_deficit": 1
+   },
+   "inv": "Urgent non-contrast CT head; further tests per senior.",
+   "tool": "Ottawa SAH rule applies only to alert adults with new severe non-traumatic headache.",
+   "alt": "Migraine, meningitis, intracranial haemorrhage"
+  },
+  {
+   "id": "sol",
+   "name": "Intracranial mass or bleed / raised ICP",
+   "cm": true,
+   "triggers": [
+    "headache"
+   ],
+   "f": {
+    "ha_progressive": 2,
+    "ha_neuro_deficit": 3,
+    "ha_trauma_anticoag": 3,
+    "vomiting": 1,
+    "confusion": 1
+   },
+   "inv": "CT or MRI brain; fundoscopy for papilloedema.",
+   "tool": "None applied.",
+   "alt": "Migraine, meningitis, SAH"
+  },
+  {
+   "id": "migraine",
+   "name": "Migraine",
+   "cm": false,
+   "triggers": [
+    "headache"
+   ],
+   "f": {
+    "ha_unilateral": 3,
+    "photophobia": 2,
+    "vomiting": 1,
+    "headache": 1
+   },
+   "inv": "Clinical diagnosis; imaging only if red flags.",
+   "tool": "ICHD criteria define migraine; apply separately.",
+   "alt": "Tension headache, SAH, meningitis"
+  },
+  {
+   "id": "appendicitis",
+   "name": "Acute appendicitis",
+   "cm": false,
+   "triggers": [
+    "abd_pain"
+   ],
+   "f": {
+    "ap_rif": 3,
+    "rif_tender": 3,
+    "fever": 1,
+    "vomiting": 1,
+    "guarding": 2,
+    "abd_pain": 1
+   },
+   "inv": "CBC, CRP, ultrasound or CT per age/local practice; pregnancy test in women.",
+   "tool": "Alvarado/AIR scores exist; verify their populations before use.",
+   "alt": "Ectopic pregnancy, gastroenteritis, ureteric colic, ovarian pathology"
+  },
+  {
+   "id": "ectopic",
+   "name": "Ectopic pregnancy",
+   "cm": true,
+   "sex": "F",
+   "triggers": [
+    "abd_pain"
+   ],
+   "f": {
+    "ap_missed_period": 4,
+    "ap_vaginal_bleed": 2,
+    "abd_pain": 1,
+    "pregnant": 1
+   },
+   "inv": "Urgent β-hCG and transvaginal ultrasound; check haemodynamics.",
+   "tool": "None applied.",
+   "alt": "Appendicitis, miscarriage, ovarian torsion"
+  },
+  {
+   "id": "gastro",
+   "name": "Acute gastroenteritis",
+   "cm": false,
+   "triggers": [
+    "diarrhoea",
+    "vomiting"
+   ],
+   "f": {
+    "diarrhoea": 2,
+    "vomiting": 2,
+    "d_contaminated": 2,
+    "fever": 1,
+    "dehydrated": 1,
+    "abd_pain": 1
+   },
+   "inv": "Usually clinical; assess dehydration; stool tests if bloody or persistent.",
+   "tool": "Use WHO dehydration assessment.",
+   "alt": "Enteric fever, appendicitis, inflammatory bowel disease"
+  },
+  {
+   "id": "uri",
+   "name": "Viral upper respiratory infection",
+   "cm": false,
+   "triggers": [
+    "cough",
+    "fever"
+   ],
+   "f": {
+    "cough": 1,
+    "fever": 1,
+    "postnasal": 3
+   },
+   "inv": "Usually none.",
+   "tool": "None applied.",
+   "alt": "Bronchitis, pneumonia, influenza, dengue"
+  },
+  {
+   "id": "scabies",
+   "name": "Scabies",
+   "cm": false,
+   "triggers": [
+    "itch",
+    "rash_skin"
+   ],
+   "f": {
+    "itch": 2,
+    "itch_night": 3,
+    "itch_contacts": 3,
+    "burrows": 3
+   },
+   "inv": "Clinical diagnosis; dermoscopy or skin scraping where available.",
+   "tool": "None applied.",
+   "alt": "Eczema, urticaria, fungal infection, insect bites"
+  },
+  {
+   "id": "urticaria",
+   "name": "Urticaria (allergic or idiopathic)",
+   "cm": false,
+   "triggers": [
+    "rash_skin",
+    "itch"
+   ],
+   "f": {
+    "wheals": 4,
+    "itch": 1,
+    "new_drug": 1,
+    "atopy": 1
+   },
+   "inv": "Clinical; look for triggers (drug, food, infection).",
+   "tool": "None applied.",
+   "alt": "Anaphylaxis, drug rash, urticarial vasculitis (if lesions last over 24 h)"
+  },
+  {
+   "id": "tinea",
+   "name": "Dermatophyte (fungal) skin infection",
+   "cm": false,
+   "triggers": [
+    "rash_skin",
+    "itch"
+   ],
+   "f": {
+    "ring_shaped": 3,
+    "scaly_ring": 3,
+    "itch": 2
+   },
+   "inv": "KOH microscopy of scrapings.",
+   "tool": "None applied.",
+   "alt": "Eczema, psoriasis, pityriasis rosea"
+  },
+  {
+   "id": "eczema",
+   "name": "Eczema / dermatitis",
+   "cm": false,
+   "triggers": [
+    "itch",
+    "rash_skin"
+   ],
+   "f": {
+    "atopy": 3,
+    "itch": 2,
+    "rash_skin": 1
+   },
+   "inv": "Clinical; consider contact triggers.",
+   "tool": "None applied.",
+   "alt": "Scabies, psoriasis, fungal infection, contact dermatitis"
+  },
+  {
+   "id": "cellulitis",
+   "name": "Cellulitis / bacterial skin infection",
+   "cm": false,
+   "triggers": [
+    "rash_skin"
+   ],
+   "f": {
+    "skin_painful_hot": 4,
+    "warm_tender_skin": 3,
+    "fever": 2
+   },
+   "inv": "Clinical; CBC and blood glucose; blood cultures if systemically unwell.",
+   "tool": "None applied.",
+   "alt": "Necrotising fasciitis (pain out of proportion), DVT, contact dermatitis, erysipelas"
+  },
+  {
+   "id": "sjs",
+   "name": "Severe cutaneous drug reaction (SJS/TEN)",
+   "cm": true,
+   "triggers": [
+    "rash_skin"
+   ],
+   "f": {
+    "new_drug": 3,
+    "mucosal_involve": 4,
+    "mucosal_lesion": 3,
+    "fever": 2
+   },
+   "inv": "Urgent specialist review; stop suspected drug as directed by clinician; skin biopsy.",
+   "tool": "None applied.",
+   "alt": "Morbilliform drug rash, viral exanthem, erythema multiforme"
+  },
+  {
+   "id": "anaphylaxis",
+   "name": "Anaphylaxis / angioedema",
+   "cm": true,
+   "triggers": [
+    "rash_skin",
+    "itch"
+   ],
+   "f": {
+    "face_swelling": 5,
+    "wheals": 2,
+    "sob": 2,
+    "new_drug": 1
+   },
+   "inv": "Clinical emergency; serum tryptase after the event.",
+   "tool": "None applied.",
+   "alt": "Urticaria, asthma, panic attack"
+  },
+  {
+   "id": "tonsillitis",
+   "name": "Acute tonsillitis / pharyngitis",
+   "cm": false,
+   "triggers": [
+    "sore_throat"
+   ],
+   "f": {
+    "sore_throat": 2,
+    "painful_swallow": 2,
+    "fever": 2,
+    "tonsil_exudate": 3
+   },
+   "inv": "Clinical; rapid antigen test or throat culture where available.",
+   "tool": "Centor/McIsaac scores estimate likelihood of streptococcal pharyngitis in sore throat; use within the intended population only.",
+   "alt": "Viral pharyngitis, infectious mononucleosis, diphtheria, peritonsillar abscess"
+  },
+  {
+   "id": "quinsy",
+   "name": "Peritonsillar abscess",
+   "cm": true,
+   "triggers": [
+    "sore_throat"
+   ],
+   "f": {
+    "trismus": 4,
+    "sore_throat": 1,
+    "painful_swallow": 1,
+    "fever": 1
+   },
+   "inv": "Urgent ENT/senior review; imaging if needed.",
+   "tool": "None applied.",
+   "alt": "Tonsillitis, epiglottitis, deep neck infection"
+  },
+  {
+   "id": "om",
+   "name": "Acute otitis media",
+   "cm": false,
+   "triggers": [
+    "ear_pain"
+   ],
+   "f": {
+    "ear_pain": 2,
+    "fever": 1,
+    "hearing_loss": 2,
+    "ear_discharge": 1,
+    "tm_bulging": 3
+   },
+   "inv": "Otoscopy.",
+   "tool": "None applied.",
+   "alt": "Otitis externa, referred pain (throat, teeth), mastoiditis"
+  },
+  {
+   "id": "oe",
+   "name": "Otitis externa",
+   "cm": false,
+   "triggers": [
+    "ear_pain"
+   ],
+   "f": {
+    "pinna_pain": 3,
+    "pinna_tender": 3,
+    "ear_discharge": 2,
+    "ear_pain": 1
+   },
+   "inv": "Otoscopy.",
+   "tool": "None applied.",
+   "alt": "Otitis media, furuncle, malignant otitis externa in diabetics"
+  },
+  {
+   "id": "sinusitis",
+   "name": "Acute rhinosinusitis",
+   "cm": false,
+   "triggers": [
+    "nasal_block"
+   ],
+   "f": {
+    "nasal_block": 2,
+    "facial_pain": 3,
+    "postnasal": 1,
+    "fever": 1,
+    "headache": 1
+   },
+   "inv": "Clinical; imaging only for complications or chronic disease.",
+   "tool": "None applied.",
+   "alt": "Allergic rhinitis, viral URTI, nasal polyps, orbital complications"
+  },
+  {
+   "id": "conj",
+   "name": "Infective conjunctivitis",
+   "cm": false,
+   "triggers": [
+    "red_eye"
+   ],
+   "f": {
+    "red_eye": 1,
+    "eye_discharge": 3
+   },
+   "inv": "Clinical.",
+   "tool": "None applied.",
+   "alt": "Keratitis, uveitis, acute angle-closure, foreign body"
+  },
+  {
+   "id": "angle",
+   "name": "Acute angle-closure glaucoma",
+   "cm": true,
+   "triggers": [
+    "red_eye"
+   ],
+   "f": {
+    "eye_pain_severe": 4,
+    "red_eye": 1,
+    "vision_loss": 2,
+    "vomiting": 1,
+    "photophobia": 1,
+    "headache": 1
+   },
+   "inv": "Urgent ophthalmology review; intraocular pressure measurement.",
+   "tool": "None applied.",
+   "alt": "Uveitis, keratitis, migraine, conjunctivitis"
+  },
+  {
+   "id": "visloss",
+   "name": "Acute vision-threatening cause (e.g. retinal detachment, retinal vascular occlusion)",
+   "cm": true,
+   "triggers": [
+    "vision_loss"
+   ],
+   "f": {
+    "sudden_vision_loss": 4,
+    "vision_curtain": 3,
+    "vision_loss": 1,
+    "ha_neuro_deficit": 1
+   },
+   "inv": "Urgent ophthalmology review, fundus examination, vascular risk assessment.",
+   "tool": "None applied.",
+   "alt": "Stroke/TIA, optic neuritis, vitreous haemorrhage, migraine aura"
+  },
+  {
+   "id": "septic",
+   "name": "Septic arthritis",
+   "cm": true,
+   "triggers": [
+    "joint_pain"
+   ],
+   "f": {
+    "joint_hot_swollen_sym": 3,
+    "joint_hot_swollen_sign": 4,
+    "fever": 2,
+    "joint_pain": 1
+   },
+   "inv": "Urgent joint aspiration and culture, CBC, CRP, blood cultures; senior review.",
+   "tool": "None applied.",
+   "alt": "Gout, reactive arthritis, haemarthrosis, cellulitis"
+  },
+  {
+   "id": "oa",
+   "name": "Osteoarthritis",
+   "cm": false,
+   "triggers": [
+    "joint_pain"
+   ],
+   "f": {
+    "mech_activity": 3,
+    "joint_pain": 1,
+    "age_over_60": 2
+   },
+   "inv": "Clinical; X-ray if diagnosis uncertain.",
+   "tool": "None applied.",
+   "alt": "Rheumatoid arthritis, gout, referred pain"
+  },
+  {
+   "id": "ra",
+   "name": "Rheumatoid / inflammatory arthritis",
+   "cm": false,
+   "triggers": [
+    "joint_pain"
+   ],
+   "f": {
+    "joint_morning_stiff": 3,
+    "joint_multiple": 3,
+    "joint_pain": 1
+   },
+   "inv": "RF, anti-CCP, ESR/CRP, X-rays.",
+   "tool": "ACR/EULAR classification criteria apply to defined populations; use separately.",
+   "alt": "Osteoarthritis, viral arthritis, SLE, psoriatic arthritis"
+  },
+  {
+   "id": "lbp",
+   "name": "Mechanical low back pain / lumbar radiculopathy",
+   "cm": false,
+   "triggers": [
+    "back_pain"
+   ],
+   "f": {
+    "mech_activity": 3,
+    "back_pain": 1,
+    "back_radiation": 1,
+    "slr_pos": 2
+   },
+   "inv": "Clinical; MRI only if red flags or persistent radiculopathy.",
+   "tool": "None applied.",
+   "alt": "Cauda equina syndrome, fracture, infection, malignancy, renal colic"
+  },
+  {
+   "id": "cauda",
+   "name": "Cauda equina syndrome",
+   "cm": true,
+   "triggers": [
+    "back_pain"
+   ],
+   "f": {
+    "saddle_bladder": 5,
+    "back_radiation": 1
+   },
+   "inv": "Emergency MRI spine; urgent neurosurgical/senior review.",
+   "tool": "None applied.",
+   "alt": "Mechanical back pain, spinal tumour, infection"
+  },
+  {
+   "id": "spine_serious",
+   "name": "Serious spinal cause (fracture, infection, metastasis)",
+   "cm": true,
+   "triggers": [
+    "back_pain"
+   ],
+   "f": {
+    "back_trauma_cancer": 4,
+    "fever": 1,
+    "weight_loss": 2,
+    "back_pain": 1
+   },
+   "inv": "X-ray/MRI, ESR/CRP, per clinician.",
+   "tool": "None applied.",
+   "alt": "Mechanical back pain, myeloma, spinal TB"
+  },
+  {
+   "id": "depr",
+   "name": "Depressive episode",
+   "cm": false,
+   "triggers": [
+    "low_mood"
+   ],
+   "f": {
+    "mood_gt2w": 3,
+    "sleep_appetite": 2,
+    "low_mood": 1
+   },
+   "inv": "Clinical interview; PHQ-9 is a screening tool only; check thyroid function and rule out medical causes.",
+   "tool": "None applied.",
+   "alt": "Hypothyroidism, bipolar disorder, grief/adjustment disorder, substance-related"
+  },
+  {
+   "id": "subst",
+   "name": "Substance-related or medical cause of low mood",
+   "cm": false,
+   "triggers": [
+    "low_mood"
+   ],
+   "f": {
+    "substance": 3,
+    "low_mood": 1
+   },
+   "inv": "Clinical; substance history, thyroid, B12, other tests as indicated.",
+   "tool": "None applied.",
+   "alt": "Depressive episode, bipolar disorder"
+  }
  ]
 }

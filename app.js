@@ -55,7 +55,7 @@
       html:
         '<h1>Clinical history and differential diagnosis</h1>' +
         '<p class="muted">An offline learning tool for MBBS students. It supports your clinical thinking. It does not replace a doctor\'s judgement.</p>' +
-        '<div class="notice warn"><strong>Educational use only.</strong> Starter clinical content: 8 complaints and 19 conditions. Not for real patient decisions until reviewed by qualified doctors.</div>' +
+        '<div class="notice warn"><strong>Educational use only.</strong> Starter clinical content: 18 complaints and 42 conditions across several departments. Not for real patient decisions until reviewed by qualified doctors.</div>' +
         '<div class="card"><ul class="menu-list">' + items + '</ul></div>' +
         '<p class="muted">Build progress: ' + doneCount + ' of ' + PHASES.length + ' phases complete.</p>'
     };

@@ -22,13 +22,13 @@
         '<label>Age (years)<input id="f-age" class="inp" type="number" min="0" max="120" inputmode="decimal"></label>' +
         '<label>Sex<select id="f-sex" class="inp"><option value="">Select</option><option value="M">Male</option><option value="F">Female</option><option value="O">Other</option></select></label>' +
         '<label id="f-preg-wrap" hidden class="chk"><input type="checkbox" id="f-preg"> Pregnant or postpartum</label>' +
-        '<label>Department<select id="f-dept" class="inp"><option>General Medicine</option></select></label>' +
+        '<label>Department<select id="f-dept" class="inp"><option value="general-medicine">General Medicine</option></select></label>' +
         '<label>Informant<select id="f-inf" class="inp"><option>Patient</option><option>Relative</option><option>Other</option></select></label>' +
         '<label>Reliability of history<select id="f-rel" class="inp"><option>Good</option><option>Fair</option><option>Poor</option></select></label>' +
         '<button class="btn" id="f-go">Start case</button><p class="muted" id="f-msg" role="alert"></p></div>',
       after: function () {
         fetch('departments.json').then(function (r) { return r.json(); }).then(function (d) {
-          document.getElementById('f-dept').innerHTML = d.departments.map(function (x) { return '<option>' + esc(x.name) + '</option>'; }).join('');
+          document.getElementById('f-dept').innerHTML = d.departments.map(function (x) { return '<option value="' + esc(x.id) + '">' + esc(x.name) + '</option>'; }).join('');
         });
         document.getElementById('f-sex').onchange = function () { document.getElementById('f-preg-wrap').hidden = this.value !== 'F'; };
         document.getElementById('f-go').onclick = function () {
@@ -36,7 +36,7 @@
           if (!pid || age === '' || !document.getElementById('f-sex').value) { document.getElementById('f-msg').textContent = 'Enter case ID, age and sex.'; return; }
           var c = { id: 'c' + Date.now(), created: Date.now(), updated: Date.now(),
             patient: { pid: pid, age: parseFloat(age), sex: document.getElementById('f-sex').value, pregnant: document.getElementById('f-preg').checked,
-              dept: document.getElementById('f-dept').value, informant: document.getElementById('f-inf').value, reliability: document.getElementById('f-rel').value },
+              dept: document.getElementById('f-dept').selectedOptions[0].text, deptId: document.getElementById('f-dept').value, informant: document.getElementById('f-inf').value, reliability: document.getElementById('f-rel').value },
             findings: {}, vitals: {}, notes: {} };
           DB.put(c).then(function () { location.hash = '#case/' + c.id; }).catch(function () { document.getElementById('f-msg').textContent = 'Could not save. Storage may be blocked.'; });
         };
@@ -93,7 +93,7 @@
   };
 
   function workspace(root, c) {
-    var tab = 'complaints', stage = 2, D = Engine.data();
+    var tab = 'complaints', stage = 2, D = Engine.data(), showAll = false;
     function save() { c.updated = Date.now(); return DB.put(c); }
     function setAns(k, s, src) {
       var cur = c.findings[k];
@@ -131,9 +131,13 @@
         return '<button data-act="tab" data-v="' + t[0] + '" class="' + (tab === t[0] ? 'on' : '') + '">' + t[1] + '</button>'; }).join('') + '</div>';
     }
     function tComplaints() {
-      var v = Engine.view(c, 2), sys = Engine.systems(c);
-      return '<p class="muted">Tap every presenting complaint. The differential updates immediately.</p><div class="chips">' +
-        D.s.symptoms.map(function (s) { return '<button class="chip ' + (v(s.id) === 'pos' ? 'on' : '') + '" data-act="ans" data-k="' + s.id + '" data-v="pos" data-src="h" aria-pressed="' + (v(s.id) === 'pos') + '">' + esc(s.lbl) + '</button>'; }).join('') + '</div>' +
+      var v = Engine.view(c, 2), sys = Engine.systems(c), id = c.patient.deptId;
+      var own = D.s.symptoms.filter(function (s) { return s.depts.indexOf(id) >= 0; });
+      var all = showAll || !id || !own.length;
+      var pool = all ? D.s.symptoms : D.s.symptoms.filter(function (s) { return s.depts.indexOf(id) >= 0 || v(s.id) === 'pos'; });
+      return '<p class="muted">' + (all && id && !own.length ? 'No complaints are set up for ' + esc(c.patient.dept) + ' yet, so all are shown. ' : 'Complaints for ' + esc(c.patient.dept) + '. ') + 'Tap every presenting complaint; the differential updates immediately.</p><div class="chips">' +
+        pool.map(function (s) { return '<button class="chip ' + (v(s.id) === 'pos' ? 'on' : '') + '" data-act="ans" data-k="' + s.id + '" data-v="pos" data-src="h" aria-pressed="' + (v(s.id) === 'pos') + '">' + esc(s.lbl) + '</button>'; }).join('') + '</div>' +
+        (own.length ? '<div class="btn-row"><button class="btn btn-secondary btn-small" data-act="showall">' + (showAll ? 'Show only ' + esc(c.patient.dept) + ' complaints' : 'Show all complaints') + '</button></div>' : '') +
         (sys.length ? '<h2>Systems activated</h2><p><b>Primary:</b> ' + esc(sys[0]) + '</p><p><b>Related:</b> ' + esc(sys.slice(1).join(', ')) + '</p><p class="muted">Only questions relevant to your selected complaints are asked.</p>' : '');
     }
     function tHistory() {
@@ -174,7 +178,7 @@
       return '<h2>Vital signs</h2><div class="grid2">' + vf.map(function (f) { return '<label>' + f[1] + '<input class="inp" type="number" inputmode="decimal" data-vit="' + f[0] + '" value="' + esc(vt[f[0]] || '') + '"></label>'; }).join('') + '</div>' +
         (bmi ? '<p>BMI: <b>' + bmi + '</b></p>' : '') +
         '<h2>Examination findings</h2><p class="muted">Leave blank if not examined. Blank is never treated as normal.</p>' +
-        D.s.exam.map(function (e) { return '<div class="card q"><p><b>' + esc(e.lbl) + '</b> <span class="muted">(' + esc(e.sys) + ')</span></p><div class="ansrow">' + btns(e.id, EXA, 'e') + '</div></div>'; }).join('') +
+        Engine.applicableExam(c).map(function (e) { return '<div class="card q"><p><b>' + esc(e.lbl) + '</b> <span class="muted">(' + esc(e.sys) + ')</span></p><div class="ansrow">' + btns(e.id, EXA, 'e') + '</div></div>'; }).join('') +
         '<label>Other examination findings<textarea class="inp" rows="3" data-note="examtext">' + esc(c.notes.examtext || '') + '</textarea></label>';
     }
     function vivaQs(dd) {
@@ -237,6 +241,7 @@
       if (a === 'tab') { tab = t.getAttribute('data-v'); draw(); window.scrollTo(0, 0); }
       else if (a === 'stage') { stage = +t.getAttribute('data-v'); draw(); }
       else if (a === 'ans') setAns(t.getAttribute('data-k'), t.getAttribute('data-v'), t.getAttribute('data-src'));
+      else if (a === 'showall') { showAll = !showAll; draw(); }
       else if (a === 'print') window.print();
       else if (a === 'copy') { var m = document.getElementById('rep-msg'); (navigator.clipboard ? navigator.clipboard.writeText(presentation()) : Promise.reject()).then(function () { m.textContent = 'Copied.'; }).catch(function () { m.textContent = 'Copy not available. Select the text in the report instead.'; }); }
     };

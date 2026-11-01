@@ -41,6 +41,10 @@ var Engine = (function () {
       return q.when.some(function (w) { return sel.indexOf(w) >= 0; });
     });
   }
+  function applicableExam(c) {
+    var sel = selected(c).map(function (s) { return s.id; }), f = c.findings || {};
+    return D.s.exam.filter(function (x) { return f[x.id] || !x.when || !x.when.length || x.when.some(function (w) { return sel.indexOf(w) >= 0; }); });
+  }
   function coverage(c) {
     var v = view(c, 2), qs = applicable(c);
     var un = qs.filter(function (q) { return v(q.id) === 'unasked'; });
@@ -94,7 +98,7 @@ var Engine = (function () {
     if (q >= 2) out.push({ text: 'qSOFA 2 or more: possible sepsis, assess urgently', why: 'qSOFA is a bedside risk screen in suspected infection, not a diagnosis' });
     return out;
   }
-  return { load: load, use: use, view: view, selected: selected, systems: systems, applicable: applicable,
+  return { load: load, use: use, view: view, selected: selected, systems: systems, applicable: applicable, applicableExam: applicableExam,
            coverage: coverage, differential: differential, redFlags: redFlags, label: function (k) { return L[k] || k; },
            data: function () { return D; } };
 })();
