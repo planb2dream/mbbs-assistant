@@ -11,9 +11,21 @@ var Engine = (function () {
     return D;
   }
   function load() {
-    return Promise.all(['symptoms', 'diseases', 'red-flags'].map(function (n) {
+    return Promise.all(['symptoms', 'diseases', 'red-flags', 'packs'].map(function (n) {
       return fetch(n + '.json').then(function (r) { return r.json(); });
-    })).then(function (a) { return use({ s: a[0], d: a[1], r: a[2] }); });
+    })).then(function (a) {
+      var d = { s: a[0], d: a[1], r: a[2] };
+      return Promise.all(a[3].packs.map(function (f) { return fetch(f).then(function (r) { return r.json(); }); })).then(function (ps) {
+        ps.forEach(function (p) {
+          (p.symptoms || []).forEach(function (x) { d.s.symptoms.push(x); });
+          (p.questions || []).forEach(function (x) { d.s.questions.push(x); });
+          (p.exam || []).forEach(function (x) { d.s.exam.push(x); });
+          (p.diseases || []).forEach(function (x) { d.d.diseases.push(x); });
+          (p.flags || []).forEach(function (x) { d.r.flags.push(x); });
+        });
+        return use(d);
+      });
+    });
   }
   function view(c, stage) {
     var f = c.findings || {}, p = c.patient || {}, der = {}, age = parseFloat(p.age);

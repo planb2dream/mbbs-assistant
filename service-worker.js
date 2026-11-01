@@ -18,6 +18,8 @@ var FILES_TO_CACHE = [
   './symptoms.json',
   './diseases.json',
   './red-flags.json',
+  './packs.json',
+  './pack-dermatology.json',
   './version.js',
   './manifest.json',
   './departments.json',

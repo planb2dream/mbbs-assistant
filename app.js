@@ -55,7 +55,7 @@
       html:
         '<h1>Clinical history and differential diagnosis</h1>' +
         '<p class="muted">An offline learning tool for MBBS students. It supports your clinical thinking. It does not replace a doctor\'s judgement.</p>' +
-        '<div class="notice warn"><strong>Educational use only.</strong> Starter clinical content: 18 complaints and 42 conditions across several departments. Not for real patient decisions until reviewed by qualified doctors.</div>' +
+        '<div class="notice warn"><strong>Educational use only.</strong> Clinical content is being added one department at a time; Dermatology is the most complete so far. Not for real patient decisions until reviewed by qualified doctors.</div>' +
         '<div class="card"><ul class="menu-list">' + items + '</ul></div>' +
         '<p class="muted">Build progress: ' + doneCount + ' of ' + PHASES.length + ' phases complete.</p>'
     };
@@ -138,7 +138,7 @@
         if (!mine.length) { row('Offline files', 'None saved yet'); return; }
         return caches.open(mine[0]).then(function (c) { return c.keys(); }).then(function (reqs) {
           row('Offline files saved', reqs.length + ' files');
-          row('Offline ready', reqs.length >= 15 ? 'Yes' : 'No');
+          row('Offline ready', reqs.length >= 17 ? 'Yes' : 'No');
         });
       }));
     }

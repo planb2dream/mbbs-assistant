@@ -1,0 +1,850 @@
+{
+ "symptoms": [
+  {
+   "id": "skin_ulcer",
+   "lbl": "Skin ulcer / non-healing wound",
+   "systems": [
+    "Dermatological",
+    "Cardiovascular",
+    "Endocrine",
+    "Neurological"
+   ],
+   "depts": [
+    "dermatology",
+    "general-surgery",
+    "general-medicine"
+   ]
+  },
+  {
+   "id": "blisters",
+   "lbl": "Blisters / bullae",
+   "systems": [
+    "Dermatological",
+    "General / Infectious"
+   ],
+   "depts": [
+    "dermatology",
+    "general-medicine",
+    "paediatrics",
+    "emergency"
+   ]
+  },
+  {
+   "id": "hair_loss",
+   "lbl": "Hair loss",
+   "systems": [
+    "Dermatological",
+    "Endocrine"
+   ],
+   "depts": [
+    "dermatology",
+    "general-medicine"
+   ]
+  },
+  {
+   "id": "nail_change",
+   "lbl": "Nail changes",
+   "systems": [
+    "Dermatological"
+   ],
+   "depts": [
+    "dermatology",
+    "general-medicine"
+   ]
+  },
+  {
+   "id": "pigment_patch",
+   "lbl": "White or dark patches",
+   "systems": [
+    "Dermatological",
+    "Neurological"
+   ],
+   "depts": [
+    "dermatology",
+    "general-medicine"
+   ]
+  },
+  {
+   "id": "skin_lump",
+   "lbl": "Skin lump / nodule / mole change",
+   "systems": [
+    "Dermatological"
+   ],
+   "depts": [
+    "dermatology",
+    "general-surgery",
+    "oncology",
+    "general-medicine"
+   ]
+  },
+  {
+   "id": "scaling",
+   "lbl": "Scaly / peeling skin",
+   "systems": [
+    "Dermatological"
+   ],
+   "depts": [
+    "dermatology",
+    "general-medicine",
+    "paediatrics"
+   ]
+  },
+  {
+   "id": "acne",
+   "lbl": "Pimples / acne",
+   "systems": [
+    "Dermatological",
+    "Endocrine"
+   ],
+   "depts": [
+    "dermatology",
+    "general-medicine"
+   ]
+  },
+  {
+   "id": "genital_lesion",
+   "lbl": "Genital / groin lesion or ulcer",
+   "systems": [
+    "Dermatological",
+    "Genitourinary"
+   ],
+   "depts": [
+    "dermatology",
+    "urology",
+    "obgyn",
+    "general-medicine"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "ulcer_diabetic",
+   "lbl": "Known diabetes",
+   "text": "Does the patient have diabetes?",
+   "why": "Diabetes causes neuropathic and ischaemic foot ulcers and slows healing.",
+   "sys": "Endocrine",
+   "when": [
+    "skin_ulcer"
+   ]
+  },
+  {
+   "id": "ulcer_varicose",
+   "lbl": "Varicose veins / long-standing leg swelling",
+   "text": "Varicose veins, or long-standing leg swelling with skin darkening?",
+   "why": "Venous disease causes ulcers near the ankle.",
+   "sys": "Cardiovascular",
+   "when": [
+    "skin_ulcer"
+   ]
+  },
+  {
+   "id": "ulcer_arterial",
+   "lbl": "Calf pain on walking / cold pale foot",
+   "text": "Calf pain when walking that eases with rest, or a cold, pale foot?",
+   "why": "Arterial insufficiency causes painful ulcers on toes or heel.",
+   "sys": "Cardiovascular",
+   "when": [
+    "skin_ulcer"
+   ]
+  },
+  {
+   "id": "ulcer_numb",
+   "lbl": "Numbness over the ulcer / skin patch",
+   "text": "Is the area numb or has lost feeling?",
+   "why": "Neuropathy (diabetes, leprosy) causes painless ulcers.",
+   "sys": "Neurological",
+   "when": [
+    "skin_ulcer",
+    "pigment_patch"
+   ]
+  },
+  {
+   "id": "ulcer_rapid_grow",
+   "lbl": "Growing, bleeding, pearly or rolled edge on sun-exposed skin",
+   "text": "Is it slowly growing or bleeding, on sun-exposed skin, with a raised pearly or rolled edge?",
+   "why": "Features of skin cancer.",
+   "sys": "Dermatological",
+   "when": [
+    "skin_ulcer",
+    "skin_lump"
+   ]
+  },
+  {
+   "id": "bl_tense_elderly",
+   "lbl": "Large tense blisters in an older person",
+   "text": "Large, tight blisters, usually itchy, in an older person?",
+   "why": "Typical of bullous pemphigoid.",
+   "sys": "Dermatological",
+   "when": [
+    "blisters"
+   ]
+  },
+  {
+   "id": "bl_flaccid_mouth",
+   "lbl": "Fragile blisters with mouth sores",
+   "text": "Fragile blisters that burst easily, with mouth erosions?",
+   "why": "Typical of pemphigus.",
+   "sys": "Dermatological",
+   "when": [
+    "blisters"
+   ]
+  },
+  {
+   "id": "bl_dermatomal",
+   "lbl": "Painful clustered blisters on one side in a band",
+   "text": "Painful clustered blisters in a band on one side of the body, with burning pain first?",
+   "why": "Typical of herpes zoster.",
+   "sys": "Dermatological",
+   "when": [
+    "blisters"
+   ]
+  },
+  {
+   "id": "bl_honey_crust",
+   "lbl": "Honey-coloured crusts",
+   "text": "Are there blisters or sores with honey-coloured crusts?",
+   "why": "Typical of impetigo.",
+   "sys": "Dermatological",
+   "when": [
+    "blisters",
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "hair_patchy",
+   "lbl": "Round patches of baldness with normal skin",
+   "text": "Round bald patches where the skin looks normal?",
+   "why": "Typical of alopecia areata.",
+   "sys": "Dermatological",
+   "when": [
+    "hair_loss"
+   ]
+  },
+  {
+   "id": "hair_diffuse",
+   "lbl": "Diffuse shedding after illness, childbirth, stress or crash dieting",
+   "text": "Widespread shedding starting weeks to months after a major illness, childbirth, stress or crash diet?",
+   "why": "Typical of telogen effluvium.",
+   "sys": "Dermatological",
+   "when": [
+    "hair_loss"
+   ]
+  },
+  {
+   "id": "hair_scaly",
+   "lbl": "Scaly scalp patch with broken hairs",
+   "text": "A scaly scalp patch with broken hairs?",
+   "why": "Suggests tinea capitis.",
+   "sys": "Dermatological",
+   "when": [
+    "hair_loss"
+   ]
+  },
+  {
+   "id": "nail_pitting",
+   "lbl": "Nail pitting / lifting / skin plaques elsewhere",
+   "text": "Tiny pits in the nails, nails lifting, or scaly plaques elsewhere?",
+   "why": "Suggests psoriasis.",
+   "sys": "Dermatological",
+   "when": [
+    "nail_change",
+    "scaling"
+   ]
+  },
+  {
+   "id": "nail_thick_yellow",
+   "lbl": "Thick, yellow, crumbly nails",
+   "text": "Are nails thickened, yellow and crumbly?",
+   "why": "Suggests fungal nail infection.",
+   "sys": "Dermatological",
+   "when": [
+    "nail_change"
+   ]
+  },
+  {
+   "id": "pig_white_depig",
+   "lbl": "Completely white patches",
+   "text": "Are the patches completely white, with no scaling?",
+   "why": "Typical of vitiligo.",
+   "sys": "Dermatological",
+   "when": [
+    "pigment_patch"
+   ]
+  },
+  {
+   "id": "pig_hypoaes",
+   "lbl": "Pale patch with reduced feeling",
+   "text": "Is a pale or reddish patch less sensitive to touch, heat or pain?",
+   "why": "Key feature of leprosy.",
+   "sys": "Neurological",
+   "when": [
+    "pigment_patch",
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "pig_fine_scale",
+   "lbl": "Fine scaly patches on trunk, worse in sweat/summer",
+   "text": "Fine scaly light or dark patches on the chest or back, worse in summer?",
+   "why": "Typical of pityriasis versicolor.",
+   "sys": "Dermatological",
+   "when": [
+    "pigment_patch"
+   ]
+  },
+  {
+   "id": "pig_nerve_thick",
+   "lbl": "Weak hands/feet, tingling or painful thick nerves",
+   "text": "Weakness of hands or feet, tingling, or tender thickened nerves?",
+   "why": "Nerve involvement in leprosy.",
+   "sys": "Neurological",
+   "when": [
+    "pigment_patch",
+    "skin_ulcer"
+   ]
+  },
+  {
+   "id": "lump_punctum",
+   "lbl": "Slow-growing lump with a central dot",
+   "text": "A slow-growing lump with a tiny central opening?",
+   "why": "Typical of epidermal cyst.",
+   "sys": "Dermatological",
+   "when": [
+    "skin_lump"
+   ]
+  },
+  {
+   "id": "lump_changing_mole",
+   "lbl": "Mole changing in shape, colour or size",
+   "text": "Has a mole changed in shape, border, colour or size, or started to bleed?",
+   "why": "ABCDE features of melanoma.",
+   "sys": "Dermatological",
+   "when": [
+    "skin_lump"
+   ]
+  },
+  {
+   "id": "lump_pearly",
+   "lbl": "Pearly bump on the face that bleeds easily",
+   "text": "A pearly bump on the face that bleeds easily and does not heal?",
+   "why": "Typical of basal cell carcinoma.",
+   "sys": "Dermatological",
+   "when": [
+    "skin_lump"
+   ]
+  },
+  {
+   "id": "sc_silvery",
+   "lbl": "Silvery scaly plaques on elbows, knees or scalp",
+   "text": "Well-defined thick plaques with silvery scale on elbows, knees or scalp?",
+   "why": "Typical of psoriasis.",
+   "sys": "Dermatological",
+   "when": [
+    "scaling"
+   ]
+  },
+  {
+   "id": "sc_greasy",
+   "lbl": "Greasy scales on scalp, eyebrows or sides of nose",
+   "text": "Greasy yellowish scales on scalp, eyebrows or beside the nose?",
+   "why": "Typical of seborrhoeic dermatitis.",
+   "sys": "Dermatological",
+   "when": [
+    "scaling"
+   ]
+  },
+  {
+   "id": "ac_face",
+   "lbl": "Blackheads and pimples on face, chest or back",
+   "text": "Blackheads, whiteheads and pimples on face, chest or back?",
+   "why": "Typical of acne vulgaris.",
+   "sys": "Dermatological",
+   "when": [
+    "acne"
+   ]
+  },
+  {
+   "id": "gen_painful_ulcer",
+   "lbl": "Painful grouped blisters/ulcers, recurrent",
+   "text": "Painful grouped blisters or ulcers that have recurred?",
+   "why": "Typical of genital herpes.",
+   "sys": "Genitourinary",
+   "when": [
+    "genital_lesion"
+   ]
+  },
+  {
+   "id": "gen_painless_ulcer",
+   "lbl": "Single painless ulcer",
+   "text": "A single, painless, firm-edged ulcer?",
+   "why": "Typical of primary syphilis.",
+   "sys": "Genitourinary",
+   "when": [
+    "genital_lesion"
+   ]
+  },
+  {
+   "id": "gen_sexual_exposure",
+   "lbl": "New partner / unprotected sex",
+   "text": "New sexual partner or unprotected sex recently?",
+   "why": "Exposure history for sexually transmitted infection.",
+   "sys": "Genitourinary",
+   "when": [
+    "genital_lesion"
+   ]
+  }
+ ],
+ "exam": [
+  {
+   "id": "ex_nikolsky",
+   "lbl": "Nikolsky sign positive (skin shears with gentle rubbing)",
+   "sys": "Dermatological",
+   "when": [
+    "blisters",
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "ex_silvery_scale",
+   "lbl": "Well-defined plaques with silvery scale (Auspitz sign)",
+   "sys": "Dermatological",
+   "when": [
+    "scaling"
+   ]
+  },
+  {
+   "id": "ex_sensory_loss",
+   "lbl": "Reduced sensation in the skin patch",
+   "sys": "Neurological",
+   "when": [
+    "pigment_patch",
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "ex_thick_nerve",
+   "lbl": "Thickened peripheral nerves",
+   "sys": "Neurological",
+   "when": [
+    "pigment_patch",
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "ex_wood_depig",
+   "lbl": "Chalk-white depigmented macules",
+   "sys": "Dermatological",
+   "when": [
+    "pigment_patch"
+   ]
+  },
+  {
+   "id": "ex_varicose",
+   "lbl": "Varicose veins / venous eczema / hyperpigmentation",
+   "sys": "Cardiovascular",
+   "when": [
+    "skin_ulcer"
+   ]
+  },
+  {
+   "id": "ex_pulses_absent",
+   "lbl": "Absent or weak foot pulses",
+   "sys": "Cardiovascular",
+   "when": [
+    "skin_ulcer"
+   ]
+  },
+  {
+   "id": "ex_abcde",
+   "lbl": "Lesion with ABCDE features (asymmetry, irregular border, colour variation, diameter, evolution)",
+   "sys": "Dermatological",
+   "when": [
+    "skin_lump"
+   ]
+  },
+  {
+   "id": "ex_pearly_edge",
+   "lbl": "Pearly rolled-edge lesion with telangiectasia",
+   "sys": "Dermatological",
+   "when": [
+    "skin_lump",
+    "skin_ulcer"
+   ]
+  },
+  {
+   "id": "ex_comedones",
+   "lbl": "Comedones, papules or pustules",
+   "sys": "Dermatological",
+   "when": [
+    "acne"
+   ]
+  },
+  {
+   "id": "ex_hair_pull",
+   "lbl": "Positive hair-pull test (easily shed hairs)",
+   "sys": "Dermatological",
+   "when": [
+    "hair_loss"
+   ]
+  }
+ ],
+ "diseases": [
+  {
+   "id": "psoriasis",
+   "name": "Psoriasis",
+   "cm": false,
+   "triggers": [
+    "scaling",
+    "rash_skin"
+   ],
+   "f": {
+    "sc_silvery": 4,
+    "ex_silvery_scale": 3,
+    "nail_pitting": 2,
+    "scaling": 1
+   },
+   "inv": "Clinical; skin biopsy if unclear. Look for arthritis.",
+   "tool": "None applied.",
+   "alt": "Eczema, tinea, seborrhoeic dermatitis, pityriasis rosea"
+  },
+  {
+   "id": "sebderm",
+   "name": "Seborrhoeic dermatitis",
+   "cm": false,
+   "triggers": [
+    "scaling",
+    "itch"
+   ],
+   "f": {
+    "sc_greasy": 4,
+    "scaling": 1,
+    "itch": 1
+   },
+   "inv": "Clinical.",
+   "tool": "None applied.",
+   "alt": "Psoriasis, tinea, atopic eczema"
+  },
+  {
+   "id": "pityv",
+   "name": "Pityriasis versicolor",
+   "cm": false,
+   "triggers": [
+    "pigment_patch",
+    "rash_skin"
+   ],
+   "f": {
+    "pig_fine_scale": 4,
+    "pigment_patch": 1,
+    "itch": 1
+   },
+   "inv": "KOH microscopy of scrapings.",
+   "tool": "None applied.",
+   "alt": "Vitiligo, tinea, leprosy, pityriasis alba"
+  },
+  {
+   "id": "vitiligo",
+   "name": "Vitiligo",
+   "cm": false,
+   "triggers": [
+    "pigment_patch"
+   ],
+   "f": {
+    "pig_white_depig": 4,
+    "ex_wood_depig": 3
+   },
+   "inv": "Clinical; Wood lamp where available; check thyroid and other autoimmune disease.",
+   "tool": "None applied.",
+   "alt": "Pityriasis versicolor, leprosy, post-inflammatory hypopigmentation"
+  },
+  {
+   "id": "leprosy",
+   "name": "Leprosy (Hansen disease)",
+   "cm": true,
+   "triggers": [
+    "pigment_patch",
+    "rash_skin",
+    "skin_ulcer"
+   ],
+   "f": {
+    "pig_hypoaes": 4,
+    "ex_sensory_loss": 4,
+    "ex_thick_nerve": 3,
+    "pig_nerve_thick": 2,
+    "ulcer_numb": 2
+   },
+   "inv": "Slit-skin smear, nerve examination; follow national leprosy programme guidance.",
+   "tool": "None applied.",
+   "alt": "Tinea, vitiligo, psoriasis, diabetic neuropathy"
+  },
+  {
+   "id": "acnev",
+   "name": "Acne vulgaris",
+   "cm": false,
+   "triggers": [
+    "acne"
+   ],
+   "f": {
+    "ac_face": 4,
+    "ex_comedones": 3
+   },
+   "inv": "Clinical; consider hormonal causes if severe, in women with irregular periods or hirsutism.",
+   "tool": "None applied.",
+   "alt": "Rosacea, folliculitis, drug-induced acne"
+  },
+  {
+   "id": "aa",
+   "name": "Alopecia areata",
+   "cm": false,
+   "triggers": [
+    "hair_loss"
+   ],
+   "f": {
+    "hair_patchy": 4
+   },
+   "inv": "Clinical; dermoscopy where available.",
+   "tool": "None applied.",
+   "alt": "Tinea capitis, trichotillomania, scarring alopecia"
+  },
+  {
+   "id": "te",
+   "name": "Telogen effluvium",
+   "cm": false,
+   "triggers": [
+    "hair_loss"
+   ],
+   "f": {
+    "hair_diffuse": 4,
+    "ex_hair_pull": 3
+   },
+   "inv": "Clinical; check ferritin, thyroid function, B12 as indicated.",
+   "tool": "None applied.",
+   "alt": "Androgenetic alopecia, iron deficiency, thyroid disease"
+  },
+  {
+   "id": "tcap",
+   "name": "Tinea capitis",
+   "cm": false,
+   "triggers": [
+    "hair_loss"
+   ],
+   "f": {
+    "hair_scaly": 4
+   },
+   "inv": "KOH microscopy and fungal culture.",
+   "tool": "None applied.",
+   "alt": "Alopecia areata, seborrhoeic dermatitis, psoriasis"
+  },
+  {
+   "id": "onych",
+   "name": "Fungal nail infection (onychomycosis)",
+   "cm": false,
+   "triggers": [
+    "nail_change"
+   ],
+   "f": {
+    "nail_thick_yellow": 4
+   },
+   "inv": "KOH microscopy/culture before treatment.",
+   "tool": "None applied.",
+   "alt": "Nail psoriasis, trauma, lichen planus"
+  },
+  {
+   "id": "pemphigus",
+   "name": "Pemphigus vulgaris",
+   "cm": true,
+   "triggers": [
+    "blisters"
+   ],
+   "f": {
+    "bl_flaccid_mouth": 4,
+    "ex_nikolsky": 4,
+    "mucosal_involve": 2
+   },
+   "inv": "Urgent specialist review; skin biopsy with direct immunofluorescence.",
+   "tool": "None applied.",
+   "alt": "Bullous pemphigoid, SJS/TEN, impetigo"
+  },
+  {
+   "id": "bp",
+   "name": "Bullous pemphigoid",
+   "cm": false,
+   "triggers": [
+    "blisters"
+   ],
+   "f": {
+    "bl_tense_elderly": 4,
+    "itch": 1,
+    "age_over_60": 2
+   },
+   "inv": "Skin biopsy with direct immunofluorescence.",
+   "tool": "None applied.",
+   "alt": "Pemphigus, eczema, scabies, drug reaction"
+  },
+  {
+   "id": "zoster",
+   "name": "Herpes zoster",
+   "cm": false,
+   "triggers": [
+    "blisters",
+    "rash_skin"
+   ],
+   "f": {
+    "bl_dermatomal": 5,
+    "age_over_60": 1
+   },
+   "inv": "Clinical; PCR if atypical. Facial involvement near the eye needs urgent eye review.",
+   "tool": "None applied.",
+   "alt": "Herpes simplex, impetigo, contact dermatitis"
+  },
+  {
+   "id": "impetigo",
+   "name": "Impetigo",
+   "cm": false,
+   "triggers": [
+    "blisters",
+    "rash_skin"
+   ],
+   "f": {
+    "bl_honey_crust": 4
+   },
+   "inv": "Clinical.",
+   "tool": "None applied.",
+   "alt": "Herpes simplex, scabies infection, eczema"
+  },
+  {
+   "id": "dfu",
+   "name": "Diabetic (neuropathic/ischaemic) foot ulcer",
+   "cm": true,
+   "triggers": [
+    "skin_ulcer"
+   ],
+   "f": {
+    "ulcer_diabetic": 3,
+    "ulcer_numb": 2,
+    "ulcer_arterial": 1,
+    "ex_pulses_absent": 2
+   },
+   "inv": "Foot examination, blood glucose, wound swab, X-ray for osteomyelitis; vascular assessment.",
+   "tool": "None applied.",
+   "alt": "Venous ulcer, arterial ulcer, leprosy, pressure ulcer"
+  },
+  {
+   "id": "venous",
+   "name": "Venous ulcer",
+   "cm": false,
+   "triggers": [
+    "skin_ulcer"
+   ],
+   "f": {
+    "ulcer_varicose": 3,
+    "ex_varicose": 3
+   },
+   "inv": "Doppler/ABPI before compression.",
+   "tool": "None applied.",
+   "alt": "Arterial ulcer, diabetic ulcer, skin cancer"
+  },
+  {
+   "id": "arterial",
+   "name": "Arterial ulcer",
+   "cm": false,
+   "triggers": [
+    "skin_ulcer"
+   ],
+   "f": {
+    "ulcer_arterial": 3,
+    "ex_pulses_absent": 4
+   },
+   "inv": "ABPI, Doppler, vascular referral.",
+   "tool": "None applied.",
+   "alt": "Diabetic ulcer, venous ulcer, pressure ulcer"
+  },
+  {
+   "id": "skinca",
+   "name": "Skin cancer (basal cell, squamous cell, melanoma)",
+   "cm": true,
+   "triggers": [
+    "skin_ulcer",
+    "skin_lump"
+   ],
+   "f": {
+    "ulcer_rapid_grow": 3,
+    "ex_pearly_edge": 3,
+    "lump_changing_mole": 4,
+    "ex_abcde": 4,
+    "lump_pearly": 3
+   },
+   "inv": "Urgent dermatology/surgical review; dermoscopy; excision biopsy.",
+   "tool": "None applied.",
+   "alt": "Seborrhoeic keratosis, benign naevus, chronic ulcer, wart"
+  },
+  {
+   "id": "cyst",
+   "name": "Epidermal cyst",
+   "cm": false,
+   "triggers": [
+    "skin_lump"
+   ],
+   "f": {
+    "lump_punctum": 4
+   },
+   "inv": "Clinical; excision if symptomatic.",
+   "tool": "None applied.",
+   "alt": "Lipoma, abscess, skin cancer"
+  },
+  {
+   "id": "hsv",
+   "name": "Genital herpes",
+   "cm": false,
+   "triggers": [
+    "genital_lesion"
+   ],
+   "f": {
+    "gen_painful_ulcer": 4,
+    "gen_sexual_exposure": 1
+   },
+   "inv": "Clinical; PCR of lesion fluid; STI screen.",
+   "tool": "None applied.",
+   "alt": "Syphilis, chancroid, trauma, Behcet disease"
+  },
+  {
+   "id": "syph",
+   "name": "Primary syphilis",
+   "cm": true,
+   "triggers": [
+    "genital_lesion"
+   ],
+   "f": {
+    "gen_painless_ulcer": 4,
+    "gen_sexual_exposure": 2
+   },
+   "inv": "VDRL/RPR and TPHA; HIV and other STI tests per national guidance.",
+   "tool": "None applied.",
+   "alt": "Genital herpes, chancroid, malignancy"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_foot",
+   "text": "Ulcer in a diabetic patient with fever: exclude deep infection or osteomyelitis urgently",
+   "all": [
+    "skin_ulcer",
+    "ulcer_diabetic",
+    "fever"
+   ]
+  },
+  {
+   "id": "rf_melanoma",
+   "text": "Changing mole: possible melanoma, urgent referral",
+   "all": [
+    "lump_changing_mole"
+   ]
+  },
+  {
+   "id": "rf_pemph",
+   "text": "Fragile blisters with mouth erosions: possible pemphigus, urgent review",
+   "all": [
+    "bl_flaccid_mouth"
+   ]
+  }
+ ]
+}
