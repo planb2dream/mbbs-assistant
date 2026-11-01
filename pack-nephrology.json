@@ -1,0 +1,472 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "ru_prerenal",
+   "lbl": "Vomiting, diarrhoea, poor intake, bleeding or diuretics",
+   "text": "Recent vomiting, diarrhoea, poor intake, bleeding, or diuretic use?",
+   "why": "Pre-renal acute kidney injury.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_reduced_urine"
+   ]
+  },
+  {
+   "id": "ru_intrinsic",
+   "lbl": "NSAIDs, aminoglycosides, contrast, sepsis, or cola-coloured urine",
+   "text": "Recent NSAIDs, aminoglycosides, contrast dye, sepsis, or cola-coloured urine?",
+   "why": "Intrinsic acute kidney injury.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_reduced_urine"
+   ]
+  },
+  {
+   "id": "ru_obstruct",
+   "lbl": "Poor stream, hesitancy or retention",
+   "text": "Difficulty passing urine, poor stream or retention?",
+   "why": "Obstruction is reversible if found early.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_reduced_urine",
+    "c_urinary_retention",
+    "c_weak_urine_stream"
+   ]
+  },
+  {
+   "id": "ru_ckd",
+   "lbl": "Known kidney disease, diabetes or long-standing hypertension",
+   "text": "Known chronic kidney disease, long-standing diabetes or hypertension?",
+   "why": "Chronic kidney disease.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_reduced_urine",
+    "c_swelling_of_face_or_feet"
+   ]
+  },
+  {
+   "id": "hu_colic",
+   "lbl": "Severe colicky pain from loin to groin",
+   "text": "Severe waves of pain from loin to groin?",
+   "why": "Ureteric stone.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_blood_in_urine",
+    "c_flank_pain"
+   ]
+  },
+  {
+   "id": "hu_painless",
+   "lbl": "Painless blood, smoker or over 50, clots",
+   "text": "Painless visible blood, in a smoker or over 50, with clots?",
+   "why": "Urinary tract cancer must be excluded.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_blood_in_urine"
+   ]
+  },
+  {
+   "id": "hu_cola",
+   "lbl": "Cola-coloured urine after sore throat/skin infection with puffiness or high BP",
+   "text": "Cola-coloured urine after sore throat or skin infection, with puffiness or high BP?",
+   "why": "Glomerulonephritis.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_blood_in_urine"
+   ]
+  },
+  {
+   "id": "bu_cystitis",
+   "lbl": "Frequency, urgency, lower abdominal pain",
+   "text": "Frequency, urgency and lower abdominal pain?",
+   "why": "Cystitis.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_burning_urination"
+   ]
+  },
+  {
+   "id": "bu_pyelo",
+   "lbl": "Fever, loin pain, rigors",
+   "text": "Fever, rigors or loin pain?",
+   "why": "Upper urinary tract infection.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_burning_urination",
+    "c_flank_pain"
+   ]
+  },
+  {
+   "id": "bu_urethritis",
+   "lbl": "Pus discharge, new sexual partner",
+   "text": "Pus-like discharge, or a new sexual partner?",
+   "why": "Sexually transmitted urethritis.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_burning_urination",
+    "c_penile_discharge",
+    "c_genital_discharge"
+   ]
+  },
+  {
+   "id": "fl_vascular",
+   "lbl": "Over 60, smoker or hypertensive, sudden severe flank/back pain, faint",
+   "text": "Over 60, smoker or hypertensive, with sudden severe flank or back pain and feeling faint?",
+   "why": "Aortic aneurysm leak.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_flank_pain",
+    "back_pain"
+   ]
+  },
+  {
+   "id": "nu_bph",
+   "lbl": "Men over 50, poor stream, hesitancy, night urination",
+   "text": "Man over 50 with poor stream, hesitancy and night-time urination?",
+   "why": "Prostate enlargement.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_night_time_urination",
+    "c_weak_urine_stream",
+    "c_urinary_retention"
+   ]
+  },
+  {
+   "id": "hbp_emerg",
+   "lbl": "Severe headache, chest pain, breathlessness, confusion or visual loss",
+   "text": "Very high BP with severe headache, chest pain, breathlessness, confusion or visual loss?",
+   "why": "Hypertensive emergency.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_high_blood_pressure_reading"
+   ]
+  },
+  {
+   "id": "hbp_pheo",
+   "lbl": "Episodes of headache, sweating and palpitations",
+   "text": "Episodes of pounding headache, sweating and palpitations?",
+   "why": "Phaeochromocytoma.",
+   "sys": "Endocrine",
+   "when": [
+    "c_high_blood_pressure_reading"
+   ]
+  },
+  {
+   "id": "hbp_secondary",
+   "lbl": "Under 40, or BP not controlled on several drugs",
+   "text": "Aged under 40, or BP not controlled on several drugs?",
+   "why": "Secondary hypertension clues.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_high_blood_pressure_reading"
+   ]
+  }
+ ],
+ "exam": [],
+ "diseases": [
+  {
+   "id": "prerenal",
+   "name": "Pre-renal acute kidney injury",
+   "cm": true,
+   "triggers": [
+    "c_reduced_urine"
+   ],
+   "f": {
+    "ru_prerenal": 4,
+    "dehydrated": 2
+   },
+   "inv": "Urea, creatinine, potassium, urine sodium; assess volume status.",
+   "tool": "None applied.",
+   "alt": "Intrinsic AKI, obstruction"
+  },
+  {
+   "id": "atn",
+   "name": "Intrinsic acute kidney injury (e.g. ATN, glomerulonephritis)",
+   "cm": true,
+   "triggers": [
+    "c_reduced_urine"
+   ],
+   "f": {
+    "ru_intrinsic": 4
+   },
+   "inv": "Creatinine, urine microscopy, ultrasound kidneys.",
+   "tool": "None applied.",
+   "alt": "Pre-renal AKI, obstruction"
+  },
+  {
+   "id": "obstruct",
+   "name": "Obstructive uropathy",
+   "cm": true,
+   "triggers": [
+    "c_reduced_urine",
+    "c_urinary_retention",
+    "c_weak_urine_stream"
+   ],
+   "f": {
+    "ru_obstruct": 4
+   },
+   "inv": "Bladder scan, ultrasound kidneys, creatinine.",
+   "tool": "None applied.",
+   "alt": "Pre-renal AKI, intrinsic AKI, BPH"
+  },
+  {
+   "id": "ckd",
+   "name": "Chronic kidney disease",
+   "cm": false,
+   "triggers": [
+    "c_reduced_urine",
+    "c_swelling_of_face_or_feet",
+    "c_night_time_urination"
+   ],
+   "f": {
+    "ru_ckd": 4,
+    "itch": 1
+   },
+   "inv": "Creatinine/eGFR, urine albumin-creatinine ratio, ultrasound kidneys.",
+   "tool": "None applied.",
+   "alt": "AKI, heart failure, nephrotic syndrome"
+  },
+  {
+   "id": "stone",
+   "name": "Ureteric / renal stone",
+   "cm": false,
+   "triggers": [
+    "c_blood_in_urine",
+    "c_flank_pain"
+   ],
+   "f": {
+    "hu_colic": 5
+   },
+   "inv": "Non-contrast CT KUB or ultrasound, urine routine, creatinine.",
+   "tool": "None applied.",
+   "alt": "Pyelonephritis, AAA, appendicitis, musculoskeletal pain"
+  },
+  {
+   "id": "uroca",
+   "name": "Urinary tract cancer (bladder/kidney)",
+   "cm": true,
+   "triggers": [
+    "c_blood_in_urine"
+   ],
+   "f": {
+    "hu_painless": 4,
+    "smoker": 1
+   },
+   "inv": "Urine cytology, ultrasound, cystoscopy, CT urography.",
+   "tool": "None applied.",
+   "alt": "Stone, infection, glomerular disease"
+  },
+  {
+   "id": "gn",
+   "name": "Glomerulonephritis",
+   "cm": false,
+   "triggers": [
+    "c_blood_in_urine"
+   ],
+   "f": {
+    "hu_cola": 5
+   },
+   "inv": "Urine microscopy, protein, creatinine, ASO titre, complement; BP.",
+   "tool": "None applied.",
+   "alt": "Stone, infection, IgA nephropathy"
+  },
+  {
+   "id": "cystitis",
+   "name": "Lower urinary tract infection (cystitis)",
+   "cm": false,
+   "triggers": [
+    "c_burning_urination"
+   ],
+   "f": {
+    "bu_cystitis": 4
+   },
+   "inv": "Urine routine and culture.",
+   "tool": "None applied.",
+   "alt": "Urethritis, vaginitis, stone"
+  },
+  {
+   "id": "pyelo",
+   "name": "Acute pyelonephritis",
+   "cm": true,
+   "triggers": [
+    "c_burning_urination",
+    "c_flank_pain"
+   ],
+   "f": {
+    "bu_pyelo": 4,
+    "fever": 1
+   },
+   "inv": "Urine culture, CBC, creatinine, blood cultures if septic; ultrasound.",
+   "tool": "None applied.",
+   "alt": "Cystitis, stone with infection, appendicitis"
+  },
+  {
+   "id": "urethritis",
+   "name": "Sexually transmitted urethritis",
+   "cm": false,
+   "triggers": [
+    "c_burning_urination",
+    "c_penile_discharge",
+    "c_genital_discharge"
+   ],
+   "f": {
+    "bu_urethritis": 4,
+    "gen_sexual_exposure": 2
+   },
+   "inv": "Gram stain/NAAT, STI screen, HIV and syphilis testing.",
+   "tool": "None applied.",
+   "alt": "Cystitis, prostatitis, epididymitis"
+  },
+  {
+   "id": "aaa",
+   "name": "Leaking aortic aneurysm",
+   "cm": true,
+   "triggers": [
+    "c_flank_pain",
+    "back_pain"
+   ],
+   "f": {
+    "fl_vascular": 5
+   },
+   "inv": "Emergency senior and vascular review, bedside ultrasound.",
+   "tool": "None applied.",
+   "alt": "Renal colic, mechanical back pain"
+  },
+  {
+   "id": "bph",
+   "name": "Benign prostatic enlargement",
+   "cm": false,
+   "triggers": [
+    "c_night_time_urination",
+    "c_weak_urine_stream",
+    "c_urinary_retention"
+   ],
+   "f": {
+    "nu_bph": 4,
+    "age_over_60": 1
+   },
+   "inv": "Prostate examination, PSA counselling, ultrasound, creatinine.",
+   "tool": "IPSS scores symptom severity; it is not diagnostic.",
+   "alt": "Prostate cancer, urethral stricture, diabetes"
+  },
+  {
+   "id": "hbpemerg",
+   "name": "Hypertensive emergency",
+   "cm": true,
+   "triggers": [
+    "c_high_blood_pressure_reading"
+   ],
+   "f": {
+    "hbp_emerg": 5
+   },
+   "inv": "Urgent assessment for organ damage: ECG, creatinine, urine, fundoscopy, neurology.",
+   "tool": "None applied.",
+   "alt": "Acute coronary syndrome, stroke, aortic dissection"
+  },
+  {
+   "id": "pheo",
+   "name": "Phaeochromocytoma",
+   "cm": true,
+   "triggers": [
+    "c_high_blood_pressure_reading"
+   ],
+   "f": {
+    "hbp_pheo": 4
+   },
+   "inv": "Plasma or urinary metanephrines, then imaging.",
+   "tool": "None applied.",
+   "alt": "Anxiety, thyrotoxicosis, essential hypertension"
+  },
+  {
+   "id": "sechbp",
+   "name": "Secondary hypertension (renal, endocrine)",
+   "cm": false,
+   "triggers": [
+    "c_high_blood_pressure_reading"
+   ],
+   "f": {
+    "hbp_secondary": 3,
+    "sw_frothy": 2
+   },
+   "inv": "Creatinine, electrolytes, urine tests, renal ultrasound, aldosterone-renin ratio as indicated.",
+   "tool": "None applied.",
+   "alt": "Primary hypertension, pheochromocytoma"
+  },
+  {
+   "id": "essht",
+   "name": "Primary (essential) hypertension",
+   "cm": false,
+   "triggers": [
+    "c_high_blood_pressure_reading"
+   ],
+   "f": {
+    "age_over_60": 1,
+    "c_high_blood_pressure_reading": 1
+   },
+   "inv": "Repeat BP measurements, ECG, creatinine, glucose, lipids, urine.",
+   "tool": "Use national or ESC/AHA hypertension guidelines for thresholds.",
+   "alt": "Secondary hypertension, white-coat effect"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_aki",
+   "text": "Reduced urine with dehydration or kidney-risk exposure: possible acute kidney injury, check creatinine and potassium",
+   "all": [
+    "c_reduced_urine"
+   ],
+   "anyOf": [
+    "ru_prerenal",
+    "ru_intrinsic",
+    "ru_obstruct"
+   ]
+  },
+  {
+   "id": "rf_pyelo",
+   "text": "Urinary symptoms with fever and rigors: possible pyelonephritis/urosepsis, assess urgently",
+   "all": [
+    "bu_pyelo"
+   ]
+  },
+  {
+   "id": "rf_aaa",
+   "text": "Sudden severe flank/back pain with faintness in an older vascular patient: possible aortic aneurysm leak, emergency",
+   "all": [
+    "fl_vascular"
+   ]
+  },
+  {
+   "id": "rf_htn_emerg",
+   "text": "Very high BP with severe symptoms: possible hypertensive emergency",
+   "all": [
+    "hbp_emerg"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "nephro": {
+    "triggers": [
+     "c_swelling_of_face_or_feet"
+    ],
+    "f": {}
+   },
+   "hf": {
+    "triggers": [
+     "c_swelling_of_face_or_feet"
+    ],
+    "f": {}
+   },
+   "stone": {
+    "triggers": [],
+    "f": {}
+   }
+  },
+  "exam": {},
+  "questions": {
+   "sw_frothy": [
+    "c_swelling_of_face_or_feet"
+   ]
+  }
+ }
+}

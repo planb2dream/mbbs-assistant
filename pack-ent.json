@@ -1,0 +1,725 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "hl_sudden",
+   "lbl": "Sudden hearing loss over hours to days",
+   "text": "Did hearing drop suddenly over hours to a few days?",
+   "why": "Sudden sensorineural loss is time-critical.",
+   "sys": "ENT",
+   "when": [
+    "c_hearing_loss"
+   ]
+  },
+  {
+   "id": "hl_age",
+   "lbl": "Gradual loss in both ears with age",
+   "text": "Gradual loss in both ears, worse in noisy places, in an older person?",
+   "why": "Age-related hearing loss.",
+   "sys": "ENT",
+   "when": [
+    "c_hearing_loss"
+   ]
+  },
+  {
+   "id": "hl_block",
+   "lbl": "Blocked ear, wax, recent cold",
+   "text": "Blocked feeling, wax, or recent cold or flying?",
+   "why": "Conductive causes.",
+   "sys": "ENT",
+   "when": [
+    "c_hearing_loss",
+    "ear_pain"
+   ]
+  },
+  {
+   "id": "hl_noise",
+   "lbl": "Loud noise exposure or ototoxic drugs",
+   "text": "Long loud-noise exposure, or drugs such as aminoglycosides, loop diuretics or high-dose aspirin?",
+   "why": "Noise or drug damage.",
+   "sys": "ENT",
+   "when": [
+    "c_hearing_loss",
+    "c_ringing_in_ears"
+   ]
+  },
+  {
+   "id": "ed_chronic",
+   "lbl": "Chronic foul discharge from a perforated ear",
+   "text": "Long-standing foul-smelling discharge from the ear?",
+   "why": "Chronic suppurative otitis media.",
+   "sys": "ENT",
+   "when": [
+    "c_ear_discharge"
+   ]
+  },
+  {
+   "id": "ed_mastoid",
+   "lbl": "Swelling behind the ear, fever, ear pushed forward",
+   "text": "Swelling or redness behind the ear with fever?",
+   "why": "Mastoiditis.",
+   "sys": "ENT",
+   "when": [
+    "c_ear_discharge",
+    "ear_pain"
+   ]
+  },
+  {
+   "id": "tn_pulsatile",
+   "lbl": "Pulsatile tinnitus",
+   "text": "Is the ringing in time with the pulse?",
+   "why": "Vascular causes.",
+   "sys": "ENT",
+   "when": [
+    "c_ringing_in_ears"
+   ]
+  },
+  {
+   "id": "tn_unilateral",
+   "lbl": "One-sided ringing with hearing loss",
+   "text": "Ringing in one ear only with hearing loss?",
+   "why": "Acoustic neuroma must be excluded.",
+   "sys": "ENT",
+   "when": [
+    "c_ringing_in_ears"
+   ]
+  },
+  {
+   "id": "ep_anterior",
+   "lbl": "One nostril, picking, dry air, child",
+   "text": "Bleeding from one nostril, with nose picking or dry air?",
+   "why": "Anterior epistaxis.",
+   "sys": "ENT",
+   "when": [
+    "c_nosebleed"
+   ]
+  },
+  {
+   "id": "ep_posterior",
+   "lbl": "Heavy bleeding, throat, hypertension or anticoagulants",
+   "text": "Heavy bleeding running down the throat, with high BP or blood thinners?",
+   "why": "Posterior bleed.",
+   "sys": "ENT",
+   "when": [
+    "c_nosebleed"
+   ]
+  },
+  {
+   "id": "ep_tumour",
+   "lbl": "One-sided blockage with blood, facial swelling, adult",
+   "text": "One-sided blocked nose with blood-stained discharge or facial swelling?",
+   "why": "Sinonasal tumour.",
+   "sys": "ENT",
+   "when": [
+    "c_nosebleed",
+    "c_nasal_discharge",
+    "nasal_block"
+   ]
+  },
+  {
+   "id": "ep_teen",
+   "lbl": "Teenage boy with profuse recurrent bleeds and blocked nose",
+   "text": "Teenage boy with repeated heavy nosebleeds and a blocked nose?",
+   "why": "Juvenile angiofibroma.",
+   "sys": "ENT",
+   "when": [
+    "c_nosebleed"
+   ]
+  },
+  {
+   "id": "ar_allergic",
+   "lbl": "Sneezing, watery discharge, itchy nose/eyes, seasonal or dust-triggered",
+   "text": "Sneezing fits, watery discharge, itchy nose and eyes, triggered by dust or season?",
+   "why": "Allergic rhinitis.",
+   "sys": "ENT",
+   "when": [
+    "c_sneezing",
+    "c_nasal_discharge",
+    "nasal_block"
+   ]
+  },
+  {
+   "id": "ar_fb",
+   "lbl": "Foul one-sided discharge in a child",
+   "text": "Foul-smelling discharge from one nostril in a child?",
+   "why": "Nasal foreign body.",
+   "sys": "ENT",
+   "when": [
+    "c_nasal_discharge",
+    "nasal_block"
+   ]
+  },
+  {
+   "id": "ar_csf",
+   "lbl": "Clear watery one-sided leak after head injury",
+   "text": "Clear watery one-sided drip after head injury or surgery?",
+   "why": "CSF leak.",
+   "sys": "ENT",
+   "when": [
+    "c_nasal_discharge"
+   ]
+  },
+  {
+   "id": "ls_viral",
+   "lbl": "Smell lost after viral illness",
+   "text": "Did smell loss follow a viral illness?",
+   "why": "Post-viral anosmia.",
+   "sys": "ENT",
+   "when": [
+    "c_loss_of_smell"
+   ]
+  },
+  {
+   "id": "ls_polyp",
+   "lbl": "Long-standing blockage, polyps",
+   "text": "Long-standing nasal blockage with a polyp or asthma?",
+   "why": "Nasal polyps.",
+   "sys": "ENT",
+   "when": [
+    "c_loss_of_smell",
+    "nasal_block"
+   ]
+  },
+  {
+   "id": "sn_child",
+   "lbl": "Child with mouth breathing, snoring, big tonsils",
+   "text": "Child who snores, breathes through the mouth, with big tonsils?",
+   "why": "Adenotonsillar hypertrophy.",
+   "sys": "ENT",
+   "when": [
+    "c_snoring"
+   ]
+  },
+  {
+   "id": "fp_trigem",
+   "lbl": "Brief electric-shock facial pain triggered by touch or chewing",
+   "text": "Brief electric-shock pain in the face triggered by touch, chewing or shaving?",
+   "why": "Trigeminal neuralgia.",
+   "sys": "ENT",
+   "when": [
+    "c_facial_pain"
+   ]
+  },
+  {
+   "id": "fp_dental",
+   "lbl": "Toothache, pain on biting, gum swelling",
+   "text": "Toothache, pain on biting or gum swelling?",
+   "why": "Dental cause.",
+   "sys": "ENT",
+   "when": [
+    "c_facial_pain",
+    "c_facial_swelling"
+   ]
+  },
+  {
+   "id": "fs_odonto",
+   "lbl": "Toothache with jaw swelling, fever, trouble opening mouth",
+   "text": "Jaw swelling with fever, difficulty opening the mouth or swallowing?",
+   "why": "Deep neck infection can threaten the airway.",
+   "sys": "ENT",
+   "when": [
+    "c_facial_swelling"
+   ]
+  },
+  {
+   "id": "fs_parotid",
+   "lbl": "Swelling in front of ear, pain on eating",
+   "text": "Swelling in front of the ear that worsens when eating?",
+   "why": "Salivary gland cause.",
+   "sys": "ENT",
+   "when": [
+    "c_facial_swelling"
+   ]
+  },
+  {
+   "id": "fs_mumps",
+   "lbl": "Swelling both sides, fever, unvaccinated",
+   "text": "Swelling on both sides with fever in someone not vaccinated?",
+   "why": "Mumps.",
+   "sys": "ENT",
+   "when": [
+    "c_facial_swelling"
+   ]
+  },
+  {
+   "id": "ns_midline",
+   "lbl": "Midline lump moving on swallowing",
+   "text": "Does the lump move up on swallowing?",
+   "why": "Thyroid origin.",
+   "sys": "ENT",
+   "when": [
+    "c_neck_swelling"
+   ]
+  }
+ ],
+ "exam": [],
+ "diseases": [
+  {
+   "id": "ssnhl",
+   "name": "Sudden sensorineural hearing loss",
+   "cm": true,
+   "triggers": [
+    "c_hearing_loss"
+   ],
+   "f": {
+    "hl_sudden": 5
+   },
+   "inv": "Urgent audiometry and ENT review; MRI if indicated.",
+   "tool": "None applied.",
+   "alt": "Wax, middle-ear fluid, acoustic neuroma"
+  },
+  {
+   "id": "presby",
+   "name": "Age-related hearing loss",
+   "cm": false,
+   "triggers": [
+    "c_hearing_loss"
+   ],
+   "f": {
+    "hl_age": 4,
+    "age_over_60": 1
+   },
+   "inv": "Pure-tone audiometry.",
+   "tool": "None applied.",
+   "alt": "Noise damage, otosclerosis, acoustic neuroma"
+  },
+  {
+   "id": "conduct",
+   "name": "Conductive hearing loss (wax, middle-ear fluid)",
+   "cm": false,
+   "triggers": [
+    "c_hearing_loss"
+   ],
+   "f": {
+    "hl_block": 4
+   },
+   "inv": "Otoscopy, tuning-fork tests, audiometry.",
+   "tool": "None applied.",
+   "alt": "Otosclerosis, ossicular problem"
+  },
+  {
+   "id": "noisehl",
+   "name": "Noise- or drug-induced hearing loss",
+   "cm": false,
+   "triggers": [
+    "c_hearing_loss",
+    "c_ringing_in_ears"
+   ],
+   "f": {
+    "hl_noise": 4
+   },
+   "inv": "Audiometry; review ototoxic drugs.",
+   "tool": "None applied.",
+   "alt": "Age-related loss, Meniere disease"
+  },
+  {
+   "id": "csom",
+   "name": "Chronic suppurative otitis media",
+   "cm": false,
+   "triggers": [
+    "c_ear_discharge"
+   ],
+   "f": {
+    "ed_chronic": 4
+   },
+   "inv": "Otoscopy, ear swab, audiometry; CT temporal bone if cholesteatoma suspected.",
+   "tool": "None applied.",
+   "alt": "Otitis externa, cholesteatoma"
+  },
+  {
+   "id": "mastoid",
+   "name": "Acute mastoiditis",
+   "cm": true,
+   "triggers": [
+    "c_ear_discharge",
+    "ear_pain"
+   ],
+   "f": {
+    "ed_mastoid": 5,
+    "fever": 1
+   },
+   "inv": "Urgent ENT review; CBC, imaging.",
+   "tool": "None applied.",
+   "alt": "Otitis externa, lymph node, parotitis"
+  },
+  {
+   "id": "pulstin",
+   "name": "Pulsatile tinnitus (vascular cause)",
+   "cm": false,
+   "triggers": [
+    "c_ringing_in_ears"
+   ],
+   "f": {
+    "tn_pulsatile": 4
+   },
+   "inv": "BP, ENT examination, vascular imaging as indicated.",
+   "tool": "None applied.",
+   "alt": "Anaemia, thyrotoxicosis, intracranial hypertension"
+  },
+  {
+   "id": "acneuro",
+   "name": "Acoustic neuroma / retrocochlear lesion",
+   "cm": true,
+   "triggers": [
+    "c_ringing_in_ears",
+    "c_hearing_loss"
+   ],
+   "f": {
+    "tn_unilateral": 4
+   },
+   "inv": "Audiometry, MRI internal auditory canals.",
+   "tool": "None applied.",
+   "alt": "Meniere disease, noise damage"
+  },
+  {
+   "id": "antepi",
+   "name": "Anterior epistaxis",
+   "cm": false,
+   "triggers": [
+    "c_nosebleed"
+   ],
+   "f": {
+    "ep_anterior": 4
+   },
+   "inv": "Anterior rhinoscopy, BP, bleeding history.",
+   "tool": "None applied.",
+   "alt": "Posterior epistaxis, bleeding disorder, tumour"
+  },
+  {
+   "id": "postepi",
+   "name": "Posterior epistaxis",
+   "cm": true,
+   "triggers": [
+    "c_nosebleed"
+   ],
+   "f": {
+    "ep_posterior": 4
+   },
+   "inv": "Resuscitation, ENT review, BP, coagulation, CBC.",
+   "tool": "None applied.",
+   "alt": "Anterior epistaxis, tumour, bleeding disorder"
+  },
+  {
+   "id": "sinonasalca",
+   "name": "Sinonasal tumour",
+   "cm": true,
+   "triggers": [
+    "c_nosebleed",
+    "c_nasal_discharge",
+    "nasal_block"
+   ],
+   "f": {
+    "ep_tumour": 4
+   },
+   "inv": "Nasal endoscopy, CT/MRI, biopsy.",
+   "tool": "None applied.",
+   "alt": "Chronic sinusitis, polyps, foreign body"
+  },
+  {
+   "id": "angiofib",
+   "name": "Juvenile nasopharyngeal angiofibroma",
+   "cm": true,
+   "triggers": [
+    "c_nosebleed"
+   ],
+   "f": {
+    "ep_teen": 5
+   },
+   "inv": "Imaging; do not biopsy blindly.",
+   "tool": "None applied.",
+   "alt": "Anterior epistaxis, adenoids"
+  },
+  {
+   "id": "allerrh",
+   "name": "Allergic rhinitis",
+   "cm": false,
+   "triggers": [
+    "c_sneezing",
+    "c_nasal_discharge",
+    "nasal_block"
+   ],
+   "f": {
+    "ar_allergic": 4,
+    "atopy": 2
+   },
+   "inv": "Clinical; allergy testing if needed.",
+   "tool": "ARIA classifies allergic rhinitis; apply separately.",
+   "alt": "Viral rhinitis, sinusitis, polyps"
+  },
+  {
+   "id": "nasfb",
+   "name": "Nasal foreign body",
+   "cm": true,
+   "triggers": [
+    "c_nasal_discharge",
+    "nasal_block"
+   ],
+   "f": {
+    "ar_fb": 5
+   },
+   "inv": "Anterior rhinoscopy; removal by trained clinician.",
+   "tool": "None applied.",
+   "alt": "Sinusitis, adenoiditis"
+  },
+  {
+   "id": "csf",
+   "name": "CSF rhinorrhoea",
+   "cm": true,
+   "triggers": [
+    "c_nasal_discharge"
+   ],
+   "f": {
+    "ar_csf": 5,
+    "g_injury": 2
+   },
+   "inv": "Urgent ENT/neurosurgical review, beta-2 transferrin, CT.",
+   "tool": "None applied.",
+   "alt": "Allergic rhinitis, vasomotor rhinitis"
+  },
+  {
+   "id": "postviral",
+   "name": "Post-viral anosmia",
+   "cm": false,
+   "triggers": [
+    "c_loss_of_smell"
+   ],
+   "f": {
+    "ls_viral": 4
+   },
+   "inv": "Clinical; smell testing.",
+   "tool": "None applied.",
+   "alt": "Polyps, head injury, neurodegeneration"
+  },
+  {
+   "id": "polyps",
+   "name": "Nasal polyps / chronic rhinosinusitis",
+   "cm": false,
+   "triggers": [
+    "c_loss_of_smell",
+    "nasal_block"
+   ],
+   "f": {
+    "ls_polyp": 4
+   },
+   "inv": "Nasal endoscopy, CT sinuses if needed.",
+   "tool": "None applied.",
+   "alt": "Tumour, allergic rhinitis"
+  },
+  {
+   "id": "adenoid",
+   "name": "Adenotonsillar hypertrophy",
+   "cm": false,
+   "triggers": [
+    "c_snoring"
+   ],
+   "f": {
+    "sn_child": 4
+   },
+   "inv": "Clinical; lateral neck X-ray or endoscopy.",
+   "tool": "None applied.",
+   "alt": "Allergic rhinitis, obesity, sleep apnoea"
+  },
+  {
+   "id": "tgn",
+   "name": "Trigeminal neuralgia",
+   "cm": false,
+   "triggers": [
+    "c_facial_pain"
+   ],
+   "f": {
+    "fp_trigem": 5
+   },
+   "inv": "Clinical; MRI to look for compression.",
+   "tool": "None applied.",
+   "alt": "Dental pain, sinusitis, migraine, giant cell arteritis"
+  },
+  {
+   "id": "dental",
+   "name": "Dental cause of facial pain",
+   "cm": false,
+   "triggers": [
+    "c_facial_pain",
+    "c_facial_swelling"
+   ],
+   "f": {
+    "fp_dental": 4
+   },
+   "inv": "Dental examination, dental X-ray.",
+   "tool": "None applied.",
+   "alt": "Sinusitis, trigeminal neuralgia"
+  },
+  {
+   "id": "odonto",
+   "name": "Odontogenic / deep neck infection",
+   "cm": true,
+   "triggers": [
+    "c_facial_swelling"
+   ],
+   "f": {
+    "fs_odonto": 5,
+    "fp_dental": 2,
+    "fever": 1
+   },
+   "inv": "Urgent assessment of airway; imaging; ENT/maxillofacial review.",
+   "tool": "None applied.",
+   "alt": "Salivary infection, cellulitis, angioedema"
+  },
+  {
+   "id": "parotid",
+   "name": "Salivary gland stone / infection",
+   "cm": false,
+   "triggers": [
+    "c_facial_swelling"
+   ],
+   "f": {
+    "fs_parotid": 4
+   },
+   "inv": "Ultrasound, examination of duct.",
+   "tool": "None applied.",
+   "alt": "Mumps, tumour, dental infection"
+  },
+  {
+   "id": "mumps",
+   "name": "Mumps",
+   "cm": false,
+   "triggers": [
+    "c_facial_swelling"
+   ],
+   "f": {
+    "fs_mumps": 4,
+    "fever": 1
+   },
+   "inv": "Clinical; mumps serology or PCR; notify per local rules.",
+   "tool": "None applied.",
+   "alt": "Salivary stone, bacterial parotitis"
+  },
+  {
+   "id": "thyroidneck",
+   "name": "Thyroid swelling",
+   "cm": false,
+   "triggers": [
+    "c_neck_swelling"
+   ],
+   "f": {
+    "ns_midline": 4,
+    "ex_goitre": 2
+   },
+   "inv": "Neck ultrasound, TSH, FNAC.",
+   "tool": "None applied.",
+   "alt": "Lymph node, congenital cyst"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_ssnhl",
+   "text": "Sudden hearing loss: urgent ENT assessment, treatment is time-sensitive",
+   "all": [
+    "hl_sudden"
+   ]
+  },
+  {
+   "id": "rf_mastoid",
+   "text": "Swelling behind the ear with fever: possible mastoiditis, urgent",
+   "all": [
+    "ed_mastoid"
+   ]
+  },
+  {
+   "id": "rf_epi",
+   "text": "Heavy nosebleed with throat bleeding: urgent assessment, check BP",
+   "all": [
+    "ep_posterior"
+   ]
+  },
+  {
+   "id": "rf_csf",
+   "text": "Clear nasal leak after head injury: possible CSF leak, urgent",
+   "all": [
+    "ar_csf"
+   ]
+  },
+  {
+   "id": "rf_neckinf",
+   "text": "Jaw or neck swelling with fever and difficulty opening mouth: airway risk, emergency",
+   "all": [
+    "fs_odonto"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "meniere": {
+    "triggers": [
+     "c_ringing_in_ears",
+     "c_hearing_loss"
+    ],
+    "f": {}
+   },
+   "tblymph": {
+    "triggers": [
+     "c_neck_swelling"
+    ],
+    "f": {}
+   },
+   "lymphoma": {
+    "triggers": [
+     "c_neck_swelling"
+    ],
+    "f": {}
+   },
+   "reactlymph": {
+    "triggers": [
+     "c_neck_swelling"
+    ],
+    "f": {}
+   },
+   "sinusitis": {
+    "triggers": [
+     "c_facial_pain",
+     "c_nasal_discharge"
+    ],
+    "f": {}
+   },
+   "anaphylaxis": {
+    "triggers": [
+     "c_facial_swelling"
+    ],
+    "f": {}
+   },
+   "fbody": {
+    "triggers": [
+     "c_foreign_body_in_ear_nose_or_throat"
+    ],
+    "f": {}
+   },
+   "osa": {
+    "triggers": [
+     "c_snoring"
+    ],
+    "f": {}
+   }
+  },
+  "exam": {},
+  "questions": {
+   "facial_pain": [
+    "c_facial_pain"
+   ],
+   "sg_tb": [
+    "c_neck_swelling"
+   ],
+   "sg_hard": [
+    "c_neck_swelling"
+   ],
+   "sg_reactive": [
+    "c_neck_swelling"
+   ],
+   "face_swelling": [
+    "c_facial_swelling"
+   ],
+   "stridor": [
+    "c_foreign_body_in_ear_nose_or_throat",
+    "c_facial_swelling"
+   ]
+  }
+ }
+}

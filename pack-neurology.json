@@ -1,0 +1,488 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "sz_gtc",
+   "lbl": "Stiffening and jerking with loss of consciousness",
+   "text": "Did the whole body stiffen and jerk with loss of consciousness?",
+   "why": "Generalised tonic-clonic seizure pattern.",
+   "sys": "Neurological",
+   "when": [
+    "c_seizures",
+    "c_convulsions"
+   ]
+  },
+  {
+   "id": "sz_post",
+   "lbl": "Tongue bite, incontinence, drowsiness afterwards",
+   "text": "Tongue bite, wetting, or prolonged drowsiness/confusion afterwards?",
+   "why": "Supports true seizure over faint.",
+   "sys": "Neurological",
+   "when": [
+    "c_seizures",
+    "c_convulsions"
+   ]
+  },
+  {
+   "id": "sz_first",
+   "lbl": "First-ever seizure",
+   "text": "Is this the first ever seizure?",
+   "why": "New-onset seizure needs a cause search.",
+   "sys": "Neurological",
+   "when": [
+    "c_seizures"
+   ]
+  },
+  {
+   "id": "sz_provoked",
+   "lbl": "Fever, head injury, alcohol withdrawal, or missed antiepileptic",
+   "text": "Fever, head injury, heavy alcohol stopped suddenly, or missed antiepileptic medicine?",
+   "why": "Provoked seizures have a reversible cause.",
+   "sys": "Neurological",
+   "when": [
+    "c_seizures",
+    "c_convulsions"
+   ]
+  },
+  {
+   "id": "sz_diabetic",
+   "lbl": "Diabetes on treatment / missed meal",
+   "text": "Diabetes on insulin or tablets, or missed meal?",
+   "why": "Hypoglycaemia causes seizures.",
+   "sys": "Endocrine",
+   "when": [
+    "c_seizures",
+    "c_convulsions"
+   ]
+  },
+  {
+   "id": "wk_sudden",
+   "lbl": "Sudden one-sided weakness, facial droop, speech or vision loss",
+   "text": "Did weakness, facial droop, speech trouble or vision loss start suddenly?",
+   "why": "Stroke until proven otherwise.",
+   "sys": "Neurological",
+   "when": [
+    "c_weakness_of_limbs",
+    "c_facial_weakness"
+   ]
+  },
+  {
+   "id": "wk_ascending",
+   "lbl": "Weakness rising from feet with tingling, after infection",
+   "text": "Weakness and tingling starting in the feet and rising, within weeks of an infection?",
+   "why": "Guillain-Barre pattern.",
+   "sys": "Neurological",
+   "when": [
+    "c_weakness_of_limbs"
+   ]
+  },
+  {
+   "id": "wk_both_legs",
+   "lbl": "Both legs weak with back pain / numb level / bladder trouble",
+   "text": "Weakness in both legs with back pain, a numb level on the trunk, or bladder trouble?",
+   "why": "Spinal cord compression.",
+   "sys": "Neurological",
+   "when": [
+    "c_weakness_of_limbs"
+   ]
+  },
+  {
+   "id": "wk_proximal",
+   "lbl": "Difficulty climbing stairs or rising from chair",
+   "text": "Difficulty climbing stairs or rising from a chair?",
+   "why": "Proximal weakness suggests myopathy.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_weakness_of_limbs"
+   ]
+  },
+  {
+   "id": "wk_fluct",
+   "lbl": "Worse by evening, droopy eyelids, double vision",
+   "text": "Weakness worse as the day goes on, with drooping eyelids or double vision?",
+   "why": "Myasthenia gravis pattern.",
+   "sys": "Neurological",
+   "when": [
+    "c_weakness_of_limbs"
+   ]
+  },
+  {
+   "id": "wk_episodic",
+   "lbl": "Episodic generalised weakness after carbohydrate meal or with vomiting/diarrhoea/diuretics",
+   "text": "Episodes of generalised weakness after a heavy carbohydrate meal, or with vomiting, diarrhoea or diuretics?",
+   "why": "Hypokalaemia and other metabolic causes.",
+   "sys": "Endocrine",
+   "when": [
+    "c_weakness_of_limbs"
+   ]
+  },
+  {
+   "id": "vt_bppv",
+   "lbl": "Brief spinning on head movement (under 1 minute)",
+   "text": "Brief spinning only on turning in bed or tilting the head?",
+   "why": "Typical of BPPV.",
+   "sys": "Neurological",
+   "when": [
+    "c_vertigo",
+    "c_dizziness"
+   ]
+  },
+  {
+   "id": "vt_meniere",
+   "lbl": "Spinning for hours with hearing loss, tinnitus, ear fullness",
+   "text": "Spinning lasting hours with hearing loss, ringing or ear fullness?",
+   "why": "Typical of Meniere disease.",
+   "sys": "ENT",
+   "when": [
+    "c_vertigo"
+   ]
+  },
+  {
+   "id": "vt_neuritis",
+   "lbl": "Continuous spinning for days after viral illness, normal hearing",
+   "text": "Continuous spinning for days after a viral illness with normal hearing?",
+   "why": "Vestibular neuritis.",
+   "sys": "Neurological",
+   "when": [
+    "c_vertigo"
+   ]
+  },
+  {
+   "id": "vt_central",
+   "lbl": "Double vision, slurred speech, incoordination or severe headache with vertigo",
+   "text": "Vertigo with double vision, slurred speech, limb incoordination or severe headache?",
+   "why": "Posterior circulation stroke.",
+   "sys": "Neurological",
+   "when": [
+    "c_vertigo",
+    "c_dizziness"
+   ]
+  },
+  {
+   "id": "fw_forehead_spared",
+   "lbl": "Forehead can still wrinkle",
+   "text": "Can the patient still wrinkle the forehead on the weak side?",
+   "why": "Forehead sparing means central (stroke) lesion.",
+   "sys": "Neurological",
+   "when": [
+    "c_facial_weakness"
+   ]
+  },
+  {
+   "id": "fw_whole_side",
+   "lbl": "Whole side of face weak including forehead, over hours to days",
+   "text": "Is the whole side of the face weak, including the forehead, developing over hours to days?",
+   "why": "Bell palsy pattern.",
+   "sys": "Neurological",
+   "when": [
+    "c_facial_weakness"
+   ]
+  },
+  {
+   "id": "fw_ear_vesicles",
+   "lbl": "Ear pain with blisters in ear",
+   "text": "Ear pain with blisters in or around the ear?",
+   "why": "Ramsay Hunt syndrome.",
+   "sys": "ENT",
+   "when": [
+    "c_facial_weakness"
+   ]
+  }
+ ],
+ "exam": [
+  {
+   "id": "ex_hemiparesis",
+   "lbl": "One-sided weakness with upper motor neuron signs",
+   "sys": "Neurological",
+   "when": [
+    "c_weakness_of_limbs",
+    "c_facial_weakness",
+    "headache"
+   ]
+  },
+  {
+   "id": "ex_areflexia",
+   "lbl": "Symmetrically reduced or absent reflexes",
+   "sys": "Neurological",
+   "when": [
+    "c_weakness_of_limbs"
+   ]
+  }
+ ],
+ "diseases": [
+  {
+   "id": "epilepsy",
+   "name": "Epilepsy (unprovoked seizures)",
+   "cm": false,
+   "triggers": [
+    "c_seizures",
+    "c_convulsions"
+   ],
+   "f": {
+    "sz_gtc": 3,
+    "sz_post": 3,
+    "sz_first": 0
+   },
+   "inv": "EEG, MRI brain; glucose and electrolytes at presentation.",
+   "tool": "None applied.",
+   "alt": "Syncope, provoked seizure, psychogenic seizure"
+  },
+  {
+   "id": "provsz",
+   "name": "Provoked (acute symptomatic) seizure",
+   "cm": true,
+   "triggers": [
+    "c_seizures",
+    "c_convulsions"
+   ],
+   "f": {
+    "sz_provoked": 3,
+    "sz_diabetic": 3
+   },
+   "inv": "Glucose, electrolytes, toxicology, CT head; treat the cause.",
+   "tool": "None applied.",
+   "alt": "Epilepsy, CNS infection, structural lesion"
+  },
+  {
+   "id": "stroke",
+   "name": "Stroke / TIA",
+   "cm": true,
+   "triggers": [
+    "c_weakness_of_limbs",
+    "c_facial_weakness"
+   ],
+   "f": {
+    "wk_sudden": 5,
+    "ex_hemiparesis": 4,
+    "fw_forehead_spared": 3,
+    "age_over_60": 1
+   },
+   "inv": "Time-critical: urgent CT/MRI brain, glucose, ECG; stroke pathway.",
+   "tool": "FAST/BE-FAST are screening aids for stroke recognition, not diagnoses.",
+   "alt": "Hypoglycaemia, Bell palsy, migraine aura, seizure with Todd paralysis"
+  },
+  {
+   "id": "gbs",
+   "name": "Guillain-Barre syndrome",
+   "cm": true,
+   "triggers": [
+    "c_weakness_of_limbs"
+   ],
+   "f": {
+    "wk_ascending": 4,
+    "ex_areflexia": 3
+   },
+   "inv": "Urgent neurology review; nerve conduction studies; lumbar puncture; monitor breathing.",
+   "tool": "None applied.",
+   "alt": "Myelopathy, hypokalaemia, myasthenia gravis, polio-like illness"
+  },
+  {
+   "id": "cord",
+   "name": "Spinal cord compression",
+   "cm": true,
+   "triggers": [
+    "c_weakness_of_limbs"
+   ],
+   "f": {
+    "wk_both_legs": 4,
+    "saddle_bladder": 3,
+    "back_trauma_cancer": 2
+   },
+   "inv": "Emergency MRI spine; urgent neurosurgical review.",
+   "tool": "None applied.",
+   "alt": "GBS, transverse myelitis, mechanical back pain"
+  },
+  {
+   "id": "myopathy",
+   "name": "Myopathy / muscle disease",
+   "cm": false,
+   "triggers": [
+    "c_weakness_of_limbs"
+   ],
+   "f": {
+    "wk_proximal": 4
+   },
+   "inv": "CK, thyroid function, EMG; consider steroid/drug causes.",
+   "tool": "None applied.",
+   "alt": "Neuropathy, myasthenia gravis, electrolyte disorder"
+  },
+  {
+   "id": "mg",
+   "name": "Myasthenia gravis",
+   "cm": false,
+   "triggers": [
+    "c_weakness_of_limbs"
+   ],
+   "f": {
+    "wk_fluct": 4
+   },
+   "inv": "Acetylcholine receptor antibodies, repetitive nerve stimulation, chest CT for thymoma.",
+   "tool": "None applied.",
+   "alt": "Myopathy, thyroid eye disease, botulism"
+  },
+  {
+   "id": "hypok",
+   "name": "Hypokalaemia / metabolic weakness",
+   "cm": false,
+   "triggers": [
+    "c_weakness_of_limbs"
+   ],
+   "f": {
+    "wk_episodic": 4
+   },
+   "inv": "Serum potassium, other electrolytes, glucose, thyroid function.",
+   "tool": "None applied.",
+   "alt": "Periodic paralysis, GBS, stroke"
+  },
+  {
+   "id": "bppv",
+   "name": "Benign paroxysmal positional vertigo",
+   "cm": false,
+   "triggers": [
+    "c_vertigo",
+    "c_dizziness"
+   ],
+   "f": {
+    "vt_bppv": 4
+   },
+   "inv": "Dix-Hallpike manoeuvre.",
+   "tool": "None applied.",
+   "alt": "Vestibular neuritis, central vertigo"
+  },
+  {
+   "id": "meniere",
+   "name": "Meniere disease",
+   "cm": false,
+   "triggers": [
+    "c_vertigo"
+   ],
+   "f": {
+    "vt_meniere": 4
+   },
+   "inv": "Audiometry; exclude central causes.",
+   "tool": "None applied.",
+   "alt": "BPPV, vestibular neuritis, acoustic neuroma"
+  },
+  {
+   "id": "vn",
+   "name": "Vestibular neuritis",
+   "cm": false,
+   "triggers": [
+    "c_vertigo"
+   ],
+   "f": {
+    "vt_neuritis": 4
+   },
+   "inv": "Clinical; HINTS-type bedside exam by trained clinician.",
+   "tool": "None applied.",
+   "alt": "Posterior circulation stroke, Meniere disease"
+  },
+  {
+   "id": "pcs",
+   "name": "Posterior circulation stroke",
+   "cm": true,
+   "triggers": [
+    "c_vertigo",
+    "c_dizziness"
+   ],
+   "f": {
+    "vt_central": 5,
+    "ha_neuro_deficit": 2,
+    "age_over_60": 1
+   },
+   "inv": "Urgent MRI brain; stroke pathway.",
+   "tool": "None applied.",
+   "alt": "Vestibular neuritis, BPPV, migraine"
+  },
+  {
+   "id": "bell",
+   "name": "Bell palsy",
+   "cm": false,
+   "triggers": [
+    "c_facial_weakness"
+   ],
+   "f": {
+    "fw_whole_side": 4
+   },
+   "inv": "Clinical; exclude stroke, ear and parotid causes.",
+   "tool": "None applied.",
+   "alt": "Stroke, Ramsay Hunt syndrome, tumour, diabetes"
+  },
+  {
+   "id": "rhs",
+   "name": "Ramsay Hunt syndrome",
+   "cm": false,
+   "triggers": [
+    "c_facial_weakness"
+   ],
+   "f": {
+    "fw_ear_vesicles": 5
+   },
+   "inv": "Clinical; early specialist review.",
+   "tool": "None applied.",
+   "alt": "Bell palsy, otitis media"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_stroke",
+   "text": "Sudden weakness, facial droop, speech or vision loss: possible stroke, time-critical",
+   "all": [
+    "wk_sudden"
+   ]
+  },
+  {
+   "id": "rf_cord",
+   "text": "Leg weakness with back pain / numb level / bladder trouble: possible cord compression, emergency",
+   "all": [
+    "wk_both_legs"
+   ]
+  },
+  {
+   "id": "rf_gbs",
+   "text": "Weakness rising from the feet with tingling: possible Guillain-Barre, monitor breathing",
+   "all": [
+    "wk_ascending"
+   ]
+  },
+  {
+   "id": "rf_central_vertigo",
+   "text": "Vertigo with double vision, slurred speech or incoordination: possible posterior circulation stroke",
+   "all": [
+    "vt_central"
+   ]
+  },
+  {
+   "id": "rf_sz_prov",
+   "text": "Seizure with fever, head injury or hypoglycaemia risk: check glucose and look for CNS infection",
+   "all": [
+    "sz_provoked"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "meningitis": {
+    "triggers": [
+     "c_seizures",
+     "c_convulsions"
+    ],
+    "f": {
+     "sz_provoked": 1
+    }
+   },
+   "sol": {
+    "triggers": [
+     "c_seizures",
+     "c_weakness_of_limbs",
+     "c_vertigo"
+    ],
+    "f": {
+     "sz_first": 2,
+     "wk_sudden": 0
+    }
+   }
+  },
+  "exam": {}
+ }
+}

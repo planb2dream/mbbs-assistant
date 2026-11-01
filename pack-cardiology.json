@@ -1,0 +1,401 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "pal_episodic",
+   "lbl": "Sudden-onset, sudden-offset fast regular beating",
+   "text": "Do palpitations start and stop suddenly, fast and regular?",
+   "why": "Typical of re-entrant supraventricular tachycardia.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_palpitations"
+   ]
+  },
+  {
+   "id": "pal_irregular",
+   "lbl": "Irregularly irregular beating",
+   "text": "Is the heartbeat completely irregular?",
+   "why": "Typical of atrial fibrillation.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_palpitations"
+   ]
+  },
+  {
+   "id": "pal_syncope",
+   "lbl": "Palpitations with fainting or chest pain",
+   "text": "Do palpitations come with fainting, chest pain or severe breathlessness?",
+   "why": "Suggests dangerous arrhythmia.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_palpitations"
+   ]
+  },
+  {
+   "id": "pal_thyro",
+   "lbl": "Heat intolerance, tremor, weight loss, or stimulant/caffeine use",
+   "text": "Heat intolerance, tremor, weight loss, or heavy caffeine/stimulant use?",
+   "why": "Non-cardiac causes of palpitations.",
+   "sys": "Endocrine",
+   "when": [
+    "c_palpitations"
+   ]
+  },
+  {
+   "id": "sy_prodrome",
+   "lbl": "Warning symptoms before faint",
+   "text": "Sweating, nausea, tunnel vision before fainting, triggered by pain, heat, standing or emotion?",
+   "why": "Typical of vasovagal syncope.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_fainting"
+   ]
+  },
+  {
+   "id": "sy_postural",
+   "lbl": "Faint on standing up",
+   "text": "Does it happen on standing up from lying or sitting?",
+   "why": "Orthostatic hypotension.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_fainting",
+    "c_dizziness"
+   ]
+  },
+  {
+   "id": "sy_exertion",
+   "lbl": "Faint during exertion",
+   "text": "Did the faint occur during exercise or exertion?",
+   "why": "Raises structural heart disease or arrhythmia.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_fainting"
+   ]
+  },
+  {
+   "id": "sy_family_sd",
+   "lbl": "Family history of sudden death or early heart disease",
+   "text": "Anyone in the family died suddenly or young from a heart cause?",
+   "why": "Inherited arrhythmia or cardiomyopathy.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_fainting",
+    "c_palpitations"
+   ]
+  },
+  {
+   "id": "lp_claud",
+   "lbl": "Calf pain on walking relieved by rest",
+   "text": "Calf pain after walking a fixed distance that settles with rest?",
+   "why": "Intermittent claudication.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_leg_pain_on_walking"
+   ]
+  },
+  {
+   "id": "lp_acute",
+   "lbl": "Sudden cold, pale, painful leg",
+   "text": "Did the leg suddenly become painful, cold, pale or numb?",
+   "why": "Acute limb ischaemia is a limb-threatening emergency.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_leg_pain_on_walking"
+   ]
+  },
+  {
+   "id": "lp_back",
+   "lbl": "Pain from back/buttock, eased by sitting or bending forward",
+   "text": "Is leg pain brought on by standing or walking and eased by sitting or bending forward?",
+   "why": "Spinal stenosis mimics claudication.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_leg_pain_on_walking"
+   ]
+  },
+  {
+   "id": "sw_frothy",
+   "lbl": "Frothy urine / puffy face in the morning",
+   "text": "Frothy urine or puffiness around the eyes in the morning?",
+   "why": "Suggests kidney disease.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_swelling_of_feet"
+   ]
+  },
+  {
+   "id": "sw_liver",
+   "lbl": "Heavy alcohol use, jaundice or abdominal swelling",
+   "text": "Heavy alcohol use, jaundice, or swollen abdomen?",
+   "why": "Chronic liver disease causes oedema.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_swelling_of_feet"
+   ]
+  }
+ ],
+ "exam": [
+  {
+   "id": "ex_murmur",
+   "lbl": "Heart murmur",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_fainting",
+    "c_palpitations",
+    "sob",
+    "chest_pain"
+   ]
+  },
+  {
+   "id": "ex_ascites",
+   "lbl": "Ascites (shifting dullness)",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_swelling_of_feet",
+    "c_jaundice",
+    "c_abdominal_distension"
+   ]
+  }
+ ],
+ "diseases": [
+  {
+   "id": "svt",
+   "name": "Supraventricular tachycardia",
+   "cm": false,
+   "triggers": [
+    "c_palpitations"
+   ],
+   "f": {
+    "pal_episodic": 4
+   },
+   "inv": "ECG during episode, Holter monitoring, thyroid function.",
+   "tool": "None applied.",
+   "alt": "Atrial fibrillation, anxiety, thyrotoxicosis, ventricular tachycardia"
+  },
+  {
+   "id": "af",
+   "name": "Atrial fibrillation",
+   "cm": false,
+   "triggers": [
+    "c_palpitations"
+   ],
+   "f": {
+    "pal_irregular": 4,
+    "age_over_60": 1
+   },
+   "inv": "ECG, thyroid function, echocardiography; stroke-risk assessment per guideline.",
+   "tool": "None applied.",
+   "alt": "Ectopics, SVT, thyrotoxicosis"
+  },
+  {
+   "id": "vt",
+   "name": "Dangerous ventricular arrhythmia / structural heart disease",
+   "cm": true,
+   "triggers": [
+    "c_palpitations",
+    "c_fainting"
+   ],
+   "f": {
+    "pal_syncope": 4,
+    "sy_exertion": 3,
+    "sy_family_sd": 2,
+    "ex_murmur": 2
+   },
+   "inv": "12-lead ECG, echocardiography, Holter monitoring; urgent cardiology review.",
+   "tool": "None applied.",
+   "alt": "SVT, vasovagal syncope, seizure"
+  },
+  {
+   "id": "thyro",
+   "name": "Thyrotoxicosis or other non-cardiac cause of palpitations",
+   "cm": false,
+   "triggers": [
+    "c_palpitations"
+   ],
+   "f": {
+    "pal_thyro": 3
+   },
+   "inv": "TSH/free T4, CBC, ECG.",
+   "tool": "None applied.",
+   "alt": "Anxiety, anaemia, caffeine/drug effect, SVT"
+  },
+  {
+   "id": "vvs",
+   "name": "Vasovagal (reflex) syncope",
+   "cm": false,
+   "triggers": [
+    "c_fainting"
+   ],
+   "f": {
+    "sy_prodrome": 4
+   },
+   "inv": "Clinical; ECG to exclude cardiac cause.",
+   "tool": "None applied.",
+   "alt": "Orthostatic hypotension, arrhythmia, seizure"
+  },
+  {
+   "id": "ortho",
+   "name": "Orthostatic hypotension",
+   "cm": false,
+   "triggers": [
+    "c_fainting",
+    "c_dizziness"
+   ],
+   "f": {
+    "sy_postural": 4,
+    "g_newdrug": 1
+   },
+   "inv": "Lying and standing BP, review medicines, hydration, glucose.",
+   "tool": "None applied.",
+   "alt": "Vasovagal syncope, dehydration, autonomic neuropathy, anaemia"
+  },
+  {
+   "id": "cardsync",
+   "name": "Cardiac syncope (arrhythmia or structural disease)",
+   "cm": true,
+   "triggers": [
+    "c_fainting"
+   ],
+   "f": {
+    "sy_exertion": 3,
+    "pal_syncope": 3,
+    "sy_family_sd": 2,
+    "ex_murmur": 3
+   },
+   "inv": "ECG, echocardiography, Holter; admit if high-risk features.",
+   "tool": "None applied.",
+   "alt": "Vasovagal syncope, orthostatic hypotension, seizure"
+  },
+  {
+   "id": "pad",
+   "name": "Peripheral arterial disease",
+   "cm": false,
+   "triggers": [
+    "c_leg_pain_on_walking"
+   ],
+   "f": {
+    "lp_claud": 4,
+    "ex_pulses_absent": 3,
+    "ulcer_diabetic": 1,
+    "smoker": 1
+   },
+   "inv": "ABPI, arterial Doppler, lipids, glucose.",
+   "tool": "None applied.",
+   "alt": "Spinal stenosis, venous disease, musculoskeletal pain"
+  },
+  {
+   "id": "ali",
+   "name": "Acute limb ischaemia",
+   "cm": true,
+   "triggers": [
+    "c_leg_pain_on_walking"
+   ],
+   "f": {
+    "lp_acute": 5,
+    "ex_pulses_absent": 2
+   },
+   "inv": "Emergency vascular assessment; Doppler; do not delay for imaging.",
+   "tool": "None applied.",
+   "alt": "Deep vein thrombosis, nerve compression, compartment syndrome"
+  },
+  {
+   "id": "stenosis",
+   "name": "Lumbar spinal stenosis",
+   "cm": false,
+   "triggers": [
+    "c_leg_pain_on_walking"
+   ],
+   "f": {
+    "lp_back": 4
+   },
+   "inv": "Clinical; MRI spine if persistent or neurological signs.",
+   "tool": "None applied.",
+   "alt": "Peripheral arterial disease, sciatica"
+  },
+  {
+   "id": "dvt",
+   "name": "Deep vein thrombosis",
+   "cm": true,
+   "triggers": [
+    "c_swelling_of_feet"
+   ],
+   "f": {
+    "leg_swelling_unilateral": 4,
+    "recent_immob": 2
+   },
+   "inv": "Clinical probability (Wells for DVT in its intended population), D-dimer, compression ultrasound.",
+   "tool": "Wells DVT score applies to suspected DVT in ambulatory patients; limits apply.",
+   "alt": "Cellulitis, ruptured Baker cyst, chronic venous disease"
+  },
+  {
+   "id": "nephro",
+   "name": "Nephrotic / nephritic syndrome (kidney cause of oedema)",
+   "cm": false,
+   "triggers": [
+    "c_swelling_of_feet"
+   ],
+   "f": {
+    "sw_frothy": 4
+   },
+   "inv": "Urine routine and protein, serum creatinine and albumin, urine protein-creatinine ratio.",
+   "tool": "None applied.",
+   "alt": "Heart failure, liver disease, drug-induced oedema"
+  },
+  {
+   "id": "cld",
+   "name": "Chronic liver disease / cirrhosis",
+   "cm": false,
+   "triggers": [
+    "c_swelling_of_feet"
+   ],
+   "f": {
+    "sw_liver": 4,
+    "ex_ascites": 3,
+    "c_jaundice": 2
+   },
+   "inv": "Liver function tests, albumin, INR, ultrasound abdomen.",
+   "tool": "None applied.",
+   "alt": "Heart failure, nephrotic syndrome, malnutrition"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_ali",
+   "text": "Sudden cold, pale, painful leg: limb-threatening ischaemia, urgent vascular assessment",
+   "all": [
+    "lp_acute"
+   ]
+  },
+  {
+   "id": "rf_vt",
+   "text": "Palpitations with fainting, chest pain or exertional faint: urgent ECG and cardiology review",
+   "all": [
+    "pal_syncope"
+   ]
+  },
+  {
+   "id": "rf_syncope",
+   "text": "Exertional faint or family history of sudden death: possible cardiac cause, needs ECG",
+   "all": [
+    "sy_exertion"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "hf": {
+    "triggers": [
+     "c_swelling_of_feet"
+    ],
+    "f": {
+     "sy_postural": 0
+    }
+   }
+  },
+  "exam": {
+   "ex_pulses_absent": [
+    "c_leg_pain_on_walking"
+   ]
+  }
+ }
+}

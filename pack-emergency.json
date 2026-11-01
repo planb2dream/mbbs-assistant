@@ -1,0 +1,1033 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "un_hypo",
+   "lbl": "Known diabetes on treatment, or sweating before collapse",
+   "text": "Known diabetes on insulin or tablets, or sweating before collapse?",
+   "why": "Hypoglycaemia is quickly reversible.",
+   "sys": "Endocrine",
+   "when": [
+    "c_unconsciousness",
+    "c_sudden_weakness",
+    "c_altered_behaviour"
+   ]
+  },
+  {
+   "id": "un_collapse",
+   "lbl": "Collapsed without warning, no pulse or irregular pulse",
+   "text": "Collapse without warning, with absent or irregular pulse?",
+   "why": "Cardiac arrest or arrhythmia.",
+   "sys": "Emergency",
+   "when": [
+    "c_unconsciousness",
+    "c_fainting"
+   ]
+  },
+  {
+   "id": "un_tablets",
+   "lbl": "Empty tablet strips, bottles, alcohol or drugs nearby",
+   "text": "Empty tablet strips, bottles, alcohol or drugs found nearby?",
+   "why": "Poisoning or overdose.",
+   "sys": "Emergency",
+   "when": [
+    "c_unconsciousness",
+    "c_altered_behaviour"
+   ]
+  },
+  {
+   "id": "se_source",
+   "lbl": "Known infection: chest, urine, wound or abdomen, with rigors",
+   "text": "Known infection (chest, urine, wound, abdomen) with rigors?",
+   "why": "Source of sepsis.",
+   "sys": "Emergency",
+   "when": [
+    "fever",
+    "c_unconsciousness",
+    "c_altered_behaviour",
+    "c_dehydration"
+   ]
+  },
+  {
+   "id": "po_op",
+   "lbl": "Garlic smell, pinpoint pupils, drooling, sweating, wheeze, muscle twitching",
+   "text": "Garlic-like smell, pinpoint pupils, drooling, sweating, wheeze or muscle twitching after pesticide exposure?",
+   "why": "Organophosphate poisoning pattern.",
+   "sys": "Emergency",
+   "when": [
+    "c_poisoning_or_overdose"
+   ]
+  },
+  {
+   "id": "po_para",
+   "lbl": "Paracetamol overdose, time of ingestion known",
+   "text": "Paracetamol overdose, with time of ingestion?",
+   "why": "Time-critical antidote treatment.",
+   "sys": "Emergency",
+   "when": [
+    "c_poisoning_or_overdose",
+    "c_suicide_attempt"
+   ]
+  },
+  {
+   "id": "po_corr",
+   "lbl": "Swallowed acid, alkali or bleach: mouth burns, drooling, pain",
+   "text": "Swallowed acid, alkali or bleach with mouth burns, drooling or pain?",
+   "why": "Corrosive injury.",
+   "sys": "Emergency",
+   "when": [
+    "c_poisoning_or_overdose"
+   ]
+  },
+  {
+   "id": "po_alp",
+   "lbl": "Swallowed rice/wheat-preserving tablets (aluminium phosphide)",
+   "text": "Swallowed grain-preservative tablets (aluminium phosphide)?",
+   "why": "Very high mortality; emergency.",
+   "sys": "Emergency",
+   "when": [
+    "c_poisoning_or_overdose"
+   ]
+  },
+  {
+   "id": "po_kero",
+   "lbl": "Swallowed kerosene or petrol, cough or breathlessness",
+   "text": "Swallowed kerosene or petrol with cough or breathlessness?",
+   "why": "Hydrocarbon aspiration.",
+   "sys": "Emergency",
+   "when": [
+    "c_poisoning_or_overdose"
+   ]
+  },
+  {
+   "id": "po_sed",
+   "lbl": "Swallowed sleeping tablets or sedatives, drowsy",
+   "text": "Swallowed sleeping tablets or sedatives and is drowsy?",
+   "why": "Sedative overdose.",
+   "sys": "Emergency",
+   "when": [
+    "c_poisoning_or_overdose",
+    "c_suicide_attempt"
+   ]
+  },
+  {
+   "id": "bn_severe",
+   "lbl": "Large burn, face/hands/genitals, circular, soot or hoarse voice",
+   "text": "Large burn, burn of face, hands or genitals, burn around a limb, soot in mouth, or hoarse voice?",
+   "why": "Severe burn or inhalation injury.",
+   "sys": "Emergency",
+   "when": [
+    "c_burns"
+   ]
+  },
+  {
+   "id": "bn_special",
+   "lbl": "Electrical or chemical burn",
+   "text": "Was it an electrical or chemical burn?",
+   "why": "Hidden deep injury.",
+   "sys": "Emergency",
+   "when": [
+    "c_burns",
+    "c_electric_shock"
+   ]
+  },
+  {
+   "id": "el_cardiac",
+   "lbl": "Palpitations, chest pain or collapse after electric shock",
+   "text": "Palpitations, chest pain or collapse after the shock?",
+   "why": "Arrhythmia after shock.",
+   "sys": "Emergency",
+   "when": [
+    "c_electric_shock"
+   ]
+  },
+  {
+   "id": "ht_stroke",
+   "lbl": "Temperature over 40, confusion, hot dry skin after heat or exertion",
+   "text": "Very hot skin, confusion or collapse after heat exposure or exertion?",
+   "why": "Heat stroke.",
+   "sys": "Emergency",
+   "when": [
+    "c_heat_stroke"
+   ]
+  },
+  {
+   "id": "ht_exh",
+   "lbl": "Sweating, weakness, thirst, headache, thinking clear",
+   "text": "Heavy sweating, weakness, thirst, headache, but thinking clearly?",
+   "why": "Heat exhaustion.",
+   "sys": "Emergency",
+   "when": [
+    "c_heat_stroke"
+   ]
+  },
+  {
+   "id": "dn_sub",
+   "lbl": "Underwater episode, cough or breathlessness even if recovered",
+   "text": "Underwater episode with cough or breathlessness, even if recovered?",
+   "why": "Delayed lung injury after drowning.",
+   "sys": "Emergency",
+   "when": [
+    "c_drowning"
+   ]
+  },
+  {
+   "id": "ch_total",
+   "lbl": "Cannot speak, cough or breathe, clutching throat",
+   "text": "Cannot speak, cough or breathe, clutching the throat?",
+   "why": "Complete airway obstruction.",
+   "sys": "Emergency",
+   "when": [
+    "c_choking"
+   ]
+  },
+  {
+   "id": "dh_severe",
+   "lbl": "Sunken eyes, no urine, drowsy, cold hands, fast weak pulse",
+   "text": "Sunken eyes, no urine, drowsy, cold hands and fast weak pulse?",
+   "why": "Severe dehydration or shock.",
+   "sys": "Emergency",
+   "when": [
+    "c_dehydration"
+   ]
+  },
+  {
+   "id": "tx_mech",
+   "lbl": "High-speed crash, ejection, fall from height, another occupant died",
+   "text": "High-speed crash, ejection, fall from height, or another person died?",
+   "why": "Major trauma mechanism.",
+   "sys": "Emergency",
+   "when": [
+    "c_road_traffic_accident",
+    "c_fall_or_injury",
+    "c_injury_or_trauma"
+   ]
+  },
+  {
+   "id": "tx_abd",
+   "lbl": "Abdominal pain, bruising or tenderness after trauma",
+   "text": "Abdominal pain, bruising or tenderness after the injury?",
+   "why": "Hidden intra-abdominal injury.",
+   "sys": "Emergency",
+   "when": [
+    "c_road_traffic_accident",
+    "c_fall_or_injury",
+    "c_injury_or_trauma"
+   ]
+  },
+  {
+   "id": "tx_chest",
+   "lbl": "Chest pain, breathlessness or rib tenderness after trauma",
+   "text": "Chest pain, breathlessness or rib tenderness after the injury?",
+   "why": "Pneumothorax or haemothorax.",
+   "sys": "Emergency",
+   "when": [
+    "c_road_traffic_accident",
+    "c_fall_or_injury",
+    "c_injury_or_trauma"
+   ]
+  },
+  {
+   "id": "tx_spine",
+   "lbl": "Neck or back pain, numbness or weakness after trauma",
+   "text": "Neck or back pain, numbness or weakness after the injury?",
+   "why": "Spinal injury.",
+   "sys": "Emergency",
+   "when": [
+    "c_road_traffic_accident",
+    "c_fall_or_injury",
+    "c_injury_or_trauma"
+   ]
+  },
+  {
+   "id": "tx_bleed",
+   "lbl": "Heavy bleeding, cold clammy, faint",
+   "text": "Heavy ongoing bleeding with cold clammy skin or faintness?",
+   "why": "Haemorrhagic shock.",
+   "sys": "Emergency",
+   "when": [
+    "c_road_traffic_accident",
+    "c_fall_or_injury",
+    "c_injury_or_trauma",
+    "c_bleeding"
+   ]
+  },
+  {
+   "id": "ab_perf",
+   "lbl": "Sudden knife-like pain, shoulder-tip pain, ulcer or NSAID use",
+   "text": "Sudden knife-like abdominal pain, shoulder-tip pain, ulcer history or NSAID use?",
+   "why": "Perforation.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_severe_abdominal_pain"
+   ]
+  },
+  {
+   "id": "ab_pancr",
+   "lbl": "Upper abdominal pain to the back, alcohol or gallstones, vomiting",
+   "text": "Upper abdominal pain spreading to the back, with alcohol, gallstones or vomiting?",
+   "why": "Acute pancreatitis.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_severe_abdominal_pain"
+   ]
+  },
+  {
+   "id": "ab_bil",
+   "lbl": "Right upper pain after fatty meal",
+   "text": "Right upper abdominal pain after a fatty meal, lasting hours?",
+   "why": "Gallstone disease.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_severe_abdominal_pain"
+   ]
+  },
+  {
+   "id": "ab_mes",
+   "lbl": "Severe pain with little tenderness, atrial fibrillation or vascular disease",
+   "text": "Severe pain with little abdominal tenderness, in atrial fibrillation or vascular disease?",
+   "why": "Mesenteric ischaemia.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_severe_abdominal_pain"
+   ]
+  },
+  {
+   "id": "bd_large",
+   "lbl": "Large volume, ongoing, cold clammy or faint",
+   "text": "Large volume ongoing bleeding with cold clammy skin or faintness?",
+   "why": "Haemorrhagic shock.",
+   "sys": "Emergency",
+   "when": [
+    "c_bleeding"
+   ]
+  },
+  {
+   "id": "ax_trigger",
+   "lbl": "Known trigger: drug, food or insect sting, now swelling or wheeze",
+   "text": "Known trigger (drug, food, insect sting) followed by swelling, wheeze or faintness?",
+   "why": "Anaphylaxis.",
+   "sys": "Emergency",
+   "when": [
+    "c_severe_allergic_reaction"
+   ]
+  },
+  {
+   "id": "sa_method",
+   "lbl": "Tablets, poison, hanging or cutting; time since",
+   "text": "What method was used, and how long ago?",
+   "why": "Guides emergency care and risk.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_suicide_attempt"
+   ]
+  }
+ ],
+ "exam": [],
+ "diseases": [
+  {
+   "id": "hypoglyc",
+   "name": "Hypoglycaemia",
+   "cm": true,
+   "triggers": [
+    "c_unconsciousness",
+    "c_sudden_weakness",
+    "c_altered_behaviour",
+    "c_convulsions"
+   ],
+   "f": {
+    "un_hypo": 5,
+    "sz_diabetic": 2
+   },
+   "inv": "Immediate capillary glucose, then treat per protocol.",
+   "tool": "None applied.",
+   "alt": "Stroke, seizure, poisoning, sepsis"
+  },
+  {
+   "id": "arrest",
+   "name": "Cardiac arrest / life-threatening arrhythmia",
+   "cm": true,
+   "triggers": [
+    "c_unconsciousness",
+    "c_fainting"
+   ],
+   "f": {
+    "un_collapse": 5
+   },
+   "inv": "Check pulse and breathing, start resuscitation per BLS/ACLS protocol, ECG.",
+   "tool": "None applied.",
+   "alt": "Syncope, seizure, hypoglycaemia"
+  },
+  {
+   "id": "sepsis",
+   "name": "Sepsis / septic shock",
+   "cm": true,
+   "triggers": [
+    "fever",
+    "c_unconsciousness",
+    "c_altered_behaviour",
+    "c_dehydration"
+   ],
+   "f": {
+    "se_source": 3,
+    "fever": 2,
+    "confusion": 2
+   },
+   "inv": "Lactate, blood cultures, CBC, creatinine, urine; early senior review and antibiotics per local sepsis protocol.",
+   "tool": "qSOFA is a bedside risk screen outside ICU; SOFA/NEWS2 are used per local protocols.",
+   "alt": "Dengue shock, malaria, DKA, dehydration"
+  },
+  {
+   "id": "opoison",
+   "name": "Organophosphate poisoning",
+   "cm": true,
+   "triggers": [
+    "c_poisoning_or_overdose"
+   ],
+   "f": {
+    "po_op": 5
+   },
+   "inv": "Emergency airway, oxygen and antidote treatment per toxicology protocol; contact poison centre; decontaminate.",
+   "tool": "None applied.",
+   "alt": "Other pesticide poisoning, carbamate poisoning, sedative overdose"
+  },
+  {
+   "id": "parapois",
+   "name": "Paracetamol overdose",
+   "cm": true,
+   "triggers": [
+    "c_poisoning_or_overdose",
+    "c_suicide_attempt"
+   ],
+   "f": {
+    "po_para": 5
+   },
+   "inv": "Time of ingestion, paracetamol level at the right time, antidote per protocol.",
+   "tool": "None applied.",
+   "alt": "Mixed overdose, other hepatotoxins"
+  },
+  {
+   "id": "corrosive",
+   "name": "Corrosive ingestion",
+   "cm": true,
+   "triggers": [
+    "c_poisoning_or_overdose"
+   ],
+   "f": {
+    "po_corr": 5
+   },
+   "inv": "Airway assessment, do not induce vomiting, urgent endoscopy/surgical review.",
+   "tool": "None applied.",
+   "alt": "Mild oral irritation, other poisoning"
+  },
+  {
+   "id": "alp",
+   "name": "Aluminium phosphide poisoning",
+   "cm": true,
+   "triggers": [
+    "c_poisoning_or_overdose"
+   ],
+   "f": {
+    "po_alp": 5
+   },
+   "inv": "Emergency intensive care and poison centre advice; decontamination, ECG, glucose.",
+   "tool": "None applied.",
+   "alt": "Organophosphate poisoning, other pesticide poisoning"
+  },
+  {
+   "id": "hydrocarbon",
+   "name": "Hydrocarbon (kerosene) aspiration",
+   "cm": true,
+   "triggers": [
+    "c_poisoning_or_overdose"
+   ],
+   "f": {
+    "po_kero": 5
+   },
+   "inv": "Chest X-ray, oxygen saturation, observation; avoid induced vomiting.",
+   "tool": "None applied.",
+   "alt": "Pneumonia, other poisoning"
+  },
+  {
+   "id": "sedover",
+   "name": "Sedative overdose",
+   "cm": true,
+   "triggers": [
+    "c_poisoning_or_overdose",
+    "c_suicide_attempt"
+   ],
+   "f": {
+    "po_sed": 4,
+    "un_tablets": 2
+   },
+   "inv": "Airway and breathing support, glucose, ECG, paracetamol level, poison centre advice.",
+   "tool": "None applied.",
+   "alt": "Opioid overdose, alcohol, other poisoning"
+  },
+  {
+   "id": "severeburn",
+   "name": "Severe burn / inhalation injury",
+   "cm": true,
+   "triggers": [
+    "c_burns"
+   ],
+   "f": {
+    "bn_severe": 5,
+    "bn_special": 2
+   },
+   "inv": "Airway assessment, fluids, burn size assessment (Rule of Nines/Lund-Browder), referral to burns unit.",
+   "tool": "None applied.",
+   "alt": "Minor superficial burn, scald"
+  },
+  {
+   "id": "minorburn",
+   "name": "Minor burn",
+   "cm": false,
+   "triggers": [
+    "c_burns"
+   ],
+   "f": {
+    "g_injury": 0,
+    "bn_special": 0
+   },
+   "inv": "Cool the burn, assess depth and size; tetanus status.",
+   "tool": "None applied.",
+   "alt": "Severe burn"
+  },
+  {
+   "id": "shockarr",
+   "name": "Arrhythmia or deep injury after electric shock",
+   "cm": true,
+   "triggers": [
+    "c_electric_shock"
+   ],
+   "f": {
+    "el_cardiac": 5,
+    "bn_special": 3
+   },
+   "inv": "ECG, monitoring, CK, urine myoglobin, deep tissue assessment.",
+   "tool": "None applied.",
+   "alt": "Local skin burn only"
+  },
+  {
+   "id": "heatstroke",
+   "name": "Heat stroke",
+   "cm": true,
+   "triggers": [
+    "c_heat_stroke"
+   ],
+   "f": {
+    "ht_stroke": 5
+   },
+   "inv": "Rapid cooling, core temperature, glucose, electrolytes, renal function.",
+   "tool": "None applied.",
+   "alt": "Heat exhaustion, sepsis, malaria, intoxication"
+  },
+  {
+   "id": "heatexh",
+   "name": "Heat exhaustion",
+   "cm": false,
+   "triggers": [
+    "c_heat_stroke"
+   ],
+   "f": {
+    "ht_exh": 4
+   },
+   "inv": "Cool, rehydrate, monitor; escalate if confusion develops.",
+   "tool": "None applied.",
+   "alt": "Heat stroke, dehydration, infection"
+  },
+  {
+   "id": "drown",
+   "name": "Drowning / submersion injury",
+   "cm": true,
+   "triggers": [
+    "c_drowning"
+   ],
+   "f": {
+    "dn_sub": 5
+   },
+   "inv": "Oxygen, observe for delayed respiratory deterioration, chest X-ray.",
+   "tool": "None applied.",
+   "alt": "Aspiration pneumonitis, hypothermia, cervical spine injury"
+  },
+  {
+   "id": "chokeobs",
+   "name": "Airway obstruction (choking)",
+   "cm": true,
+   "triggers": [
+    "c_choking"
+   ],
+   "f": {
+    "ch_total": 5
+   },
+   "inv": "Immediate airway manoeuvres per protocol; urgent senior help.",
+   "tool": "None applied.",
+   "alt": "Anaphylaxis, epiglottitis, foreign body"
+  },
+  {
+   "id": "shockdehyd",
+   "name": "Severe dehydration / hypovolaemic shock",
+   "cm": true,
+   "triggers": [
+    "c_dehydration"
+   ],
+   "f": {
+    "dh_severe": 5,
+    "dehydrated": 2
+   },
+   "inv": "Urgent IV fluids per protocol, glucose, electrolytes, renal function.",
+   "tool": "Use WHO dehydration assessment for children and adults.",
+   "alt": "Sepsis, DKA, adrenal crisis"
+  },
+  {
+   "id": "majortrauma",
+   "name": "Major trauma",
+   "cm": true,
+   "triggers": [
+    "c_road_traffic_accident",
+    "c_fall_or_injury",
+    "c_injury_or_trauma"
+   ],
+   "f": {
+    "tx_mech": 4,
+    "tx_bleed": 3
+   },
+   "inv": "Primary survey (ABCDE) with trauma team, FAST scan, CT per protocol.",
+   "tool": "ATLS primary survey structure; follow local trauma protocol.",
+   "alt": "Minor injury"
+  },
+  {
+   "id": "abdinj",
+   "name": "Intra-abdominal injury",
+   "cm": true,
+   "triggers": [
+    "c_road_traffic_accident",
+    "c_fall_or_injury",
+    "c_injury_or_trauma"
+   ],
+   "f": {
+    "tx_abd": 5
+   },
+   "inv": "FAST ultrasound, CT abdomen, serial examination.",
+   "tool": "None applied.",
+   "alt": "Abdominal wall contusion, rib fracture"
+  },
+  {
+   "id": "chestinj",
+   "name": "Chest injury (pneumothorax / haemothorax / rib fractures)",
+   "cm": true,
+   "triggers": [
+    "c_road_traffic_accident",
+    "c_fall_or_injury",
+    "c_injury_or_trauma"
+   ],
+   "f": {
+    "tx_chest": 5
+   },
+   "inv": "Chest X-ray or ultrasound; oxygen; senior review.",
+   "tool": "None applied.",
+   "alt": "Cardiac contusion, pulmonary contusion, aortic injury"
+  },
+  {
+   "id": "spineinj",
+   "name": "Spinal injury",
+   "cm": true,
+   "triggers": [
+    "c_road_traffic_accident",
+    "c_fall_or_injury",
+    "c_injury_or_trauma"
+   ],
+   "f": {
+    "tx_spine": 5
+   },
+   "inv": "Spinal immobilisation, neurological examination, CT/MRI.",
+   "tool": "None applied.",
+   "alt": "Muscle strain, whiplash"
+  },
+  {
+   "id": "hshock",
+   "name": "Haemorrhagic shock",
+   "cm": true,
+   "triggers": [
+    "c_road_traffic_accident",
+    "c_fall_or_injury",
+    "c_injury_or_trauma",
+    "c_bleeding"
+   ],
+   "f": {
+    "tx_bleed": 5,
+    "bd_large": 5
+   },
+   "inv": "Control bleeding, IV access, bloods, cross-match, early senior and surgical help.",
+   "tool": "None applied.",
+   "alt": "Pain, anxiety, vasovagal faint"
+  },
+  {
+   "id": "perfor",
+   "name": "Perforated viscus",
+   "cm": true,
+   "triggers": [
+    "c_severe_abdominal_pain"
+   ],
+   "f": {
+    "ab_perf": 5,
+    "guarding": 3
+   },
+   "inv": "Erect chest X-ray or CT, bloods, urgent surgical review.",
+   "tool": "None applied.",
+   "alt": "Pancreatitis, appendicitis, renal colic"
+  },
+  {
+   "id": "pancreatitis",
+   "name": "Acute pancreatitis",
+   "cm": true,
+   "triggers": [
+    "c_severe_abdominal_pain"
+   ],
+   "f": {
+    "ab_pancr": 5
+   },
+   "inv": "Serum lipase or amylase, CBC, calcium, ultrasound for gallstones.",
+   "tool": "None applied.",
+   "alt": "Perforation, biliary disease, MI, aortic aneurysm"
+  },
+  {
+   "id": "biliary",
+   "name": "Gallstone disease / cholecystitis",
+   "cm": false,
+   "triggers": [
+    "c_severe_abdominal_pain"
+   ],
+   "f": {
+    "ab_bil": 4,
+    "fever": 1
+   },
+   "inv": "Ultrasound abdomen, LFTs, CBC.",
+   "tool": "None applied.",
+   "alt": "Pancreatitis, peptic ulcer, MI"
+  },
+  {
+   "id": "mesisch",
+   "name": "Mesenteric ischaemia",
+   "cm": true,
+   "triggers": [
+    "c_severe_abdominal_pain"
+   ],
+   "f": {
+    "ab_mes": 5
+   },
+   "inv": "Urgent CT angiography and surgical review; lactate.",
+   "tool": "None applied.",
+   "alt": "Pancreatitis, obstruction, perforation"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_unc",
+   "text": "Reduced consciousness: ABC, check glucose immediately, assess pupils and GCS",
+   "all": [
+    "c_unconsciousness"
+   ]
+  },
+  {
+   "id": "rf_arrest",
+   "text": "Collapse without warning with absent or irregular pulse: start resuscitation",
+   "all": [
+    "un_collapse"
+   ]
+  },
+  {
+   "id": "rf_poison",
+   "text": "Poisoning or overdose: secure airway, identify agent and time, contact poison centre and senior",
+   "all": [
+    "c_poisoning_or_overdose"
+   ]
+  },
+  {
+   "id": "rf_burn",
+   "text": "Severe burn or inhalation signs: airway first, urgent burns care",
+   "all": [
+    "bn_severe"
+   ]
+  },
+  {
+   "id": "rf_electric",
+   "text": "Palpitations, chest pain or collapse after shock: needs ECG and monitoring",
+   "all": [
+    "el_cardiac"
+   ]
+  },
+  {
+   "id": "rf_heat",
+   "text": "Hot skin with confusion after heat: possible heat stroke, cool rapidly, emergency",
+   "all": [
+    "ht_stroke"
+   ]
+  },
+  {
+   "id": "rf_choke",
+   "text": "Cannot speak, cough or breathe: complete airway obstruction, act immediately",
+   "all": [
+    "ch_total"
+   ]
+  },
+  {
+   "id": "rf_drown",
+   "text": "Underwater episode with cough or breathlessness: observe for delayed lung injury",
+   "all": [
+    "dn_sub"
+   ]
+  },
+  {
+   "id": "rf_dehyd",
+   "text": "Severe dehydration with cold hands and fast weak pulse: shock, urgent fluids",
+   "all": [
+    "dh_severe"
+   ]
+  },
+  {
+   "id": "rf_trauma",
+   "text": "Major trauma mechanism: primary survey with trauma team",
+   "all": [
+    "tx_mech"
+   ]
+  },
+  {
+   "id": "rf_traumabld",
+   "text": "Heavy bleeding after injury: control bleeding and call for help",
+   "all": [
+    "tx_bleed"
+   ]
+  },
+  {
+   "id": "rf_allergy",
+   "text": "Severe allergic reaction: anaphylaxis assessment now, call for senior help",
+   "all": [
+    "c_severe_allergic_reaction"
+   ]
+  },
+  {
+   "id": "rf_suicatt",
+   "text": "Suicide attempt: treat the medical emergency first, then psychiatric risk assessment, do not leave alone",
+   "all": [
+    "c_suicide_attempt"
+   ]
+  },
+  {
+   "id": "rf_abdperf",
+   "text": "Sudden knife-like abdominal pain with rigid abdomen: possible perforation, urgent surgery",
+   "all": [
+    "ab_perf"
+   ]
+  },
+  {
+   "id": "rf_bleed",
+   "text": "Large ongoing bleeding: possible haemorrhagic shock, control bleeding, call for help",
+   "all": [
+    "bd_large"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "opiod": {
+    "triggers": [
+     "c_poisoning_or_overdose"
+    ],
+    "f": {}
+   },
+   "gastro": {
+    "triggers": [
+     "c_dehydration"
+    ],
+    "f": {}
+   },
+   "appendicitis": {
+    "triggers": [
+     "c_severe_abdominal_pain"
+    ],
+    "f": {}
+   },
+   "ectopic": {
+    "triggers": [
+     "c_severe_abdominal_pain"
+    ],
+    "f": {}
+   },
+   "aaa": {
+    "triggers": [
+     "c_severe_abdominal_pain"
+    ],
+    "f": {}
+   },
+   "stone": {
+    "triggers": [
+     "c_severe_abdominal_pain"
+    ],
+    "f": {}
+   },
+   "obstruction": {
+    "triggers": [
+     "c_severe_abdominal_pain"
+    ],
+    "f": {}
+   },
+   "pid": {
+    "triggers": [
+     "c_severe_abdominal_pain"
+    ],
+    "f": {}
+   },
+   "anaphylaxis": {
+    "triggers": [
+     "c_severe_allergic_reaction"
+    ],
+    "f": {
+     "ax_trigger": 4
+    }
+   },
+   "stroke": {
+    "triggers": [
+     "c_sudden_weakness"
+    ],
+    "f": {}
+   },
+   "delirium": {
+    "triggers": [
+     "c_altered_behaviour"
+    ],
+    "f": {}
+   },
+   "subpsych": {
+    "triggers": [
+     "c_altered_behaviour"
+    ],
+    "f": {}
+   },
+   "suicrisk": {
+    "triggers": [
+     "c_suicide_attempt"
+    ],
+    "f": {}
+   },
+   "acqcoag": {
+    "triggers": [
+     "c_bleeding"
+    ],
+    "f": {
+     "bd_large": 0
+    }
+   },
+   "ali": {
+    "triggers": [],
+    "f": {}
+   },
+   "fracture": {
+    "triggers": [
+     "c_road_traffic_accident",
+     "c_fall_or_injury",
+     "c_injury_or_trauma"
+    ],
+    "f": {}
+   },
+   "openfx": {
+    "triggers": [
+     "c_road_traffic_accident",
+     "c_fall_or_injury",
+     "c_injury_or_trauma"
+    ],
+    "f": {}
+   },
+   "nvcomp": {
+    "triggers": [
+     "c_road_traffic_accident",
+     "c_fall_or_injury",
+     "c_injury_or_trauma"
+    ],
+    "f": {}
+   },
+   "compsyn": {
+    "triggers": [
+     "c_road_traffic_accident",
+     "c_fall_or_injury",
+     "c_injury_or_trauma"
+    ],
+    "f": {}
+   }
+  },
+  "exam": {
+   "rif_tender": [
+    "c_severe_abdominal_pain"
+   ],
+   "guarding": [
+    "c_severe_abdominal_pain"
+   ],
+   "dehydrated": [
+    "c_dehydration",
+    "c_heat_stroke"
+   ]
+  },
+  "questions": {
+   "ap_rif": [
+    "c_severe_abdominal_pain"
+   ],
+   "ap_missed_period": [
+    "c_severe_abdominal_pain"
+   ],
+   "ap_vaginal_bleed": [
+    "c_severe_abdominal_pain"
+   ],
+   "fl_vascular": [
+    "c_severe_abdominal_pain"
+   ],
+   "hu_colic": [
+    "c_severe_abdominal_pain"
+   ],
+   "co_obstructed": [
+    "c_severe_abdominal_pain"
+   ],
+   "face_swelling": [
+    "c_severe_allergic_reaction"
+   ],
+   "wk_sudden": [
+    "c_sudden_weakness"
+   ],
+   "sh_plan": [
+    "c_suicide_attempt"
+   ],
+   "dl_acute": [
+    "c_altered_behaviour"
+   ],
+   "eb_liver": [
+    "c_bleeding"
+   ],
+   "eb_plt": [
+    "c_bleeding"
+   ],
+   "eb_clot": [
+    "c_bleeding"
+   ],
+   "g_injury": [
+    "c_road_traffic_accident",
+    "c_fall_or_injury",
+    "c_injury_or_trauma"
+   ],
+   "fx_def": [
+    "c_road_traffic_accident",
+    "c_fall_or_injury",
+    "c_injury_or_trauma"
+   ],
+   "fx_open": [
+    "c_road_traffic_accident",
+    "c_fall_or_injury",
+    "c_injury_or_trauma"
+   ],
+   "fx_nv": [
+    "c_road_traffic_accident",
+    "c_fall_or_injury",
+    "c_injury_or_trauma"
+   ]
+  }
+ }
+}

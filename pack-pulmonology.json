@@ -1,0 +1,332 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "wz_asthma",
+   "lbl": "Episodic wheeze/cough, worse at night, triggered by cold, dust or exercise, relieved by inhaler",
+   "text": "Episodes of wheeze or cough, worse at night or with dust, cold air or exercise, relieved by an inhaler?",
+   "why": "Variable airflow obstruction pattern of asthma.",
+   "sys": "Respiratory",
+   "when": [
+    "c_wheeze",
+    "c_chest_tightness",
+    "cough",
+    "sob"
+   ]
+  },
+  {
+   "id": "wz_copd",
+   "lbl": "Chronic cough with sputum, smoker, slowly worsening breathlessness",
+   "text": "Long-term cough with sputum in a smoker or smoke-exposed person, with slowly worsening breathlessness?",
+   "why": "COPD pattern.",
+   "sys": "Respiratory",
+   "when": [
+    "c_wheeze",
+    "c_sputum_production",
+    "sob"
+   ]
+  },
+  {
+   "id": "wz_foreign",
+   "lbl": "Sudden choking episode then cough/wheeze",
+   "text": "Did it start after a sudden choking or coughing fit while eating or playing?",
+   "why": "Foreign body aspiration.",
+   "sys": "Respiratory",
+   "when": [
+    "c_wheeze",
+    "cough"
+   ]
+  },
+  {
+   "id": "hm_massive",
+   "lbl": "Large amount of blood (more than a cupful) or repeated",
+   "text": "Is the blood more than about a cupful, or repeated?",
+   "why": "Massive haemoptysis is an emergency.",
+   "sys": "Respiratory",
+   "when": [
+    "c_coughing_blood"
+   ]
+  },
+  {
+   "id": "hm_bronch",
+   "lbl": "Daily purulent sputum since childhood infection",
+   "text": "Daily large amounts of pus-like sputum, or lung infection in childhood?",
+   "why": "Bronchiectasis.",
+   "sys": "Respiratory",
+   "when": [
+    "c_coughing_blood",
+    "c_sputum_production"
+   ]
+  },
+  {
+   "id": "hm_cancer",
+   "lbl": "Smoker over 50 with weight loss or hoarseness",
+   "text": "Smoker over 50 with weight loss, hoarseness or persistent chest pain?",
+   "why": "Lung cancer risk.",
+   "sys": "Respiratory",
+   "when": [
+    "c_coughing_blood",
+    "cough"
+   ]
+  },
+  {
+   "id": "sa_osa",
+   "lbl": "Witnessed breathing pauses, daytime sleepiness, obesity, morning headache",
+   "text": "Pauses in breathing seen during sleep, daytime sleepiness, obesity or morning headache?",
+   "why": "Obstructive sleep apnoea.",
+   "sys": "Respiratory",
+   "when": [
+    "c_snoring_or_sleep_apnoea"
+   ]
+  },
+  {
+   "id": "hs_chronic",
+   "lbl": "Hoarseness over 3 weeks, smoker or heavy voice use",
+   "text": "Hoarseness lasting over 3 weeks in a smoker?",
+   "why": "Persistent hoarseness needs laryngoscopy.",
+   "sys": "ENT",
+   "when": [
+    "c_hoarseness"
+   ]
+  },
+  {
+   "id": "hs_acute",
+   "lbl": "Hoarseness after cold or voice overuse",
+   "text": "Hoarseness after a cold or voice overuse, lasting days?",
+   "why": "Acute laryngitis.",
+   "sys": "ENT",
+   "when": [
+    "c_hoarseness"
+   ]
+  },
+  {
+   "id": "fs_svc",
+   "lbl": "Face/neck/arm swelling, distended neck veins, worse lying or bending",
+   "text": "Swelling of face, neck and arms with prominent neck veins, worse lying down or bending?",
+   "why": "Superior vena cava obstruction.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_swelling_of_face"
+   ]
+  }
+ ],
+ "exam": [],
+ "diseases": [
+  {
+   "id": "asthma",
+   "name": "Bronchial asthma",
+   "cm": false,
+   "triggers": [
+    "c_wheeze",
+    "c_chest_tightness",
+    "cough",
+    "sob"
+   ],
+   "f": {
+    "wz_asthma": 4,
+    "atopy": 2,
+    "wheeze_sign": 3,
+    "c_wheeze": 1
+   },
+   "inv": "Peak flow variability, spirometry with reversibility, SpO2.",
+   "tool": "GINA defines diagnosis and severity; apply separately.",
+   "alt": "COPD, heart failure, foreign body, vocal cord dysfunction"
+  },
+  {
+   "id": "copd",
+   "name": "COPD",
+   "cm": false,
+   "triggers": [
+    "c_wheeze",
+    "c_sputum_production",
+    "sob",
+    "cough"
+   ],
+   "f": {
+    "wz_copd": 4,
+    "smoker": 2,
+    "age_over_60": 1
+   },
+   "inv": "Post-bronchodilator spirometry, chest X-ray.",
+   "tool": "GOLD criteria define COPD and severity; apply separately.",
+   "alt": "Asthma, bronchiectasis, heart failure, TB"
+  },
+  {
+   "id": "fbody",
+   "name": "Airway foreign body",
+   "cm": true,
+   "triggers": [
+    "c_wheeze",
+    "cough"
+   ],
+   "f": {
+    "wz_foreign": 5
+   },
+   "inv": "Urgent senior/ENT review; chest X-ray; bronchoscopy if suspected.",
+   "tool": "None applied.",
+   "alt": "Asthma, bronchiolitis, pneumonia"
+  },
+  {
+   "id": "bronchiect",
+   "name": "Bronchiectasis",
+   "cm": false,
+   "triggers": [
+    "c_coughing_blood",
+    "c_sputum_production"
+   ],
+   "f": {
+    "hm_bronch": 4,
+    "productive": 1
+   },
+   "inv": "High-resolution CT chest, sputum culture.",
+   "tool": "None applied.",
+   "alt": "TB, COPD, cystic fibrosis"
+  },
+  {
+   "id": "lungca",
+   "name": "Lung cancer",
+   "cm": true,
+   "triggers": [
+    "c_coughing_blood",
+    "cough"
+   ],
+   "f": {
+    "hm_cancer": 4,
+    "smoker": 1,
+    "c_weight_loss": 2,
+    "c_hoarseness": 1
+   },
+   "inv": "Chest X-ray, CT chest, biopsy through specialist.",
+   "tool": "None applied.",
+   "alt": "TB, bronchiectasis, pneumonia"
+  },
+  {
+   "id": "osa",
+   "name": "Obstructive sleep apnoea",
+   "cm": false,
+   "triggers": [
+    "c_snoring_or_sleep_apnoea"
+   ],
+   "f": {
+    "sa_osa": 4
+   },
+   "inv": "Polysomnography or home sleep study.",
+   "tool": "None applied.",
+   "alt": "Obesity hypoventilation, hypothyroidism, narcolepsy"
+  },
+  {
+   "id": "laryngca",
+   "name": "Laryngeal cancer / chronic laryngeal disease",
+   "cm": true,
+   "triggers": [
+    "c_hoarseness"
+   ],
+   "f": {
+    "hs_chronic": 4,
+    "smoker": 1
+   },
+   "inv": "Urgent laryngoscopy.",
+   "tool": "None applied.",
+   "alt": "Reflux laryngitis, vocal cord nodules, thyroid disease, vocal cord palsy"
+  },
+  {
+   "id": "laryngitis",
+   "name": "Acute laryngitis",
+   "cm": false,
+   "triggers": [
+    "c_hoarseness"
+   ],
+   "f": {
+    "hs_acute": 4
+   },
+   "inv": "Clinical; laryngoscopy if over 3 weeks.",
+   "tool": "None applied.",
+   "alt": "Reflux, laryngeal cancer"
+  },
+  {
+   "id": "svc",
+   "name": "Superior vena cava obstruction",
+   "cm": true,
+   "triggers": [
+    "c_swelling_of_face"
+   ],
+   "f": {
+    "fs_svc": 5
+   },
+   "inv": "Urgent chest imaging (CT), senior review.",
+   "tool": "None applied.",
+   "alt": "Anaphylaxis/angioedema, nephrotic syndrome, goitre"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_massive_hm",
+   "text": "Large or repeated haemoptysis: emergency, protect airway",
+   "all": [
+    "hm_massive"
+   ]
+  },
+  {
+   "id": "rf_svc",
+   "text": "Face/neck swelling with distended neck veins: possible SVC obstruction, urgent",
+   "all": [
+    "fs_svc"
+   ]
+  },
+  {
+   "id": "rf_fbody",
+   "text": "Choking episode then wheeze/cough: possible foreign body, urgent",
+   "all": [
+    "wz_foreign"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "tb": {
+    "triggers": [
+     "c_coughing_blood",
+     "c_sputum_production",
+     "c_night_sweats",
+     "c_prolonged_fever",
+     "c_weight_loss"
+    ],
+    "f": {}
+   },
+   "pe": {
+    "triggers": [
+     "c_coughing_blood",
+     "c_chest_tightness"
+    ],
+    "f": {}
+   },
+   "acs": {
+    "triggers": [
+     "c_chest_tightness"
+    ],
+    "f": {}
+   },
+   "anaphylaxis": {
+    "triggers": [
+     "c_swelling_of_face"
+    ],
+    "f": {}
+   },
+   "hf": {
+    "triggers": [
+     "c_wheeze"
+    ],
+    "f": {}
+   }
+  },
+  "exam": {},
+  "questions": {
+   "hemoptysis": [
+    "c_coughing_blood"
+   ],
+   "face_swelling": [
+    "c_swelling_of_face"
+   ]
+  }
+ }
+}

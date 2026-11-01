@@ -1,0 +1,282 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "fb_indrawing",
+   "lbl": "Chest indrawing, grunting or unable to drink",
+   "text": "Is there lower chest wall indrawing, grunting, or inability to drink or breastfeed?",
+   "why": "WHO danger signs for severe pneumonia.",
+   "sys": "Paediatric",
+   "when": [
+    "c_fast_breathing",
+    "cough",
+    "sob"
+   ]
+  },
+  {
+   "id": "fb_wheeze",
+   "lbl": "Recurrent wheeze, family history of allergy",
+   "text": "Recurrent wheeze, or family history of asthma or allergy?",
+   "why": "Wheezy illness or asthma.",
+   "sys": "Paediatric",
+   "when": [
+    "c_fast_breathing",
+    "cough",
+    "sob"
+   ]
+  },
+  {
+   "id": "fb_mild",
+   "lbl": "Cough and cold for 1-3 days, feeding well",
+   "text": "Cough and cold for a few days, feeding well and playful?",
+   "why": "Mild viral illness.",
+   "sys": "Paediatric",
+   "when": [
+    "c_fast_breathing",
+    "cough"
+   ]
+  },
+  {
+   "id": "cv_febrile",
+   "lbl": "Seizure with fever, age 6 months to 5 years, generalised, under 15 minutes, quick recovery",
+   "text": "Fever with a short generalised seizure in a child aged 6 months to 5 years, recovering quickly?",
+   "why": "Simple febrile seizure criteria.",
+   "sys": "Paediatric",
+   "when": [
+    "c_convulsions"
+   ]
+  },
+  {
+   "id": "cv_neck",
+   "lbl": "Neck stiffness, bulging fontanelle, drowsy after",
+   "text": "Neck stiffness, bulging fontanelle, or prolonged drowsiness after the seizure?",
+   "why": "Meningitis signs.",
+   "sys": "Paediatric",
+   "when": [
+    "c_convulsions"
+   ]
+  },
+  {
+   "id": "cv_hypo",
+   "lbl": "Poor feeding, malnourished, sweating or limp before fit",
+   "text": "Poor feeding, malnutrition, sweating or limpness before the fit?",
+   "why": "Hypoglycaemia.",
+   "sys": "Paediatric",
+   "when": [
+    "c_convulsions"
+   ]
+  },
+  {
+   "id": "pf_neo",
+   "lbl": "Baby 28 days or younger, lethargic, fever or cold, fast breathing",
+   "text": "Is the baby 28 days old or younger, lethargic with fever or low temperature, or breathing fast?",
+   "why": "Neonatal sepsis danger signs.",
+   "sys": "Paediatric",
+   "when": [
+    "c_poor_feeding"
+   ]
+  },
+  {
+   "id": "pf_bilious",
+   "lbl": "Green (bilious) vomiting",
+   "text": "Is the vomit green or yellow-green?",
+   "why": "Bilious vomiting suggests obstruction.",
+   "sys": "Paediatric",
+   "when": [
+    "c_poor_feeding",
+    "vomiting"
+   ]
+  },
+  {
+   "id": "pf_cardiac",
+   "lbl": "Sweating or breathlessness on feeding, poor weight gain",
+   "text": "Sweating or breathlessness during feeds with poor weight gain?",
+   "why": "Congenital heart disease with heart failure.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_poor_feeding"
+   ]
+  }
+ ],
+ "exam": [],
+ "diseases": [
+  {
+   "id": "chpneu",
+   "name": "Childhood pneumonia (severe if chest indrawing)",
+   "cm": true,
+   "triggers": [
+    "c_fast_breathing",
+    "cough",
+    "sob"
+   ],
+   "f": {
+    "fb_indrawing": 4,
+    "fever": 2,
+    "cough": 1
+   },
+   "inv": "Chest X-ray if unclear, oxygen saturation, CBC; follow WHO/IMCI classification.",
+   "tool": "WHO IMCI classifies childhood illness by age and signs; use the official charts.",
+   "alt": "Bronchiolitis, asthma, foreign body, TB, heart failure"
+  },
+  {
+   "id": "bronchl",
+   "name": "Bronchiolitis / wheezy illness",
+   "cm": false,
+   "triggers": [
+    "c_fast_breathing",
+    "cough",
+    "sob"
+   ],
+   "f": {
+    "fb_wheeze": 3,
+    "fb_mild": 1
+   },
+   "inv": "Clinical; oxygen saturation.",
+   "tool": "None applied.",
+   "alt": "Pneumonia, asthma, foreign body, heart failure"
+  },
+  {
+   "id": "viralri",
+   "name": "Mild viral respiratory infection",
+   "cm": false,
+   "triggers": [
+    "c_fast_breathing",
+    "cough"
+   ],
+   "f": {
+    "fb_mild": 4
+   },
+   "inv": "Clinical; no tests usually needed.",
+   "tool": "None applied.",
+   "alt": "Pneumonia, bronchiolitis, asthma"
+  },
+  {
+   "id": "febsz",
+   "name": "Simple febrile seizure",
+   "cm": false,
+   "triggers": [
+    "c_convulsions"
+   ],
+   "f": {
+    "cv_febrile": 4
+   },
+   "inv": "Clinical; look for the source of fever.",
+   "tool": "None applied.",
+   "alt": "Meningitis, epilepsy, hypoglycaemia"
+  },
+  {
+   "id": "hypogly",
+   "name": "Hypoglycaemia (metabolic cause of seizure)",
+   "cm": true,
+   "triggers": [
+    "c_convulsions",
+    "c_poor_feeding"
+   ],
+   "f": {
+    "cv_hypo": 4,
+    "sz_diabetic": 2
+   },
+   "inv": "Check blood glucose immediately.",
+   "tool": "None applied.",
+   "alt": "Meningitis, sepsis, epilepsy"
+  },
+  {
+   "id": "neosepsis",
+   "name": "Neonatal sepsis",
+   "cm": true,
+   "triggers": [
+    "c_poor_feeding"
+   ],
+   "f": {
+    "pf_neo": 5
+   },
+   "inv": "Urgent paediatric review; blood culture, CBC, glucose; do not delay referral.",
+   "tool": "None applied.",
+   "alt": "Hypoglycaemia, congenital heart disease, metabolic disease"
+  },
+  {
+   "id": "malrot",
+   "name": "Intestinal obstruction / malrotation in infant",
+   "cm": true,
+   "triggers": [
+    "c_poor_feeding",
+    "vomiting"
+   ],
+   "f": {
+    "pf_bilious": 5
+   },
+   "inv": "Emergency surgical review; abdominal X-ray, ultrasound/contrast study.",
+   "tool": "None applied.",
+   "alt": "Gastroenteritis, feeding intolerance"
+  },
+  {
+   "id": "chd",
+   "name": "Congenital heart disease with heart failure",
+   "cm": false,
+   "triggers": [
+    "c_poor_feeding"
+   ],
+   "f": {
+    "pf_cardiac": 4
+   },
+   "inv": "Oxygen saturation, chest X-ray, ECG, echocardiography.",
+   "tool": "None applied.",
+   "alt": "Infection, anaemia, lung disease"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_peds_indraw",
+   "text": "Chest indrawing, grunting or unable to drink: WHO danger signs, urgent referral",
+   "all": [
+    "fb_indrawing"
+   ]
+  },
+  {
+   "id": "rf_peds_conv",
+   "text": "Seizure with neck stiffness, bulging fontanelle or prolonged drowsiness: possible meningitis, urgent care",
+   "all": [
+    "cv_neck"
+   ]
+  },
+  {
+   "id": "rf_neo",
+   "text": "Baby 28 days or younger who is lethargic, febrile/cold or breathing fast: possible neonatal sepsis, urgent referral",
+   "all": [
+    "pf_neo"
+   ]
+  },
+  {
+   "id": "rf_bilious",
+   "text": "Green (bilious) vomiting in an infant: possible obstruction, surgical emergency",
+   "all": [
+    "pf_bilious"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "meningitis": {
+    "triggers": [
+     "c_convulsions"
+    ],
+    "f": {
+     "cv_neck": 4
+    }
+   },
+   "epilepsy": {
+    "triggers": [
+     "c_convulsions"
+    ],
+    "f": {}
+   },
+   "gastro": {
+    "triggers": [
+     "c_poor_feeding"
+    ],
+    "f": {}
+   }
+  },
+  "exam": {}
+ }
+}

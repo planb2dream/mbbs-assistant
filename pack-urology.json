@@ -1,0 +1,750 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "sp_sudden",
+   "lbl": "Sudden severe testicular pain, young male, nausea",
+   "text": "Sudden severe testicular pain, often in a young male with nausea or vomiting?",
+   "why": "Torsion is time-critical.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_scrotal_pain"
+   ]
+  },
+  {
+   "id": "sp_epid",
+   "lbl": "Gradual pain with fever or urinary symptoms",
+   "text": "Gradual testicular pain with fever or burning urination?",
+   "why": "Epididymo-orchitis.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_scrotal_pain"
+   ]
+  },
+  {
+   "id": "sp_hernia",
+   "lbl": "Painful irreducible groin lump with vomiting",
+   "text": "Painful groin lump that cannot be pushed back, with vomiting?",
+   "why": "Strangulated hernia.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_scrotal_pain",
+    "c_scrotal_swelling"
+   ]
+  },
+  {
+   "id": "sp_fournier",
+   "lbl": "Scrotal or perineal pain with redness, diabetes, very unwell",
+   "text": "Scrotal or perineal pain with redness or crackling under the skin, in a diabetic who is very unwell?",
+   "why": "Fournier gangrene.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_scrotal_pain",
+    "c_scrotal_swelling"
+   ]
+  },
+  {
+   "id": "sx_hydro",
+   "lbl": "Painless swelling, can feel above it, transilluminates",
+   "text": "Painless scrotal swelling that glows on torchlight?",
+   "why": "Hydrocele.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_scrotal_swelling"
+   ]
+  },
+  {
+   "id": "sx_vari",
+   "lbl": "Bag of worms feeling, worse standing, left side",
+   "text": "A soft \"bag of worms\" feeling, worse on standing?",
+   "why": "Varicocele.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_scrotal_swelling",
+    "c_difficulty_conceiving"
+   ]
+  },
+  {
+   "id": "sx_ca",
+   "lbl": "Painless hard testicular lump in young man",
+   "text": "Painless hard lump in the testis of a young man?",
+   "why": "Testicular cancer.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_scrotal_swelling"
+   ]
+  },
+  {
+   "id": "sx_hern",
+   "lbl": "Reducible lump with cough impulse",
+   "text": "Lump that reduces lying down and bulges on coughing?",
+   "why": "Inguinal hernia.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_scrotal_swelling",
+    "c_lump_or_swelling"
+   ]
+  },
+  {
+   "id": "ur_acute",
+   "lbl": "Sudden painful inability to pass urine",
+   "text": "Sudden painful inability to pass urine?",
+   "why": "Acute retention.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_urinary_retention"
+   ]
+  },
+  {
+   "id": "ur_drug",
+   "lbl": "Anticholinergics, opioids, antihistamines or cold medicines",
+   "text": "Taking anticholinergics, opioids, antihistamines or cold medicines?",
+   "why": "Drug-induced retention.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_urinary_retention",
+    "c_weak_urine_stream"
+   ]
+  },
+  {
+   "id": "ur_strict",
+   "lbl": "Past urethral instrumentation, infection or injury with poor stream",
+   "text": "Past catheter, urethral infection or injury with poor stream?",
+   "why": "Urethral stricture.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_urinary_retention",
+    "c_weak_urine_stream"
+   ]
+  },
+  {
+   "id": "ul_stress",
+   "lbl": "Leaks on coughing, sneezing, exertion",
+   "text": "Urine leaks with coughing, sneezing or exertion?",
+   "why": "Stress incontinence.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_urine_leakage"
+   ]
+  },
+  {
+   "id": "ul_urge",
+   "lbl": "Sudden urgency, cannot reach toilet in time",
+   "text": "Sudden urgent need, unable to reach the toilet in time?",
+   "why": "Overactive bladder.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_urine_leakage",
+    "c_urgency_to_urinate",
+    "c_frequent_urination"
+   ]
+  },
+  {
+   "id": "ul_over",
+   "lbl": "Continuous dribbling, poor stream, full bladder",
+   "text": "Continuous dribbling with poor stream or a feeling of fullness?",
+   "why": "Overflow incontinence.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_urine_leakage"
+   ]
+  },
+  {
+   "id": "ul_fist",
+   "lbl": "Continuous leakage after childbirth or pelvic surgery",
+   "text": "Continuous leakage of urine after childbirth or pelvic surgery?",
+   "why": "Vesicovaginal fistula.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_urine_leakage"
+   ]
+  },
+  {
+   "id": "pl_wart",
+   "lbl": "Cauliflower-like growths",
+   "text": "Cauliflower-like growths on the genitals?",
+   "why": "Genital warts.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_penile_lesion"
+   ]
+  },
+  {
+   "id": "pl_bal",
+   "lbl": "Red sore glans, uncircumcised, diabetes",
+   "text": "Red sore glans, in an uncircumcised man or diabetic?",
+   "why": "Balanitis.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_penile_lesion"
+   ]
+  },
+  {
+   "id": "pl_ca",
+   "lbl": "Non-healing ulcer or mass under foreskin, tight foreskin, poor hygiene",
+   "text": "Non-healing ulcer or mass under the foreskin, tight foreskin, poor hygiene?",
+   "why": "Penile cancer.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_penile_lesion",
+    "c_tight_foreskin"
+   ]
+  },
+  {
+   "id": "tf_phim",
+   "lbl": "Cannot retract foreskin, ballooning on passing urine",
+   "text": "Cannot retract the foreskin, which balloons when passing urine?",
+   "why": "Phimosis.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_tight_foreskin"
+   ]
+  },
+  {
+   "id": "tf_para",
+   "lbl": "Retracted foreskin stuck behind glans, painful swollen glans",
+   "text": "Foreskin stuck behind the glans with a painful swollen glans?",
+   "why": "Paraphimosis.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_tight_foreskin",
+    "c_penile_lesion"
+   ]
+  },
+  {
+   "id": "mf_male",
+   "lbl": "History of mumps orchitis, undescended testis, varicocele, chemotherapy",
+   "text": "Past mumps orchitis, undescended testis, varicocele or chemotherapy?",
+   "why": "Male-factor infertility.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_difficulty_conceiving"
+   ]
+  },
+  {
+   "id": "mf_tube",
+   "lbl": "Past pelvic infection, TB or pelvic surgery",
+   "text": "Past pelvic infection, TB or pelvic surgery?",
+   "why": "Tubal-factor infertility.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_difficulty_conceiving"
+   ],
+   "sex": "F"
+  }
+ ],
+ "exam": [
+  {
+   "id": "ex_highriding",
+   "lbl": "High-riding tender testis, absent cremasteric reflex",
+   "sys": "Genitourinary",
+   "when": [
+    "c_scrotal_pain"
+   ]
+  },
+  {
+   "id": "ex_transil",
+   "lbl": "Scrotal swelling transilluminates",
+   "sys": "Genitourinary",
+   "when": [
+    "c_scrotal_swelling"
+   ]
+  },
+  {
+   "id": "ex_cough_imp",
+   "lbl": "Cough impulse in groin or scrotal swelling",
+   "sys": "Genitourinary",
+   "when": [
+    "c_scrotal_swelling",
+    "c_lump_or_swelling"
+   ]
+  },
+  {
+   "id": "ex_bladder",
+   "lbl": "Palpable distended bladder",
+   "sys": "Genitourinary",
+   "when": [
+    "c_urinary_retention",
+    "c_weak_urine_stream"
+   ]
+  }
+ ],
+ "diseases": [
+  {
+   "id": "torsion",
+   "name": "Testicular torsion",
+   "cm": true,
+   "triggers": [
+    "c_scrotal_pain"
+   ],
+   "f": {
+    "sp_sudden": 5,
+    "ex_highriding": 4
+   },
+   "inv": "Emergency urology review; do not delay for ultrasound if clinically suspected.",
+   "tool": "None applied.",
+   "alt": "Epididymo-orchitis, torsion of appendage, hernia"
+  },
+  {
+   "id": "epididy",
+   "name": "Epididymo-orchitis",
+   "cm": false,
+   "triggers": [
+    "c_scrotal_pain"
+   ],
+   "f": {
+    "sp_epid": 4,
+    "fever": 1
+   },
+   "inv": "Urine test, STI screen, ultrasound if doubt about torsion.",
+   "tool": "Torsion must be excluded first, especially in young males.",
+   "alt": "Torsion, hernia, tumour"
+  },
+  {
+   "id": "strangh",
+   "name": "Strangulated inguinal hernia",
+   "cm": true,
+   "triggers": [
+    "c_scrotal_pain",
+    "c_scrotal_swelling"
+   ],
+   "f": {
+    "sp_hernia": 5
+   },
+   "inv": "Emergency surgical review.",
+   "tool": "None applied.",
+   "alt": "Torsion, epididymitis, hydrocele"
+  },
+  {
+   "id": "fournier",
+   "name": "Fournier gangrene",
+   "cm": true,
+   "triggers": [
+    "c_scrotal_pain",
+    "c_scrotal_swelling"
+   ],
+   "f": {
+    "sp_fournier": 5
+   },
+   "inv": "Emergency surgical review, antibiotics, resuscitation.",
+   "tool": "None applied.",
+   "alt": "Cellulitis, epididymitis, abscess"
+  },
+  {
+   "id": "hydrocele",
+   "name": "Hydrocele",
+   "cm": false,
+   "triggers": [
+    "c_scrotal_swelling"
+   ],
+   "f": {
+    "sx_hydro": 4,
+    "ex_transil": 3
+   },
+   "inv": "Scrotal ultrasound to exclude tumour or hernia.",
+   "tool": "None applied.",
+   "alt": "Hernia, tumour, epididymal cyst"
+  },
+  {
+   "id": "varic",
+   "name": "Varicocele",
+   "cm": false,
+   "triggers": [
+    "c_scrotal_swelling",
+    "c_difficulty_conceiving"
+   ],
+   "f": {
+    "sx_vari": 4
+   },
+   "inv": "Examination standing, Valsalva; ultrasound; semen analysis if fertility concern.",
+   "tool": "None applied.",
+   "alt": "Hydrocele, tumour, hernia"
+  },
+  {
+   "id": "testca",
+   "name": "Testicular cancer",
+   "cm": true,
+   "triggers": [
+    "c_scrotal_swelling"
+   ],
+   "f": {
+    "sx_ca": 5
+   },
+   "inv": "Urgent scrotal ultrasound, tumour markers, urology referral.",
+   "tool": "None applied.",
+   "alt": "Epididymitis, hydrocele, haematoma"
+  },
+  {
+   "id": "ingher",
+   "name": "Inguinoscrotal hernia",
+   "cm": false,
+   "triggers": [
+    "c_scrotal_swelling",
+    "c_lump_or_swelling"
+   ],
+   "f": {
+    "sx_hern": 4,
+    "ex_cough_imp": 3
+   },
+   "inv": "Clinical; surgical review.",
+   "tool": "None applied.",
+   "alt": "Hydrocele, lymph node, undescended testis"
+  },
+  {
+   "id": "acuteret",
+   "name": "Acute urinary retention",
+   "cm": true,
+   "triggers": [
+    "c_urinary_retention"
+   ],
+   "f": {
+    "ur_acute": 5,
+    "ex_bladder": 3
+   },
+   "inv": "Catheterise, check creatinine and electrolytes, find the cause.",
+   "tool": "None applied.",
+   "alt": "Constipation, cauda equina, drug effect, clot retention"
+  },
+  {
+   "id": "drugret",
+   "name": "Drug-induced retention",
+   "cm": false,
+   "triggers": [
+    "c_urinary_retention",
+    "c_weak_urine_stream"
+   ],
+   "f": {
+    "ur_drug": 4
+   },
+   "inv": "Medicine review.",
+   "tool": "None applied.",
+   "alt": "BPH, stricture"
+  },
+  {
+   "id": "stricture",
+   "name": "Urethral stricture",
+   "cm": false,
+   "triggers": [
+    "c_urinary_retention",
+    "c_weak_urine_stream"
+   ],
+   "f": {
+    "ur_strict": 4
+   },
+   "inv": "Uroflowmetry, urethrogram or urethroscopy.",
+   "tool": "None applied.",
+   "alt": "BPH, bladder neck contracture"
+  },
+  {
+   "id": "stressinc",
+   "name": "Stress urinary incontinence",
+   "cm": false,
+   "triggers": [
+    "c_urine_leakage"
+   ],
+   "f": {
+    "ul_stress": 4
+   },
+   "inv": "Clinical, cough stress test, urine test.",
+   "tool": "None applied.",
+   "alt": "Urge incontinence, prolapse, fistula"
+  },
+  {
+   "id": "oab",
+   "name": "Overactive bladder / urge incontinence",
+   "cm": false,
+   "triggers": [
+    "c_urine_leakage",
+    "c_urgency_to_urinate",
+    "c_frequent_urination"
+   ],
+   "f": {
+    "ul_urge": 4
+   },
+   "inv": "Urine test, bladder diary; exclude infection, stone and diabetes.",
+   "tool": "None applied.",
+   "alt": "Infection, stone, diabetes, bladder cancer"
+  },
+  {
+   "id": "overflow",
+   "name": "Overflow incontinence",
+   "cm": true,
+   "triggers": [
+    "c_urine_leakage"
+   ],
+   "f": {
+    "ul_over": 4,
+    "ex_bladder": 3
+   },
+   "inv": "Bladder scan, creatinine, ultrasound.",
+   "tool": "None applied.",
+   "alt": "Stress incontinence, neurogenic bladder, BPH"
+  },
+  {
+   "id": "vvf",
+   "name": "Vesicovaginal fistula",
+   "cm": false,
+   "triggers": [
+    "c_urine_leakage"
+   ],
+   "f": {
+    "ul_fist": 5
+   },
+   "inv": "Dye test and urology/gynaecology referral.",
+   "tool": "None applied.",
+   "alt": "Stress incontinence, urge incontinence"
+  },
+  {
+   "id": "warts",
+   "name": "Genital warts",
+   "cm": false,
+   "triggers": [
+    "c_penile_lesion",
+    "genital_lesion"
+   ],
+   "f": {
+    "pl_wart": 5
+   },
+   "inv": "Clinical; STI screen; examine partner.",
+   "tool": "None applied.",
+   "alt": "Molluscum, pearly penile papules, carcinoma"
+  },
+  {
+   "id": "balan",
+   "name": "Balanitis",
+   "cm": false,
+   "triggers": [
+    "c_penile_lesion"
+   ],
+   "f": {
+    "pl_bal": 4
+   },
+   "inv": "Clinical; check glucose; swab if persistent.",
+   "tool": "None applied.",
+   "alt": "Candida, STI, lichen sclerosus, carcinoma"
+  },
+  {
+   "id": "penca",
+   "name": "Penile cancer",
+   "cm": true,
+   "triggers": [
+    "c_penile_lesion",
+    "c_tight_foreskin"
+   ],
+   "f": {
+    "pl_ca": 5
+   },
+   "inv": "Urgent urology referral and biopsy.",
+   "tool": "None applied.",
+   "alt": "Balanitis, syphilis, warts"
+  },
+  {
+   "id": "phim",
+   "name": "Phimosis",
+   "cm": false,
+   "triggers": [
+    "c_tight_foreskin"
+   ],
+   "f": {
+    "tf_phim": 4
+   },
+   "inv": "Clinical.",
+   "tool": "None applied.",
+   "alt": "Balanitis xerotica obliterans, carcinoma"
+  },
+  {
+   "id": "paraph",
+   "name": "Paraphimosis",
+   "cm": true,
+   "triggers": [
+    "c_tight_foreskin",
+    "c_penile_lesion"
+   ],
+   "f": {
+    "tf_para": 5
+   },
+   "inv": "Emergency reduction by trained clinician.",
+   "tool": "None applied.",
+   "alt": "Balanitis, angioedema"
+  },
+  {
+   "id": "malefac",
+   "name": "Male-factor infertility",
+   "cm": false,
+   "triggers": [
+    "c_difficulty_conceiving"
+   ],
+   "f": {
+    "mf_male": 4,
+    "sx_vari": 2
+   },
+   "inv": "Semen analysis (WHO method), hormones, scrotal examination.",
+   "tool": "WHO semen reference values guide interpretation.",
+   "alt": "Female factor, combined causes"
+  },
+  {
+   "id": "tubal",
+   "name": "Tubal-factor infertility",
+   "cm": false,
+   "triggers": [
+    "c_difficulty_conceiving"
+   ],
+   "f": {
+    "mf_tube": 4
+   },
+   "inv": "Hysterosalpingography or laparoscopy; screen for TB if relevant.",
+   "tool": "None applied.",
+   "alt": "Ovulatory disorder, male factor, PCOS",
+   "sex": "F"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_torsion",
+   "text": "Sudden severe testicular pain: possible torsion, emergency urology review within hours",
+   "all": [
+    "sp_sudden"
+   ]
+  },
+  {
+   "id": "rf_fournier",
+   "text": "Scrotal or perineal pain with redness and illness: possible Fournier gangrene, emergency",
+   "all": [
+    "sp_fournier"
+   ]
+  },
+  {
+   "id": "rf_strang",
+   "text": "Painful irreducible groin lump with vomiting: possible strangulated hernia, emergency",
+   "all": [
+    "sp_hernia"
+   ]
+  },
+  {
+   "id": "rf_paraph",
+   "text": "Foreskin stuck behind the glans with painful swollen glans: paraphimosis, urgent reduction",
+   "all": [
+    "tf_para"
+   ]
+  },
+  {
+   "id": "rf_retention",
+   "text": "Acute painful inability to pass urine: catheterise and check creatinine",
+   "all": [
+    "ur_acute"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "filar": {
+    "triggers": [
+     "c_scrotal_swelling"
+    ],
+    "f": {}
+   },
+   "bph": {
+    "triggers": [
+     "c_weak_urine_stream",
+     "c_urinary_retention"
+    ],
+    "f": {}
+   },
+   "obstruct": {
+    "triggers": [
+     "c_weak_urine_stream",
+     "c_urinary_retention"
+    ],
+    "f": {}
+   },
+   "pcos": {
+    "triggers": [
+     "c_difficulty_conceiving"
+    ],
+    "f": {}
+   },
+   "cystitis": {
+    "triggers": [
+     "c_urgency_to_urinate",
+     "c_frequent_urination",
+     "c_lower_abdominal_pain"
+    ],
+    "f": {}
+   },
+   "pid": {
+    "triggers": [
+     "c_lower_abdominal_pain"
+    ],
+    "f": {}
+   },
+   "stone": {
+    "triggers": [
+     "c_passing_stones_or_gravel"
+    ],
+    "f": {}
+   },
+   "nephro": {
+    "triggers": [
+     "c_foamy_urine",
+     "c_frothy_urine"
+    ],
+    "f": {}
+   },
+   "urethritis": {
+    "triggers": [
+     "c_penile_discharge"
+    ],
+    "f": {}
+   },
+   "hsv": {
+    "triggers": [
+     "c_penile_lesion"
+    ],
+    "f": {}
+   },
+   "syph": {
+    "triggers": [
+     "c_penile_lesion"
+    ],
+    "f": {}
+   },
+   "appendicitis": {
+    "triggers": [
+     "c_lower_abdominal_pain"
+    ],
+    "f": {}
+   }
+  },
+  "exam": {},
+  "questions": {
+   "sw_frothy": [
+    "c_foamy_urine",
+    "c_frothy_urine"
+   ],
+   "gen_painless_ulcer": [
+    "c_penile_lesion"
+   ],
+   "gen_painful_ulcer": [
+    "c_penile_lesion"
+   ],
+   "gen_sexual_exposure": [
+    "c_penile_lesion",
+    "c_penile_discharge"
+   ],
+   "hu_colic": [
+    "c_passing_stones_or_gravel"
+   ],
+   "bu_cystitis": [
+    "c_urgency_to_urinate",
+    "c_frequent_urination",
+    "c_lower_abdominal_pain"
+   ],
+   "ap_rif": [
+    "c_lower_abdominal_pain"
+   ],
+   "vb_pid": [
+    "c_lower_abdominal_pain"
+   ]
+  }
+ }
+}

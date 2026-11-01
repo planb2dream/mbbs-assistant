@@ -1,0 +1,947 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "bv_cataract",
+   "lbl": "Gradual painless blur with glare, cloudy vision, over 50",
+   "text": "Gradual painless blur or glare, as if looking through a cloud?",
+   "why": "Cataract.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_blurred_vision",
+    "vision_loss"
+   ]
+  },
+  {
+   "id": "bv_near",
+   "lbl": "Difficulty with near work after 40",
+   "text": "Trouble reading small print after age 40?",
+   "why": "Presbyopia.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_blurred_vision"
+   ]
+  },
+  {
+   "id": "bv_distance",
+   "lbl": "Distance blur, better with squinting or pinhole",
+   "text": "Distance blur that improves with squinting?",
+   "why": "Refractive error.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_blurred_vision"
+   ]
+  },
+  {
+   "id": "bv_dm",
+   "lbl": "Diabetes or hypertension for years",
+   "text": "Diabetes or hypertension for years?",
+   "why": "Retinopathy.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_blurred_vision",
+    "vision_loss"
+   ]
+  },
+  {
+   "id": "bv_glauc",
+   "lbl": "Tunnel vision, family history of glaucoma, painless",
+   "text": "Slowly shrinking side vision without pain, or glaucoma in the family?",
+   "why": "Open-angle glaucoma.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_blurred_vision",
+    "vision_loss"
+   ]
+  },
+  {
+   "id": "ep_cornea",
+   "lbl": "Foreign body sensation, watering, contact lens or injury, photophobia",
+   "text": "Gritty pain with watering and light sensitivity, after injury or contact-lens use?",
+   "why": "Corneal abrasion/ulcer.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_eye_pain",
+    "red_eye",
+    "c_foreign_body_sensation_in_eye"
+   ]
+  },
+  {
+   "id": "ep_optic",
+   "lbl": "Pain on eye movement, young adult, colours look washed out, vision loss over days",
+   "text": "Pain on moving the eye, washed-out colours and vision loss over days?",
+   "why": "Optic neuritis.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_eye_pain",
+    "vision_loss"
+   ]
+  },
+  {
+   "id": "ep_orbital",
+   "lbl": "Swollen red eyelid, fever, pain on eye movement, bulging eye",
+   "text": "Swollen red eyelid with fever, painful eye movement or a bulging eye?",
+   "why": "Orbital cellulitis.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_eye_pain",
+    "c_swollen_eyelid",
+    "c_bulging_eye"
+   ]
+  },
+  {
+   "id": "ff_floaters",
+   "lbl": "New floaters or flashes, shower of spots",
+   "text": "New floaters or flashes of light?",
+   "why": "Posterior vitreous detachment or retinal tear.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_flashes_or_floaters"
+   ]
+  },
+  {
+   "id": "dp_binoc",
+   "lbl": "Double vision disappears when either eye is covered",
+   "text": "Does double vision go away when either eye is covered?",
+   "why": "Binocular double vision.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_double_vision"
+   ]
+  },
+  {
+   "id": "dp_third",
+   "lbl": "Drooping lid, large pupil, painful, one eye",
+   "text": "Drooping lid and a large pupil in one eye, with headache?",
+   "why": "Third-nerve palsy: aneurysm until proven otherwise.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_double_vision",
+    "c_drooping_eyelid"
+   ]
+  },
+  {
+   "id": "dp_dm",
+   "lbl": "Diabetes or hypertension, pupil normal",
+   "text": "Diabetes or hypertension, with a normal-sized pupil?",
+   "why": "Ischaemic cranial nerve palsy.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_double_vision"
+   ]
+  },
+  {
+   "id": "dp_mono",
+   "lbl": "Persists with one eye closed",
+   "text": "Does it persist when one eye is closed?",
+   "why": "Local eye problem.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_double_vision"
+   ]
+  },
+  {
+   "id": "nb_vita",
+   "lbl": "Poor diet, dry eyes, child",
+   "text": "Poor diet, dry eyes or white foamy spots on the eye, in a child?",
+   "why": "Vitamin A deficiency.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_night_blindness"
+   ]
+  },
+  {
+   "id": "nb_rp",
+   "lbl": "Family history, shrinking side vision",
+   "text": "Family history, and side vision shrinking slowly?",
+   "why": "Retinitis pigmentosa.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_night_blindness"
+   ]
+  },
+  {
+   "id": "ei_chem",
+   "lbl": "Chemical splash",
+   "text": "Was there a chemical splash into the eye?",
+   "why": "Needs immediate irrigation.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_eye_injury"
+   ]
+  },
+  {
+   "id": "ei_pen",
+   "lbl": "Sharp object or hammering metal",
+   "text": "Sharp object, or metal struck on metal?",
+   "why": "Penetrating injury.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_eye_injury"
+   ]
+  },
+  {
+   "id": "ei_blunt",
+   "lbl": "Blunt blow, bruising, double vision, vision loss",
+   "text": "Blunt blow with bruising, double vision or reduced vision?",
+   "why": "Hyphaema or fracture.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_eye_injury"
+   ]
+  },
+  {
+   "id": "sw_stye",
+   "lbl": "Tender red lump on lid margin",
+   "text": "Tender red lump at the lid edge?",
+   "why": "Stye.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_swollen_eyelid"
+   ]
+  },
+  {
+   "id": "sw_chal",
+   "lbl": "Painless firm lump on lid for weeks",
+   "text": "Painless firm lid lump for weeks?",
+   "why": "Chalazion.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_swollen_eyelid"
+   ]
+  },
+  {
+   "id": "sw_allerg",
+   "lbl": "Both lids itchy and puffy, allergy",
+   "text": "Both lids puffy and itchy with allergy symptoms?",
+   "why": "Allergic lid swelling.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_swollen_eyelid",
+    "c_itchy_eyes"
+   ]
+  },
+  {
+   "id": "wt_duct",
+   "lbl": "Constant watering with sticky discharge",
+   "text": "Constant watering with sticky discharge?",
+   "why": "Nasolacrimal duct blockage.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_watering_of_eyes"
+   ]
+  },
+  {
+   "id": "wt_sac",
+   "lbl": "Painful swelling at inner corner near the nose",
+   "text": "Painful red swelling at the inner corner of the eye?",
+   "why": "Dacryocystitis.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_watering_of_eyes",
+    "c_eye_discharge"
+   ]
+  },
+  {
+   "id": "pt_child",
+   "lbl": "Drooping lid since birth",
+   "text": "Has the lid drooped since birth?",
+   "why": "Congenital ptosis.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_drooping_eyelid",
+    "c_squint"
+   ]
+  },
+  {
+   "id": "sq_child",
+   "lbl": "Child with eyes not aligned, family history",
+   "text": "Child whose eyes do not look straight, with family history?",
+   "why": "Strabismus.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_squint"
+   ]
+  },
+  {
+   "id": "sq_white",
+   "lbl": "White reflex in pupil in a child",
+   "text": "Does the pupil look white in photos or in light?",
+   "why": "Leucocoria: retinoblastoma until excluded.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_squint"
+   ]
+  },
+  {
+   "id": "ie_allerg",
+   "lbl": "Itching, seasonal, ropy discharge, hay fever",
+   "text": "Itching with stringy discharge, seasonal, with hay fever?",
+   "why": "Allergic conjunctivitis.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_itchy_eyes",
+    "red_eye"
+   ]
+  },
+  {
+   "id": "ie_dry",
+   "lbl": "Gritty burning, worse on screens or air-conditioning",
+   "text": "Gritty burning that worsens with screens or air-conditioning?",
+   "why": "Dry eye.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_itchy_eyes",
+    "c_foreign_body_sensation_in_eye"
+   ]
+  },
+  {
+   "id": "ie_blephar",
+   "lbl": "Crusted lid margins, burning",
+   "text": "Crusted lid margins with burning?",
+   "why": "Blepharitis.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_itchy_eyes",
+    "c_swollen_eyelid"
+   ]
+  },
+  {
+   "id": "be_unilat",
+   "lbl": "Gradual painless one-eye bulging",
+   "text": "One eye gradually bulging without pain?",
+   "why": "Orbital mass.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_bulging_eye"
+   ]
+  },
+  {
+   "id": "ed_neonate",
+   "lbl": "Discharge in first month of life",
+   "text": "Discharge in a baby under one month?",
+   "why": "Ophthalmia neonatorum.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_eye_discharge"
+   ]
+  },
+  {
+   "id": "ed_hyper",
+   "lbl": "Profuse pus that returns quickly",
+   "text": "Profuse pus that returns as soon as wiped away?",
+   "why": "Gonococcal conjunctivitis.",
+   "sys": "Ophthalmological",
+   "when": [
+    "c_eye_discharge",
+    "red_eye"
+   ]
+  }
+ ],
+ "exam": [],
+ "diseases": [
+  {
+   "id": "cataract",
+   "name": "Cataract",
+   "cm": false,
+   "triggers": [
+    "c_blurred_vision",
+    "vision_loss"
+   ],
+   "f": {
+    "bv_cataract": 4,
+    "age_over_60": 1
+   },
+   "inv": "Visual acuity, slit-lamp, dilated fundus examination.",
+   "tool": "None applied.",
+   "alt": "Refractive error, glaucoma, diabetic eye disease"
+  },
+  {
+   "id": "presb",
+   "name": "Presbyopia",
+   "cm": false,
+   "triggers": [
+    "c_blurred_vision"
+   ],
+   "f": {
+    "bv_near": 5
+   },
+   "inv": "Near vision test, refraction.",
+   "tool": "None applied.",
+   "alt": "Cataract, hypermetropia"
+  },
+  {
+   "id": "refract",
+   "name": "Refractive error",
+   "cm": false,
+   "triggers": [
+    "c_blurred_vision"
+   ],
+   "f": {
+    "bv_distance": 4
+   },
+   "inv": "Visual acuity with pinhole, refraction.",
+   "tool": "None applied.",
+   "alt": "Cataract, keratoconus"
+  },
+  {
+   "id": "dmr",
+   "name": "Diabetic / hypertensive retinopathy",
+   "cm": false,
+   "triggers": [
+    "c_blurred_vision",
+    "vision_loss"
+   ],
+   "f": {
+    "bv_dm": 4
+   },
+   "inv": "Dilated fundus exam, OCT, glucose and BP.",
+   "tool": "None applied.",
+   "alt": "Cataract, vein occlusion, glaucoma"
+  },
+  {
+   "id": "poag",
+   "name": "Chronic open-angle glaucoma",
+   "cm": false,
+   "triggers": [
+    "c_blurred_vision",
+    "vision_loss"
+   ],
+   "f": {
+    "bv_glauc": 4
+   },
+   "inv": "Intraocular pressure, optic disc, visual field.",
+   "tool": "None applied.",
+   "alt": "Cataract, optic neuropathy"
+  },
+  {
+   "id": "cornulcer",
+   "name": "Corneal abrasion / ulcer",
+   "cm": true,
+   "triggers": [
+    "c_eye_pain",
+    "red_eye",
+    "c_foreign_body_sensation_in_eye"
+   ],
+   "f": {
+    "ep_cornea": 4,
+    "photophobia": 1
+   },
+   "inv": "Slit-lamp with fluorescein; corneal scrape if ulcer; urgent review.",
+   "tool": "None applied.",
+   "alt": "Conjunctivitis, uveitis, angle closure"
+  },
+  {
+   "id": "optneur",
+   "name": "Optic neuritis",
+   "cm": true,
+   "triggers": [
+    "c_eye_pain",
+    "vision_loss"
+   ],
+   "f": {
+    "ep_optic": 4
+   },
+   "inv": "Urgent ophthalmology and neurology review; MRI brain/orbits.",
+   "tool": "None applied.",
+   "alt": "Ischaemic optic neuropathy, compression"
+  },
+  {
+   "id": "orbcell",
+   "name": "Orbital cellulitis",
+   "cm": true,
+   "triggers": [
+    "c_eye_pain",
+    "c_swollen_eyelid",
+    "c_bulging_eye"
+   ],
+   "f": {
+    "ep_orbital": 5,
+    "fever": 1
+   },
+   "inv": "Urgent imaging (CT orbits), CBC, senior review.",
+   "tool": "None applied.",
+   "alt": "Preseptal cellulitis, stye, thyroid eye disease"
+  },
+  {
+   "id": "pvd",
+   "name": "Posterior vitreous detachment / retinal tear",
+   "cm": true,
+   "triggers": [
+    "c_flashes_or_floaters"
+   ],
+   "f": {
+    "ff_floaters": 3,
+    "vision_curtain": 4
+   },
+   "inv": "Urgent dilated retinal examination.",
+   "tool": "None applied.",
+   "alt": "Retinal detachment, vitreous haemorrhage, migraine aura"
+  },
+  {
+   "id": "crn3",
+   "name": "Third-nerve palsy (compressive)",
+   "cm": true,
+   "triggers": [
+    "c_double_vision",
+    "c_drooping_eyelid"
+   ],
+   "f": {
+    "dp_third": 5
+   },
+   "inv": "Urgent neuroimaging (CT/MR angiography), senior review.",
+   "tool": "None applied.",
+   "alt": "Ischaemic palsy, myasthenia gravis"
+  },
+  {
+   "id": "ischcn",
+   "name": "Ischaemic cranial nerve palsy",
+   "cm": false,
+   "triggers": [
+    "c_double_vision"
+   ],
+   "f": {
+    "dp_binoc": 2,
+    "dp_dm": 4
+   },
+   "inv": "Glucose, BP, vascular risk; follow up for recovery.",
+   "tool": "None applied.",
+   "alt": "Third-nerve palsy, myasthenia, thyroid eye disease"
+  },
+  {
+   "id": "monodip",
+   "name": "Local eye cause of monocular double vision",
+   "cm": false,
+   "triggers": [
+    "c_double_vision"
+   ],
+   "f": {
+    "dp_mono": 4
+   },
+   "inv": "Refraction, slit-lamp.",
+   "tool": "None applied.",
+   "alt": "Cataract, corneal problem, binocular cause"
+  },
+  {
+   "id": "vita",
+   "name": "Vitamin A deficiency",
+   "cm": false,
+   "triggers": [
+    "c_night_blindness"
+   ],
+   "f": {
+    "nb_vita": 5
+   },
+   "inv": "Clinical; serum retinol; treat per national programme.",
+   "tool": "None applied.",
+   "alt": "Retinitis pigmentosa, refractive error"
+  },
+  {
+   "id": "rp",
+   "name": "Retinitis pigmentosa",
+   "cm": false,
+   "triggers": [
+    "c_night_blindness"
+   ],
+   "f": {
+    "nb_rp": 4
+   },
+   "inv": "Fundus exam, ERG, visual field.",
+   "tool": "None applied.",
+   "alt": "Vitamin A deficiency, glaucoma"
+  },
+  {
+   "id": "chemburn",
+   "name": "Chemical eye injury",
+   "cm": true,
+   "triggers": [
+    "c_eye_injury"
+   ],
+   "f": {
+    "ei_chem": 5
+   },
+   "inv": "Immediate irrigation, check pH, ophthalmology review.",
+   "tool": "None applied.",
+   "alt": "Corneal abrasion"
+  },
+  {
+   "id": "penetr",
+   "name": "Penetrating eye injury",
+   "cm": true,
+   "triggers": [
+    "c_eye_injury"
+   ],
+   "f": {
+    "ei_pen": 5
+   },
+   "inv": "Protect the eye with a shield, no pressure; urgent ophthalmology; CT orbit.",
+   "tool": "None applied.",
+   "alt": "Corneal abrasion, foreign body"
+  },
+  {
+   "id": "bluntinj",
+   "name": "Blunt eye / orbital trauma (hyphaema, fracture)",
+   "cm": true,
+   "triggers": [
+    "c_eye_injury"
+   ],
+   "f": {
+    "ei_blunt": 4,
+    "g_injury": 1
+   },
+   "inv": "Visual acuity, slit-lamp, CT orbit.",
+   "tool": "None applied.",
+   "alt": "Corneal abrasion, retinal detachment"
+  },
+  {
+   "id": "stye",
+   "name": "Stye (hordeolum)",
+   "cm": false,
+   "triggers": [
+    "c_swollen_eyelid"
+   ],
+   "f": {
+    "sw_stye": 5
+   },
+   "inv": "Clinical.",
+   "tool": "None applied.",
+   "alt": "Chalazion, preseptal cellulitis"
+  },
+  {
+   "id": "chalaz",
+   "name": "Chalazion",
+   "cm": false,
+   "triggers": [
+    "c_swollen_eyelid"
+   ],
+   "f": {
+    "sw_chal": 5
+   },
+   "inv": "Clinical.",
+   "tool": "None applied.",
+   "alt": "Stye, sebaceous carcinoma if recurrent"
+  },
+  {
+   "id": "lidallerg",
+   "name": "Allergic eyelid swelling",
+   "cm": false,
+   "triggers": [
+    "c_swollen_eyelid",
+    "c_itchy_eyes"
+   ],
+   "f": {
+    "sw_allerg": 4
+   },
+   "inv": "Clinical.",
+   "tool": "None applied.",
+   "alt": "Orbital cellulitis, blepharitis"
+  },
+  {
+   "id": "nld",
+   "name": "Nasolacrimal duct obstruction",
+   "cm": false,
+   "triggers": [
+    "c_watering_of_eyes"
+   ],
+   "f": {
+    "wt_duct": 4
+   },
+   "inv": "Syringing test; ophthalmology review.",
+   "tool": "None applied.",
+   "alt": "Conjunctivitis, dry eye"
+  },
+  {
+   "id": "dacryo",
+   "name": "Acute dacryocystitis",
+   "cm": false,
+   "triggers": [
+    "c_watering_of_eyes",
+    "c_eye_discharge"
+   ],
+   "f": {
+    "wt_sac": 5,
+    "fever": 1
+   },
+   "inv": "Clinical; ophthalmology review.",
+   "tool": "None applied.",
+   "alt": "Orbital cellulitis, stye"
+  },
+  {
+   "id": "conggptosis",
+   "name": "Congenital ptosis",
+   "cm": false,
+   "triggers": [
+    "c_drooping_eyelid"
+   ],
+   "f": {
+    "pt_child": 5
+   },
+   "inv": "Ophthalmology assessment.",
+   "tool": "None applied.",
+   "alt": "Third-nerve palsy, myasthenia gravis"
+  },
+  {
+   "id": "squintchild",
+   "name": "Childhood strabismus",
+   "cm": false,
+   "triggers": [
+    "c_squint"
+   ],
+   "f": {
+    "sq_child": 4
+   },
+   "inv": "Cover test, refraction, paediatric ophthalmology.",
+   "tool": "None applied.",
+   "alt": "Retinoblastoma, cranial nerve palsy"
+  },
+  {
+   "id": "rb",
+   "name": "Retinoblastoma",
+   "cm": true,
+   "triggers": [
+    "c_squint"
+   ],
+   "f": {
+    "sq_white": 5
+   },
+   "inv": "Urgent ophthalmology; dilated fundus exam; MRI.",
+   "tool": "None applied.",
+   "alt": "Cataract, strabismus, retinopathy of prematurity"
+  },
+  {
+   "id": "allerconj",
+   "name": "Allergic conjunctivitis",
+   "cm": false,
+   "triggers": [
+    "c_itchy_eyes",
+    "red_eye"
+   ],
+   "f": {
+    "ie_allerg": 4,
+    "atopy": 1
+   },
+   "inv": "Clinical.",
+   "tool": "None applied.",
+   "alt": "Infective conjunctivitis, dry eye"
+  },
+  {
+   "id": "dryeye",
+   "name": "Dry eye disease",
+   "cm": false,
+   "triggers": [
+    "c_itchy_eyes",
+    "c_foreign_body_sensation_in_eye"
+   ],
+   "f": {
+    "ie_dry": 4
+   },
+   "inv": "Schirmer test, tear break-up time.",
+   "tool": "None applied.",
+   "alt": "Allergic conjunctivitis, blepharitis, Sjogren syndrome"
+  },
+  {
+   "id": "blephar",
+   "name": "Blepharitis",
+   "cm": false,
+   "triggers": [
+    "c_itchy_eyes",
+    "c_swollen_eyelid"
+   ],
+   "f": {
+    "ie_blephar": 4
+   },
+   "inv": "Clinical; lid hygiene.",
+   "tool": "None applied.",
+   "alt": "Dry eye, allergic conjunctivitis, demodex"
+  },
+  {
+   "id": "orbmass",
+   "name": "Orbital mass / tumour",
+   "cm": true,
+   "triggers": [
+    "c_bulging_eye"
+   ],
+   "f": {
+    "be_unilat": 4
+   },
+   "inv": "CT or MRI orbits, ophthalmology review.",
+   "tool": "None applied.",
+   "alt": "Thyroid eye disease, orbital cellulitis, vascular lesion"
+  },
+  {
+   "id": "neoconj",
+   "name": "Ophthalmia neonatorum",
+   "cm": true,
+   "triggers": [
+    "c_eye_discharge"
+   ],
+   "f": {
+    "ed_neonate": 5
+   },
+   "inv": "Urgent swab and treatment; assess mother for STI.",
+   "tool": "None applied.",
+   "alt": "Blocked tear duct, chemical conjunctivitis"
+  },
+  {
+   "id": "gcconj",
+   "name": "Hyperacute (gonococcal) conjunctivitis",
+   "cm": true,
+   "triggers": [
+    "c_eye_discharge",
+    "red_eye"
+   ],
+   "f": {
+    "ed_hyper": 5
+   },
+   "inv": "Urgent Gram stain/culture and ophthalmology review.",
+   "tool": "None applied.",
+   "alt": "Bacterial conjunctivitis, adenoviral"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_chem",
+   "text": "Chemical splash in the eye: irrigate immediately with water for at least 15-20 minutes",
+   "all": [
+    "ei_chem"
+   ]
+  },
+  {
+   "id": "rf_pen",
+   "text": "Penetrating eye injury: shield the eye, no pressure, emergency ophthalmology",
+   "all": [
+    "ei_pen"
+   ]
+  },
+  {
+   "id": "rf_orb",
+   "text": "Swollen red lid with fever or painful eye movement: possible orbital cellulitis, urgent",
+   "all": [
+    "ep_orbital"
+   ]
+  },
+  {
+   "id": "rf_third",
+   "text": "Drooping lid with large pupil and headache: possible aneurysm, emergency",
+   "all": [
+    "dp_third"
+   ]
+  },
+  {
+   "id": "rf_leuco",
+   "text": "White pupil reflex in a child: possible retinoblastoma, urgent referral",
+   "all": [
+    "sq_white"
+   ]
+  },
+  {
+   "id": "rf_neo_eye",
+   "text": "Eye discharge in a newborn: urgent assessment",
+   "all": [
+    "ed_neonate"
+   ]
+  },
+  {
+   "id": "rf_retdet",
+   "text": "Curtain over vision or new flashes and floaters: possible retinal detachment, urgent",
+   "all": [
+    "vision_curtain"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "visloss": {
+    "triggers": [
+     "c_flashes_or_floaters"
+    ],
+    "f": {
+     "ff_floaters": 0
+    }
+   },
+   "angle": {
+    "triggers": [
+     "c_eye_pain",
+     "c_halos_around_lights",
+     "c_sensitivity_to_light"
+    ],
+    "f": {}
+   },
+   "anteruv": {
+    "triggers": [
+     "c_eye_pain",
+     "c_sensitivity_to_light"
+    ],
+    "f": {}
+   },
+   "mg": {
+    "triggers": [
+     "c_double_vision",
+     "c_drooping_eyelid"
+    ],
+    "f": {}
+   },
+   "graves": {
+    "triggers": [
+     "c_bulging_eye",
+     "c_double_vision"
+    ],
+    "f": {}
+   },
+   "conj": {
+    "triggers": [
+     "c_eye_discharge",
+     "c_itchy_eyes"
+    ],
+    "f": {}
+   },
+   "migraine": {
+    "triggers": [
+     "c_sensitivity_to_light"
+    ],
+    "f": {}
+   },
+   "meningitis": {
+    "triggers": [
+     "c_sensitivity_to_light"
+    ],
+    "f": {}
+   },
+   "sjogren": {
+    "triggers": [
+     "c_foreign_body_sensation_in_eye"
+    ],
+    "f": {}
+   }
+  },
+  "exam": {},
+  "questions": {
+   "photophobia": [
+    "c_sensitivity_to_light"
+   ],
+   "eye_pain_severe": [
+    "c_eye_pain",
+    "c_halos_around_lights"
+   ],
+   "eye_discharge": [
+    "c_eye_discharge"
+   ],
+   "wk_fluct": [
+    "c_drooping_eyelid",
+    "c_double_vision"
+   ],
+   "ty_hyper": [
+    "c_bulging_eye"
+   ],
+   "sudden_vision_loss": [
+    "c_blurred_vision"
+   ],
+   "vision_curtain": [
+    "c_flashes_or_floaters"
+   ],
+   "vt_central": [
+    "c_double_vision"
+   ]
+  }
+ }
+}

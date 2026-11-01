@@ -1,0 +1,1023 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "sh_arc",
+   "lbl": "Pain lifting arm sideways, painful arc",
+   "text": "Pain when lifting the arm out to the side, worst midway?",
+   "why": "Rotator cuff / impingement.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_shoulder_pain"
+   ]
+  },
+  {
+   "id": "sh_stiff",
+   "lbl": "All movements stiff, diabetes or after immobility",
+   "text": "Shoulder stiff in all directions, with diabetes or after immobilisation?",
+   "why": "Frozen shoulder.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_shoulder_pain",
+    "c_reduced_joint_movement"
+   ]
+  },
+  {
+   "id": "sh_dislo",
+   "lbl": "After a fall, deformity, arm held in",
+   "text": "Shoulder deformity after a fall or twisting injury?",
+   "why": "Dislocation.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_shoulder_pain"
+   ]
+  },
+  {
+   "id": "sh_cardiac",
+   "lbl": "Pain with exertion, sweating, breathlessness",
+   "text": "Shoulder or arm pain brought on by exertion, with sweating or breathlessness?",
+   "why": "Referred cardiac pain.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_shoulder_pain"
+   ]
+  },
+  {
+   "id": "kn_lock",
+   "lbl": "Locking or giving way after twisting",
+   "text": "Locking, catching or giving way after a twist?",
+   "why": "Meniscal injury.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_knee_pain"
+   ]
+  },
+  {
+   "id": "kn_pop",
+   "lbl": "Pop at injury, early swelling, instability",
+   "text": "A pop at injury, quick swelling and a knee that gives way?",
+   "why": "Ligament injury / haemarthrosis.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_knee_pain"
+   ]
+  },
+  {
+   "id": "kn_ant",
+   "lbl": "Pain with stairs and prolonged sitting, front of knee",
+   "text": "Front-of-knee pain on stairs or after long sitting?",
+   "why": "Patellofemoral pain.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_knee_pain"
+   ]
+  },
+  {
+   "id": "hp_oa",
+   "lbl": "Groin pain with stiffness, over 50",
+   "text": "Groin pain and stiffness, over age 50?",
+   "why": "Hip osteoarthritis.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_hip_pain"
+   ]
+  },
+  {
+   "id": "hp_fx",
+   "lbl": "Fall, cannot bear weight, shortened turned-out leg",
+   "text": "After a fall, cannot bear weight, with a shortened, outward-turned leg?",
+   "why": "Hip fracture.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_hip_pain",
+    "c_fall"
+   ]
+  },
+  {
+   "id": "hp_avn",
+   "lbl": "Steroid or alcohol use, groin pain",
+   "text": "Long-term steroids or heavy alcohol with groin pain?",
+   "why": "Avascular necrosis.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_hip_pain",
+    "c_limping"
+   ]
+  },
+  {
+   "id": "hp_lat",
+   "lbl": "Lateral hip pain lying on that side",
+   "text": "Pain on the outer hip, worse lying on that side?",
+   "why": "Trochanteric bursitis.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_hip_pain"
+   ]
+  },
+  {
+   "id": "lm_syn",
+   "lbl": "Child 3-10 years, recent cold, no fever",
+   "text": "Child aged 3-10, recent viral illness, painful limp, no fever?",
+   "why": "Transient synovitis.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_limping"
+   ]
+  },
+  {
+   "id": "lm_perthes",
+   "lbl": "Child 4-8 years, painless limp",
+   "text": "Child aged 4-8 with a painless limp?",
+   "why": "Perthes disease.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_limping"
+   ]
+  },
+  {
+   "id": "lm_scfe",
+   "lbl": "Obese adolescent with hip or knee pain",
+   "text": "Overweight adolescent with hip or knee pain and limp?",
+   "why": "Slipped capital femoral epiphysis.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_limping"
+   ]
+  },
+  {
+   "id": "lm_septic",
+   "lbl": "Child with fever who refuses to bear weight",
+   "text": "Child with fever who refuses to bear weight?",
+   "why": "Septic arthritis / osteomyelitis.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_limping",
+    "c_bone_pain"
+   ]
+  },
+  {
+   "id": "fx_def",
+   "lbl": "Deformity, cannot use limb, crepitus",
+   "text": "Visible deformity or cannot use the limb?",
+   "why": "Fracture.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_limb_injury_or_fracture",
+    "c_fall"
+   ]
+  },
+  {
+   "id": "fx_nv",
+   "lbl": "Numb, pale, cold limb beyond injury",
+   "text": "Numbness, pallor or coldness beyond the injury?",
+   "why": "Neurovascular compromise.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_limb_injury_or_fracture"
+   ]
+  },
+  {
+   "id": "fx_open",
+   "lbl": "Bone or wound visible, bleeding",
+   "text": "Bone visible or an open bleeding wound over the injury?",
+   "why": "Open fracture.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_limb_injury_or_fracture"
+   ]
+  },
+  {
+   "id": "fx_comp",
+   "lbl": "Pain out of proportion, tense swelling, pain on passive stretch",
+   "text": "Severe pain out of proportion, tense swelling, pain on passive stretch?",
+   "why": "Compartment syndrome.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_limb_injury_or_fracture",
+    "c_swelling_of_limb"
+   ]
+  },
+  {
+   "id": "np_rad",
+   "lbl": "Arm pain or tingling with neck movement",
+   "text": "Arm pain or tingling that spreads from the neck?",
+   "why": "Cervical radiculopathy.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_neck_pain"
+   ]
+  },
+  {
+   "id": "np_myel",
+   "lbl": "Clumsy hands, unsteady walking, bladder trouble",
+   "text": "Clumsy hands, unsteady walking or bladder trouble with neck pain?",
+   "why": "Cervical myelopathy.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_neck_pain"
+   ]
+  },
+  {
+   "id": "np_whip",
+   "lbl": "After road accident or sudden jerk",
+   "text": "Neck pain after a road accident or sudden jerk?",
+   "why": "Whiplash.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_neck_pain"
+   ]
+  },
+  {
+   "id": "ct_night",
+   "lbl": "Tingling thumb to ring finger, wakes at night, shakes hand",
+   "text": "Tingling in thumb to ring finger that wakes the patient at night?",
+   "why": "Carpal tunnel syndrome.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_numbness_or_tingling_in_hands",
+    "c_wrist_or_hand_pain"
+   ]
+  },
+  {
+   "id": "ct_ulnar",
+   "lbl": "Little and ring finger numb, elbow leaning",
+   "text": "Little and ring finger numbness, worse with elbow bent?",
+   "why": "Ulnar neuropathy.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_numbness_or_tingling_in_hands"
+   ]
+  },
+  {
+   "id": "wr_scaph",
+   "lbl": "Fall on outstretched hand, snuffbox pain",
+   "text": "Fall on an outstretched hand, with pain at the base of the thumb?",
+   "why": "Scaphoid fracture.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_wrist_or_hand_pain"
+   ]
+  },
+  {
+   "id": "wr_dq",
+   "lbl": "Thumb-side wrist pain with repetitive gripping",
+   "text": "Pain on the thumb side of the wrist with repetitive gripping or lifting a baby?",
+   "why": "De Quervain tenosynovitis.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_wrist_or_hand_pain"
+   ]
+  },
+  {
+   "id": "me_statin",
+   "lbl": "Statin use with muscle pain",
+   "text": "Taking a statin with muscle pain or weakness?",
+   "why": "Statin myopathy.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_muscle_pain"
+   ]
+  },
+  {
+   "id": "me_pmr",
+   "lbl": "Over 50, morning stiffness of shoulders and hips",
+   "text": "Over 50 with morning stiffness of shoulders and hips?",
+   "why": "Polymyalgia rheumatica.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_muscle_pain",
+    "c_shoulder_pain",
+    "c_hip_pain"
+   ]
+  },
+  {
+   "id": "sw_lymph",
+   "lbl": "Chronic painless non-pitting swelling, endemic area",
+   "text": "Long-standing painless limb swelling, living in a filaria-endemic area?",
+   "why": "Lymphatic filariasis.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_swelling_of_limb"
+   ]
+  },
+  {
+   "id": "om_fever",
+   "lbl": "Fever with bone pain, recent wound or infection",
+   "text": "Fever with bone pain after a wound or infection?",
+   "why": "Osteomyelitis.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_bone_pain",
+    "c_swelling_of_limb"
+   ]
+  },
+  {
+   "id": "jd_rick",
+   "lbl": "Bow legs, wrist widening, little sun, poor diet",
+   "text": "Bow legs or wrist widening, little sun exposure, poor diet?",
+   "why": "Rickets.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_joint_deformity"
+   ]
+  },
+  {
+   "id": "fa_dizzy",
+   "lbl": "Dizzy or fainted before falling",
+   "text": "Dizzy, lightheaded or fainted before the fall?",
+   "why": "Medical cause for the fall.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_fall"
+   ]
+  },
+  {
+   "id": "fa_mech",
+   "lbl": "Tripped or slipped",
+   "text": "Did the patient trip or slip?",
+   "why": "Mechanical fall.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_fall"
+   ]
+  }
+ ],
+ "exam": [
+  {
+   "id": "ex_painful_arc",
+   "lbl": "Painful arc 60-120 degrees",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_shoulder_pain"
+   ]
+  },
+  {
+   "id": "ex_lachman",
+   "lbl": "Positive Lachman / anterior drawer",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_knee_pain"
+   ]
+  },
+  {
+   "id": "ex_mcmurray",
+   "lbl": "Joint-line tenderness / McMurray positive",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_knee_pain"
+   ]
+  },
+  {
+   "id": "ex_short_rot",
+   "lbl": "Shortened, externally rotated leg",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_hip_pain",
+    "c_fall"
+   ]
+  },
+  {
+   "id": "ex_phalen",
+   "lbl": "Positive Phalen / Tinel sign",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_numbness_or_tingling_in_hands",
+    "c_wrist_or_hand_pain"
+   ]
+  },
+  {
+   "id": "ex_snuffbox",
+   "lbl": "Anatomical snuffbox tenderness",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_wrist_or_hand_pain"
+   ]
+  },
+  {
+   "id": "ex_passive_stretch",
+   "lbl": "Pain on passive stretch of muscles",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_limb_injury_or_fracture",
+    "c_swelling_of_limb"
+   ]
+  }
+ ],
+ "diseases": [
+  {
+   "id": "rotcuff",
+   "name": "Rotator cuff tendinopathy / impingement",
+   "cm": false,
+   "triggers": [
+    "c_shoulder_pain"
+   ],
+   "f": {
+    "sh_arc": 4,
+    "ex_painful_arc": 3
+   },
+   "inv": "Clinical; ultrasound or MRI if persistent.",
+   "tool": "None applied.",
+   "alt": "Frozen shoulder, cervical radiculopathy, referred pain"
+  },
+  {
+   "id": "frozen",
+   "name": "Frozen shoulder (adhesive capsulitis)",
+   "cm": false,
+   "triggers": [
+    "c_shoulder_pain",
+    "c_reduced_joint_movement"
+   ],
+   "f": {
+    "sh_stiff": 4
+   },
+   "inv": "Clinical; X-ray; check glucose.",
+   "tool": "None applied.",
+   "alt": "Rotator cuff tear, OA, referred pain"
+  },
+  {
+   "id": "dislocsh",
+   "name": "Shoulder dislocation",
+   "cm": true,
+   "triggers": [
+    "c_shoulder_pain"
+   ],
+   "f": {
+    "sh_dislo": 5
+   },
+   "inv": "X-ray; check axillary nerve and pulses; reduction by trained clinician.",
+   "tool": "None applied.",
+   "alt": "Fracture, AC joint injury"
+  },
+  {
+   "id": "refcard",
+   "name": "Referred cardiac pain",
+   "cm": true,
+   "triggers": [
+    "c_shoulder_pain"
+   ],
+   "f": {
+    "sh_cardiac": 5
+   },
+   "inv": "ECG and troponin if exertional features.",
+   "tool": "None applied.",
+   "alt": "Rotator cuff disease, cervical disease"
+  },
+  {
+   "id": "meniscus",
+   "name": "Meniscal tear",
+   "cm": false,
+   "triggers": [
+    "c_knee_pain"
+   ],
+   "f": {
+    "kn_lock": 4,
+    "ex_mcmurray": 3
+   },
+   "inv": "Clinical; MRI.",
+   "tool": "None applied.",
+   "alt": "OA, ligament injury, loose body"
+  },
+  {
+   "id": "acl",
+   "name": "Ligament injury (e.g. ACL tear)",
+   "cm": false,
+   "triggers": [
+    "c_knee_pain"
+   ],
+   "f": {
+    "kn_pop": 4,
+    "ex_lachman": 4
+   },
+   "inv": "X-ray to exclude fracture; MRI.",
+   "tool": "None applied.",
+   "alt": "Meniscal tear, patellar dislocation, fracture"
+  },
+  {
+   "id": "pfp",
+   "name": "Patellofemoral pain syndrome",
+   "cm": false,
+   "triggers": [
+    "c_knee_pain"
+   ],
+   "f": {
+    "kn_ant": 4
+   },
+   "inv": "Clinical.",
+   "tool": "None applied.",
+   "alt": "OA, meniscal tear, patellar instability"
+  },
+  {
+   "id": "hipoa",
+   "name": "Hip osteoarthritis",
+   "cm": false,
+   "triggers": [
+    "c_hip_pain"
+   ],
+   "f": {
+    "hp_oa": 4,
+    "age_over_60": 1
+   },
+   "inv": "X-ray pelvis and hip.",
+   "tool": "None applied.",
+   "alt": "Avascular necrosis, referred spine pain, bursitis"
+  },
+  {
+   "id": "hipfx",
+   "name": "Hip fracture",
+   "cm": true,
+   "triggers": [
+    "c_hip_pain",
+    "c_fall"
+   ],
+   "f": {
+    "hp_fx": 5,
+    "ex_short_rot": 4
+   },
+   "inv": "X-ray pelvis; urgent orthopaedic care; analgesia.",
+   "tool": "None applied.",
+   "alt": "Pelvic fracture, contusion"
+  },
+  {
+   "id": "avn",
+   "name": "Avascular necrosis of femoral head",
+   "cm": false,
+   "triggers": [
+    "c_hip_pain",
+    "c_limping"
+   ],
+   "f": {
+    "hp_avn": 4
+   },
+   "inv": "MRI hip.",
+   "tool": "None applied.",
+   "alt": "Hip OA, transient synovitis"
+  },
+  {
+   "id": "trochb",
+   "name": "Greater trochanteric pain syndrome",
+   "cm": false,
+   "triggers": [
+    "c_hip_pain"
+   ],
+   "f": {
+    "hp_lat": 4
+   },
+   "inv": "Clinical.",
+   "tool": "None applied.",
+   "alt": "Hip OA, lumbar referred pain"
+  },
+  {
+   "id": "transsyn",
+   "name": "Transient synovitis of the hip",
+   "cm": false,
+   "triggers": [
+    "c_limping"
+   ],
+   "f": {
+    "lm_syn": 4
+   },
+   "inv": "Clinical; ultrasound; exclude septic arthritis.",
+   "tool": "None applied.",
+   "alt": "Septic arthritis, Perthes disease"
+  },
+  {
+   "id": "perthes",
+   "name": "Perthes disease",
+   "cm": false,
+   "triggers": [
+    "c_limping"
+   ],
+   "f": {
+    "lm_perthes": 4
+   },
+   "inv": "X-ray hip; paediatric orthopaedics.",
+   "tool": "None applied.",
+   "alt": "Transient synovitis, SCFE"
+  },
+  {
+   "id": "scfe",
+   "name": "Slipped capital femoral epiphysis",
+   "cm": true,
+   "triggers": [
+    "c_limping"
+   ],
+   "f": {
+    "lm_scfe": 5
+   },
+   "inv": "X-ray both hips (AP and lateral); urgent orthopaedic review; avoid weight bearing.",
+   "tool": "None applied.",
+   "alt": "Perthes disease, knee pathology"
+  },
+  {
+   "id": "pedsepsis",
+   "name": "Paediatric septic arthritis / osteomyelitis",
+   "cm": true,
+   "triggers": [
+    "c_limping",
+    "c_bone_pain"
+   ],
+   "f": {
+    "lm_septic": 5,
+    "fever": 1
+   },
+   "inv": "Urgent CBC, CRP, blood cultures, ultrasound; senior orthopaedic review.",
+   "tool": "None applied.",
+   "alt": "Transient synovitis, trauma, leukaemia"
+  },
+  {
+   "id": "fracture",
+   "name": "Fracture",
+   "cm": false,
+   "triggers": [
+    "c_limb_injury_or_fracture",
+    "c_fall"
+   ],
+   "f": {
+    "fx_def": 4,
+    "g_injury": 1
+   },
+   "inv": "X-ray two views including joints above and below.",
+   "tool": "None applied.",
+   "alt": "Soft tissue injury, dislocation, pathological fracture"
+  },
+  {
+   "id": "nvcomp",
+   "name": "Neurovascular compromise with injury",
+   "cm": true,
+   "triggers": [
+    "c_limb_injury_or_fracture"
+   ],
+   "f": {
+    "fx_nv": 5
+   },
+   "inv": "Urgent vascular and orthopaedic review; do not delay.",
+   "tool": "None applied.",
+   "alt": "Simple fracture, soft tissue injury"
+  },
+  {
+   "id": "openfx",
+   "name": "Open fracture",
+   "cm": true,
+   "triggers": [
+    "c_limb_injury_or_fracture"
+   ],
+   "f": {
+    "fx_open": 5
+   },
+   "inv": "Cover wound, splint, tetanus, antibiotics per protocol, urgent surgery.",
+   "tool": "None applied.",
+   "alt": "Closed fracture with abrasion"
+  },
+  {
+   "id": "compsyn",
+   "name": "Compartment syndrome",
+   "cm": true,
+   "triggers": [
+    "c_limb_injury_or_fracture",
+    "c_swelling_of_limb"
+   ],
+   "f": {
+    "fx_comp": 5,
+    "ex_passive_stretch": 4
+   },
+   "inv": "Emergency senior surgical review; clinical diagnosis; do not wait for tests.",
+   "tool": "None applied.",
+   "alt": "Fracture pain, cellulitis, DVT"
+  },
+  {
+   "id": "cervrad",
+   "name": "Cervical radiculopathy",
+   "cm": false,
+   "triggers": [
+    "c_neck_pain"
+   ],
+   "f": {
+    "np_rad": 4
+   },
+   "inv": "Clinical; MRI if persistent or neurological deficit.",
+   "tool": "None applied.",
+   "alt": "Cervical myelopathy, shoulder disease"
+  },
+  {
+   "id": "cervmyel",
+   "name": "Cervical myelopathy",
+   "cm": true,
+   "triggers": [
+    "c_neck_pain"
+   ],
+   "f": {
+    "np_myel": 5
+   },
+   "inv": "Urgent MRI cervical spine; surgical opinion.",
+   "tool": "None applied.",
+   "alt": "Cervical radiculopathy, MS, B12 deficiency"
+  },
+  {
+   "id": "whiplash",
+   "name": "Whiplash / cervical sprain",
+   "cm": false,
+   "triggers": [
+    "c_neck_pain"
+   ],
+   "f": {
+    "np_whip": 4,
+    "g_injury": 1
+   },
+   "inv": "Clinical; imaging if red flags or neurological signs.",
+   "tool": "None applied.",
+   "alt": "Fracture, instability, disc injury"
+  },
+  {
+   "id": "cts",
+   "name": "Carpal tunnel syndrome",
+   "cm": false,
+   "triggers": [
+    "c_numbness_or_tingling_in_hands",
+    "c_wrist_or_hand_pain"
+   ],
+   "f": {
+    "ct_night": 4,
+    "ex_phalen": 3
+   },
+   "inv": "Clinical; nerve conduction study; check TSH and glucose.",
+   "tool": "None applied.",
+   "alt": "Cervical radiculopathy, ulnar neuropathy, peripheral neuropathy"
+  },
+  {
+   "id": "ulnarn",
+   "name": "Ulnar neuropathy (cubital tunnel)",
+   "cm": false,
+   "triggers": [
+    "c_numbness_or_tingling_in_hands"
+   ],
+   "f": {
+    "ct_ulnar": 4
+   },
+   "inv": "Clinical; nerve conduction study.",
+   "tool": "None applied.",
+   "alt": "Cervical radiculopathy, thoracic outlet syndrome"
+  },
+  {
+   "id": "scaphoid",
+   "name": "Scaphoid fracture",
+   "cm": true,
+   "triggers": [
+    "c_wrist_or_hand_pain"
+   ],
+   "f": {
+    "wr_scaph": 4,
+    "ex_snuffbox": 4
+   },
+   "inv": "X-ray wrist with scaphoid views; repeat or MRI if normal but suspicious.",
+   "tool": "None applied.",
+   "alt": "Wrist sprain, De Quervain, radius fracture"
+  },
+  {
+   "id": "dquerv",
+   "name": "De Quervain tenosynovitis",
+   "cm": false,
+   "triggers": [
+    "c_wrist_or_hand_pain"
+   ],
+   "f": {
+    "wr_dq": 4
+   },
+   "inv": "Clinical (Finkelstein test).",
+   "tool": "None applied.",
+   "alt": "Thumb OA, scaphoid fracture"
+  },
+  {
+   "id": "statinmyo",
+   "name": "Statin-related myopathy",
+   "cm": false,
+   "triggers": [
+    "c_muscle_pain"
+   ],
+   "f": {
+    "me_statin": 4
+   },
+   "inv": "CK, TSH, review the statin.",
+   "tool": "None applied.",
+   "alt": "Myositis, hypothyroidism, polymyalgia rheumatica"
+  },
+  {
+   "id": "pmr",
+   "name": "Polymyalgia rheumatica",
+   "cm": false,
+   "triggers": [
+    "c_muscle_pain",
+    "c_shoulder_pain",
+    "c_hip_pain"
+   ],
+   "f": {
+    "me_pmr": 4,
+    "age_over_60": 1
+   },
+   "inv": "ESR/CRP; consider giant cell arteritis.",
+   "tool": "None applied.",
+   "alt": "Rheumatoid arthritis, myositis, hypothyroidism"
+  },
+  {
+   "id": "filar",
+   "name": "Lymphatic filariasis / chronic lymphoedema",
+   "cm": false,
+   "triggers": [
+    "c_swelling_of_limb"
+   ],
+   "f": {
+    "sw_lymph": 4
+   },
+   "inv": "Clinical; night blood smear or antigen test.",
+   "tool": "None applied.",
+   "alt": "DVT, heart failure, venous disease, cellulitis"
+  },
+  {
+   "id": "osteomye",
+   "name": "Osteomyelitis",
+   "cm": true,
+   "triggers": [
+    "c_bone_pain",
+    "c_swelling_of_limb"
+   ],
+   "f": {
+    "om_fever": 4
+   },
+   "inv": "CBC, CRP, blood culture, X-ray, MRI.",
+   "tool": "None applied.",
+   "alt": "Bone tumour, fracture, septic arthritis"
+  },
+  {
+   "id": "rickets",
+   "name": "Rickets",
+   "cm": false,
+   "triggers": [
+    "c_joint_deformity"
+   ],
+   "f": {
+    "jd_rick": 4
+   },
+   "inv": "X-ray wrist, vitamin D, calcium, phosphate, ALP.",
+   "tool": "None applied.",
+   "alt": "Physiological bow legs, Blount disease"
+  },
+  {
+   "id": "mechfall",
+   "name": "Mechanical fall",
+   "cm": false,
+   "triggers": [
+    "c_fall"
+   ],
+   "f": {
+    "fa_mech": 4
+   },
+   "inv": "Falls assessment, vision, footwear, home hazards.",
+   "tool": "None applied.",
+   "alt": "Syncope, medical cause, fracture"
+  },
+  {
+   "id": "medfall",
+   "name": "Fall with medical cause (syncope, drugs, hypotension)",
+   "cm": false,
+   "triggers": [
+    "c_fall"
+   ],
+   "f": {
+    "fa_dizzy": 4
+   },
+   "inv": "ECG, orthostatic BP, glucose, medicines review.",
+   "tool": "None applied.",
+   "alt": "Mechanical fall, stroke, arrhythmia"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_comp",
+   "text": "Severe pain with tense swelling and pain on stretch: possible compartment syndrome, emergency",
+   "all": [
+    "fx_comp"
+   ]
+  },
+  {
+   "id": "rf_nv",
+   "text": "Injured limb that is pale, cold or numb: limb-threatening, urgent",
+   "all": [
+    "fx_nv"
+   ]
+  },
+  {
+   "id": "rf_open",
+   "text": "Open fracture: urgent surgery, cover wound, tetanus and antibiotics",
+   "all": [
+    "fx_open"
+   ]
+  },
+  {
+   "id": "rf_myel",
+   "text": "Neck pain with clumsy hands, unsteady walking or bladder trouble: possible myelopathy, urgent",
+   "all": [
+    "np_myel"
+   ]
+  },
+  {
+   "id": "rf_hipfx",
+   "text": "Fall with shortened turned-out leg: possible hip fracture",
+   "all": [
+    "hp_fx"
+   ]
+  },
+  {
+   "id": "rf_pedsep",
+   "text": "Child with fever who refuses to bear weight: possible septic arthritis/osteomyelitis, urgent",
+   "all": [
+    "lm_septic"
+   ]
+  },
+  {
+   "id": "rf_scfe",
+   "text": "Overweight adolescent with hip or knee pain and limp: possible SCFE, avoid weight bearing, urgent",
+   "all": [
+    "lm_scfe"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "oa": {
+    "triggers": [
+     "c_knee_pain",
+     "c_hip_pain",
+     "c_shoulder_pain"
+    ],
+    "f": {
+     "mech_activity": 3
+    }
+   },
+   "septic": {
+    "triggers": [
+     "c_knee_pain",
+     "c_limping"
+    ],
+    "f": {}
+   },
+   "gouty": {
+    "triggers": [
+     "c_knee_pain"
+    ],
+    "f": {}
+   },
+   "meningitis": {
+    "triggers": [
+     "c_neck_pain"
+    ],
+    "f": {}
+   },
+   "dvt": {
+    "triggers": [
+     "c_swelling_of_limb"
+    ],
+    "f": {}
+   },
+   "cellulitis": {
+    "triggers": [
+     "c_swelling_of_limb"
+    ],
+    "f": {}
+   },
+   "bonemet": {
+    "triggers": [
+     "c_bone_pain"
+    ],
+    "f": {}
+   },
+   "cord": {
+    "triggers": [
+     "c_limb_weakness"
+    ],
+    "f": {}
+   },
+   "lbp": {
+    "triggers": [
+     "c_leg_pain_radiating_from_back"
+    ],
+    "f": {}
+   }
+  },
+  "exam": {},
+  "questions": {
+   "wk_proximal": [
+    "c_limb_weakness"
+   ],
+   "leg_swelling_unilateral": [
+    "c_swelling_of_limb"
+   ],
+   "wk_sudden": [
+    "c_limb_weakness"
+   ],
+   "mech_activity": [
+    "c_knee_pain",
+    "c_hip_pain",
+    "c_shoulder_pain"
+   ]
+  }
+ }
+}

@@ -1,0 +1,530 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "ja_cholestatic",
+   "lbl": "Dark urine, pale stools, itching",
+   "text": "Dark urine, pale stools and itching?",
+   "why": "Cholestatic (obstructive) pattern.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_jaundice"
+   ]
+  },
+  {
+   "id": "ja_cholangitis",
+   "lbl": "Fever and right upper abdominal pain",
+   "text": "Fever with right upper abdominal pain?",
+   "why": "Raises ascending cholangitis.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_jaundice"
+   ]
+  },
+  {
+   "id": "ja_painless",
+   "lbl": "Painless progressive jaundice with weight loss",
+   "text": "Painless, progressive jaundice with weight loss?",
+   "why": "Raises pancreatic or biliary cancer.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_jaundice"
+   ]
+  },
+  {
+   "id": "ja_alcohol",
+   "lbl": "Heavy alcohol use",
+   "text": "Heavy regular alcohol use?",
+   "why": "Alcohol-related liver disease.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_jaundice",
+    "c_swelling_of_feet"
+   ]
+  },
+  {
+   "id": "ja_viral",
+   "lbl": "Fever, nausea, anorexia before jaundice; food/water or needle exposure",
+   "text": "Fever, nausea and loss of appetite before jaundice, or unsafe food, water, needles, transfusion?",
+   "why": "Viral hepatitis prodrome and exposure.",
+   "sys": "General / Infectious",
+   "when": [
+    "c_jaundice"
+   ]
+  },
+  {
+   "id": "ja_haemolytic",
+   "lbl": "Dark urine without itching, with pallor or family history",
+   "text": "Dark urine without itching, with pallor, or a family history of anaemia?",
+   "why": "Haemolytic pattern.",
+   "sys": "Haematological",
+   "when": [
+    "c_jaundice"
+   ]
+  },
+  {
+   "id": "gb_nsaid",
+   "lbl": "NSAID, aspirin or steroid use",
+   "text": "Regular painkillers (NSAIDs), aspirin or steroids?",
+   "why": "Major cause of ulcers and gastritis.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_vomiting_blood",
+    "c_black_stools"
+   ]
+  },
+  {
+   "id": "gb_liver",
+   "lbl": "Heavy alcohol or known liver disease",
+   "text": "Heavy alcohol use or known liver disease?",
+   "why": "Varices cause large bleeds.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_vomiting_blood",
+    "c_black_stools"
+   ]
+  },
+  {
+   "id": "gb_epigastric",
+   "lbl": "Burning epigastric pain related to meals",
+   "text": "Burning upper abdominal pain related to meals?",
+   "why": "Peptic ulcer pattern.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_vomiting_blood",
+    "c_black_stools"
+   ]
+  },
+  {
+   "id": "gb_retching",
+   "lbl": "Forceful retching before blood",
+   "text": "Forceful vomiting or retching before the blood appeared?",
+   "why": "Mallory-Weiss tear.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_vomiting_blood"
+   ]
+  },
+  {
+   "id": "gb_massive",
+   "lbl": "Large volume of blood, faint or dizzy",
+   "text": "Large amount of blood, or feeling faint or dizzy?",
+   "why": "Haemodynamic compromise.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_vomiting_blood",
+    "c_black_stools"
+   ]
+  },
+  {
+   "id": "dy_solid_prog",
+   "lbl": "Solids then liquids, progressive with weight loss",
+   "text": "Trouble with solids first, then liquids, steadily worse with weight loss?",
+   "why": "Mechanical obstruction, e.g. oesophageal cancer.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_difficulty_swallowing"
+   ]
+  },
+  {
+   "id": "dy_both",
+   "lbl": "Solids and liquids both from the start, with regurgitation",
+   "text": "Trouble with both solids and liquids from the start, with regurgitation of undigested food?",
+   "why": "Achalasia pattern.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_difficulty_swallowing"
+   ]
+  },
+  {
+   "id": "dy_heartburn",
+   "lbl": "Long-standing heartburn",
+   "text": "Long-standing heartburn or acid reflux?",
+   "why": "Reflux stricture.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_difficulty_swallowing"
+   ]
+  },
+  {
+   "id": "dy_painful_thrush",
+   "lbl": "Painful swallowing with oral thrush or low immunity",
+   "text": "Painful swallowing with white patches in the mouth, or weak immunity (HIV, steroids, diabetes)?",
+   "why": "Candida oesophagitis.",
+   "sys": "General / Infectious",
+   "when": [
+    "c_difficulty_swallowing"
+   ]
+  },
+  {
+   "id": "co_alarm",
+   "lbl": "Blood in stool, weight loss, anaemia or new onset after 50",
+   "text": "Blood in stool, weight loss, anaemia, new constipation after 50, or family history of bowel cancer?",
+   "why": "Alarm features need investigation.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_constipation"
+   ]
+  },
+  {
+   "id": "co_func",
+   "lbl": "Lifelong, hard stools, low fibre or fluid",
+   "text": "Lifelong constipation with hard stools, low fibre or low fluid intake?",
+   "why": "Functional constipation.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_constipation"
+   ]
+  },
+  {
+   "id": "co_drugs",
+   "lbl": "Opioids, anticholinergics, iron, calcium channel blockers",
+   "text": "Taking opioids, anticholinergics, iron or calcium channel blockers?",
+   "why": "Drug-induced constipation.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_constipation"
+   ]
+  },
+  {
+   "id": "co_obstructed",
+   "lbl": "No stool and no gas, vomiting, distension",
+   "text": "Passing neither stool nor gas, with vomiting and a swollen abdomen?",
+   "why": "Intestinal obstruction.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_constipation",
+    "c_abdominal_distension"
+   ]
+  }
+ ],
+ "exam": [
+  {
+   "id": "ex_icterus",
+   "lbl": "Yellow sclera (icterus)",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_jaundice"
+   ]
+  }
+ ],
+ "diseases": [
+  {
+   "id": "hepviral",
+   "name": "Acute viral hepatitis",
+   "cm": false,
+   "triggers": [
+    "c_jaundice"
+   ],
+   "f": {
+    "ja_viral": 4,
+    "d_contaminated": 2,
+    "fever": 1
+   },
+   "inv": "LFTs, hepatitis A/E IgM, HBsAg, anti-HCV, INR.",
+   "tool": "None applied.",
+   "alt": "Drug-induced injury, alcohol, malaria, leptospirosis"
+  },
+  {
+   "id": "alcliver",
+   "name": "Alcohol-related liver disease",
+   "cm": false,
+   "triggers": [
+    "c_jaundice"
+   ],
+   "f": {
+    "ja_alcohol": 4,
+    "ex_ascites": 2,
+    "sw_liver": 2
+   },
+   "inv": "LFTs, CBC, INR, ultrasound abdomen.",
+   "tool": "None applied.",
+   "alt": "Viral hepatitis, drug-induced injury, other chronic liver disease"
+  },
+  {
+   "id": "cholangitis",
+   "name": "Biliary obstruction / cholangitis",
+   "cm": true,
+   "triggers": [
+    "c_jaundice"
+   ],
+   "f": {
+    "ja_cholestatic": 3,
+    "ja_cholangitis": 4,
+    "fever": 1
+   },
+   "inv": "Ultrasound abdomen, LFTs, blood cultures; urgent senior review if unwell.",
+   "tool": "None applied.",
+   "alt": "Viral hepatitis, pancreatic cancer, stones"
+  },
+  {
+   "id": "panca",
+   "name": "Pancreatic or biliary malignancy",
+   "cm": true,
+   "triggers": [
+    "c_jaundice"
+   ],
+   "f": {
+    "ja_painless": 4,
+    "ja_cholestatic": 2,
+    "c_weight_loss": 2
+   },
+   "inv": "Ultrasound/CT abdomen, tumour markers per specialist.",
+   "tool": "None applied.",
+   "alt": "Gallstones, hepatitis, cholangiopathy"
+  },
+  {
+   "id": "haemo",
+   "name": "Haemolytic jaundice",
+   "cm": false,
+   "triggers": [
+    "c_jaundice"
+   ],
+   "f": {
+    "ja_haemolytic": 4,
+    "pallor": 2
+   },
+   "inv": "CBC, reticulocyte count, peripheral smear, indirect bilirubin, LDH.",
+   "tool": "None applied.",
+   "alt": "Hepatitis, Gilbert syndrome, malaria"
+  },
+  {
+   "id": "dili",
+   "name": "Drug-induced liver injury",
+   "cm": false,
+   "triggers": [
+    "c_jaundice"
+   ],
+   "f": {
+    "g_newdrug": 3
+   },
+   "inv": "LFTs; review all drugs, herbal remedies and supplements.",
+   "tool": "None applied.",
+   "alt": "Viral hepatitis, alcohol, autoimmune hepatitis"
+  },
+  {
+   "id": "pud",
+   "name": "Peptic ulcer disease",
+   "cm": true,
+   "triggers": [
+    "c_vomiting_blood",
+    "c_black_stools"
+   ],
+   "f": {
+    "gb_epigastric": 3,
+    "gb_nsaid": 3
+   },
+   "inv": "Urgent endoscopy; H. pylori testing; check haemoglobin.",
+   "tool": "None applied.",
+   "alt": "Gastritis, varices, cancer"
+  },
+  {
+   "id": "varix",
+   "name": "Variceal bleeding",
+   "cm": true,
+   "triggers": [
+    "c_vomiting_blood",
+    "c_black_stools"
+   ],
+   "f": {
+    "gb_liver": 4,
+    "ex_ascites": 2,
+    "ja_alcohol": 2
+   },
+   "inv": "Emergency resuscitation and endoscopy; coagulation and liver tests.",
+   "tool": "None applied.",
+   "alt": "Peptic ulcer, Mallory-Weiss tear"
+  },
+  {
+   "id": "mw",
+   "name": "Mallory-Weiss tear",
+   "cm": false,
+   "triggers": [
+    "c_vomiting_blood"
+   ],
+   "f": {
+    "gb_retching": 4
+   },
+   "inv": "Endoscopy if bleeding persists.",
+   "tool": "None applied.",
+   "alt": "Peptic ulcer, varices"
+  },
+  {
+   "id": "gastritis",
+   "name": "Erosive gastritis / oesophagitis",
+   "cm": false,
+   "triggers": [
+    "c_vomiting_blood",
+    "c_black_stools"
+   ],
+   "f": {
+    "gb_nsaid": 2,
+    "gb_liver": 1
+   },
+   "inv": "Endoscopy.",
+   "tool": "None applied.",
+   "alt": "Peptic ulcer, varices, cancer"
+  },
+  {
+   "id": "oesca",
+   "name": "Oesophageal cancer",
+   "cm": true,
+   "triggers": [
+    "c_difficulty_swallowing"
+   ],
+   "f": {
+    "dy_solid_prog": 4,
+    "c_weight_loss": 2,
+    "age_over_60": 1
+   },
+   "inv": "Urgent upper GI endoscopy and biopsy.",
+   "tool": "None applied.",
+   "alt": "Benign stricture, achalasia, extrinsic compression"
+  },
+  {
+   "id": "achal",
+   "name": "Achalasia",
+   "cm": false,
+   "triggers": [
+    "c_difficulty_swallowing"
+   ],
+   "f": {
+    "dy_both": 4
+   },
+   "inv": "Barium swallow, endoscopy, oesophageal manometry.",
+   "tool": "None applied.",
+   "alt": "Oesophageal cancer (pseudoachalasia), stricture"
+  },
+  {
+   "id": "gerdstr",
+   "name": "Reflux oesophagitis / peptic stricture",
+   "cm": false,
+   "triggers": [
+    "c_difficulty_swallowing"
+   ],
+   "f": {
+    "dy_heartburn": 3
+   },
+   "inv": "Endoscopy.",
+   "tool": "None applied.",
+   "alt": "Cancer, achalasia"
+  },
+  {
+   "id": "candoes",
+   "name": "Candida oesophagitis",
+   "cm": false,
+   "triggers": [
+    "c_difficulty_swallowing"
+   ],
+   "f": {
+    "dy_painful_thrush": 3
+   },
+   "inv": "Endoscopy; HIV test and glucose check.",
+   "tool": "None applied.",
+   "alt": "Reflux oesophagitis, pill oesophagitis, viral oesophagitis"
+  },
+  {
+   "id": "crc",
+   "name": "Colorectal cancer",
+   "cm": true,
+   "triggers": [
+    "c_constipation"
+   ],
+   "f": {
+    "co_alarm": 4,
+    "c_blood_in_stool": 3,
+    "c_weight_loss": 2
+   },
+   "inv": "Colonoscopy, CBC, CEA per specialist.",
+   "tool": "None applied.",
+   "alt": "Haemorrhoids, functional constipation, IBD"
+  },
+  {
+   "id": "funcconst",
+   "name": "Functional constipation",
+   "cm": false,
+   "triggers": [
+    "c_constipation"
+   ],
+   "f": {
+    "co_func": 3
+   },
+   "inv": "Clinical; exclude alarm features.",
+   "tool": "None applied.",
+   "alt": "Drug-induced, hypothyroidism, colon cancer"
+  },
+  {
+   "id": "drugconst",
+   "name": "Drug-induced constipation",
+   "cm": false,
+   "triggers": [
+    "c_constipation"
+   ],
+   "f": {
+    "co_drugs": 4
+   },
+   "inv": "Medication review.",
+   "tool": "None applied.",
+   "alt": "Functional constipation, hypothyroidism"
+  },
+  {
+   "id": "obstruction",
+   "name": "Intestinal obstruction",
+   "cm": true,
+   "triggers": [
+    "c_constipation",
+    "c_abdominal_distension"
+   ],
+   "f": {
+    "co_obstructed": 5,
+    "vomiting": 2,
+    "guarding": 1
+   },
+   "inv": "Urgent surgical review; abdominal X-ray, CT; fluids and electrolytes.",
+   "tool": "None applied.",
+   "alt": "Ileus, constipation, volvulus, hernia"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_gib",
+   "text": "Vomiting blood or black stools: assess haemodynamics urgently",
+   "all": [
+    "gb_massive"
+   ]
+  },
+  {
+   "id": "rf_haematemesis",
+   "text": "Haematemesis or melaena: possible upper GI bleed, check pulse and blood pressure",
+   "all": [
+    "c_vomiting_blood"
+   ]
+  },
+  {
+   "id": "rf_melaena",
+   "text": "Black stools: possible upper GI bleed, check pulse and blood pressure",
+   "all": [
+    "c_black_stools"
+   ]
+  },
+  {
+   "id": "rf_obstruct",
+   "text": "No stool or gas with vomiting and distension: possible intestinal obstruction, urgent surgical review",
+   "all": [
+    "co_obstructed"
+   ]
+  },
+  {
+   "id": "rf_cholangitis",
+   "text": "Jaundice with fever and right upper abdominal pain: possible cholangitis, urgent assessment",
+   "all": [
+    "c_jaundice",
+    "ja_cholangitis"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {},
+  "exam": {}
+ }
+}

@@ -1,0 +1,320 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "sle",
+   "lbl": "Facial butterfly rash, sun sensitivity, mouth ulcers, joint pain, hair loss, kidney trouble",
+   "text": "Butterfly facial rash, sun sensitivity, mouth ulcers, joint pain, hair loss or kidney problems?",
+   "why": "Systemic lupus pattern.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_sun_sensitivity",
+    "c_mouth_ulcers",
+    "rash_skin",
+    "joint_pain",
+    "c_fatigue_or_weakness"
+   ]
+  },
+  {
+   "id": "sj_dry",
+   "lbl": "Dry, gritty eyes and dry mouth",
+   "text": "Dry gritty eyes and a dry mouth?",
+   "why": "Sjogren syndrome.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_dry_eyes_or_mouth"
+   ]
+  },
+  {
+   "id": "ray",
+   "lbl": "Fingers white then blue then red in the cold, tight skin, reflux",
+   "text": "Fingers turn white, then blue, then red in the cold, with tight skin or reflux?",
+   "why": "Raynaud phenomenon / systemic sclerosis.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_fingers_turning_white_or_blue_in_cold"
+   ]
+  },
+  {
+   "id": "dm",
+   "lbl": "Purple eyelids, knuckle rash, proximal weakness",
+   "text": "Purple eyelid colour, knuckle rash and weakness rising from a chair?",
+   "why": "Dermatomyositis.",
+   "sys": "Dermatological",
+   "when": [
+    "c_muscle_pain",
+    "c_muscle_weakness"
+   ]
+  },
+  {
+   "id": "gout",
+   "lbl": "Sudden severe red hot big-toe or foot joint, night-time, alcohol or rich diet",
+   "text": "Sudden severe pain, redness and swelling of the big toe or foot joint, often at night after alcohol or rich food?",
+   "why": "Gout pattern.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "joint_pain",
+    "c_joint_swelling"
+   ]
+  },
+  {
+   "id": "as",
+   "lbl": "Young adult back pain, stiffness over 30 minutes, better with exercise, night pain",
+   "text": "Back pain starting under 40, stiffness over 30 minutes, better with exercise and worse at rest?",
+   "why": "Inflammatory back pain.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "back_pain",
+    "c_morning_stiffness"
+   ]
+  },
+  {
+   "id": "uveitis",
+   "lbl": "Red painful eye with light sensitivity",
+   "text": "Red painful eye with light sensitivity and blurred vision, or past spondyloarthritis?",
+   "why": "Anterior uveitis.",
+   "sys": "Ophthalmological",
+   "when": [
+    "red_eye"
+   ]
+  },
+  {
+   "id": "gca",
+   "lbl": "Over 50, new temple headache, scalp tenderness, jaw pain on chewing, visual symptoms",
+   "text": "Over 50 with new temple headache, scalp tenderness, jaw pain when chewing or visual symptoms?",
+   "why": "Giant cell arteritis threatens vision.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "headache",
+    "vision_loss"
+   ]
+  },
+  {
+   "id": "pfas",
+   "lbl": "Heel pain with first steps in the morning",
+   "text": "Heel pain with the first steps in the morning?",
+   "why": "Plantar fasciitis.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_heel_pain"
+   ]
+  },
+  {
+   "id": "rastiff",
+   "lbl": "Hand joints swollen with morning stiffness over an hour",
+   "text": "Swollen small hand joints with morning stiffness over an hour?",
+   "why": "Rheumatoid pattern.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_swollen_fingers",
+    "c_joint_swelling",
+    "c_morning_stiffness"
+   ]
+  }
+ ],
+ "exam": [],
+ "diseases": [
+  {
+   "id": "sle",
+   "name": "Systemic lupus erythematosus",
+   "cm": true,
+   "triggers": [
+    "c_sun_sensitivity",
+    "c_mouth_ulcers",
+    "rash_skin",
+    "joint_pain",
+    "c_fatigue_or_weakness"
+   ],
+   "f": {
+    "sle": 4,
+    "hair_loss": 1
+   },
+   "inv": "ANA, anti-dsDNA, complement, CBC, urine protein, creatinine; specialist care.",
+   "tool": "ACR/EULAR classification criteria are for research classification; apply by specialists.",
+   "alt": "Rheumatoid arthritis, viral illness, drug-induced lupus"
+  },
+  {
+   "id": "sjogren",
+   "name": "Sjogren syndrome",
+   "cm": false,
+   "triggers": [
+    "c_dry_eyes_or_mouth"
+   ],
+   "f": {
+    "sj_dry": 5
+   },
+   "inv": "Schirmer test, anti-Ro/La antibodies, salivary gland assessment.",
+   "tool": "None applied.",
+   "alt": "Drug-induced dryness, diabetes, dehydration"
+  },
+  {
+   "id": "raynaud",
+   "name": "Raynaud phenomenon / systemic sclerosis",
+   "cm": false,
+   "triggers": [
+    "c_fingers_turning_white_or_blue_in_cold"
+   ],
+   "f": {
+    "ray": 4
+   },
+   "inv": "ANA, nailfold capillaroscopy; look for skin tightening and reflux.",
+   "tool": "None applied.",
+   "alt": "Primary Raynaud, SLE, cold injury"
+  },
+  {
+   "id": "dermatomyo",
+   "name": "Dermatomyositis / inflammatory myopathy",
+   "cm": false,
+   "triggers": [
+    "c_muscle_pain",
+    "c_muscle_weakness"
+   ],
+   "f": {
+    "dm": 5,
+    "wk_proximal": 2
+   },
+   "inv": "CK, EMG, muscle biopsy, ANA; malignancy screening.",
+   "tool": "None applied.",
+   "alt": "Hypothyroidism, statin myopathy, muscular dystrophy"
+  },
+  {
+   "id": "gouty",
+   "name": "Gouty arthritis",
+   "cm": false,
+   "triggers": [
+    "joint_pain",
+    "c_joint_swelling"
+   ],
+   "f": {
+    "gout": 4
+   },
+   "inv": "Joint aspiration (crystals), serum uric acid, creatinine.",
+   "tool": "Septic arthritis must be excluded when a joint is hot and swollen.",
+   "alt": "Septic arthritis, pseudogout, cellulitis"
+  },
+  {
+   "id": "spa",
+   "name": "Axial spondyloarthritis (e.g. ankylosing spondylitis)",
+   "cm": false,
+   "triggers": [
+    "back_pain",
+    "c_morning_stiffness"
+   ],
+   "f": {
+    "as": 4
+   },
+   "inv": "HLA-B27, X-ray sacroiliac joints, MRI.",
+   "tool": "ASAS criteria classify axial SpA; apply by specialists.",
+   "alt": "Mechanical back pain, infection, malignancy"
+  },
+  {
+   "id": "anteruv",
+   "name": "Anterior uveitis",
+   "cm": false,
+   "triggers": [
+    "red_eye"
+   ],
+   "f": {
+    "uveitis": 4,
+    "photophobia": 1
+   },
+   "inv": "Slit-lamp examination by ophthalmologist; screen for associated systemic disease.",
+   "tool": "None applied.",
+   "alt": "Conjunctivitis, angle closure, keratitis"
+  },
+  {
+   "id": "gcarteritis",
+   "name": "Giant cell arteritis",
+   "cm": true,
+   "triggers": [
+    "headache",
+    "vision_loss"
+   ],
+   "f": {
+    "gca": 5,
+    "age_over_60": 1
+   },
+   "inv": "Urgent ESR/CRP and specialist review; early treatment may be needed to protect vision.",
+   "tool": "None applied.",
+   "alt": "Migraine, sinusitis, stroke, dental cause"
+  },
+  {
+   "id": "pf",
+   "name": "Plantar fasciitis",
+   "cm": false,
+   "triggers": [
+    "c_heel_pain"
+   ],
+   "f": {
+    "pfas": 5
+   },
+   "inv": "Clinical.",
+   "tool": "None applied.",
+   "alt": "Calcaneal spur, stress fracture, spondyloarthritis"
+  },
+  {
+   "id": "rahand",
+   "name": "Rheumatoid arthritis (hand joint pattern)",
+   "cm": false,
+   "triggers": [
+    "c_swollen_fingers",
+    "c_joint_swelling",
+    "c_morning_stiffness"
+   ],
+   "f": {
+    "rastiff": 4
+   },
+   "inv": "RF, anti-CCP, ESR/CRP, hand X-rays.",
+   "tool": "ACR/EULAR criteria apply to defined populations.",
+   "alt": "Osteoarthritis, psoriatic arthritis, viral arthritis"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_gca",
+   "text": "New temple headache or jaw pain with visual symptoms over age 50: possible giant cell arteritis, urgent",
+   "all": [
+    "gca"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "septic": {
+    "triggers": [
+     "c_joint_swelling"
+    ],
+    "f": {}
+   },
+   "ra": {
+    "triggers": [
+     "c_joint_swelling",
+     "c_morning_stiffness"
+    ],
+    "f": {}
+   },
+   "oa": {
+    "triggers": [
+     "c_joint_swelling"
+    ],
+    "f": {}
+   }
+  },
+  "exam": {},
+  "questions": {
+   "joint_morning_stiff": [
+    "c_morning_stiffness",
+    "c_joint_swelling"
+   ],
+   "joint_hot_swollen_sym": [
+    "c_joint_swelling"
+   ],
+   "joint_multiple": [
+    "c_joint_swelling"
+   ],
+   "rash": [
+    "c_sun_sensitivity"
+   ]
+  }
+ }
+}

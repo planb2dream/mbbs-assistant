@@ -1,0 +1,533 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "pu_endo",
+   "lbl": "Heart valve disease, IV drug use, recent dental/cardiac procedure",
+   "text": "Known valve disease, IV drug use, or recent dental or cardiac procedure?",
+   "why": "Infective endocarditis risk.",
+   "sys": "General / Infectious",
+   "when": [
+    "c_prolonged_fever",
+    "fever"
+   ]
+  },
+  {
+   "id": "pu_brucella",
+   "lbl": "Unpasteurised milk or livestock contact",
+   "text": "Drinks unpasteurised milk or works with cattle, goats or sheep?",
+   "why": "Brucellosis exposure.",
+   "sys": "General / Infectious",
+   "when": [
+    "c_prolonged_fever",
+    "fever"
+   ]
+  },
+  {
+   "id": "pu_hiv",
+   "lbl": "Unprotected sex, IV drug use, transfusion, recurrent infections",
+   "text": "Unprotected sex, IV drug use, transfusion, or recurrent infections?",
+   "why": "HIV risk.",
+   "sys": "General / Infectious",
+   "when": [
+    "c_prolonged_fever",
+    "c_weight_loss",
+    "c_mouth_ulcers_or_white_patches",
+    "fever"
+   ]
+  },
+  {
+   "id": "pu_kala",
+   "lbl": "Long fever with big spleen from endemic area",
+   "text": "Long fever with a big spleen, from or travelled to a kala-azar endemic area?",
+   "why": "Visceral leishmaniasis (India).",
+   "sys": "General / Infectious",
+   "when": [
+    "c_prolonged_fever",
+    "fever"
+   ]
+  },
+  {
+   "id": "pu_lepto",
+   "lbl": "Contact with flood water or rats, red eyes, calf pain, jaundice",
+   "text": "Contact with flood water, stagnant water or rats, with red eyes, calf pain or jaundice?",
+   "why": "Leptospirosis, important in monsoon India.",
+   "sys": "General / Infectious",
+   "when": [
+    "fever",
+    "c_prolonged_fever"
+   ]
+  },
+  {
+   "id": "pu_scrub",
+   "lbl": "Rural/outdoor exposure, black scab (eschar)",
+   "text": "Rural or bushy outdoor exposure, with a black scab on the skin?",
+   "why": "Scrub typhus.",
+   "sys": "General / Infectious",
+   "when": [
+    "fever",
+    "c_prolonged_fever"
+   ]
+  },
+  {
+   "id": "sg_reactive",
+   "lbl": "Tender glands with sore throat or infection",
+   "text": "Tender glands with sore throat, tooth or skin infection?",
+   "why": "Reactive lymphadenitis.",
+   "sys": "General / Infectious",
+   "when": [
+    "c_swollen_glands"
+   ]
+  },
+  {
+   "id": "sg_tb",
+   "lbl": "Matted glands with fever or night sweats",
+   "text": "Matted glands for weeks with fever or night sweats?",
+   "why": "TB lymphadenitis.",
+   "sys": "General / Infectious",
+   "when": [
+    "c_swollen_glands"
+   ]
+  },
+  {
+   "id": "sg_hard",
+   "lbl": "Hard painless fixed growing glands with weight loss",
+   "text": "Hard, painless, fixed, growing glands with weight loss?",
+   "why": "Lymphoma or metastasis.",
+   "sys": "General / Infectious",
+   "when": [
+    "c_swollen_glands"
+   ]
+  },
+  {
+   "id": "wi_necrotising",
+   "lbl": "Severe pain out of proportion, rapid spread, blisters, black skin, very unwell",
+   "text": "Pain out of proportion, fast spreading redness, blisters or black skin, with feeling very unwell?",
+   "why": "Necrotising infection.",
+   "sys": "General / Infectious",
+   "when": [
+    "c_wound_infection",
+    "rash_skin"
+   ]
+  },
+  {
+   "id": "wi_tetanus",
+   "lbl": "Stiff jaw or muscle spasms, not immunised",
+   "text": "Stiff jaw or painful muscle spasms, and not immunised against tetanus?",
+   "why": "Tetanus.",
+   "sys": "Neurological",
+   "when": [
+    "c_wound_infection",
+    "c_snake_or_animal_bite"
+   ]
+  },
+  {
+   "id": "mo_thrush",
+   "lbl": "White scrapable patches in mouth",
+   "text": "White patches that scrape off the mouth lining?",
+   "why": "Candidiasis.",
+   "sys": "General / Infectious",
+   "when": [
+    "c_mouth_ulcers_or_white_patches",
+    "c_mouth_ulcers"
+   ]
+  },
+  {
+   "id": "mo_aphthous",
+   "lbl": "Painful round ulcers, recurrent, heal in 1-2 weeks",
+   "text": "Painful round ulcers that recur and heal in 1-2 weeks?",
+   "why": "Recurrent aphthous ulcers.",
+   "sys": "General / Infectious",
+   "when": [
+    "c_mouth_ulcers_or_white_patches",
+    "c_mouth_ulcers"
+   ]
+  },
+  {
+   "id": "mo_cancer",
+   "lbl": "Ulcer over 3 weeks, hard, tobacco/betel quid use",
+   "text": "Ulcer or white/red patch over 3 weeks, hard, in a tobacco, betel quid or areca nut user?",
+   "why": "Oral cancer risk.",
+   "sys": "General / Infectious",
+   "when": [
+    "c_mouth_ulcers_or_white_patches",
+    "c_mouth_ulcers"
+   ]
+  },
+  {
+   "id": "rb_dog",
+   "lbl": "Bite, scratch or lick on broken skin by dog, cat, monkey or bat",
+   "text": "Bite, scratch or lick on broken skin by a dog, cat, monkey or bat?",
+   "why": "Rabies exposure.",
+   "sys": "General / Infectious",
+   "when": [
+    "c_snake_or_animal_bite"
+   ]
+  },
+  {
+   "id": "sn_neuro",
+   "lbl": "Drooping eyelids, difficulty breathing or swallowing",
+   "text": "Drooping eyelids, double vision, trouble swallowing or breathing?",
+   "why": "Neurotoxic snake envenoming.",
+   "sys": "Neurological",
+   "when": [
+    "c_snake_or_animal_bite"
+   ]
+  },
+  {
+   "id": "sn_haem",
+   "lbl": "Spreading swelling, bleeding gums, blood not clotting",
+   "text": "Spreading limb swelling, bleeding gums or blood that does not clot?",
+   "why": "Haemotoxic snake envenoming.",
+   "sys": "Haematological",
+   "when": [
+    "c_snake_or_animal_bite"
+   ]
+  }
+ ],
+ "exam": [],
+ "diseases": [
+  {
+   "id": "endocard",
+   "name": "Infective endocarditis",
+   "cm": true,
+   "triggers": [
+    "fever",
+    "c_prolonged_fever"
+   ],
+   "f": {
+    "pu_endo": 4,
+    "ex_murmur": 3
+   },
+   "inv": "Blood cultures before antibiotics, echocardiography.",
+   "tool": "Modified Duke criteria are used by specialists; apply separately.",
+   "alt": "Rheumatic fever, TB, lymphoma, SLE"
+  },
+  {
+   "id": "brucel",
+   "name": "Brucellosis",
+   "cm": false,
+   "triggers": [
+    "fever",
+    "c_prolonged_fever"
+   ],
+   "f": {
+    "pu_brucella": 4,
+    "joint_pain": 1
+   },
+   "inv": "Brucella serology or blood culture.",
+   "tool": "None applied.",
+   "alt": "Enteric fever, TB, malaria"
+  },
+  {
+   "id": "hiv",
+   "name": "HIV infection / opportunistic infection",
+   "cm": true,
+   "triggers": [
+    "fever",
+    "c_prolonged_fever",
+    "c_weight_loss",
+    "c_mouth_ulcers_or_white_patches"
+   ],
+   "f": {
+    "pu_hiv": 3,
+    "mo_thrush": 2
+   },
+   "inv": "HIV test with counselling per national programme (NACO), CD4 count.",
+   "tool": "None applied.",
+   "alt": "TB, malignancy, other chronic infection"
+  },
+  {
+   "id": "kala",
+   "name": "Visceral leishmaniasis (kala-azar)",
+   "cm": false,
+   "triggers": [
+    "fever",
+    "c_prolonged_fever"
+   ],
+   "f": {
+    "pu_kala": 4,
+    "hsm": 3,
+    "pallor": 1
+   },
+   "inv": "rK39 rapid test, CBC, bone marrow/splenic aspirate by specialist.",
+   "tool": "None applied.",
+   "alt": "Malaria, enteric fever, TB, lymphoma"
+  },
+  {
+   "id": "lepto",
+   "name": "Leptospirosis",
+   "cm": true,
+   "triggers": [
+    "fever",
+    "c_prolonged_fever"
+   ],
+   "f": {
+    "pu_lepto": 4,
+    "c_jaundice": 1
+   },
+   "inv": "Leptospira serology (MAT/IgM), CBC, creatinine, LFTs.",
+   "tool": "None applied.",
+   "alt": "Dengue, malaria, viral hepatitis, scrub typhus"
+  },
+  {
+   "id": "scrub",
+   "name": "Scrub typhus / rickettsial infection",
+   "cm": true,
+   "triggers": [
+    "fever",
+    "c_prolonged_fever"
+   ],
+   "f": {
+    "pu_scrub": 4
+   },
+   "inv": "Scrub typhus IgM ELISA; look for eschar.",
+   "tool": "None applied.",
+   "alt": "Dengue, malaria, enteric fever, leptospirosis"
+  },
+  {
+   "id": "reactlymph",
+   "name": "Reactive lymphadenitis",
+   "cm": false,
+   "triggers": [
+    "c_swollen_glands"
+   ],
+   "f": {
+    "sg_reactive": 4
+   },
+   "inv": "Treat source; review if not settling.",
+   "tool": "None applied.",
+   "alt": "TB lymphadenitis, lymphoma"
+  },
+  {
+   "id": "tblymph",
+   "name": "Tuberculous lymphadenitis",
+   "cm": false,
+   "triggers": [
+    "c_swollen_glands"
+   ],
+   "f": {
+    "sg_tb": 4,
+    "night_sweats": 1
+   },
+   "inv": "FNAC with AFB stain/CBNAAT, chest X-ray.",
+   "tool": "None applied.",
+   "alt": "Reactive lymphadenitis, lymphoma, metastasis"
+  },
+  {
+   "id": "lymphoma",
+   "name": "Lymphoma / metastatic lymph nodes",
+   "cm": true,
+   "triggers": [
+    "c_swollen_glands"
+   ],
+   "f": {
+    "sg_hard": 4,
+    "c_weight_loss": 2,
+    "c_night_sweats": 1
+   },
+   "inv": "Excision biopsy of node, CBC, imaging; specialist care.",
+   "tool": "None applied.",
+   "alt": "TB lymphadenitis, reactive nodes"
+  },
+  {
+   "id": "necrot",
+   "name": "Necrotising soft-tissue infection",
+   "cm": true,
+   "triggers": [
+    "c_wound_infection",
+    "rash_skin"
+   ],
+   "f": {
+    "wi_necrotising": 5
+   },
+   "inv": "Emergency surgical review; do not delay; CBC, lactate, imaging only if it does not delay care.",
+   "tool": "None applied.",
+   "alt": "Cellulitis, abscess"
+  },
+  {
+   "id": "tetanus",
+   "name": "Tetanus",
+   "cm": true,
+   "triggers": [
+    "c_wound_infection",
+    "c_snake_or_animal_bite"
+   ],
+   "f": {
+    "wi_tetanus": 5
+   },
+   "inv": "Clinical diagnosis; urgent hospital care.",
+   "tool": "None applied.",
+   "alt": "Dental infection, drug-induced dystonia, strychnine poisoning"
+  },
+  {
+   "id": "woundinf",
+   "name": "Local wound infection",
+   "cm": false,
+   "triggers": [
+    "c_wound_infection"
+   ],
+   "f": {
+    "skin_painful_hot": 2
+   },
+   "inv": "Clinical; swab if purulent; check tetanus immunisation.",
+   "tool": "None applied.",
+   "alt": "Cellulitis, abscess, necrotising infection"
+  },
+  {
+   "id": "oralcand",
+   "name": "Oral candidiasis",
+   "cm": false,
+   "triggers": [
+    "c_mouth_ulcers_or_white_patches",
+    "c_mouth_ulcers"
+   ],
+   "f": {
+    "mo_thrush": 4
+   },
+   "inv": "Clinical; check glucose, steroids, HIV.",
+   "tool": "None applied.",
+   "alt": "Leukoplakia, lichen planus"
+  },
+  {
+   "id": "aphth",
+   "name": "Recurrent aphthous ulcers",
+   "cm": false,
+   "triggers": [
+    "c_mouth_ulcers_or_white_patches",
+    "c_mouth_ulcers"
+   ],
+   "f": {
+    "mo_aphthous": 4
+   },
+   "inv": "Clinical; check for iron, B12, folate deficiency or inflammatory bowel disease.",
+   "tool": "None applied.",
+   "alt": "Herpes, Behcet disease, cancer"
+  },
+  {
+   "id": "oralca",
+   "name": "Oral cancer / premalignant lesion",
+   "cm": true,
+   "triggers": [
+    "c_mouth_ulcers_or_white_patches",
+    "c_mouth_ulcers"
+   ],
+   "f": {
+    "mo_cancer": 5
+   },
+   "inv": "Urgent biopsy and specialist (ENT/oral surgery) review.",
+   "tool": "None applied.",
+   "alt": "Aphthous ulcer, traumatic ulcer, TB, candidiasis"
+  },
+  {
+   "id": "rabies",
+   "name": "Rabies exposure (needs post-exposure prophylaxis assessment)",
+   "cm": true,
+   "triggers": [
+    "c_snake_or_animal_bite"
+   ],
+   "f": {
+    "rb_dog": 5
+   },
+   "inv": "Wash wound for 15 minutes with soap and water; assess category and start PEP per WHO/national guidelines, tetanus prophylaxis.",
+   "tool": "None applied.",
+   "alt": "Non-rabid animal exposure, bacterial wound infection"
+  },
+  {
+   "id": "snake",
+   "name": "Snakebite envenoming",
+   "cm": true,
+   "triggers": [
+    "c_snake_or_animal_bite"
+   ],
+   "f": {
+    "sn_neuro": 4,
+    "sn_haem": 4
+   },
+   "inv": "20-minute whole blood clotting test, urgent antivenom assessment; keep limb still.",
+   "tool": "None applied.",
+   "alt": "Dry bite, non-venomous bite, anxiety"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_rabies",
+   "text": "Animal bite/scratch/lick: rabies post-exposure prophylaxis assessment is urgent; wash wound now",
+   "all": [
+    "rb_dog"
+   ]
+  },
+  {
+   "id": "rf_snake",
+   "text": "Snakebite with neurotoxic or bleeding signs: emergency; immobilise limb and go to hospital for antivenom assessment",
+   "all": [
+    "c_snake_or_animal_bite"
+   ],
+   "anyOf": [
+    "sn_neuro",
+    "sn_haem"
+   ]
+  },
+  {
+   "id": "rf_necrot",
+   "text": "Rapidly spreading painful skin infection with systemic illness: possible necrotising infection, emergency",
+   "all": [
+    "wi_necrotising"
+   ]
+  },
+  {
+   "id": "rf_tetanus",
+   "text": "Stiff jaw or muscle spasms with a wound: possible tetanus, emergency",
+   "all": [
+    "wi_tetanus"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "tb": {
+    "triggers": [
+     "c_swollen_glands"
+    ],
+    "f": {}
+   },
+   "enteric": {
+    "triggers": [
+     "c_prolonged_fever"
+    ],
+    "f": {}
+   },
+   "malaria": {
+    "triggers": [
+     "c_prolonged_fever"
+    ],
+    "f": {}
+   },
+   "dengue": {
+    "triggers": [],
+    "f": {}
+   },
+   "urethritis": {
+    "triggers": [
+     "c_genital_discharge"
+    ],
+    "f": {}
+   },
+   "syph": {
+    "triggers": [],
+    "f": {}
+   }
+  },
+  "exam": {},
+  "questions": {
+   "gen_sexual_exposure": [
+    "c_genital_discharge",
+    "c_penile_discharge"
+   ],
+   "ex_murmur": [
+    "fever",
+    "c_prolonged_fever"
+   ]
+  }
+ }
+}

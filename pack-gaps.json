@@ -1,0 +1,3878 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "dm_prim",
+   "lbl": "Pain with or just before periods since teens, no other cause",
+   "text": "Period pain starting with or just before bleeding, since the teenage years?",
+   "why": "Primary dysmenorrhoea.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_painful_periods"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "dm_sec",
+   "lbl": "Pain worsening over years, pain during sex, heavy periods, infertility",
+   "text": "Pain getting worse over the years, with pain during sex, heavy periods or difficulty conceiving?",
+   "why": "Endometriosis or adenomyosis.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_painful_periods",
+    "c_pelvic_pain"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "pv_torsion",
+   "lbl": "Sudden severe one-sided pain with vomiting, known ovarian cyst",
+   "text": "Sudden severe one-sided pelvic pain with nausea or vomiting, or a known ovarian cyst?",
+   "why": "Ovarian torsion.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_pelvic_pain",
+    "c_lower_abdominal_pain"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "pv_cyst",
+   "lbl": "Mid-cycle one-sided pain, sudden onset",
+   "text": "Mid-cycle one-sided pain starting suddenly?",
+   "why": "Ruptured or haemorrhagic ovarian cyst.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_pelvic_pain",
+    "c_lower_abdominal_pain"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "pv_chronic",
+   "lbl": "Pain over 6 months with bowel or bladder symptoms",
+   "text": "Pelvic pain for over 6 months with bowel or bladder symptoms?",
+   "why": "Chronic pelvic pain.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_pelvic_pain"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "fm_absent",
+   "lbl": "No movements felt for many hours, or clear change in usual pattern",
+   "text": "Has the baby moved much less than usual, or not at all for many hours?",
+   "why": "Reduced movements can signal fetal compromise.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_reduced_fetal_movements"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "fm_assoc",
+   "lbl": "With bleeding, pain, leaking, fever or reduced BP/ high BP",
+   "text": "Reduced movements with bleeding, abdominal pain, leaking fluid, fever or raised BP?",
+   "why": "Associated complications.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_reduced_fetal_movements"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "fm_diab",
+   "lbl": "Diabetes, hypertension or previous stillbirth",
+   "text": "Diabetes, hypertension or a previous stillbirth?",
+   "why": "Risk factors for fetal compromise.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_reduced_fetal_movements"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "lb_reg",
+   "lbl": "Regular painful contractions getting stronger, show or waters broke",
+   "text": "Regular painful contractions getting closer and stronger, with a show or waters breaking?",
+   "why": "True labour.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_labour_pain"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "lb_pre",
+   "lbl": "Contractions before 37 weeks",
+   "text": "Are the contractions before 37 weeks?",
+   "why": "Preterm labour.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_labour_pain"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "lb_false",
+   "lbl": "Irregular tightening, eased by rest, no progress",
+   "text": "Irregular tightenings that ease with rest or water and do not progress?",
+   "why": "Braxton Hicks (false labour).",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_labour_pain"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "lf_gush",
+   "lbl": "Gush or continuous watery leak, wet pads",
+   "text": "A gush or continuous watery leak that wets pads?",
+   "why": "Rupture of membranes.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_leaking_of_fluid_in_pregnancy"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "lf_inf",
+   "lbl": "Fever, foul discharge or tender uterus",
+   "text": "Fever, foul-smelling discharge or a tender uterus?",
+   "why": "Infection in the uterus (chorioamnionitis).",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_leaking_of_fluid_in_pregnancy",
+    "c_labour_pain"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "lf_urine",
+   "lbl": "Leaks on coughing, no continuous flow, smells of urine",
+   "text": "Leaks only on coughing or sneezing and smells of urine?",
+   "why": "Urine leakage, not membranes.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_leaking_of_fluid_in_pregnancy"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "ph_atony",
+   "lbl": "Heavy bleeding with soft boggy uterus, long labour, twins, big baby",
+   "text": "Heavy bleeding in the first day, with a soft boggy uterus after a long labour, twins or a large baby?",
+   "why": "Uterine atony.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_bleeding_after_delivery"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "ph_trauma",
+   "lbl": "Bleeding despite a firm uterus, tear after delivery",
+   "text": "Bleeding continues although the uterus is firm, after a difficult or instrumental delivery?",
+   "why": "Genital tract trauma.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_bleeding_after_delivery"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "ph_ret",
+   "lbl": "Placenta incomplete or retained",
+   "text": "Was the placenta incomplete, delayed or retained?",
+   "why": "Retained products.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_bleeding_after_delivery"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "ph_late",
+   "lbl": "Bleeding after 24 hours with foul smell or fever",
+   "text": "Bleeding after the first day, with foul smell or fever?",
+   "why": "Secondary haemorrhage or infection.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_bleeding_after_delivery",
+    "c_fever_after_delivery"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "pn_endo",
+   "lbl": "Fever, foul lochia, lower abdominal pain, tender uterus",
+   "text": "Fever with foul-smelling lochia, lower abdominal pain and a tender uterus?",
+   "why": "Puerperal sepsis.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_fever_after_delivery"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "pn_wound",
+   "lbl": "Caesarean or perineal wound red, painful or discharging",
+   "text": "Caesarean or perineal wound red, painful or discharging?",
+   "why": "Wound infection.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_fever_after_delivery"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "pn_breast",
+   "lbl": "Red painful breast wedge, engorgement, fever",
+   "text": "A red painful breast area with engorgement and fever?",
+   "why": "Mastitis.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_fever_after_delivery",
+    "c_breast_pain",
+    "c_breastfeeding_problems"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "pn_calf",
+   "lbl": "Painful swollen calf or chest pain",
+   "text": "A painful swollen calf, breathlessness or chest pain after delivery?",
+   "why": "Thromboembolism after delivery.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_fever_after_delivery"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "br_cyc",
+   "lbl": "Both breasts painful, varying with cycle",
+   "text": "Pain in both breasts that varies with the menstrual cycle?",
+   "why": "Cyclical mastalgia.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_breast_pain"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "br_hard",
+   "lbl": "Hard, painless, fixed lump, skin dimpling, nipple retraction, axillary lumps",
+   "text": "Hard painless fixed lump with skin dimpling, nipple retraction or lumps in the armpit?",
+   "why": "Breast cancer features.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_breast_lump",
+    "c_nipple_discharge"
+   ]
+  },
+  {
+   "id": "br_mobile",
+   "lbl": "Smooth, mobile lump in young woman",
+   "text": "Smooth, mobile, rubbery lump in a young woman?",
+   "why": "Fibroadenoma.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_breast_lump"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "br_cyst",
+   "lbl": "Lump varying with cycle, age 35 to 50",
+   "text": "Lump that changes with the cycle, age 35 to 50?",
+   "why": "Breast cyst.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_breast_lump"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "br_bloody",
+   "lbl": "Bloody discharge from one duct",
+   "text": "Bloody discharge from a single duct?",
+   "why": "Duct papilloma or cancer.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_nipple_discharge"
+   ]
+  },
+  {
+   "id": "bf_latch",
+   "lbl": "Pain on latching, cracked nipples",
+   "text": "Pain on latching with cracked nipples?",
+   "why": "Poor attachment.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_breastfeeding_problems"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "bf_low",
+   "lbl": "Baby not gaining, fewer wet nappies",
+   "text": "Baby gaining poorly with few wet nappies?",
+   "why": "Insufficient milk intake.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_breastfeeding_problems"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "nv_mild",
+   "lbl": "Nausea and vomiting in first trimester, keeping fluids down",
+   "text": "Nausea and vomiting in early pregnancy, able to keep fluids down?",
+   "why": "Usual pregnancy sickness.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_nausea_and_vomiting_in_pregnancy"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "nv_hyper",
+   "lbl": "Persistent vomiting, weight loss, cannot keep fluids",
+   "text": "Persistent vomiting, weight loss and unable to keep fluids down?",
+   "why": "Hyperemesis gravidarum.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_nausea_and_vomiting_in_pregnancy"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "nv_mole",
+   "lbl": "Heavy bleeding, uterus larger than dates, grape-like tissue",
+   "text": "Heavy bleeding, uterus larger than dates, or passing grape-like tissue?",
+   "why": "Molar pregnancy.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_nausea_and_vomiting_in_pregnancy",
+    "c_bleeding_in_pregnancy"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "hf_meno",
+   "lbl": "Age 45 to 55 with irregular periods and night sweats",
+   "text": "Age 45 to 55 with irregular or stopped periods and night sweats?",
+   "why": "Menopausal transition.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_hot_flushes"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "hf_poi",
+   "lbl": "Periods stopped before 40",
+   "text": "Periods stopped before age 40?",
+   "why": "Premature ovarian insufficiency.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_hot_flushes"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "hf_drug",
+   "lbl": "Tamoxifen, other hormone drugs",
+   "text": "Taking tamoxifen or other hormone-altering drugs?",
+   "why": "Drug-induced flushes.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_hot_flushes"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "pr_bulge",
+   "lbl": "Dragging feeling or bulge, worse on standing, after childbirth or heavy lifting",
+   "text": "A dragging feeling or bulge in the vagina, worse standing, after childbirth or heavy lifting?",
+   "why": "Pelvic organ prolapse.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_something_coming_down_in_vagina"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "al_ovar",
+   "lbl": "Lower abdominal swelling, early fullness, pelvic pain, weight loss",
+   "text": "Lower abdominal swelling with early fullness, pelvic pain or weight loss?",
+   "why": "Ovarian mass.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_abdominal_lump",
+    "c_swelling_of_abdomen",
+    "c_bloating"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "al_renal",
+   "lbl": "Loin mass with blood in urine or loin pain",
+   "text": "A loin mass with blood in the urine or loin pain?",
+   "why": "Renal mass.",
+   "sys": "Genitourinary",
+   "when": [
+    "c_abdominal_lump"
+   ]
+  },
+  {
+   "id": "al_gastr",
+   "lbl": "Upper abdominal lump with weight loss, vomiting, anaemia",
+   "text": "Upper abdominal lump with weight loss, vomiting or anaemia?",
+   "why": "Gastric cancer.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_abdominal_lump"
+   ]
+  },
+  {
+   "id": "bm_atrophic",
+   "lbl": "Dry sore vagina with light spotting, no HRT",
+   "text": "Vaginal dryness and soreness with light spotting, not on hormone therapy?",
+   "why": "Atrophic changes, a diagnosis only after cancer is excluded.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_bleeding_after_menopause"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "bm_hrt",
+   "lbl": "On hormone therapy or tamoxifen",
+   "text": "On hormone replacement or tamoxifen?",
+   "why": "Therapy-related bleeding.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_bleeding_after_menopause"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "bs_pile",
+   "lbl": "Bright red blood on paper or dripping after stool, painless",
+   "text": "Bright red blood on paper or dripping after stool, without pain?",
+   "why": "Haemorrhoids.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_blood_in_stool"
+   ]
+  },
+  {
+   "id": "bs_tear",
+   "lbl": "Severe pain passing hard stool, bright blood",
+   "text": "Severe pain passing a hard stool with some bright blood?",
+   "why": "Anal fissure.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_blood_in_stool",
+    "c_anal_pain"
+   ]
+  },
+  {
+   "id": "bs_ibd",
+   "lbl": "Blood and mucus with diarrhoea, urgency and abdominal pain over weeks",
+   "text": "Blood and mucus with diarrhoea, urgency and abdominal pain over weeks?",
+   "why": "Inflammatory bowel disease.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_blood_in_stool"
+   ]
+  },
+  {
+   "id": "bs_amoeba",
+   "lbl": "Bloody mucoid stool, travel or poor sanitation, right upper pain",
+   "text": "Bloody mucoid stools with poor sanitation exposure, perhaps right upper abdominal pain?",
+   "why": "Amoebic dysentery.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_blood_in_stool"
+   ]
+  },
+  {
+   "id": "bs_divert",
+   "lbl": "Painless large fresh bleeding in older adult",
+   "text": "Painless large-volume fresh bleeding in an older adult?",
+   "why": "Diverticular or vascular bleeding.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_blood_in_stool"
+   ]
+  },
+  {
+   "id": "bs_polyp",
+   "lbl": "Painless fresh blood in a child",
+   "text": "Painless fresh blood in a young child?",
+   "why": "Juvenile polyp.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_blood_in_stool"
+   ]
+  },
+  {
+   "id": "rn_abs",
+   "lbl": "Throbbing constant pain, swelling, fever, worse sitting",
+   "text": "Constant throbbing anal pain with swelling and fever, worse when sitting?",
+   "why": "Perianal abscess.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_anal_pain",
+    "c_anal_swelling_or_lump"
+   ]
+  },
+  {
+   "id": "rn_thromb",
+   "lbl": "Sudden painful lump at anus after straining",
+   "text": "A sudden painful lump at the anus after straining?",
+   "why": "Thrombosed haemorrhoid.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_anal_pain",
+    "c_anal_swelling_or_lump"
+   ]
+  },
+  {
+   "id": "rn_proct",
+   "lbl": "Brief severe spasm of pain at night, no lump",
+   "text": "Brief severe anal spasms, often at night, with no lump?",
+   "why": "Proctalgia fugax.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_anal_pain"
+   ]
+  },
+  {
+   "id": "rn_prol",
+   "lbl": "Mass protrudes on straining, goes back",
+   "text": "A mass that comes out on straining and goes back?",
+   "why": "Piles or rectal prolapse.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_anal_swelling_or_lump"
+   ]
+  },
+  {
+   "id": "rn_fist",
+   "lbl": "Recurrent discharge near anus after past abscess",
+   "text": "Recurrent discharge near the anus after a past abscess?",
+   "why": "Anal fistula.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_anal_swelling_or_lump",
+    "c_anal_pain"
+   ]
+  },
+  {
+   "id": "rn_ca",
+   "lbl": "Hard painful mass, bleeding, weight loss",
+   "text": "Hard painful mass with bleeding or weight loss?",
+   "why": "Anal or rectal cancer.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_anal_swelling_or_lump",
+    "c_anal_pain",
+    "c_blood_in_stool"
+   ]
+  },
+  {
+   "id": "rn_worm",
+   "lbl": "Night itching, child, visible threadworms",
+   "text": "Night-time anal itching, especially in a child, with visible worms?",
+   "why": "Threadworm.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_itching_around_anus"
+   ]
+  },
+  {
+   "id": "rn_skin",
+   "lbl": "Moist sore skin after diarrhoea, hygiene, fungal",
+   "text": "Moist sore perianal skin after diarrhoea or poor hygiene?",
+   "why": "Perianal dermatitis.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_itching_around_anus"
+   ]
+  },
+  {
+   "id": "hb_cl",
+   "lbl": "Burning behind the breastbone after meals, worse lying or bending, sour taste",
+   "text": "Burning behind the breastbone after meals, worse lying or bending, with a sour taste?",
+   "why": "Gastro-oesophageal reflux.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_heartburn",
+    "c_belching"
+   ]
+  },
+  {
+   "id": "hb_alarm",
+   "lbl": "Trouble swallowing, weight loss, vomiting blood, anaemia, new at over 55",
+   "text": "Trouble swallowing, weight loss, vomiting blood, anaemia, or new symptoms after 55?",
+   "why": "Alarm features need endoscopy.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_heartburn",
+    "c_belching",
+    "c_bloating",
+    "c_nausea"
+   ]
+  },
+  {
+   "id": "hb_exert",
+   "lbl": "Burning with exertion, relieved by rest, sweating",
+   "text": "Burning triggered by exertion, relieved by rest, with sweating or breathlessness?",
+   "why": "Cardiac pain can mimic heartburn.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_heartburn"
+   ]
+  },
+  {
+   "id": "hb_func",
+   "lbl": "Fullness or bloating after meals without alarm features",
+   "text": "Early fullness or bloating after meals, no alarm features?",
+   "why": "Functional dyspepsia.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_heartburn",
+    "c_bloating",
+    "c_belching",
+    "c_nausea"
+   ]
+  },
+  {
+   "id": "bz_int",
+   "lbl": "Worse after milk or wheat, wind and loose stool",
+   "text": "Worse after milk or wheat, with wind and loose stool?",
+   "why": "Food intolerance.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_bloating"
+   ]
+  },
+  {
+   "id": "bz_ibs",
+   "lbl": "Recurrent pain relieved by passing stool with altered bowel habit, months",
+   "text": "Recurrent abdominal pain relieved by passing stool, with changing bowel habit for months?",
+   "why": "Irritable bowel syndrome.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_bloating",
+    "c_abdominal_distension"
+   ]
+  },
+  {
+   "id": "bz_celiac",
+   "lbl": "Diarrhoea, weight loss, anaemia, family history",
+   "text": "Diarrhoea with weight loss, anaemia or family history of coeliac disease?",
+   "why": "Coeliac disease.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_bloating",
+    "c_pale_fatty_stools",
+    "c_poor_weight_gain"
+   ]
+  },
+  {
+   "id": "bz_giard",
+   "lbl": "Contaminated water exposure, foul gas, greasy stool",
+   "text": "Contaminated water exposure with foul gas and greasy stools?",
+   "why": "Giardiasis.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_bloating",
+    "c_pale_fatty_stools"
+   ]
+  },
+  {
+   "id": "st_pan",
+   "lbl": "Heavy alcohol, upper abdominal pain, diabetes",
+   "text": "Heavy alcohol use, upper abdominal pain, or diabetes?",
+   "why": "Pancreatic insufficiency.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_pale_fatty_stools"
+   ]
+  },
+  {
+   "id": "st_stea",
+   "lbl": "Floating foul greasy stools with weight loss",
+   "text": "Floating, foul, greasy stools with weight loss?",
+   "why": "Fat malabsorption.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_pale_fatty_stools"
+   ]
+  },
+  {
+   "id": "nz_drug",
+   "lbl": "Started new tablets, chemotherapy",
+   "text": "Started new medicines, antibiotics or chemotherapy?",
+   "why": "Drug-induced nausea.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_nausea",
+    "c_nausea_and_vomiting"
+   ]
+  },
+  {
+   "id": "nz_neuro",
+   "lbl": "With headache, drowsiness or vision change",
+   "text": "Nausea with headache, drowsiness or vision change?",
+   "why": "Raised intracranial pressure.",
+   "sys": "Neurological",
+   "when": [
+    "c_nausea",
+    "c_nausea_and_vomiting"
+   ]
+  },
+  {
+   "id": "pw_pill",
+   "lbl": "Tablet taken with little water, then painful swallowing",
+   "text": "Painful swallowing after taking a tablet (e.g. doxycycline, NSAIDs) with little water?",
+   "why": "Pill oesophagitis.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_painful_swallowing"
+   ]
+  },
+  {
+   "id": "vv_ache",
+   "lbl": "Aching, heaviness, ankle swelling, visible dilated veins",
+   "text": "Aching and heaviness in the legs, worse at day end, with visible dilated veins?",
+   "why": "Varicose veins.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_varicose_veins"
+   ]
+  },
+  {
+   "id": "vv_hot",
+   "lbl": "Painful red cord along a vein",
+   "text": "A painful red cord-like vein?",
+   "why": "Superficial thrombophlebitis.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_varicose_veins"
+   ]
+  },
+  {
+   "id": "vv_bleed",
+   "lbl": "Bleeding from a vein",
+   "text": "Is a varicose vein bleeding?",
+   "why": "First aid and urgent care.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_varicose_veins"
+   ]
+  },
+  {
+   "id": "us_red",
+   "lbl": "Soft reducible umbilical bulge, cough impulse",
+   "text": "A soft bulge at the navel that goes back and bulges on coughing?",
+   "why": "Umbilical hernia.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_umbilical_swelling"
+   ]
+  },
+  {
+   "id": "us_pain",
+   "lbl": "Painful irreducible bulge with vomiting",
+   "text": "A painful bulge that will not go back, with vomiting?",
+   "why": "Strangulation.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_umbilical_swelling",
+    "c_groin_swelling"
+   ]
+  },
+  {
+   "id": "us_inf",
+   "lbl": "Red swollen navel with discharge in baby under 1 month, fever",
+   "text": "Red, swollen navel with discharge in a baby under one month, with fever?",
+   "why": "Omphalitis.",
+   "sys": "Paediatric",
+   "when": [
+    "c_umbilical_swelling"
+   ]
+  },
+  {
+   "id": "gs_fem",
+   "lbl": "Lump below and outside the pubic bone, woman",
+   "text": "A lump below and to the outer side of the pubic bone, usually in a woman?",
+   "why": "Femoral hernia.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_groin_swelling"
+   ]
+  },
+  {
+   "id": "gs_sap",
+   "lbl": "Swelling that disappears lying down, with varicose veins",
+   "text": "A groin swelling that disappears lying down, with varicose veins?",
+   "why": "Saphena varix.",
+   "sys": "Cardiovascular",
+   "when": [
+    "c_groin_swelling"
+   ]
+  },
+  {
+   "id": "gs_node",
+   "lbl": "Tender after leg or genital infection",
+   "text": "Tender groin swelling after infection of the leg, foot or genitals?",
+   "why": "Reactive lymph nodes.",
+   "sys": "General / Infectious",
+   "when": [
+    "c_groin_swelling"
+   ]
+  },
+  {
+   "id": "as_asc",
+   "lbl": "Gradual abdominal swelling with leg swelling, liver disease",
+   "text": "Gradual abdominal swelling with leg swelling or known liver disease?",
+   "why": "Ascites.",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_swelling_of_abdomen"
+   ]
+  },
+  {
+   "id": "as_tb",
+   "lbl": "Fever, weight loss, abdominal swelling and pain",
+   "text": "Fever and weight loss with abdominal swelling and pain, in a TB-endemic setting?",
+   "why": "Abdominal TB.",
+   "sys": "General / Infectious",
+   "when": [
+    "c_swelling_of_abdomen"
+   ]
+  },
+  {
+   "id": "cr_colic",
+   "lbl": "Healthy baby 2 to 16 weeks crying over 3 hours daily, feeding and growing well",
+   "text": "Healthy baby aged 2 to 16 weeks crying for long spells, feeding and growing well?",
+   "why": "Infantile colic pattern.",
+   "sys": "Paediatric",
+   "when": [
+    "c_excessive_crying"
+   ]
+  },
+  {
+   "id": "cr_hungry",
+   "lbl": "Poor feeding, few wet nappies",
+   "text": "Poor feeding or few wet nappies?",
+   "why": "Underfeeding.",
+   "sys": "Paediatric",
+   "when": [
+    "c_excessive_crying"
+   ]
+  },
+  {
+   "id": "cr_infect",
+   "lbl": "Fever, irritable, lethargic, poor feeding",
+   "text": "Fever with irritability, lethargy or poor feeding?",
+   "why": "Serious infection.",
+   "sys": "Paediatric",
+   "when": [
+    "c_excessive_crying"
+   ]
+  },
+  {
+   "id": "cr_intus",
+   "lbl": "Waves of severe pain drawing up legs, vomiting, redcurrant stool, pale between episodes",
+   "text": "Waves of severe pain with legs drawn up, vomiting, redcurrant-jelly stool and pallor between episodes?",
+   "why": "Intussusception.",
+   "sys": "Paediatric",
+   "when": [
+    "c_excessive_crying"
+   ]
+  },
+  {
+   "id": "cr_abuse",
+   "lbl": "Unexplained bruises or injuries, inconsistent history, delayed presentation",
+   "text": "Unexplained injuries or bruises with an inconsistent story or delayed presentation?",
+   "why": "Possible non-accidental injury.",
+   "sys": "Paediatric",
+   "when": [
+    "c_excessive_crying",
+    "c_behaviour_problems"
+   ]
+  },
+  {
+   "id": "nj_24",
+   "lbl": "Jaundice in first 24 hours",
+   "text": "Jaundice within the first 24 hours of life?",
+   "why": "Always pathological.",
+   "sys": "Paediatric",
+   "when": [
+    "c_newborn_jaundice"
+   ]
+  },
+  {
+   "id": "nj_phys",
+   "lbl": "Day 2 to 3 in a well, feeding term baby",
+   "text": "Jaundice starting on day 2 or 3 in a well, feeding term baby?",
+   "why": "Physiological jaundice.",
+   "sys": "Paediatric",
+   "when": [
+    "c_newborn_jaundice"
+   ]
+  },
+  {
+   "id": "nj_long",
+   "lbl": "Beyond 14 days (term), pale stools, dark urine",
+   "text": "Still jaundiced after 14 days (21 days if preterm), with pale stools or dark urine?",
+   "why": "Prolonged jaundice needs liver cause excluded.",
+   "sys": "Paediatric",
+   "when": [
+    "c_newborn_jaundice"
+   ]
+  },
+  {
+   "id": "nj_bm",
+   "lbl": "Breastfed, otherwise well, stools yellow",
+   "text": "Breastfed baby, otherwise well, with normal yellow stools?",
+   "why": "Breast-milk jaundice.",
+   "sys": "Paediatric",
+   "when": [
+    "c_newborn_jaundice"
+   ]
+  },
+  {
+   "id": "nj_sev",
+   "lbl": "Yellow to palms and soles, lethargy, high-pitched cry, arching",
+   "text": "Yellow to the palms and soles with lethargy, high-pitched cry or arching?",
+   "why": "Risk of bilirubin brain injury.",
+   "sys": "Paediatric",
+   "when": [
+    "c_newborn_jaundice"
+   ]
+  },
+  {
+   "id": "bw_prim",
+   "lbl": "Never dry for 6 months, over 5 years, no daytime symptoms, family history",
+   "text": "Never consistently dry at night, over age 5, no daytime symptoms, family history?",
+   "why": "Primary nocturnal enuresis.",
+   "sys": "Paediatric",
+   "when": [
+    "c_bedwetting"
+   ]
+  },
+  {
+   "id": "bw_sec",
+   "lbl": "Was dry before, now wetting, new thirst, burning urine, constipation or stress",
+   "text": "Was dry before, now wetting, with thirst, burning urine, constipation or a stressful event?",
+   "why": "Secondary enuresis causes.",
+   "sys": "Paediatric",
+   "when": [
+    "c_bedwetting"
+   ]
+  },
+  {
+   "id": "bw_neuro",
+   "lbl": "Weak legs, back dimple, dribbling, poor stream",
+   "text": "Weak legs, a back dimple or tuft, dribbling or poor stream?",
+   "why": "Neurogenic bladder.",
+   "sys": "Paediatric",
+   "when": [
+    "c_bedwetting"
+   ]
+  },
+  {
+   "id": "pa_diet",
+   "lbl": "Poor diet, vegetarian, heavy periods, worms",
+   "text": "Poor diet, vegetarian, heavy periods or worm infestation?",
+   "why": "Iron deficiency.",
+   "sys": "Haematological",
+   "when": [
+    "c_pallor",
+    "c_fatigue_or_weakness"
+   ]
+  },
+  {
+   "id": "pa_thal",
+   "lbl": "Family anaemia, repeated transfusions, jaundice, bossing of forehead",
+   "text": "Family history of anaemia, repeated transfusions, jaundice or skull changes?",
+   "why": "Haemoglobinopathy.",
+   "sys": "Haematological",
+   "when": [
+    "c_pallor"
+   ]
+  },
+  {
+   "id": "pa_leuk",
+   "lbl": "Fever, bruising or bleeding, bone pain, repeated infections with pallor",
+   "text": "Fever, bruising or bleeding, bone pain or repeated infections with pallor?",
+   "why": "Marrow failure or leukaemia.",
+   "sys": "Haematological",
+   "when": [
+    "c_pallor"
+   ]
+  },
+  {
+   "id": "pa_b12",
+   "lbl": "Vegetarian diet, tingling, sore tongue",
+   "text": "Vegetarian diet, tingling or a sore smooth tongue?",
+   "why": "Vitamin B12 deficiency.",
+   "sys": "Haematological",
+   "when": [
+    "c_pallor",
+    "c_numbness_or_tingling"
+   ]
+  },
+  {
+   "id": "pa_chronic",
+   "lbl": "Long-standing kidney, liver or chronic infection",
+   "text": "Long-standing kidney or liver disease or chronic infection?",
+   "why": "Anaemia of chronic disease.",
+   "sys": "Haematological",
+   "when": [
+    "c_pallor"
+   ]
+  },
+  {
+   "id": "pa_worm",
+   "lbl": "Barefoot walking, endemic area, itchy feet",
+   "text": "Barefoot walking in an endemic area?",
+   "why": "Hookworm blood loss.",
+   "sys": "Haematological",
+   "when": [
+    "c_pallor",
+    "c_worm_infestation"
+   ]
+  },
+  {
+   "id": "wg_sam",
+   "lbl": "Visible wasting or swelling of both feet or very thin arm",
+   "text": "Visible wasting, swelling of both feet or a very thin arm for age?",
+   "why": "Severe acute malnutrition.",
+   "sys": "Paediatric",
+   "when": [
+    "c_poor_weight_gain",
+    "c_swelling"
+   ]
+  },
+  {
+   "id": "wg_int",
+   "lbl": "Too little or diluted feeds, poor attachment",
+   "text": "Too little feeding, diluted feeds or poor attachment?",
+   "why": "Inadequate intake.",
+   "sys": "Paediatric",
+   "when": [
+    "c_poor_weight_gain"
+   ]
+  },
+  {
+   "id": "wg_mal",
+   "lbl": "Diarrhoea, greasy stools, recurrent chest infection",
+   "text": "Diarrhoea, greasy stools or recurrent chest infections?",
+   "why": "Malabsorption.",
+   "sys": "Paediatric",
+   "when": [
+    "c_poor_weight_gain"
+   ]
+  },
+  {
+   "id": "wg_chr",
+   "lbl": "Chronic TB, HIV, heart or kidney disease",
+   "text": "Chronic TB, HIV, heart or kidney disease?",
+   "why": "Chronic illness impairs growth.",
+   "sys": "Paediatric",
+   "when": [
+    "c_poor_weight_gain"
+   ]
+  },
+  {
+   "id": "bd_cent",
+   "lbl": "Blue tongue and lips, breathless on feeds, not improving with crying",
+   "text": "Blue tongue and lips, breathlessness on feeds, getting worse?",
+   "why": "Central cyanosis.",
+   "sys": "Paediatric",
+   "when": [
+    "c_bluish_discolouration"
+   ]
+  },
+  {
+   "id": "bd_acro",
+   "lbl": "Hands and feet blue only, warm, pink lips and tongue",
+   "text": "Hands and feet only slightly blue, lips and tongue pink?",
+   "why": "Acrocyanosis.",
+   "sys": "Paediatric",
+   "when": [
+    "c_bluish_discolouration"
+   ]
+  },
+  {
+   "id": "sk_ld",
+   "lbl": "Reading, writing or maths trouble with normal intelligence",
+   "text": "Trouble with reading, writing or maths despite normal intelligence?",
+   "why": "Specific learning disorder.",
+   "sys": "Paediatric",
+   "when": [
+    "c_poor_school_performance"
+   ]
+  },
+  {
+   "id": "sk_senses",
+   "lbl": "Squints, sits near board, does not respond to name",
+   "text": "Squints, sits near the board or does not respond to being called?",
+   "why": "Vision or hearing problem.",
+   "sys": "Paediatric",
+   "when": [
+    "c_poor_school_performance",
+    "c_developmental_delay"
+   ]
+  },
+  {
+   "id": "sk_abs",
+   "lbl": "Brief staring spells, unresponsive",
+   "text": "Brief staring spells with no response?",
+   "why": "Absence seizures.",
+   "sys": "Neurological",
+   "when": [
+    "c_poor_school_performance",
+    "c_behaviour_problems"
+   ]
+  },
+  {
+   "id": "sk_psy",
+   "lbl": "School refusal, bullying, abuse, stress or low mood",
+   "text": "School refusal, bullying, abuse, stress or low mood?",
+   "why": "Psychosocial cause.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_poor_school_performance",
+    "c_behaviour_problems"
+   ]
+  },
+  {
+   "id": "dd_glob",
+   "lbl": "Late sitting, walking and speech, poor learning",
+   "text": "Late sitting, walking and speech, with poor learning?",
+   "why": "Global developmental delay.",
+   "sys": "Paediatric",
+   "when": [
+    "c_developmental_delay"
+   ]
+  },
+  {
+   "id": "dd_hear",
+   "lbl": "Poor response to sound, speech delay",
+   "text": "Poor response to sound with speech delay?",
+   "why": "Hearing impairment.",
+   "sys": "Paediatric",
+   "when": [
+    "c_developmental_delay"
+   ]
+  },
+  {
+   "id": "dd_cp",
+   "lbl": "Stiff or floppy limbs, asymmetry, birth asphyxia or prematurity",
+   "text": "Stiff or floppy limbs, asymmetry, or birth asphyxia or prematurity?",
+   "why": "Cerebral palsy.",
+   "sys": "Neurological",
+   "when": [
+    "c_developmental_delay"
+   ]
+  },
+  {
+   "id": "dd_reg",
+   "lbl": "Loss of previously learned skills",
+   "text": "Has the child lost skills already learned?",
+   "why": "Regression is a red flag.",
+   "sys": "Neurological",
+   "when": [
+    "c_developmental_delay"
+   ]
+  },
+  {
+   "id": "nm_stock",
+   "lbl": "Both feet or hands, glove-and-stocking, diabetes, alcohol or B12",
+   "text": "Numbness in both feet or hands, with diabetes, heavy alcohol or low B12?",
+   "why": "Peripheral neuropathy.",
+   "sys": "Neurological",
+   "when": [
+    "c_numbness_or_tingling"
+   ]
+  },
+  {
+   "id": "nm_dermat",
+   "lbl": "One limb in a band with neck or back pain",
+   "text": "Numbness in one limb in a band pattern with neck or back pain?",
+   "why": "Nerve root.",
+   "sys": "Neurological",
+   "when": [
+    "c_numbness_or_tingling"
+   ]
+  },
+  {
+   "id": "nm_peri",
+   "lbl": "Around the mouth and fingers with cramps, anxiety or fast breathing",
+   "text": "Tingling around the mouth and fingers with cramps, anxiety or fast breathing?",
+   "why": "Hypocalcaemia or hyperventilation.",
+   "sys": "Neurological",
+   "when": [
+    "c_numbness_or_tingling"
+   ]
+  },
+  {
+   "id": "nm_ms",
+   "lbl": "Relapsing numbness or vision loss in a young adult",
+   "text": "Episodes of numbness, weakness or vision loss in a young adult that settle and return?",
+   "why": "Demyelination.",
+   "sys": "Neurological",
+   "when": [
+    "c_numbness_or_tingling"
+   ]
+  },
+  {
+   "id": "la_chronic",
+   "lbl": "Weeks of poor appetite with weight loss and fatigue",
+   "text": "Poor appetite for weeks with weight loss and fatigue?",
+   "why": "Systemic illness.",
+   "sys": "General",
+   "when": [
+    "c_loss_of_appetite"
+   ]
+  },
+  {
+   "id": "la_depr",
+   "lbl": "Low mood, loss of interest, poor sleep",
+   "text": "Low mood, loss of interest or poor sleep?",
+   "why": "Depression.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_loss_of_appetite"
+   ]
+  },
+  {
+   "id": "ba_flu",
+   "lbl": "Sudden fever, severe aches, cough, epidemic season",
+   "text": "Sudden fever with severe body aches, cough and sore throat during a local outbreak?",
+   "why": "Influenza-like illness.",
+   "sys": "General",
+   "when": [
+    "c_body_aches"
+   ]
+  },
+  {
+   "id": "ba_fibro",
+   "lbl": "Widespread pain over 3 months, fatigue, poor sleep, normal tests",
+   "text": "Widespread pain for over 3 months with fatigue, poor sleep and normal tests?",
+   "why": "Fibromyalgia.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_body_aches",
+    "c_muscle_pain"
+   ]
+  }
+ ],
+ "exam": [
+  {
+   "id": "ex_pr_pile",
+   "lbl": "Haemorrhoids / fissure / mass on proctoscopy or inspection",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_blood_in_stool",
+    "c_anal_pain",
+    "c_anal_swelling_or_lump"
+   ]
+  },
+  {
+   "id": "ex_umb",
+   "lbl": "Reducible swelling with cough impulse at navel or groin",
+   "sys": "Gastrointestinal",
+   "when": [
+    "c_umbilical_swelling",
+    "c_groin_swelling"
+   ]
+  }
+ ],
+ "diseases": [
+  {
+   "id": "dysmprim",
+   "name": "Primary dysmenorrhoea",
+   "cm": false,
+   "triggers": [
+    "c_painful_periods"
+   ],
+   "f": {
+    "dm_prim": 4
+   },
+   "inv": "Clinical; pelvic ultrasound if atypical.",
+   "tool": "None applied.",
+   "alt": "Endometriosis, adenomyosis, PID, fibroids",
+   "sex": "F"
+  },
+  {
+   "id": "endomet",
+   "name": "Endometriosis / adenomyosis",
+   "cm": false,
+   "triggers": [
+    "c_painful_periods",
+    "c_pelvic_pain"
+   ],
+   "f": {
+    "dm_sec": 4,
+    "pv_chronic": 2
+   },
+   "inv": "Pelvic ultrasound, MRI; laparoscopy by gynaecologist.",
+   "tool": "None applied.",
+   "alt": "Primary dysmenorrhoea, PID, fibroids, IBS",
+   "sex": "F"
+  },
+  {
+   "id": "ovtors",
+   "name": "Ovarian torsion",
+   "cm": true,
+   "triggers": [
+    "c_pelvic_pain",
+    "c_lower_abdominal_pain"
+   ],
+   "f": {
+    "pv_torsion": 5
+   },
+   "inv": "Urgent pelvic ultrasound with Doppler; urgent gynaecology review. A normal Doppler does not exclude torsion.",
+   "tool": "None applied.",
+   "alt": "Ruptured cyst, ectopic pregnancy, appendicitis",
+   "sex": "F"
+  },
+  {
+   "id": "ovcyst",
+   "name": "Ruptured or haemorrhagic ovarian cyst",
+   "cm": false,
+   "triggers": [
+    "c_pelvic_pain",
+    "c_lower_abdominal_pain"
+   ],
+   "f": {
+    "pv_cyst": 4
+   },
+   "inv": "Pregnancy test, pelvic ultrasound, haemoglobin.",
+   "tool": "None applied.",
+   "alt": "Ectopic pregnancy, torsion, appendicitis",
+   "sex": "F"
+  },
+  {
+   "id": "chronicpv",
+   "name": "Chronic pelvic pain syndrome",
+   "cm": false,
+   "triggers": [
+    "c_pelvic_pain"
+   ],
+   "f": {
+    "pv_chronic": 4
+   },
+   "inv": "Pelvic ultrasound, STI screen, urine, consider laparoscopy.",
+   "tool": "None applied.",
+   "alt": "Endometriosis, adhesions, IBS, interstitial cystitis",
+   "sex": "F"
+  },
+  {
+   "id": "fetalcomp",
+   "name": "Fetal compromise / intrauterine fetal demise",
+   "cm": true,
+   "triggers": [
+    "c_reduced_fetal_movements"
+   ],
+   "f": {
+    "fm_absent": 5,
+    "fm_assoc": 3,
+    "fm_diab": 2,
+    "pe_bp": 2
+   },
+   "inv": "Same-day assessment: fetal heart auscultation, CTG, ultrasound, BP, urine protein, glucose.",
+   "tool": "None applied.",
+   "alt": "Normal variation, anterior placenta, maternal distraction",
+   "sex": "F"
+  },
+  {
+   "id": "truelab",
+   "name": "Labour",
+   "cm": false,
+   "triggers": [
+    "c_labour_pain"
+   ],
+   "f": {
+    "lb_reg": 4
+   },
+   "inv": "Obstetric assessment: contractions, cervical examination (if praevia excluded), fetal heart.",
+   "tool": "None applied.",
+   "alt": "False labour, preterm labour, abruption, UTI",
+   "sex": "F"
+  },
+  {
+   "id": "pretlab",
+   "name": "Preterm labour",
+   "cm": true,
+   "triggers": [
+    "c_labour_pain"
+   ],
+   "f": {
+    "lb_pre": 4,
+    "lb_reg": 2
+   },
+   "inv": "Urgent obstetric assessment, fetal heart, infection screen, steroids and referral per protocol.",
+   "tool": "None applied.",
+   "alt": "Braxton Hicks, UTI, abruption",
+   "sex": "F"
+  },
+  {
+   "id": "falselab",
+   "name": "False labour (Braxton Hicks)",
+   "cm": false,
+   "triggers": [
+    "c_labour_pain"
+   ],
+   "f": {
+    "lb_false": 4
+   },
+   "inv": "Reassess after observation; exclude true labour.",
+   "tool": "None applied.",
+   "alt": "True labour, UTI, abruption",
+   "sex": "F"
+  },
+  {
+   "id": "prom",
+   "name": "Rupture of membranes (including preterm)",
+   "cm": true,
+   "triggers": [
+    "c_leaking_of_fluid_in_pregnancy"
+   ],
+   "f": {
+    "lf_gush": 5
+   },
+   "inv": "Sterile speculum examination, check for infection, fetal heart, urgent obstetric review.",
+   "tool": "None applied.",
+   "alt": "Urine leakage, discharge, show",
+   "sex": "F"
+  },
+  {
+   "id": "chorio",
+   "name": "Chorioamnionitis",
+   "cm": true,
+   "triggers": [
+    "c_leaking_of_fluid_in_pregnancy",
+    "c_labour_pain"
+   ],
+   "f": {
+    "lf_inf": 5,
+    "fever": 2
+   },
+   "inv": "Urgent obstetric and neonatal review; infection screen, antibiotics per protocol.",
+   "tool": "None applied.",
+   "alt": "UTI, other fever source",
+   "sex": "F"
+  },
+  {
+   "id": "urleak",
+   "name": "Urinary leakage in pregnancy",
+   "cm": false,
+   "triggers": [
+    "c_leaking_of_fluid_in_pregnancy"
+   ],
+   "f": {
+    "lf_urine": 4
+   },
+   "inv": "Pad test, urine test.",
+   "tool": "None applied.",
+   "alt": "Rupture of membranes, discharge",
+   "sex": "F"
+  },
+  {
+   "id": "pphatony",
+   "name": "Uterine atony (postpartum haemorrhage)",
+   "cm": true,
+   "triggers": [
+    "c_bleeding_after_delivery"
+   ],
+   "f": {
+    "ph_atony": 5
+   },
+   "inv": "Emergency: uterine massage, uterotonics, fluids, blood, per obstetric haemorrhage protocol.",
+   "tool": "None applied.",
+   "alt": "Genital tract trauma, retained products, coagulopathy",
+   "sex": "F"
+  },
+  {
+   "id": "pphtrauma",
+   "name": "Genital tract trauma bleeding",
+   "cm": true,
+   "triggers": [
+    "c_bleeding_after_delivery"
+   ],
+   "f": {
+    "ph_trauma": 5
+   },
+   "inv": "Examine for tears under good light; repair by trained clinician.",
+   "tool": "None applied.",
+   "alt": "Atony, retained placenta",
+   "sex": "F"
+  },
+  {
+   "id": "retpoc",
+   "name": "Retained placenta / products of conception",
+   "cm": true,
+   "triggers": [
+    "c_bleeding_after_delivery"
+   ],
+   "f": {
+    "ph_ret": 5
+   },
+   "inv": "Check placenta, ultrasound, removal by trained clinician.",
+   "tool": "None applied.",
+   "alt": "Atony, infection",
+   "sex": "F"
+  },
+  {
+   "id": "secpph",
+   "name": "Secondary postpartum haemorrhage / endometritis",
+   "cm": false,
+   "triggers": [
+    "c_bleeding_after_delivery",
+    "c_fever_after_delivery"
+   ],
+   "f": {
+    "ph_late": 4
+   },
+   "inv": "Ultrasound, swabs, CBC; antibiotics per protocol.",
+   "tool": "None applied.",
+   "alt": "Retained products, coagulopathy",
+   "sex": "F"
+  },
+  {
+   "id": "puerp",
+   "name": "Puerperal sepsis (endometritis)",
+   "cm": true,
+   "triggers": [
+    "c_fever_after_delivery"
+   ],
+   "f": {
+    "pn_endo": 5,
+    "fever": 2
+   },
+   "inv": "Blood cultures, high vaginal swab, CBC, urgent senior review and antibiotics per sepsis protocol.",
+   "tool": "None applied.",
+   "alt": "Wound infection, UTI, mastitis, thromboembolism",
+   "sex": "F"
+  },
+  {
+   "id": "wound",
+   "name": "Post-delivery wound infection",
+   "cm": false,
+   "triggers": [
+    "c_fever_after_delivery"
+   ],
+   "f": {
+    "pn_wound": 4
+   },
+   "inv": "Wound examination and swab; ultrasound for collection.",
+   "tool": "None applied.",
+   "alt": "Endometritis, UTI, mastitis",
+   "sex": "F"
+  },
+  {
+   "id": "mastitis",
+   "name": "Mastitis / breast abscess",
+   "cm": false,
+   "triggers": [
+    "c_fever_after_delivery",
+    "c_breast_pain",
+    "c_breastfeeding_problems"
+   ],
+   "f": {
+    "pn_breast": 5
+   },
+   "inv": "Clinical; ultrasound if lump or no improvement; keep feeding or expressing.",
+   "tool": "None applied.",
+   "alt": "Engorgement, cyclical mastalgia, cancer",
+   "sex": "F"
+  },
+  {
+   "id": "postvte",
+   "name": "Venous thromboembolism after delivery",
+   "cm": true,
+   "triggers": [
+    "c_fever_after_delivery"
+   ],
+   "f": {
+    "pn_calf": 5
+   },
+   "inv": "Clinical probability and imaging for DVT/PE as appropriate.",
+   "tool": "None applied.",
+   "alt": "Infection, muscle pain, cardiac cause",
+   "sex": "F"
+  },
+  {
+   "id": "cycmast",
+   "name": "Cyclical mastalgia",
+   "cm": false,
+   "triggers": [
+    "c_breast_pain"
+   ],
+   "f": {
+    "br_cyc": 4
+   },
+   "inv": "Clinical breast examination; imaging per age.",
+   "tool": "None applied.",
+   "alt": "Breast cancer, mastitis, musculoskeletal pain",
+   "sex": "F"
+  },
+  {
+   "id": "bca",
+   "name": "Breast cancer",
+   "cm": true,
+   "triggers": [
+    "c_breast_lump",
+    "c_nipple_discharge"
+   ],
+   "f": {
+    "br_hard": 5,
+    "age_over_60": 1
+   },
+   "inv": "Triple assessment: clinical examination, imaging and biopsy.",
+   "tool": "Triple assessment is the standard approach to any breast lump.",
+   "alt": "Fibroadenoma, cyst, abscess"
+  },
+  {
+   "id": "fibroad",
+   "name": "Fibroadenoma",
+   "cm": false,
+   "triggers": [
+    "c_breast_lump"
+   ],
+   "f": {
+    "br_mobile": 4
+   },
+   "inv": "Triple assessment; ultrasound.",
+   "tool": "None applied.",
+   "alt": "Cyst, phyllodes tumour, cancer",
+   "sex": "F"
+  },
+  {
+   "id": "bcyst",
+   "name": "Breast cyst",
+   "cm": false,
+   "triggers": [
+    "c_breast_lump"
+   ],
+   "f": {
+    "br_cyst": 4
+   },
+   "inv": "Ultrasound.",
+   "tool": "None applied.",
+   "alt": "Fibroadenoma, cancer",
+   "sex": "F"
+  },
+  {
+   "id": "papill",
+   "name": "Duct papilloma / ductal disease",
+   "cm": true,
+   "triggers": [
+    "c_nipple_discharge"
+   ],
+   "f": {
+    "br_bloody": 4
+   },
+   "inv": "Breast imaging, duct evaluation, cytology; exclude cancer.",
+   "tool": "None applied.",
+   "alt": "Breast cancer, mammary duct ectasia"
+  },
+  {
+   "id": "nipTrauma",
+   "name": "Nipple trauma / poor breastfeeding attachment",
+   "cm": false,
+   "triggers": [
+    "c_breastfeeding_problems"
+   ],
+   "f": {
+    "bf_latch": 4
+   },
+   "inv": "Observe feeding and attachment.",
+   "tool": "None applied.",
+   "alt": "Mastitis, thrush, tongue-tie",
+   "sex": "F"
+  },
+  {
+   "id": "lowmilk",
+   "name": "Insufficient milk intake",
+   "cm": false,
+   "triggers": [
+    "c_breastfeeding_problems"
+   ],
+   "f": {
+    "bf_low": 4
+   },
+   "inv": "Weigh baby, feeding assessment, nappy output.",
+   "tool": "None applied.",
+   "alt": "Poor attachment, infant illness",
+   "sex": "F"
+  },
+  {
+   "id": "nvp",
+   "name": "Nausea and vomiting of pregnancy",
+   "cm": false,
+   "triggers": [
+    "c_nausea_and_vomiting_in_pregnancy"
+   ],
+   "f": {
+    "nv_mild": 4
+   },
+   "inv": "Clinical; urine ketones; exclude infection.",
+   "tool": "None applied.",
+   "alt": "Hyperemesis, UTI, molar pregnancy, gastroenteritis",
+   "sex": "F"
+  },
+  {
+   "id": "hyperem",
+   "name": "Hyperemesis gravidarum",
+   "cm": true,
+   "triggers": [
+    "c_nausea_and_vomiting_in_pregnancy"
+   ],
+   "f": {
+    "nv_hyper": 5
+   },
+   "inv": "Weight, urine ketones, electrolytes, ultrasound; hospital care if dehydrated.",
+   "tool": "None applied.",
+   "alt": "Gastroenteritis, thyrotoxicosis, molar pregnancy",
+   "sex": "F"
+  },
+  {
+   "id": "mole",
+   "name": "Molar pregnancy",
+   "cm": true,
+   "triggers": [
+    "c_nausea_and_vomiting_in_pregnancy",
+    "c_bleeding_in_pregnancy"
+   ],
+   "f": {
+    "nv_mole": 5
+   },
+   "inv": "Ultrasound, quantitative β-hCG; specialist follow-up.",
+   "tool": "None applied.",
+   "alt": "Miscarriage, ectopic pregnancy, twin pregnancy",
+   "sex": "F"
+  },
+  {
+   "id": "meno",
+   "name": "Menopausal transition",
+   "cm": false,
+   "triggers": [
+    "c_hot_flushes"
+   ],
+   "f": {
+    "hf_meno": 5,
+    "age_over_60": 0
+   },
+   "inv": "Clinical in women over 45; FSH is rarely needed.",
+   "tool": "None applied.",
+   "alt": "Thyrotoxicosis, drug effect, infection, pregnancy",
+   "sex": "F"
+  },
+  {
+   "id": "poi",
+   "name": "Premature ovarian insufficiency",
+   "cm": false,
+   "triggers": [
+    "c_hot_flushes"
+   ],
+   "f": {
+    "hf_poi": 5
+   },
+   "inv": "FSH on two occasions, oestradiol, TSH, karyotype as indicated.",
+   "tool": "None applied.",
+   "alt": "Pregnancy, hyperprolactinaemia, thyroid disease",
+   "sex": "F"
+  },
+  {
+   "id": "drugflush",
+   "name": "Drug-induced flushes",
+   "cm": false,
+   "triggers": [
+    "c_hot_flushes"
+   ],
+   "f": {
+    "hf_drug": 4
+   },
+   "inv": "Medicine review.",
+   "tool": "None applied.",
+   "alt": "Menopause, thyrotoxicosis, carcinoid",
+   "sex": "F"
+  },
+  {
+   "id": "prolapse",
+   "name": "Pelvic organ prolapse",
+   "cm": false,
+   "triggers": [
+    "c_something_coming_down_in_vagina"
+   ],
+   "f": {
+    "pr_bulge": 5
+   },
+   "inv": "Pelvic examination in standing and straining; POP-Q assessment by specialist.",
+   "tool": "None applied.",
+   "alt": "Cervical polyp, vaginal cyst, cancer",
+   "sex": "F"
+  },
+  {
+   "id": "ovmass",
+   "name": "Ovarian mass (including ovarian cancer)",
+   "cm": true,
+   "triggers": [
+    "c_abdominal_lump",
+    "c_swelling_of_abdomen",
+    "c_bloating"
+   ],
+   "f": {
+    "al_ovar": 4,
+    "age_over_60": 1
+   },
+   "inv": "Pelvic ultrasound, CA-125 with ultrasound as per risk-of-malignancy assessment, specialist review.",
+   "tool": "Risk of malignancy index (RMI) is used by specialists; apply per local guideline.",
+   "alt": "Fibroid, ascites from liver disease, pregnancy, bladder distension",
+   "sex": "F"
+  },
+  {
+   "id": "renalmass",
+   "name": "Renal mass (e.g. renal cell carcinoma)",
+   "cm": true,
+   "triggers": [
+    "c_abdominal_lump"
+   ],
+   "f": {
+    "al_renal": 4
+   },
+   "inv": "Ultrasound, CT abdomen, urine, CBC.",
+   "tool": "None applied.",
+   "alt": "Hydronephrosis, polycystic kidney, adrenal mass"
+  },
+  {
+   "id": "gastca",
+   "name": "Gastric cancer",
+   "cm": true,
+   "triggers": [
+    "c_abdominal_lump",
+    "c_heartburn"
+   ],
+   "f": {
+    "al_gastr": 4,
+    "c_weight_loss": 2,
+    "hb_alarm": 3
+   },
+   "inv": "Urgent endoscopy and biopsy.",
+   "tool": "None applied.",
+   "alt": "Peptic ulcer, lymphoma, pancreatic mass"
+  },
+  {
+   "id": "atroph",
+   "name": "Atrophic vaginitis (after cancer exclusion)",
+   "cm": false,
+   "triggers": [
+    "c_bleeding_after_menopause"
+   ],
+   "f": {
+    "bm_atrophic": 3
+   },
+   "inv": "Pelvic ultrasound with endometrial thickness and gynaecology review before accepting this diagnosis.",
+   "tool": "None applied.",
+   "alt": "Endometrial cancer, polyp, cervical cancer",
+   "sex": "F"
+  },
+  {
+   "id": "hrtbleed",
+   "name": "Therapy-related postmenopausal bleeding",
+   "cm": false,
+   "triggers": [
+    "c_bleeding_after_menopause"
+   ],
+   "f": {
+    "bm_hrt": 3
+   },
+   "inv": "Review therapy, ultrasound, endometrial sampling if persistent.",
+   "tool": "None applied.",
+   "alt": "Endometrial cancer, polyp",
+   "sex": "F"
+  },
+  {
+   "id": "piles",
+   "name": "Haemorrhoids",
+   "cm": false,
+   "triggers": [
+    "c_blood_in_stool",
+    "c_itching_around_anus",
+    "c_anal_swelling_or_lump"
+   ],
+   "f": {
+    "bs_pile": 4,
+    "rn_prol": 2,
+    "ex_pr_pile": 2
+   },
+   "inv": "Digital rectal examination and proctoscopy; check haemoglobin; colonoscopy if age or alarm features.",
+   "tool": "None applied.",
+   "alt": "Anal fissure, colorectal cancer, rectal prolapse"
+  },
+  {
+   "id": "fissure",
+   "name": "Anal fissure",
+   "cm": false,
+   "triggers": [
+    "c_blood_in_stool",
+    "c_anal_pain"
+   ],
+   "f": {
+    "bs_tear": 5,
+    "co_func": 1
+   },
+   "inv": "Inspection; avoid forceful rectal examination; manage constipation.",
+   "tool": "None applied.",
+   "alt": "Haemorrhoids, abscess, Crohn disease, cancer"
+  },
+  {
+   "id": "ibdx",
+   "name": "Inflammatory bowel disease",
+   "cm": true,
+   "triggers": [
+    "c_blood_in_stool"
+   ],
+   "f": {
+    "bs_ibd": 4,
+    "c_weight_loss": 1
+   },
+   "inv": "Stool culture and calprotectin, CBC, CRP, colonoscopy with biopsy.",
+   "tool": "None applied.",
+   "alt": "Infective colitis, IBS, colorectal cancer"
+  },
+  {
+   "id": "dysent",
+   "name": "Infective (bacillary) dysentery",
+   "cm": true,
+   "triggers": [
+    "c_blood_in_stool"
+   ],
+   "f": {
+    "d_bloody": 4,
+    "d_contaminated": 2,
+    "fever": 2
+   },
+   "inv": "Stool microscopy and culture; hydration; senior review if severe.",
+   "tool": "None applied.",
+   "alt": "Amoebic dysentery, IBD, ischaemic colitis"
+  },
+  {
+   "id": "amoeb",
+   "name": "Amoebic colitis",
+   "cm": false,
+   "triggers": [
+    "c_blood_in_stool"
+   ],
+   "f": {
+    "bs_amoeba": 4,
+    "d_contaminated": 1
+   },
+   "inv": "Stool microscopy; ultrasound for liver abscess.",
+   "tool": "None applied.",
+   "alt": "Bacillary dysentery, IBD, cancer"
+  },
+  {
+   "id": "diverbleed",
+   "name": "Diverticular or vascular lower GI bleed",
+   "cm": true,
+   "triggers": [
+    "c_blood_in_stool"
+   ],
+   "f": {
+    "bs_divert": 4,
+    "age_over_60": 1
+   },
+   "inv": "Resuscitation, CBC, colonoscopy or CT angiography per stability.",
+   "tool": "None applied.",
+   "alt": "Haemorrhoids, cancer, upper GI bleed"
+  },
+  {
+   "id": "juvpolyp",
+   "name": "Juvenile rectal polyp",
+   "cm": false,
+   "triggers": [
+    "c_blood_in_stool"
+   ],
+   "f": {
+    "bs_polyp": 4
+   },
+   "inv": "Examination, colonoscopy by paediatric surgeon.",
+   "tool": "None applied.",
+   "alt": "Fissure, infective colitis"
+  },
+  {
+   "id": "perianabs",
+   "name": "Perianal abscess",
+   "cm": true,
+   "triggers": [
+    "c_anal_pain",
+    "c_anal_swelling_or_lump"
+   ],
+   "f": {
+    "rn_abs": 5,
+    "fever": 1
+   },
+   "inv": "Clinical; early surgical drainage; check glucose.",
+   "tool": "None applied.",
+   "alt": "Thrombosed haemorrhoid, fissure, pilonidal abscess"
+  },
+  {
+   "id": "thrombpile",
+   "name": "Thrombosed external haemorrhoid",
+   "cm": false,
+   "triggers": [
+    "c_anal_pain",
+    "c_anal_swelling_or_lump"
+   ],
+   "f": {
+    "rn_thromb": 4
+   },
+   "inv": "Clinical.",
+   "tool": "None applied.",
+   "alt": "Abscess, fissure"
+  },
+  {
+   "id": "proctal",
+   "name": "Proctalgia fugax",
+   "cm": false,
+   "triggers": [
+    "c_anal_pain"
+   ],
+   "f": {
+    "rn_proct": 4
+   },
+   "inv": "Clinical after other causes excluded.",
+   "tool": "None applied.",
+   "alt": "Fissure, abscess, levator ani syndrome"
+  },
+  {
+   "id": "fistula",
+   "name": "Anal fistula",
+   "cm": false,
+   "triggers": [
+    "c_anal_swelling_or_lump",
+    "c_anal_pain"
+   ],
+   "f": {
+    "rn_fist": 4
+   },
+   "inv": "Clinical; MRI; consider Crohn disease and TB.",
+   "tool": "None applied.",
+   "alt": "Abscess, hidradenitis, pilonidal sinus"
+  },
+  {
+   "id": "analca",
+   "name": "Anorectal cancer",
+   "cm": true,
+   "triggers": [
+    "c_anal_swelling_or_lump",
+    "c_anal_pain",
+    "c_blood_in_stool"
+   ],
+   "f": {
+    "rn_ca": 5,
+    "c_weight_loss": 1
+   },
+   "inv": "Digital rectal examination, proctoscopy, biopsy, imaging.",
+   "tool": "None applied.",
+   "alt": "Haemorrhoids, fissure, warts"
+  },
+  {
+   "id": "prolapsediag",
+   "name": "Rectal prolapse",
+   "cm": false,
+   "triggers": [
+    "c_anal_swelling_or_lump"
+   ],
+   "f": {
+    "rn_prol": 3
+   },
+   "inv": "Examination while straining; colonoscopy as indicated.",
+   "tool": "None applied.",
+   "alt": "Prolapsed piles, polyp"
+  },
+  {
+   "id": "threadw",
+   "name": "Threadworm infestation",
+   "cm": false,
+   "triggers": [
+    "c_itching_around_anus"
+   ],
+   "f": {
+    "rn_worm": 5
+   },
+   "inv": "Sellotape test; treat the family per local guideline.",
+   "tool": "None applied.",
+   "alt": "Perianal dermatitis, haemorrhoids, fungal infection"
+  },
+  {
+   "id": "perianderm",
+   "name": "Perianal skin irritation (hygiene, dermatitis, fungal)",
+   "cm": false,
+   "triggers": [
+    "c_itching_around_anus"
+   ],
+   "f": {
+    "rn_skin": 4
+   },
+   "inv": "Clinical; skin scraping if fungal suspected.",
+   "tool": "None applied.",
+   "alt": "Threadworm, haemorrhoids, psoriasis"
+  },
+  {
+   "id": "gerd",
+   "name": "Gastro-oesophageal reflux disease",
+   "cm": false,
+   "triggers": [
+    "c_heartburn",
+    "c_belching"
+   ],
+   "f": {
+    "hb_cl": 5
+   },
+   "inv": "Clinical; endoscopy if alarm features or non-response.",
+   "tool": "None applied.",
+   "alt": "Peptic ulcer, functional dyspepsia, ACS, eosinophilic oesophagitis"
+  },
+  {
+   "id": "alarmdys",
+   "name": "Dyspepsia with alarm features (exclude malignancy)",
+   "cm": true,
+   "triggers": [
+    "c_heartburn",
+    "c_belching",
+    "c_bloating",
+    "c_nausea"
+   ],
+   "f": {
+    "hb_alarm": 4,
+    "c_weight_loss": 2
+   },
+   "inv": "Urgent upper GI endoscopy and biopsy.",
+   "tool": "None applied.",
+   "alt": "GERD, peptic ulcer, functional dyspepsia"
+  },
+  {
+   "id": "acsmimic",
+   "name": "Cardiac cause of \"heartburn\" (ACS)",
+   "cm": true,
+   "triggers": [
+    "c_heartburn"
+   ],
+   "f": {
+    "hb_exert": 5
+   },
+   "inv": "ECG and troponin; treat as cardiac until excluded.",
+   "tool": "None applied.",
+   "alt": "GERD, peptic ulcer, oesophageal spasm"
+  },
+  {
+   "id": "funcdys",
+   "name": "Functional dyspepsia",
+   "cm": false,
+   "triggers": [
+    "c_heartburn",
+    "c_bloating",
+    "c_belching",
+    "c_nausea"
+   ],
+   "f": {
+    "hb_func": 4
+   },
+   "inv": "Diagnosis after excluding alarm features; test for H. pylori.",
+   "tool": "Rome IV criteria define functional dyspepsia; apply separately.",
+   "alt": "GERD, peptic ulcer, gastroparesis"
+  },
+  {
+   "id": "lactint",
+   "name": "Food (e.g. lactose) intolerance",
+   "cm": false,
+   "triggers": [
+    "c_bloating"
+   ],
+   "f": {
+    "bz_int": 4
+   },
+   "inv": "Dietary history; elimination trial; hydrogen breath test where available.",
+   "tool": "None applied.",
+   "alt": "IBS, coeliac disease, giardiasis"
+  },
+  {
+   "id": "ibsx",
+   "name": "Irritable bowel syndrome",
+   "cm": false,
+   "triggers": [
+    "c_bloating",
+    "c_abdominal_distension"
+   ],
+   "f": {
+    "bz_ibs": 4
+   },
+   "inv": "Diagnosis after excluding alarm features; CBC, CRP, coeliac screen.",
+   "tool": "Rome IV criteria define IBS; apply separately.",
+   "alt": "Coeliac disease, IBD, colorectal cancer, ovarian cancer"
+  },
+  {
+   "id": "celiac",
+   "name": "Coeliac disease / malabsorption",
+   "cm": false,
+   "triggers": [
+    "c_bloating",
+    "c_pale_fatty_stools",
+    "c_poor_weight_gain"
+   ],
+   "f": {
+    "bz_celiac": 4,
+    "st_stea": 3
+   },
+   "inv": "Anti-tissue transglutaminase IgA with total IgA, then duodenal biopsy; keep gluten in diet until tested.",
+   "tool": "None applied.",
+   "alt": "Giardiasis, IBS, pancreatic insufficiency"
+  },
+  {
+   "id": "giardia",
+   "name": "Giardiasis",
+   "cm": false,
+   "triggers": [
+    "c_bloating",
+    "c_pale_fatty_stools"
+   ],
+   "f": {
+    "bz_giard": 4
+   },
+   "inv": "Stool microscopy or antigen test.",
+   "tool": "None applied.",
+   "alt": "Coeliac disease, lactose intolerance, IBS"
+  },
+  {
+   "id": "chronpanc",
+   "name": "Chronic pancreatitis / pancreatic insufficiency",
+   "cm": false,
+   "triggers": [
+    "c_pale_fatty_stools"
+   ],
+   "f": {
+    "st_pan": 4,
+    "st_stea": 2
+   },
+   "inv": "Stool elastase, imaging of pancreas, glucose.",
+   "tool": "None applied.",
+   "alt": "Coeliac disease, giardiasis, cholestasis"
+  },
+  {
+   "id": "drugnausea",
+   "name": "Drug-induced nausea or vomiting",
+   "cm": false,
+   "triggers": [
+    "c_nausea",
+    "c_nausea_and_vomiting"
+   ],
+   "f": {
+    "nz_drug": 4,
+    "g_newdrug": 2
+   },
+   "inv": "Medicine review.",
+   "tool": "None applied.",
+   "alt": "Gastroenteritis, pregnancy, obstruction, raised ICP"
+  },
+  {
+   "id": "neuronz",
+   "name": "Neurological cause of nausea (raised ICP, migraine, vestibular)",
+   "cm": true,
+   "triggers": [
+    "c_nausea",
+    "c_nausea_and_vomiting"
+   ],
+   "f": {
+    "nz_neuro": 4,
+    "ha_progressive": 2
+   },
+   "inv": "Neurological examination, fundoscopy, imaging as indicated.",
+   "tool": "None applied.",
+   "alt": "Gastroenteritis, drug effect, pregnancy"
+  },
+  {
+   "id": "pillo",
+   "name": "Pill oesophagitis",
+   "cm": false,
+   "triggers": [
+    "c_painful_swallowing"
+   ],
+   "f": {
+    "pw_pill": 5
+   },
+   "inv": "History; endoscopy if persistent; stop offending drug.",
+   "tool": "None applied.",
+   "alt": "Reflux oesophagitis, candidiasis, tumour"
+  },
+  {
+   "id": "varicose",
+   "name": "Varicose veins / chronic venous insufficiency",
+   "cm": false,
+   "triggers": [
+    "c_varicose_veins"
+   ],
+   "f": {
+    "vv_ache": 5,
+    "ulcer_varicose": 2,
+    "ex_varicose": 2
+   },
+   "inv": "Duplex ultrasound of leg veins.",
+   "tool": "None applied.",
+   "alt": "DVT, lymphoedema, arterial disease"
+  },
+  {
+   "id": "thrombophl",
+   "name": "Superficial thrombophlebitis",
+   "cm": true,
+   "triggers": [
+    "c_varicose_veins"
+   ],
+   "f": {
+    "vv_hot": 5
+   },
+   "inv": "Duplex ultrasound to exclude deep vein involvement.",
+   "tool": "None applied.",
+   "alt": "DVT, cellulitis"
+  },
+  {
+   "id": "varixbleed",
+   "name": "Bleeding varicose vein",
+   "cm": true,
+   "triggers": [
+    "c_varicose_veins"
+   ],
+   "f": {
+    "vv_bleed": 5
+   },
+   "inv": "Firm pressure and leg elevation; urgent care.",
+   "tool": "None applied.",
+   "alt": "Traumatic bleeding"
+  },
+  {
+   "id": "umbher",
+   "name": "Umbilical / paraumbilical hernia",
+   "cm": false,
+   "triggers": [
+    "c_umbilical_swelling"
+   ],
+   "f": {
+    "us_red": 4,
+    "ex_umb": 3
+   },
+   "inv": "Clinical; ultrasound if doubt.",
+   "tool": "None applied.",
+   "alt": "Umbilical granuloma, omphalitis, ascites"
+  },
+  {
+   "id": "omphal",
+   "name": "Omphalitis",
+   "cm": true,
+   "triggers": [
+    "c_umbilical_swelling"
+   ],
+   "f": {
+    "us_inf": 5,
+    "fever": 1
+   },
+   "inv": "Urgent paediatric review; swab, blood culture, antibiotics.",
+   "tool": "None applied.",
+   "alt": "Umbilical granuloma, hernia"
+  },
+  {
+   "id": "femher",
+   "name": "Femoral hernia",
+   "cm": true,
+   "triggers": [
+    "c_groin_swelling"
+   ],
+   "f": {
+    "gs_fem": 4
+   },
+   "inv": "Surgical review; early repair advised because of strangulation risk.",
+   "tool": "None applied.",
+   "alt": "Inguinal hernia, lymph node, saphena varix"
+  },
+  {
+   "id": "saphvar",
+   "name": "Saphena varix",
+   "cm": false,
+   "triggers": [
+    "c_groin_swelling"
+   ],
+   "f": {
+    "gs_sap": 4
+   },
+   "inv": "Duplex ultrasound.",
+   "tool": "None applied.",
+   "alt": "Femoral hernia, lymph node"
+  },
+  {
+   "id": "ascitesx",
+   "name": "Ascites (liver, heart, kidney or malignant cause)",
+   "cm": true,
+   "triggers": [
+    "c_swelling_of_abdomen"
+   ],
+   "f": {
+    "as_asc": 4,
+    "ex_ascites": 3
+   },
+   "inv": "Abdominal ultrasound, diagnostic paracentesis with SAAG and cell count, liver and kidney tests.",
+   "tool": "None applied.",
+   "alt": "Ovarian mass, intestinal obstruction, pregnancy, obesity"
+  },
+  {
+   "id": "tbabd",
+   "name": "Abdominal (peritoneal) tuberculosis",
+   "cm": true,
+   "triggers": [
+    "c_swelling_of_abdomen"
+   ],
+   "f": {
+    "as_tb": 4,
+    "night_sweats": 1,
+    "c_weight_loss": 1
+   },
+   "inv": "Ascitic fluid analysis (lymphocytes, ADA), imaging, chest X-ray.",
+   "tool": "None applied.",
+   "alt": "Cirrhotic ascites, malignancy, other infection"
+  },
+  {
+   "id": "colic",
+   "name": "Infantile colic",
+   "cm": false,
+   "triggers": [
+    "c_excessive_crying"
+   ],
+   "f": {
+    "cr_colic": 4
+   },
+   "inv": "Clinical after exclusion of serious causes; reassure and support parents.",
+   "tool": "None applied.",
+   "alt": "Underfeeding, reflux, cow milk allergy, infection, intussusception"
+  },
+  {
+   "id": "underfed",
+   "name": "Underfeeding",
+   "cm": false,
+   "triggers": [
+    "c_excessive_crying"
+   ],
+   "f": {
+    "cr_hungry": 4
+   },
+   "inv": "Weight, feeding observation, nappy count.",
+   "tool": "None applied.",
+   "alt": "Colic, infection"
+  },
+  {
+   "id": "infcry",
+   "name": "Serious infection in a crying infant",
+   "cm": true,
+   "triggers": [
+    "c_excessive_crying"
+   ],
+   "f": {
+    "cr_infect": 5,
+    "fever": 2
+   },
+   "inv": "Urgent paediatric review; full examination, urine, blood tests, cultures.",
+   "tool": "None applied.",
+   "alt": "Colic, intussusception, otitis media"
+  },
+  {
+   "id": "intussus",
+   "name": "Intussusception",
+   "cm": true,
+   "triggers": [
+    "c_excessive_crying"
+   ],
+   "f": {
+    "cr_intus": 5
+   },
+   "inv": "Urgent ultrasound and surgical/paediatric review.",
+   "tool": "None applied.",
+   "alt": "Gastroenteritis, colic, volvulus"
+  },
+  {
+   "id": "nai",
+   "name": "Non-accidental injury (child protection concern)",
+   "cm": true,
+   "triggers": [
+    "c_excessive_crying",
+    "c_behaviour_problems"
+   ],
+   "f": {
+    "cr_abuse": 5
+   },
+   "inv": "Full examination with documentation; follow child protection procedures and involve senior paediatrician.",
+   "tool": "None applied.",
+   "alt": "Accidental injury, bleeding disorder, bone disease"
+  },
+  {
+   "id": "pathjaund",
+   "name": "Pathological jaundice in first 24 hours (e.g. haemolytic disease)",
+   "cm": true,
+   "triggers": [
+    "c_newborn_jaundice"
+   ],
+   "f": {
+    "nj_24": 5
+   },
+   "inv": "Urgent serum bilirubin, blood group and Coombs test, CBC; phototherapy per age-in-hours nomogram.",
+   "tool": "Use age-in-hours bilirubin nomograms (e.g. AAP, NICE or IAP) for treatment thresholds.",
+   "alt": "Sepsis, G6PD deficiency, ABO/Rh incompatibility"
+  },
+  {
+   "id": "physjaund",
+   "name": "Physiological jaundice",
+   "cm": false,
+   "triggers": [
+    "c_newborn_jaundice"
+   ],
+   "f": {
+    "nj_phys": 4
+   },
+   "inv": "Clinical with bilirubin measurement per local protocol.",
+   "tool": "None applied.",
+   "alt": "Breast-milk jaundice, haemolysis, sepsis"
+  },
+  {
+   "id": "cholestasis",
+   "name": "Prolonged jaundice / neonatal cholestasis (e.g. biliary atresia)",
+   "cm": true,
+   "triggers": [
+    "c_newborn_jaundice"
+   ],
+   "f": {
+    "nj_long": 5
+   },
+   "inv": "Split bilirubin, stool colour card, liver ultrasound; urgent paediatric hepatology referral.",
+   "tool": "None applied.",
+   "alt": "Breast-milk jaundice, hypothyroidism, infection"
+  },
+  {
+   "id": "bmjaund",
+   "name": "Breast-milk jaundice",
+   "cm": false,
+   "triggers": [
+    "c_newborn_jaundice"
+   ],
+   "f": {
+    "nj_bm": 3
+   },
+   "inv": "Diagnosis after excluding cholestasis (conjugated bilirubin).",
+   "tool": "None applied.",
+   "alt": "Cholestasis, hypothyroidism, haemolysis"
+  },
+  {
+   "id": "kernic",
+   "name": "Severe hyperbilirubinaemia with risk of bilirubin brain injury",
+   "cm": true,
+   "triggers": [
+    "c_newborn_jaundice"
+   ],
+   "f": {
+    "nj_sev": 5
+   },
+   "inv": "Emergency bilirubin, phototherapy and exchange transfusion decisions by neonatal team.",
+   "tool": "None applied.",
+   "alt": "Sepsis, meningitis"
+  },
+  {
+   "id": "primenur",
+   "name": "Primary nocturnal enuresis",
+   "cm": false,
+   "triggers": [
+    "c_bedwetting"
+   ],
+   "f": {
+    "bw_prim": 5
+   },
+   "inv": "Urine test; bladder diary; reassurance and behavioural measures.",
+   "tool": "None applied.",
+   "alt": "Secondary enuresis, constipation, diabetes"
+  },
+  {
+   "id": "secenur",
+   "name": "Secondary enuresis (diabetes, UTI, constipation, stress)",
+   "cm": true,
+   "triggers": [
+    "c_bedwetting"
+   ],
+   "f": {
+    "bw_sec": 4
+   },
+   "inv": "Urine dipstick, glucose, constipation assessment.",
+   "tool": "None applied.",
+   "alt": "Primary enuresis, neurogenic bladder, diabetes insipidus"
+  },
+  {
+   "id": "neurobl",
+   "name": "Neurogenic bladder / spinal cause",
+   "cm": true,
+   "triggers": [
+    "c_bedwetting"
+   ],
+   "f": {
+    "bw_neuro": 4
+   },
+   "inv": "Spine and lower-limb examination, ultrasound, MRI spine.",
+   "tool": "None applied.",
+   "alt": "Primary enuresis, constipation"
+  },
+  {
+   "id": "iron",
+   "name": "Iron deficiency anaemia",
+   "cm": false,
+   "triggers": [
+    "c_pallor",
+    "c_fatigue_or_weakness"
+   ],
+   "f": {
+    "pa_diet": 5,
+    "pallor": 1
+   },
+   "inv": "CBC, ferritin, peripheral smear, stool for ova; look for the source.",
+   "tool": "None applied.",
+   "alt": "Thalassaemia trait, chronic disease, B12 deficiency"
+  },
+  {
+   "id": "thal",
+   "name": "Thalassaemia / haemoglobinopathy",
+   "cm": false,
+   "triggers": [
+    "c_pallor"
+   ],
+   "f": {
+    "pa_thal": 4,
+    "hsm": 2,
+    "ja_haemolytic": 1
+   },
+   "inv": "CBC, peripheral smear, haemoglobin electrophoresis or HPLC.",
+   "tool": "None applied.",
+   "alt": "Iron deficiency, sickle cell disease, haemolysis"
+  },
+  {
+   "id": "leuk",
+   "name": "Leukaemia / bone marrow failure",
+   "cm": true,
+   "triggers": [
+    "c_pallor"
+   ],
+   "f": {
+    "pa_leuk": 5,
+    "ex_petechiae": 2
+   },
+   "inv": "CBC, peripheral smear, urgent haematology review, marrow examination.",
+   "tool": "None applied.",
+   "alt": "Iron deficiency, dengue, aplastic anaemia, ITP"
+  },
+  {
+   "id": "b12",
+   "name": "Vitamin B12 / folate deficiency",
+   "cm": false,
+   "triggers": [
+    "c_pallor",
+    "c_numbness_or_tingling"
+   ],
+   "f": {
+    "pa_b12": 4
+   },
+   "inv": "CBC, smear, B12 and folate levels.",
+   "tool": "None applied.",
+   "alt": "Iron deficiency, thyroid disease, peripheral neuropathy"
+  },
+  {
+   "id": "anchr",
+   "name": "Anaemia of chronic disease",
+   "cm": false,
+   "triggers": [
+    "c_pallor"
+   ],
+   "f": {
+    "pa_chronic": 3
+   },
+   "inv": "CBC, ferritin, CRP, kidney and liver tests.",
+   "tool": "None applied.",
+   "alt": "Iron deficiency, B12 deficiency, haemolysis"
+  },
+  {
+   "id": "hookw",
+   "name": "Hookworm anaemia",
+   "cm": false,
+   "triggers": [
+    "c_pallor",
+    "c_worm_infestation"
+   ],
+   "f": {
+    "pa_worm": 4
+   },
+   "inv": "Stool microscopy, CBC; deworming per national programme.",
+   "tool": "None applied.",
+   "alt": "Iron deficiency of other cause"
+  },
+  {
+   "id": "sam",
+   "name": "Severe acute malnutrition",
+   "cm": true,
+   "triggers": [
+    "c_poor_weight_gain",
+    "c_swelling"
+   ],
+   "f": {
+    "wg_sam": 5
+   },
+   "inv": "Weight-for-height/MUAC by WHO standards, appetite test, look for infection and hypoglycaemia; refer to nutrition rehabilitation.",
+   "tool": "WHO child growth standards and MUAC cut-offs define malnutrition; follow national guidelines.",
+   "alt": "Chronic disease, malabsorption, nephrotic syndrome"
+  },
+  {
+   "id": "inadint",
+   "name": "Inadequate nutritional intake",
+   "cm": false,
+   "triggers": [
+    "c_poor_weight_gain"
+   ],
+   "f": {
+    "wg_int": 4
+   },
+   "inv": "Feeding history, observation, growth chart.",
+   "tool": "None applied.",
+   "alt": "Malabsorption, chronic disease"
+  },
+  {
+   "id": "chronwg",
+   "name": "Chronic illness affecting growth (TB, HIV, heart, kidney)",
+   "cm": false,
+   "triggers": [
+    "c_poor_weight_gain"
+   ],
+   "f": {
+    "wg_chr": 4
+   },
+   "inv": "CBC, Mantoux/IGRA, HIV test, urine and kidney tests, echocardiography as indicated.",
+   "tool": "None applied.",
+   "alt": "Malnutrition, malabsorption"
+  },
+  {
+   "id": "cyanchd",
+   "name": "Cyanotic congenital heart disease",
+   "cm": true,
+   "triggers": [
+    "c_bluish_discolouration"
+   ],
+   "f": {
+    "bd_cent": 5,
+    "pf_cardiac": 3
+   },
+   "inv": "Urgent oxygen saturation, hyperoxia test, chest X-ray, ECG, echocardiography, cardiology review.",
+   "tool": "None applied.",
+   "alt": "Respiratory disease, sepsis, acrocyanosis"
+  },
+  {
+   "id": "acrocy",
+   "name": "Acrocyanosis (benign)",
+   "cm": false,
+   "triggers": [
+    "c_bluish_discolouration"
+   ],
+   "f": {
+    "bd_acro": 4
+   },
+   "inv": "Check central colour and oxygen saturation to exclude central cyanosis.",
+   "tool": "None applied.",
+   "alt": "Central cyanosis, cold exposure, Raynaud"
+  },
+  {
+   "id": "learndis",
+   "name": "Specific learning disorder",
+   "cm": false,
+   "triggers": [
+    "c_poor_school_performance"
+   ],
+   "f": {
+    "sk_ld": 5
+   },
+   "inv": "Psychoeducational assessment after vision and hearing checks.",
+   "tool": "None applied.",
+   "alt": "Vision or hearing problem, ADHD, intellectual disability, anxiety"
+  },
+  {
+   "id": "senses",
+   "name": "Undetected vision or hearing problem",
+   "cm": false,
+   "triggers": [
+    "c_poor_school_performance",
+    "c_developmental_delay"
+   ],
+   "f": {
+    "sk_senses": 5
+   },
+   "inv": "Vision and hearing screening.",
+   "tool": "None applied.",
+   "alt": "Learning disorder, ADHD, intellectual disability"
+  },
+  {
+   "id": "absence",
+   "name": "Absence epilepsy",
+   "cm": true,
+   "triggers": [
+    "c_poor_school_performance",
+    "c_behaviour_problems"
+   ],
+   "f": {
+    "sk_abs": 5
+   },
+   "inv": "EEG; neurology review.",
+   "tool": "None applied.",
+   "alt": "ADHD, daydreaming, complex partial seizures"
+  },
+  {
+   "id": "psychsoc",
+   "name": "Psychosocial cause (stress, bullying, abuse, low mood)",
+   "cm": false,
+   "triggers": [
+    "c_poor_school_performance",
+    "c_behaviour_problems"
+   ],
+   "f": {
+    "sk_psy": 4
+   },
+   "inv": "Sensitive interview with child and parents; screen for abuse and depression.",
+   "tool": "None applied.",
+   "alt": "Learning disorder, ADHD, anxiety"
+  },
+  {
+   "id": "gdd",
+   "name": "Global developmental delay / intellectual disability",
+   "cm": false,
+   "triggers": [
+    "c_developmental_delay"
+   ],
+   "f": {
+    "dd_glob": 4
+   },
+   "inv": "Developmental assessment, hearing and vision tests, thyroid and metabolic tests, genetic tests as indicated.",
+   "tool": "None applied.",
+   "alt": "Hearing loss, autism, hypothyroidism, cerebral palsy"
+  },
+  {
+   "id": "hearimp",
+   "name": "Hearing impairment in a child",
+   "cm": false,
+   "triggers": [
+    "c_developmental_delay"
+   ],
+   "f": {
+    "dd_hear": 4
+   },
+   "inv": "Audiology (OAE/BERA).",
+   "tool": "None applied.",
+   "alt": "Autism, global delay, language disorder"
+  },
+  {
+   "id": "cp",
+   "name": "Cerebral palsy",
+   "cm": false,
+   "triggers": [
+    "c_developmental_delay"
+   ],
+   "f": {
+    "dd_cp": 4
+   },
+   "inv": "Neurological examination, MRI brain, multidisciplinary assessment.",
+   "tool": "None applied.",
+   "alt": "Metabolic disease, spinal disorder, global delay"
+  },
+  {
+   "id": "regress",
+   "name": "Neurodevelopmental regression (neurodegenerative or metabolic disease)",
+   "cm": true,
+   "triggers": [
+    "c_developmental_delay"
+   ],
+   "f": {
+    "dd_reg": 5
+   },
+   "inv": "Urgent paediatric neurology review; MRI, metabolic and genetic tests.",
+   "tool": "None applied.",
+   "alt": "Autism with regression, hypothyroidism, epilepsy"
+  },
+  {
+   "id": "pneuro",
+   "name": "Peripheral neuropathy (diabetic, alcohol, B12, other)",
+   "cm": false,
+   "triggers": [
+    "c_numbness_or_tingling"
+   ],
+   "f": {
+    "nm_stock": 4,
+    "ulcer_diabetic": 2,
+    "pa_b12": 2
+   },
+   "inv": "Glucose/HbA1c, B12, TSH, creatinine, nerve conduction studies.",
+   "tool": "None applied.",
+   "alt": "Radiculopathy, myelopathy, leprosy, B12 deficiency"
+  },
+  {
+   "id": "hypocalc",
+   "name": "Hypocalcaemia / hyperventilation",
+   "cm": true,
+   "triggers": [
+    "c_numbness_or_tingling"
+   ],
+   "f": {
+    "nm_peri": 4
+   },
+   "inv": "Serum calcium, magnesium, phosphate, ECG; arterial gas if breathing fast.",
+   "tool": "None applied.",
+   "alt": "Panic disorder, tetany of other cause"
+  },
+  {
+   "id": "msx",
+   "name": "Multiple sclerosis / demyelination",
+   "cm": false,
+   "triggers": [
+    "c_numbness_or_tingling"
+   ],
+   "f": {
+    "nm_ms": 4
+   },
+   "inv": "MRI brain and spine; neurology referral.",
+   "tool": "None applied.",
+   "alt": "B12 deficiency, vascular disease, functional disorder"
+  },
+  {
+   "id": "anorexsys",
+   "name": "Systemic illness with loss of appetite (infection, malignancy, organ failure)",
+   "cm": true,
+   "triggers": [
+    "c_loss_of_appetite"
+   ],
+   "f": {
+    "la_chronic": 3,
+    "c_weight_loss": 2,
+    "fever": 1,
+    "night_sweats": 1
+   },
+   "inv": "History and examination to find the system involved; CBC, CRP, glucose, kidney, liver and thyroid tests, chest X-ray, HIV and TB screening as indicated.",
+   "tool": "None applied.",
+   "alt": "Depression, drug effect, pregnancy"
+  },
+  {
+   "id": "anorexdepr",
+   "name": "Depression causing poor appetite",
+   "cm": false,
+   "triggers": [
+    "c_loss_of_appetite"
+   ],
+   "f": {
+    "la_depr": 4
+   },
+   "inv": "Clinical interview; screen for physical illness.",
+   "tool": "None applied.",
+   "alt": "Systemic illness, drug effect, anxiety"
+  },
+  {
+   "id": "fluill",
+   "name": "Influenza-like illness",
+   "cm": false,
+   "triggers": [
+    "c_body_aches",
+    "fever"
+   ],
+   "f": {
+    "ba_flu": 4,
+    "cough": 1
+   },
+   "inv": "Clinical; testing per local policy.",
+   "tool": "Use national influenza surveillance case definitions.",
+   "alt": "Dengue, malaria, COVID-19, leptospirosis, typhoid"
+  },
+  {
+   "id": "fibromy",
+   "name": "Fibromyalgia",
+   "cm": false,
+   "triggers": [
+    "c_body_aches",
+    "c_muscle_pain"
+   ],
+   "f": {
+    "ba_fibro": 4
+   },
+   "inv": "Diagnosis after excluding other causes; TSH, CBC, ESR/CRP, vitamin D, CK.",
+   "tool": "ACR criteria are used by clinicians; apply separately.",
+   "alt": "Hypothyroidism, polymyalgia rheumatica, myositis, depression"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_rfm",
+   "text": "Reduced fetal movements: needs same-day assessment with CTG and ultrasound",
+   "all": [
+    "c_reduced_fetal_movements"
+   ]
+  },
+  {
+   "id": "rf_prom",
+   "text": "Leaking fluid in pregnancy: assess for rupture of membranes and infection",
+   "all": [
+    "lf_gush"
+   ]
+  },
+  {
+   "id": "rf_chorio",
+   "text": "Fever or foul discharge with leaking fluid: possible intrauterine infection, urgent",
+   "all": [
+    "lf_inf"
+   ]
+  },
+  {
+   "id": "rf_pretlab",
+   "text": "Contractions before 37 weeks: possible preterm labour, urgent",
+   "all": [
+    "lb_pre"
+   ]
+  },
+  {
+   "id": "rf_puerp",
+   "text": "Fever with foul lochia and tender uterus after delivery: possible puerperal sepsis, urgent",
+   "all": [
+    "pn_endo"
+   ]
+  },
+  {
+   "id": "rf_postvte",
+   "text": "Swollen calf or chest pain after delivery: possible thromboembolism, urgent",
+   "all": [
+    "pn_calf"
+   ]
+  },
+  {
+   "id": "rf_ovtors",
+   "text": "Sudden severe one-sided pelvic pain with vomiting: possible ovarian torsion, urgent",
+   "all": [
+    "pv_torsion"
+   ]
+  },
+  {
+   "id": "rf_postmeno",
+   "text": "Bleeding after menopause: needs cancer exclusion",
+   "all": [
+    "vb_postmeno"
+   ]
+  },
+  {
+   "id": "rf_mole",
+   "text": "Heavy bleeding with uterus larger than dates or grape-like tissue: possible molar pregnancy, urgent",
+   "all": [
+    "nv_mole"
+   ]
+  },
+  {
+   "id": "rf_perianal",
+   "text": "Constant throbbing anal pain with swelling and fever: possible perianal abscess, needs urgent drainage",
+   "all": [
+    "rn_abs"
+   ]
+  },
+  {
+   "id": "rf_acsmimic",
+   "text": "Heartburn triggered by exertion with sweating: treat as cardiac, urgent ECG",
+   "all": [
+    "hb_exert"
+   ]
+  },
+  {
+   "id": "rf_alarmdys",
+   "text": "Trouble swallowing, weight loss, vomiting blood or anaemia with indigestion: needs urgent endoscopy",
+   "all": [
+    "hb_alarm"
+   ]
+  },
+  {
+   "id": "rf_strang2",
+   "text": "Painful bulge that will not go back with vomiting: possible strangulated hernia, emergency",
+   "all": [
+    "us_pain"
+   ]
+  },
+  {
+   "id": "rf_omphal",
+   "text": "Red swollen navel with discharge in a newborn: possible omphalitis, urgent",
+   "all": [
+    "us_inf"
+   ]
+  },
+  {
+   "id": "rf_varix",
+   "text": "Bleeding varicose vein: firm pressure, elevate, urgent care",
+   "all": [
+    "vv_bleed"
+   ]
+  },
+  {
+   "id": "rf_cyan",
+   "text": "Blue tongue and lips: central cyanosis, give oxygen and get urgent assessment",
+   "all": [
+    "bd_cent"
+   ]
+  },
+  {
+   "id": "rf_intus",
+   "text": "Waves of severe pain with vomiting and redcurrant stool in an infant: possible intussusception, urgent",
+   "all": [
+    "cr_intus"
+   ]
+  },
+  {
+   "id": "rf_nj24",
+   "text": "Jaundice in the first 24 hours: urgent bilirubin and haemolysis work-up",
+   "all": [
+    "nj_24"
+   ]
+  },
+  {
+   "id": "rf_njsev",
+   "text": "Deep jaundice with lethargy or arching: risk of bilirubin brain injury, emergency",
+   "all": [
+    "nj_sev"
+   ]
+  },
+  {
+   "id": "rf_njlong",
+   "text": "Jaundice beyond 2 weeks with pale stools: possible biliary atresia, urgent referral",
+   "all": [
+    "nj_long"
+   ]
+  },
+  {
+   "id": "rf_sam",
+   "text": "Severe wasting or swelling of both feet: severe acute malnutrition, urgent nutrition care",
+   "all": [
+    "wg_sam"
+   ]
+  },
+  {
+   "id": "rf_nai",
+   "text": "Unexplained injuries with inconsistent history: possible child abuse, follow child protection procedure",
+   "all": [
+    "cr_abuse"
+   ]
+  },
+  {
+   "id": "rf_regress",
+   "text": "Loss of previously learned skills: urgent neurology review",
+   "all": [
+    "dd_reg"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "fibroid": {
+    "triggers": [
+     "c_abdominal_lump"
+    ],
+    "f": {}
+   },
+   "pid": {
+    "triggers": [
+     "c_pelvic_pain"
+    ],
+    "f": {}
+   },
+   "ectopic": {
+    "triggers": [
+     "c_pelvic_pain"
+    ],
+    "f": {}
+   },
+   "cystitis": {
+    "triggers": [
+     "c_bedwetting"
+    ],
+    "f": {}
+   },
+   "abruption": {
+    "triggers": [
+     "c_reduced_fetal_movements"
+    ],
+    "f": {}
+   },
+   "preecl": {
+    "triggers": [
+     "c_reduced_fetal_movements"
+    ],
+    "f": {}
+   },
+   "pe": {
+    "triggers": [
+     "c_fever_after_delivery"
+    ],
+    "f": {}
+   },
+   "hyperprl": {
+    "triggers": [
+     "c_nipple_discharge"
+    ],
+    "f": {}
+   },
+   "preg": {
+    "triggers": [
+     "c_abdominal_lump"
+    ],
+    "f": {}
+   },
+   "graves": {
+    "triggers": [
+     "c_anxiety"
+    ],
+    "f": {}
+   },
+   "pheo": {
+    "triggers": [
+     "c_hot_flushes"
+    ],
+    "f": {}
+   },
+   "stressinc": {
+    "triggers": [
+     "c_something_coming_down_in_vagina"
+    ],
+    "f": {}
+   },
+   "aaa": {
+    "triggers": [
+     "c_abdominal_lump"
+    ],
+    "f": {}
+   },
+   "endomca": {
+    "triggers": [
+     "c_bleeding_after_menopause"
+    ],
+    "f": {}
+   },
+   "cervca": {
+    "triggers": [
+     "c_bleeding_after_menopause"
+    ],
+    "f": {}
+   },
+   "crc": {
+    "triggers": [
+     "c_loss_of_appetite"
+    ],
+    "f": {}
+   },
+   "pud": {
+    "triggers": [
+     "c_heartburn"
+    ],
+    "f": {}
+   },
+   "warts": {
+    "triggers": [
+     "c_anal_swelling_or_lump"
+    ],
+    "f": {}
+   },
+   "acs": {
+    "triggers": [
+     "c_heartburn"
+    ],
+    "f": {}
+   },
+   "cholangitis": {
+    "triggers": [
+     "c_pale_fatty_stools"
+    ],
+    "f": {}
+   },
+   "panca": {
+    "triggers": [
+     "c_pale_fatty_stools"
+    ],
+    "f": {}
+   },
+   "gastro": {
+    "triggers": [
+     "c_nausea_and_vomiting",
+     "c_nausea"
+    ],
+    "f": {}
+   },
+   "obstruction": {
+    "triggers": [
+     "c_nausea_and_vomiting"
+    ],
+    "f": {}
+   },
+   "dka": {
+    "triggers": [
+     "c_bedwetting"
+    ],
+    "f": {}
+   },
+   "sol": {
+    "triggers": [
+     "c_nausea_and_vomiting"
+    ],
+    "f": {}
+   },
+   "hyperem": {
+    "triggers": [],
+    "f": {}
+   },
+   "pancreatitis": {
+    "triggers": [
+     "c_nausea_and_vomiting"
+    ],
+    "f": {}
+   },
+   "candoes": {
+    "triggers": [
+     "c_painful_swallowing"
+    ],
+    "f": {}
+   },
+   "tonsillitis": {
+    "triggers": [
+     "c_painful_swallowing"
+    ],
+    "f": {}
+   },
+   "quinsy": {
+    "triggers": [
+     "c_painful_swallowing"
+    ],
+    "f": {}
+   },
+   "dvt": {
+    "triggers": [
+     "c_varicose_veins"
+    ],
+    "f": {}
+   },
+   "ali": {
+    "triggers": [
+     "c_cold_pale_limb"
+    ],
+    "f": {}
+   },
+   "pad": {
+    "triggers": [
+     "c_cold_pale_limb"
+    ],
+    "f": {}
+   },
+   "raynaud": {
+    "triggers": [
+     "c_bluish_discolouration"
+    ],
+    "f": {}
+   },
+   "strangh": {
+    "triggers": [
+     "c_excessive_crying"
+    ],
+    "f": {}
+   },
+   "ingher": {
+    "triggers": [
+     "c_groin_swelling"
+    ],
+    "f": {}
+   },
+   "reactlymph": {
+    "triggers": [
+     "c_groin_swelling"
+    ],
+    "f": {}
+   },
+   "lymphoma": {
+    "triggers": [
+     "c_groin_swelling"
+    ],
+    "f": {}
+   },
+   "cld": {
+    "triggers": [
+     "c_generalised_swelling"
+    ],
+    "f": {}
+   },
+   "hf": {
+    "triggers": [
+     "c_swelling",
+     "c_generalised_swelling"
+    ],
+    "f": {}
+   },
+   "nephro": {
+    "triggers": [
+     "c_swelling"
+    ],
+    "f": {}
+   },
+   "om": {
+    "triggers": [
+     "c_excessive_crying"
+    ],
+    "f": {}
+   },
+   "torsion": {
+    "triggers": [
+     "c_excessive_crying"
+    ],
+    "f": {}
+   },
+   "neosepsis": {
+    "triggers": [
+     "c_newborn_jaundice"
+    ],
+    "f": {}
+   },
+   "t2dm": {
+    "triggers": [
+     "c_bedwetting"
+    ],
+    "f": {}
+   },
+   "haemo": {
+    "triggers": [
+     "c_pallor"
+    ],
+    "f": {}
+   },
+   "kala": {
+    "triggers": [
+     "c_pallor"
+    ],
+    "f": {}
+   },
+   "itp": {
+    "triggers": [
+     "c_pallor"
+    ],
+    "f": {}
+   },
+   "chd": {
+    "triggers": [
+     "c_poor_weight_gain",
+     "c_bluish_discolouration"
+    ],
+    "f": {}
+   },
+   "celiac": {
+    "triggers": [
+     "c_poor_weight_gain"
+    ],
+    "f": {}
+   },
+   "chpneu": {
+    "triggers": [
+     "c_bluish_discolouration"
+    ],
+    "f": {}
+   },
+   "prerenal": {
+    "triggers": [
+     "c_passing_less_urine"
+    ],
+    "f": {}
+   },
+   "atn": {
+    "triggers": [
+     "c_passing_less_urine"
+    ],
+    "f": {}
+   },
+   "obstruct": {
+    "triggers": [
+     "c_passing_less_urine"
+    ],
+    "f": {}
+   },
+   "shockdehyd": {
+    "triggers": [
+     "c_passing_less_urine"
+    ],
+    "f": {}
+   },
+   "adhd": {
+    "triggers": [
+     "c_poor_school_performance",
+     "c_behaviour_problems"
+    ],
+    "f": {}
+   },
+   "asd": {
+    "triggers": [
+     "c_behaviour_problems",
+     "c_developmental_delay"
+    ],
+    "f": {}
+   },
+   "conduct2": {
+    "triggers": [
+     "c_behaviour_problems"
+    ],
+    "f": {}
+   },
+   "hypothy": {
+    "triggers": [
+     "c_body_aches"
+    ],
+    "f": {}
+   },
+   "discprol": {
+    "triggers": [
+     "c_numbness_or_tingling"
+    ],
+    "f": {}
+   },
+   "cervrad": {
+    "triggers": [
+     "c_numbness_or_tingling"
+    ],
+    "f": {}
+   },
+   "cts": {
+    "triggers": [
+     "c_numbness_or_tingling"
+    ],
+    "f": {}
+   },
+   "stroke": {
+    "triggers": [
+     "c_numbness_or_tingling"
+    ],
+    "f": {}
+   },
+   "leprosy": {
+    "triggers": [
+     "c_numbness_or_tingling"
+    ],
+    "f": {}
+   },
+   "b12": {
+    "triggers": [
+     "c_numbness_or_tingling"
+    ],
+    "f": {}
+   },
+   "depr": {
+    "triggers": [
+     "c_loss_of_appetite"
+    ],
+    "f": {}
+   },
+   "addison": {
+    "triggers": [
+     "c_loss_of_appetite"
+    ],
+    "f": {}
+   },
+   "hepviral": {
+    "triggers": [
+     "c_loss_of_appetite"
+    ],
+    "f": {}
+   },
+   "ckd": {
+    "triggers": [
+     "c_loss_of_appetite"
+    ],
+    "f": {}
+   },
+   "tb": {
+    "triggers": [
+     "c_loss_of_appetite"
+    ],
+    "f": {}
+   },
+   "hiv": {
+    "triggers": [
+     "c_loss_of_appetite"
+    ],
+    "f": {}
+   },
+   "dengue": {
+    "triggers": [
+     "c_body_aches"
+    ],
+    "f": {}
+   },
+   "lepto": {
+    "triggers": [
+     "c_body_aches"
+    ],
+    "f": {}
+   },
+   "uri": {
+    "triggers": [
+     "c_body_aches"
+    ],
+    "f": {}
+   },
+   "osteom": {
+    "triggers": [
+     "c_body_aches"
+    ],
+    "f": {}
+   },
+   "statinmyo": {
+    "triggers": [
+     "c_body_aches"
+    ],
+    "f": {}
+   },
+   "pmr": {
+    "triggers": [
+     "c_body_aches"
+    ],
+    "f": {}
+   },
+   "malaria": {
+    "triggers": [
+     "c_body_aches"
+    ],
+    "f": {}
+   },
+   "gad": {
+    "triggers": [
+     "c_anxiety"
+    ],
+    "f": {}
+   },
+   "panic": {
+    "triggers": [
+     "c_anxiety"
+    ],
+    "f": {}
+   },
+   "anxmed": {
+    "triggers": [
+     "c_anxiety"
+    ],
+    "f": {}
+   },
+   "sam": {
+    "triggers": [
+     "c_generalised_swelling"
+    ],
+    "f": {}
+   }
+  },
+  "exam": {
+   "ex_pulses_absent": [
+    "c_cold_pale_limb"
+   ]
+  },
+  "questions": {
+   "vb_pid": [
+    "c_pelvic_pain"
+   ],
+   "ap_missed_period": [
+    "c_pelvic_pain"
+   ],
+   "vb_fibroid": [
+    "c_abdominal_lump"
+   ],
+   "vb_flooding": [
+    "c_painful_periods"
+   ],
+   "bp_painful": [
+    "c_reduced_fetal_movements"
+   ],
+   "pe_bp": [
+    "c_reduced_fetal_movements"
+   ],
+   "gl_drug": [
+    "c_nipple_discharge"
+   ],
+   "gl_pit": [
+    "c_nipple_discharge"
+   ],
+   "fl_vascular": [
+    "c_abdominal_lump"
+   ],
+   "vb_postmeno": [
+    "c_bleeding_after_menopause"
+   ],
+   "vb_postcoital": [
+    "c_bleeding_after_menopause"
+   ],
+   "co_alarm": [
+    "c_blood_in_stool",
+    "c_change_in_bowel_habit"
+   ],
+   "d_bloody": [
+    "c_blood_in_stool"
+   ],
+   "d_contaminated": [
+    "c_blood_in_stool"
+   ],
+   "cp_exertional": [
+    "c_heartburn"
+   ],
+   "gb_epigastric": [
+    "c_heartburn"
+   ],
+   "gb_nsaid": [
+    "c_heartburn"
+   ],
+   "ja_cholestatic": [
+    "c_pale_fatty_stools"
+   ],
+   "dy_painful_thrush": [
+    "c_painful_swallowing"
+   ],
+   "painful_swallow": [
+    "c_painful_swallowing"
+   ],
+   "ulcer_varicose": [
+    "c_varicose_veins"
+   ],
+   "leg_swelling_unilateral": [
+    "c_varicose_veins"
+   ],
+   "lp_acute": [
+    "c_cold_pale_limb"
+   ],
+   "lp_claud": [
+    "c_cold_pale_limb"
+   ],
+   "ray": [
+    "c_cold_pale_limb"
+   ],
+   "sp_hernia": [
+    "c_groin_swelling"
+   ],
+   "sx_hern": [
+    "c_groin_swelling"
+   ],
+   "sg_reactive": [
+    "c_groin_swelling"
+   ],
+   "pf_neo": [
+    "c_newborn_jaundice"
+   ],
+   "th_dka": [
+    "c_bedwetting"
+   ],
+   "bu_cystitis": [
+    "c_bedwetting"
+   ],
+   "ja_haemolytic": [
+    "c_pallor"
+   ],
+   "eb_plt": [
+    "c_pallor"
+   ],
+   "pf_cardiac": [
+    "c_poor_weight_gain",
+    "c_bluish_discolouration"
+   ],
+   "sw_frothy": [
+    "c_swelling",
+    "c_generalised_swelling"
+   ],
+   "ru_prerenal": [
+    "c_passing_less_urine"
+   ],
+   "ru_intrinsic": [
+    "c_passing_less_urine"
+   ],
+   "ru_obstruct": [
+    "c_passing_less_urine"
+   ],
+   "dh_severe": [
+    "c_passing_less_urine"
+   ],
+   "cb_adhd": [
+    "c_poor_school_performance",
+    "c_behaviour_problems"
+   ],
+   "cb_asd": [
+    "c_behaviour_problems"
+   ],
+   "cb_conduct": [
+    "c_behaviour_problems"
+   ],
+   "ty_hypo": [
+    "c_body_aches"
+   ],
+   "np_rad": [
+    "c_numbness_or_tingling"
+   ],
+   "ct_night": [
+    "c_numbness_or_tingling"
+   ],
+   "wk_sudden": [
+    "c_numbness_or_tingling"
+   ],
+   "pig_hypoaes": [
+    "c_numbness_or_tingling"
+   ],
+   "ulcer_diabetic": [
+    "c_numbness_or_tingling"
+   ],
+   "lr_disc": [
+    "c_numbness_or_tingling"
+   ],
+   "bo_osteo": [
+    "c_body_aches"
+   ],
+   "retro_orbital": [
+    "c_body_aches"
+   ],
+   "pu_lepto": [
+    "c_body_aches"
+   ],
+   "me_statin": [
+    "c_body_aches"
+   ],
+   "an_gad": [
+    "c_anxiety"
+   ],
+   "an_panic": [
+    "c_anxiety"
+   ],
+   "an_med": [
+    "c_anxiety"
+   ],
+   "ty_hyper": [
+    "c_anxiety"
+   ],
+   "wg_sam": [
+    "c_generalised_swelling"
+   ],
+   "sw_liver": [
+    "c_generalised_swelling"
+   ],
+   "pedal_oedema": [
+    "c_swelling_of_abdomen"
+   ]
+  }
+ }
+}

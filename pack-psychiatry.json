@@ -1,0 +1,752 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "an_gad",
+   "lbl": "Persistent excessive worry most days over 6 months, restless, tense, poor sleep",
+   "text": "Excessive worry about many things most days for 6 months or more, with restlessness and tension?",
+   "why": "Generalised anxiety pattern.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_anxiety_or_worry"
+   ]
+  },
+  {
+   "id": "an_panic",
+   "lbl": "Sudden intense fear peaking in minutes with palpitations, breathlessness, fear of dying",
+   "text": "Sudden attacks of intense fear peaking within minutes, with racing heart, breathlessness or fear of dying?",
+   "why": "Panic attack pattern.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_panic_attacks",
+    "c_anxiety_or_worry"
+   ]
+  },
+  {
+   "id": "an_med",
+   "lbl": "Caffeine, stimulants, thyroid disease or asthma inhalers",
+   "text": "Heavy caffeine, stimulants, thyroid illness or asthma inhalers?",
+   "why": "Medical and substance causes mimic anxiety.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_anxiety_or_worry",
+    "c_panic_attacks"
+   ]
+  },
+  {
+   "id": "an_phobia",
+   "lbl": "Fear of specific objects or social situations, avoided",
+   "text": "Strong fear of a specific object or social situation that is avoided?",
+   "why": "Phobia or social anxiety.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_fears_or_phobias",
+    "c_anxiety_or_worry"
+   ]
+  },
+  {
+   "id": "an_ocd",
+   "lbl": "Unwanted repeated thoughts with rituals",
+   "text": "Unwanted repeated thoughts with rituals to relieve them?",
+   "why": "Obsessive-compulsive pattern.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_repetitive_thoughts_or_rituals"
+   ]
+  },
+  {
+   "id": "an_ptsd",
+   "lbl": "Traumatic event with flashbacks, nightmares, avoidance, over a month",
+   "text": "A traumatic event with flashbacks, nightmares, avoidance or being constantly on guard, for over a month?",
+   "why": "PTSD pattern.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_distress_after_trauma"
+   ]
+  },
+  {
+   "id": "sl_insom",
+   "lbl": "Trouble falling or staying asleep with worry, daytime tiredness",
+   "text": "Difficulty falling or staying asleep with daytime tiredness?",
+   "why": "Insomnia disorder.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_sleep_problems"
+   ]
+  },
+  {
+   "id": "sl_mania",
+   "lbl": "Little need for sleep but high energy",
+   "text": "Little need for sleep but energy is high?",
+   "why": "Possible mania.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_sleep_problems",
+    "c_elevated_or_excited_mood"
+   ]
+  },
+  {
+   "id": "mn_el",
+   "lbl": "Elevated or irritable mood over a week, grandiose, pressured speech, spending",
+   "text": "Elevated or irritable mood for a week or more, with grandiose ideas, fast speech or reckless spending?",
+   "why": "Manic episode pattern.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_elevated_or_excited_mood",
+    "c_irritability_or_anger"
+   ]
+  },
+  {
+   "id": "ps_voices",
+   "lbl": "Hearing voices commenting or commanding",
+   "text": "Hears voices that comment or give commands?",
+   "why": "Psychosis.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_hearing_voices",
+    "c_abnormal_behaviour"
+   ]
+  },
+  {
+   "id": "ps_delus",
+   "lbl": "Fixed false beliefs (persecution, being controlled)",
+   "text": "Fixed false beliefs such as being persecuted or controlled?",
+   "why": "Delusions.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_suspiciousness_or_false_beliefs",
+    "c_abnormal_behaviour"
+   ]
+  },
+  {
+   "id": "ps_neg",
+   "lbl": "Withdrawn, flat, reduced speech, over 6 months decline",
+   "text": "Withdrawn, flat, speaking little, with decline in function over months?",
+   "why": "Negative symptoms.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_hearing_voices",
+    "c_suspiciousness_or_false_beliefs",
+    "c_abnormal_behaviour"
+   ]
+  },
+  {
+   "id": "ps_subst",
+   "lbl": "Recent drug or alcohol use",
+   "text": "Recent drug or alcohol use or withdrawal?",
+   "why": "Substance-induced psychosis.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_hearing_voices",
+    "c_suspiciousness_or_false_beliefs",
+    "c_abnormal_behaviour",
+    "c_confusion"
+   ]
+  },
+  {
+   "id": "dl_acute",
+   "lbl": "Acute onset over hours to days, fluctuating, worse at night, medical illness",
+   "text": "Confusion starting over hours to days, fluctuating, worse at night, with illness, infection or new drugs?",
+   "why": "Delirium pattern.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_confusion",
+    "c_memory_problems",
+    "c_abnormal_behaviour"
+   ]
+  },
+  {
+   "id": "mem_grad",
+   "lbl": "Gradual decline over months to years affecting daily tasks",
+   "text": "Gradual memory decline over months to years that affects daily tasks?",
+   "why": "Dementia pattern.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_memory_problems",
+    "c_memory_loss"
+   ]
+  },
+  {
+   "id": "mem_step",
+   "lbl": "Stepwise decline with vascular risk factors",
+   "text": "Stepwise decline, with diabetes, hypertension or strokes?",
+   "why": "Vascular dementia.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_memory_problems",
+    "c_memory_loss"
+   ]
+  },
+  {
+   "id": "mem_rev",
+   "lbl": "Low mood, B12 or thyroid problem, drugs",
+   "text": "Low mood, vitamin B12 or thyroid problem, or sedative drugs?",
+   "why": "Reversible causes of memory trouble.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_memory_problems",
+    "c_memory_loss"
+   ]
+  },
+  {
+   "id": "al_with",
+   "lbl": "Tremor, sweating, anxiety, hallucinations or seizures after stopping alcohol",
+   "text": "Tremor, sweating, agitation, hallucinations or seizure after stopping or cutting down alcohol?",
+   "why": "Alcohol withdrawal.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_alcohol_use_problem",
+    "c_withdrawal_symptoms",
+    "c_confusion"
+   ]
+  },
+  {
+   "id": "al_dep",
+   "lbl": "Craving, tolerance, morning drinks, cannot cut down",
+   "text": "Strong craving, needs more to get the same effect, morning drinking, failed attempts to cut down?",
+   "why": "Dependence.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_alcohol_use_problem"
+   ]
+  },
+  {
+   "id": "al_wern",
+   "lbl": "Confusion, unsteady gait, abnormal eye movements with heavy alcohol",
+   "text": "Confusion, unsteady walking or abnormal eye movements with heavy alcohol use or poor nutrition?",
+   "why": "Wernicke encephalopathy.",
+   "sys": "Neurological",
+   "when": [
+    "c_alcohol_use_problem",
+    "c_confusion"
+   ]
+  },
+  {
+   "id": "dr_od",
+   "lbl": "Pinpoint pupils, slow breathing, drowsy",
+   "text": "Pinpoint pupils, slow shallow breathing and drowsiness?",
+   "why": "Opioid toxicity.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_drug_use_problem",
+    "c_withdrawal_symptoms"
+   ]
+  },
+  {
+   "id": "dr_dep",
+   "lbl": "Craving, tolerance, loss of control over drug use",
+   "text": "Craving, needing more drug, loss of control over use?",
+   "why": "Substance use disorder.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_drug_use_problem"
+   ]
+  },
+  {
+   "id": "sh_plan",
+   "lbl": "Has a plan, means or intent, or past attempt",
+   "text": "Is there a plan, access to means, intent to act, or a past attempt?",
+   "why": "Suicide risk assessment.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_thoughts_of_self_harm",
+    "low_mood"
+   ]
+  },
+  {
+   "id": "pf_soma",
+   "lbl": "Many physical complaints, normal tests, stress",
+   "text": "Many physical symptoms across systems with repeatedly normal tests and stress?",
+   "why": "Somatic symptom disorder, after organic causes are excluded.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_unexplained_physical_complaints"
+   ]
+  },
+  {
+   "id": "cb_adhd",
+   "lbl": "Inattention, hyperactivity, impulsivity before 12 years in 2 settings",
+   "text": "Inattention, overactivity and impulsiveness before age 12, at home and school?",
+   "why": "ADHD pattern.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_child_behaviour_problems",
+    "c_poor_concentration"
+   ]
+  },
+  {
+   "id": "cb_asd",
+   "lbl": "Delayed speech, poor eye contact, repetitive behaviours",
+   "text": "Delayed speech, poor eye contact or repetitive behaviours?",
+   "why": "Autism spectrum pattern.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_child_behaviour_problems",
+    "c_developmental_delay"
+   ]
+  },
+  {
+   "id": "cb_conduct",
+   "lbl": "Aggression, rule breaking, cruelty",
+   "text": "Aggression, rule breaking, or cruelty to people or animals?",
+   "why": "Conduct disorder.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_child_behaviour_problems",
+    "c_irritability_or_anger"
+   ]
+  }
+ ],
+ "exam": [],
+ "diseases": [
+  {
+   "id": "gad",
+   "name": "Generalised anxiety disorder",
+   "cm": false,
+   "triggers": [
+    "c_anxiety_or_worry"
+   ],
+   "f": {
+    "an_gad": 4,
+    "sl_insom": 1
+   },
+   "inv": "Clinical interview; GAD-7 is a screening tool; exclude thyroid and drug causes.",
+   "tool": "None applied.",
+   "alt": "Panic disorder, depression, thyrotoxicosis, substance effects"
+  },
+  {
+   "id": "panic",
+   "name": "Panic disorder",
+   "cm": false,
+   "triggers": [
+    "c_panic_attacks",
+    "c_anxiety_or_worry"
+   ],
+   "f": {
+    "an_panic": 4
+   },
+   "inv": "Clinical; ECG and TSH to exclude cardiac and thyroid causes first.",
+   "tool": "None applied.",
+   "alt": "Cardiac arrhythmia, thyrotoxicosis, asthma, substance effect"
+  },
+  {
+   "id": "anxmed",
+   "name": "Medical or substance-induced anxiety",
+   "cm": false,
+   "triggers": [
+    "c_anxiety_or_worry",
+    "c_panic_attacks"
+   ],
+   "f": {
+    "an_med": 4
+   },
+   "inv": "TSH, glucose, ECG, caffeine and drug review.",
+   "tool": "None applied.",
+   "alt": "Primary anxiety disorders"
+  },
+  {
+   "id": "phobia",
+   "name": "Specific phobia / social anxiety disorder",
+   "cm": false,
+   "triggers": [
+    "c_fears_or_phobias",
+    "c_anxiety_or_worry"
+   ],
+   "f": {
+    "an_phobia": 4
+   },
+   "inv": "Clinical interview.",
+   "tool": "None applied.",
+   "alt": "Panic disorder, agoraphobia"
+  },
+  {
+   "id": "ocd",
+   "name": "Obsessive-compulsive disorder",
+   "cm": false,
+   "triggers": [
+    "c_repetitive_thoughts_or_rituals"
+   ],
+   "f": {
+    "an_ocd": 5
+   },
+   "inv": "Clinical interview; Y-BOCS for severity by specialist.",
+   "tool": "None applied.",
+   "alt": "Anxiety disorder, psychosis, tic disorder"
+  },
+  {
+   "id": "ptsd",
+   "name": "Post-traumatic stress disorder",
+   "cm": false,
+   "triggers": [
+    "c_distress_after_trauma"
+   ],
+   "f": {
+    "an_ptsd": 5
+   },
+   "inv": "Clinical interview; screen for depression and substance use.",
+   "tool": "None applied.",
+   "alt": "Acute stress reaction, depression, adjustment disorder"
+  },
+  {
+   "id": "insom",
+   "name": "Insomnia disorder",
+   "cm": false,
+   "triggers": [
+    "c_sleep_problems"
+   ],
+   "f": {
+    "sl_insom": 4
+   },
+   "inv": "Sleep history, screen for depression, anxiety, sleep apnoea, drugs.",
+   "tool": "None applied.",
+   "alt": "Depression, mania, sleep apnoea, restless legs"
+  },
+  {
+   "id": "mania",
+   "name": "Manic / bipolar episode",
+   "cm": true,
+   "triggers": [
+    "c_elevated_or_excited_mood",
+    "c_irritability_or_anger",
+    "c_sleep_problems"
+   ],
+   "f": {
+    "mn_el": 5,
+    "sl_mania": 3
+   },
+   "inv": "Urgent psychiatric assessment; rule out substances and thyroid disease; assess risk.",
+   "tool": "None applied.",
+   "alt": "Substance-induced mania, ADHD, psychosis"
+  },
+  {
+   "id": "schizo",
+   "name": "Schizophrenia spectrum illness",
+   "cm": true,
+   "triggers": [
+    "c_hearing_voices",
+    "c_suspiciousness_or_false_beliefs",
+    "c_abnormal_behaviour"
+   ],
+   "f": {
+    "ps_voices": 3,
+    "ps_delus": 3,
+    "ps_neg": 2
+   },
+   "inv": "Psychiatric assessment; exclude substances, delirium and medical causes.",
+   "tool": "None applied.",
+   "alt": "Substance-induced psychosis, mania, depression with psychosis, delirium"
+  },
+  {
+   "id": "subpsych",
+   "name": "Substance-induced psychosis",
+   "cm": true,
+   "triggers": [
+    "c_hearing_voices",
+    "c_suspiciousness_or_false_beliefs",
+    "c_abnormal_behaviour",
+    "c_confusion"
+   ],
+   "f": {
+    "ps_subst": 4
+   },
+   "inv": "Toxicology, observation, psychiatric review.",
+   "tool": "None applied.",
+   "alt": "Schizophrenia, delirium, mania"
+  },
+  {
+   "id": "delirium",
+   "name": "Delirium (acute confusional state)",
+   "cm": true,
+   "triggers": [
+    "c_confusion",
+    "c_memory_problems",
+    "c_abnormal_behaviour"
+   ],
+   "f": {
+    "dl_acute": 5,
+    "g_newdrug": 1
+   },
+   "inv": "Look for infection, drugs, electrolytes, hypoxia, glucose, retention, withdrawal; treat the cause.",
+   "tool": "CAM is a bedside delirium screening method; apply per intended use.",
+   "alt": "Dementia, psychosis, depression, stroke"
+  },
+  {
+   "id": "dementia",
+   "name": "Dementia (e.g. Alzheimer disease)",
+   "cm": false,
+   "triggers": [
+    "c_memory_problems",
+    "c_memory_loss"
+   ],
+   "f": {
+    "mem_grad": 4,
+    "age_over_60": 2
+   },
+   "inv": "Cognitive screen (e.g. MMSE/MoCA), B12, TSH, neuroimaging as indicated.",
+   "tool": "MMSE/MoCA are screening tools, not diagnoses.",
+   "alt": "Delirium, depression, reversible causes"
+  },
+  {
+   "id": "vasdem",
+   "name": "Vascular cognitive impairment",
+   "cm": false,
+   "triggers": [
+    "c_memory_problems",
+    "c_memory_loss"
+   ],
+   "f": {
+    "mem_step": 4
+   },
+   "inv": "Vascular risk factor control, imaging, cognitive screen.",
+   "tool": "None applied.",
+   "alt": "Alzheimer disease, depression, normal pressure hydrocephalus"
+  },
+  {
+   "id": "revmem",
+   "name": "Reversible cause of memory trouble (B12, thyroid, depression, drugs)",
+   "cm": true,
+   "triggers": [
+    "c_memory_problems",
+    "c_memory_loss"
+   ],
+   "f": {
+    "mem_rev": 4
+   },
+   "inv": "B12, TSH, glucose, electrolytes; review drugs; screen for depression.",
+   "tool": "None applied.",
+   "alt": "Dementia, delirium"
+  },
+  {
+   "id": "alcwith",
+   "name": "Alcohol withdrawal / delirium tremens",
+   "cm": true,
+   "triggers": [
+    "c_alcohol_use_problem",
+    "c_withdrawal_symptoms",
+    "c_confusion"
+   ],
+   "f": {
+    "al_with": 5
+   },
+   "inv": "Urgent medical assessment; glucose, electrolytes, thiamine; monitor vitals.",
+   "tool": "None applied.",
+   "alt": "Delirium from other cause, infection, hypoglycaemia"
+  },
+  {
+   "id": "alcdep",
+   "name": "Alcohol use disorder / dependence",
+   "cm": false,
+   "triggers": [
+    "c_alcohol_use_problem"
+   ],
+   "f": {
+    "al_dep": 4
+   },
+   "inv": "AUDIT screening; LFTs, CBC; assess withdrawal risk.",
+   "tool": "AUDIT is a screening tool.",
+   "alt": "Depression, anxiety, liver disease"
+  },
+  {
+   "id": "wernicke",
+   "name": "Wernicke encephalopathy",
+   "cm": true,
+   "triggers": [
+    "c_alcohol_use_problem",
+    "c_confusion"
+   ],
+   "f": {
+    "al_wern": 5
+   },
+   "inv": "Urgent thiamine before glucose; medical assessment.",
+   "tool": "None applied.",
+   "alt": "Delirium tremens, intoxication, hepatic encephalopathy"
+  },
+  {
+   "id": "opiod",
+   "name": "Opioid toxicity / overdose",
+   "cm": true,
+   "triggers": [
+    "c_drug_use_problem",
+    "c_withdrawal_symptoms"
+   ],
+   "f": {
+    "dr_od": 5
+   },
+   "inv": "Emergency airway support; naloxone as per protocol.",
+   "tool": "None applied.",
+   "alt": "Other sedative overdose, head injury, hypoglycaemia"
+  },
+  {
+   "id": "sud",
+   "name": "Substance use disorder",
+   "cm": false,
+   "triggers": [
+    "c_drug_use_problem"
+   ],
+   "f": {
+    "dr_dep": 4
+   },
+   "inv": "Substance history, urine toxicology, screen for infections (HIV, hepatitis).",
+   "tool": "None applied.",
+   "alt": "Anxiety, depression, psychosis"
+  },
+  {
+   "id": "suicrisk",
+   "name": "High suicide risk (urgent risk assessment)",
+   "cm": true,
+   "triggers": [
+    "c_thoughts_of_self_harm",
+    "low_mood"
+   ],
+   "f": {
+    "suicidal": 3,
+    "sh_plan": 5
+   },
+   "inv": "Immediate safety assessment by trained clinician; do not leave the patient alone; involve family.",
+   "tool": "No risk score predicts suicide reliably; use structured clinical assessment.",
+   "alt": "Passive thoughts only, depression, psychosis"
+  },
+  {
+   "id": "soma",
+   "name": "Somatic symptom disorder",
+   "cm": false,
+   "triggers": [
+    "c_unexplained_physical_complaints"
+   ],
+   "f": {
+    "pf_soma": 4
+   },
+   "inv": "Diagnosis after thorough medical assessment; avoid repeated unnecessary tests.",
+   "tool": "None applied.",
+   "alt": "Organic disease, depression, anxiety"
+  },
+  {
+   "id": "adhd",
+   "name": "ADHD",
+   "cm": false,
+   "triggers": [
+    "c_child_behaviour_problems",
+    "c_poor_concentration"
+   ],
+   "f": {
+    "cb_adhd": 5
+   },
+   "inv": "Clinical assessment with parent and teacher reports.",
+   "tool": "None applied.",
+   "alt": "Anxiety, learning disability, hearing/vision problem"
+  },
+  {
+   "id": "asd",
+   "name": "Autism spectrum disorder",
+   "cm": false,
+   "triggers": [
+    "c_child_behaviour_problems",
+    "c_developmental_delay"
+   ],
+   "f": {
+    "cb_asd": 5
+   },
+   "inv": "Developmental assessment; hearing test.",
+   "tool": "None applied.",
+   "alt": "Language delay, hearing loss, intellectual disability"
+  },
+  {
+   "id": "conduct2",
+   "name": "Conduct disorder",
+   "cm": false,
+   "triggers": [
+    "c_child_behaviour_problems",
+    "c_irritability_or_anger"
+   ],
+   "f": {
+    "cb_conduct": 5
+   },
+   "inv": "Clinical assessment of home, school and peers.",
+   "tool": "None applied.",
+   "alt": "ADHD, depression, trauma"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_suicplan",
+   "text": "Suicide plan, means or intent: immediate safety assessment, do not leave the patient alone",
+   "all": [
+    "sh_plan"
+   ]
+  },
+  {
+   "id": "rf_alcwith",
+   "text": "Possible alcohol withdrawal (tremor, hallucinations or seizures): medical emergency",
+   "all": [
+    "al_with"
+   ]
+  },
+  {
+   "id": "rf_wern",
+   "text": "Confusion or unsteady gait with heavy alcohol use: possible Wernicke encephalopathy, urgent thiamine",
+   "all": [
+    "al_wern"
+   ]
+  },
+  {
+   "id": "rf_opioid",
+   "text": "Pinpoint pupils, slow breathing, drowsiness: possible opioid overdose, emergency",
+   "all": [
+    "dr_od"
+   ]
+  },
+  {
+   "id": "rf_delirium",
+   "text": "Acute fluctuating confusion: possible delirium, search for the medical cause urgently",
+   "all": [
+    "dl_acute"
+   ]
+  },
+  {
+   "id": "rf_mania",
+   "text": "Elevated mood with reduced sleep and risky behaviour: possible mania, assess risk and safety",
+   "all": [
+    "mn_el"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "depr": {
+    "triggers": [
+     "c_anxiety_or_worry",
+     "c_sleep_problems",
+     "c_poor_concentration",
+     "c_thoughts_of_self_harm"
+    ],
+    "f": {
+     "sh_plan": 0
+    }
+   },
+   "graves": {
+    "triggers": [
+     "c_anxiety_or_worry",
+     "c_panic_attacks"
+    ],
+    "f": {}
+   },
+   "provsz": {
+    "triggers": [
+     "c_alcohol_use_problem"
+    ],
+    "f": {}
+   }
+  },
+  "exam": {},
+  "questions": {
+   "suicidal": [
+    "c_thoughts_of_self_harm",
+    "low_mood"
+   ],
+   "substance": [
+    "c_alcohol_use_problem",
+    "c_drug_use_problem"
+   ]
+  }
+ }
+}

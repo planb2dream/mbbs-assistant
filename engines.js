@@ -27,6 +27,22 @@ var Engine = (function () {
           (p.diseases || []).forEach(function (x) { d.d.diseases.push(x); });
           (p.flags || []).forEach(function (x) { d.r.flags.push(x); });
         });
+        ps.forEach(function (p) {
+          var pt = p.patch || {};
+          Object.keys(pt.diseases || {}).forEach(function (id) {
+            var x = d.d.diseases.filter(function (y) { return y.id === id; })[0]; if (!x) return;
+            pt.diseases[id].triggers.forEach(function (t) { if (x.triggers.indexOf(t) < 0) x.triggers.push(t); });
+            Object.keys(pt.diseases[id].f).forEach(function (k) { if (pt.diseases[id].f[k]) x.f[k] = pt.diseases[id].f[k]; });
+          });
+          Object.keys(pt.questions || {}).forEach(function (id) {
+            var x = d.s.questions.filter(function (y) { return y.id === id; })[0]; if (!x) return;
+            pt.questions[id].forEach(function (w) { if (x.when.indexOf(w) < 0) x.when.push(w); });
+          });
+          Object.keys(pt.exam || {}).forEach(function (id) {
+            var x = d.s.exam.filter(function (y) { return y.id === id; })[0]; if (!x) return;
+            pt.exam[id].forEach(function (w) { if (x.when.indexOf(w) < 0) x.when.push(w); });
+          });
+        });
         return use(d);
       });
     });

@@ -1,0 +1,726 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "th_dka",
+   "lbl": "Young, rapid weight loss, vomiting, abdominal pain, deep fast breathing, drowsy",
+   "text": "Rapid weight loss with vomiting, abdominal pain, deep fast breathing or drowsiness?",
+   "why": "Diabetic ketoacidosis is life-threatening.",
+   "sys": "Endocrine",
+   "when": [
+    "c_increased_thirst",
+    "c_frequent_urination",
+    "c_weight_loss"
+   ]
+  },
+  {
+   "id": "th_t2",
+   "lbl": "Overweight, family history of diabetes, slow onset",
+   "text": "Overweight, a family history of diabetes, and symptoms developing slowly?",
+   "why": "Type 2 diabetes pattern.",
+   "sys": "Endocrine",
+   "when": [
+    "c_increased_thirst",
+    "c_frequent_urination",
+    "c_weight_loss"
+   ]
+  },
+  {
+   "id": "th_infect",
+   "lbl": "Recurrent boils, genital itching or slow-healing wounds",
+   "text": "Recurrent boils, genital itching or wounds that heal slowly?",
+   "why": "Hyperglycaemia complications.",
+   "sys": "Endocrine",
+   "when": [
+    "c_increased_thirst",
+    "c_frequent_urination"
+   ]
+  },
+  {
+   "id": "th_di",
+   "lbl": "Very large volumes of dilute urine, intense thirst, head injury, or lithium",
+   "text": "Passing very large volumes of dilute urine day and night, with intense thirst, after head injury or on lithium?",
+   "why": "Diabetes insipidus.",
+   "sys": "Endocrine",
+   "when": [
+    "c_increased_thirst",
+    "c_frequent_urination"
+   ]
+  },
+  {
+   "id": "th_calc",
+   "lbl": "Bone pain, stones, constipation, abdominal pain",
+   "text": "Bone pain, kidney stones, constipation or abdominal pain?",
+   "why": "Hypercalcaemia.",
+   "sys": "Endocrine",
+   "when": [
+    "c_increased_thirst",
+    "c_bone_pain",
+    "c_constipation"
+   ]
+  },
+  {
+   "id": "ty_hyper",
+   "lbl": "Weight loss with good appetite, tremor, palpitations, heat intolerance, anxiety",
+   "text": "Weight loss despite good appetite, tremor, palpitations, heat intolerance, sweating?",
+   "why": "Thyrotoxicosis.",
+   "sys": "Endocrine",
+   "when": [
+    "c_heat_intolerance",
+    "c_weight_loss",
+    "c_tremor",
+    "c_neck_swelling",
+    "c_excessive_sweating",
+    "c_palpitations"
+   ]
+  },
+  {
+   "id": "ty_hypo",
+   "lbl": "Weight gain, cold intolerance, constipation, dry skin, slow thinking",
+   "text": "Weight gain, cold intolerance, constipation, dry skin, hair loss or slowed thinking?",
+   "why": "Hypothyroidism.",
+   "sys": "Endocrine",
+   "when": [
+    "c_cold_intolerance",
+    "c_weight_gain",
+    "c_dry_skin_and_constipation",
+    "c_fatigue_or_weakness",
+    "hair_loss"
+   ]
+  },
+  {
+   "id": "ty_nodule",
+   "lbl": "Single hard neck nodule, rapid growth, hoarseness",
+   "text": "Single hard neck lump, growing quickly, with hoarseness?",
+   "why": "Thyroid cancer clues.",
+   "sys": "Endocrine",
+   "when": [
+    "c_neck_swelling"
+   ]
+  },
+  {
+   "id": "ty_painful",
+   "lbl": "Painful neck swelling after viral illness",
+   "text": "Painful neck swelling after a viral illness?",
+   "why": "Subacute thyroiditis.",
+   "sys": "Endocrine",
+   "when": [
+    "c_neck_swelling"
+   ]
+  },
+  {
+   "id": "cu_feat",
+   "lbl": "Central weight gain, purple stretch marks, easy bruising, moon face, steroid use",
+   "text": "Central weight gain, purple stretch marks, easy bruising, round face, or long-term steroid use?",
+   "why": "Cushing syndrome.",
+   "sys": "Endocrine",
+   "when": [
+    "c_weight_gain",
+    "c_easy_bruising",
+    "c_muscle_weakness"
+   ]
+  },
+  {
+   "id": "ai_feat",
+   "lbl": "Fatigue, weight loss, dizziness on standing, salt craving, dark skin, steroids stopped",
+   "text": "Fatigue, weight loss, dizziness on standing, salt craving, darkening skin, or recently stopped steroids?",
+   "why": "Adrenal insufficiency.",
+   "sys": "Endocrine",
+   "when": [
+    "c_fatigue_or_weakness",
+    "c_weight_loss",
+    "c_muscle_weakness"
+   ]
+  },
+  {
+   "id": "ss_fam",
+   "lbl": "Parents short, growth velocity normal",
+   "text": "Are the parents short, and has growth stayed along the same curve?",
+   "why": "Familial short stature.",
+   "sys": "Endocrine",
+   "when": [
+    "c_short_stature"
+   ]
+  },
+  {
+   "id": "ss_slow",
+   "lbl": "Growth falling off the curve, features of hypothyroidism",
+   "text": "Growth falling away from the growth curve, or tiredness, constipation, dry skin?",
+   "why": "Hormone deficiency.",
+   "sys": "Endocrine",
+   "when": [
+    "c_short_stature"
+   ]
+  },
+  {
+   "id": "ss_chronic",
+   "lbl": "Chronic illness or poor nutrition",
+   "text": "Chronic illness, repeated infections or poor nutrition?",
+   "why": "Chronic illness stunts growth.",
+   "sys": "Endocrine",
+   "when": [
+    "c_short_stature",
+    "c_delayed_puberty"
+   ]
+  },
+  {
+   "id": "ss_delay_fam",
+   "lbl": "Parent had late puberty",
+   "text": "Did a parent also have late puberty?",
+   "why": "Constitutional delay.",
+   "sys": "Endocrine",
+   "when": [
+    "c_delayed_puberty"
+   ]
+  },
+  {
+   "id": "gl_drug",
+   "lbl": "Antipsychotics, metoclopramide, domperidone",
+   "text": "Taking antipsychotics, metoclopramide or domperidone?",
+   "why": "Common reversible cause of raised prolactin.",
+   "sys": "Endocrine",
+   "when": [
+    "c_milky_nipple_discharge"
+   ]
+  },
+  {
+   "id": "gl_pit",
+   "lbl": "Headache, visual field loss, absent periods or low libido",
+   "text": "Headache, visual field loss, absent periods or low libido?",
+   "why": "Pituitary tumour.",
+   "sys": "Endocrine",
+   "when": [
+    "c_milky_nipple_discharge"
+   ]
+  },
+  {
+   "id": "ed_vasc",
+   "lbl": "Diabetes, smoking or hypertension",
+   "text": "Diabetes, smoking or hypertension?",
+   "why": "Vascular and neuropathic causes.",
+   "sys": "Endocrine",
+   "when": [
+    "c_erectile_dysfunction"
+   ]
+  },
+  {
+   "id": "ed_psy",
+   "lbl": "Normal morning erections, situational",
+   "text": "Normal morning erections but difficulty only in some situations?",
+   "why": "Psychogenic pattern.",
+   "sys": "Psychiatric",
+   "when": [
+    "c_erectile_dysfunction"
+   ]
+  },
+  {
+   "id": "ed_hypog",
+   "lbl": "Low libido, fatigue, small testes",
+   "text": "Low libido, fatigue or reduced beard growth?",
+   "why": "Hypogonadism.",
+   "sys": "Endocrine",
+   "when": [
+    "c_erectile_dysfunction"
+   ]
+  },
+  {
+   "id": "bo_osteo",
+   "lbl": "Bone pain, proximal weakness, little sun exposure or poor diet",
+   "text": "Bone pain with difficulty rising from a chair, little sun exposure or poor diet?",
+   "why": "Osteomalacia / vitamin D deficiency.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_bone_pain"
+   ]
+  },
+  {
+   "id": "bo_cancer",
+   "lbl": "Known cancer, weight loss, night pain",
+   "text": "Known cancer, weight loss or pain at night?",
+   "why": "Bone metastasis or myeloma.",
+   "sys": "Musculoskeletal",
+   "when": [
+    "c_bone_pain"
+   ]
+  },
+  {
+   "id": "eb_plt",
+   "lbl": "Mucosal bleeding or tiny red spots",
+   "text": "Bleeding gums or nose, or tiny red spots on the skin?",
+   "why": "Platelet problem.",
+   "sys": "Haematological",
+   "when": [
+    "c_easy_bruising_or_bleeding",
+    "c_easy_bruising"
+   ]
+  },
+  {
+   "id": "eb_clot",
+   "lbl": "Deep bruises, joint bleeds, family history",
+   "text": "Deep bruises, joint bleeds or a family history of bleeding?",
+   "why": "Coagulation factor disorder.",
+   "sys": "Haematological",
+   "when": [
+    "c_easy_bruising_or_bleeding",
+    "c_easy_bruising"
+   ]
+  },
+  {
+   "id": "eb_liver",
+   "lbl": "Liver disease, warfarin or NSAIDs",
+   "text": "Known liver disease, warfarin, aspirin or NSAIDs?",
+   "why": "Acquired clotting problems.",
+   "sys": "Haematological",
+   "when": [
+    "c_easy_bruising_or_bleeding",
+    "c_easy_bruising"
+   ]
+  }
+ ],
+ "exam": [
+  {
+   "id": "ex_goitre",
+   "lbl": "Goitre / thyroid nodule",
+   "sys": "Endocrine",
+   "when": [
+    "c_neck_swelling",
+    "c_heat_intolerance",
+    "c_cold_intolerance",
+    "c_weight_gain",
+    "c_weight_loss"
+   ]
+  },
+  {
+   "id": "ex_eye_signs",
+   "lbl": "Prominent eyes / lid retraction",
+   "sys": "Endocrine",
+   "when": [
+    "c_heat_intolerance",
+    "c_weight_loss",
+    "c_tremor"
+   ]
+  },
+  {
+   "id": "ex_petechiae",
+   "lbl": "Petechiae / purpura",
+   "sys": "Haematological",
+   "when": [
+    "c_easy_bruising_or_bleeding",
+    "c_easy_bruising",
+    "fever"
+   ]
+  }
+ ],
+ "diseases": [
+  {
+   "id": "dka",
+   "name": "Diabetic ketoacidosis / new type 1 diabetes",
+   "cm": true,
+   "triggers": [
+    "c_increased_thirst",
+    "c_frequent_urination",
+    "c_weight_loss"
+   ],
+   "f": {
+    "th_dka": 5
+   },
+   "inv": "Capillary and venous glucose, ketones, blood gas, electrolytes, urgent senior care.",
+   "tool": "None applied.",
+   "alt": "Type 2 diabetes, gastroenteritis, sepsis"
+  },
+  {
+   "id": "t2dm",
+   "name": "Type 2 diabetes mellitus",
+   "cm": false,
+   "triggers": [
+    "c_increased_thirst",
+    "c_frequent_urination",
+    "c_weight_loss"
+   ],
+   "f": {
+    "th_t2": 3,
+    "th_infect": 2
+   },
+   "inv": "Fasting/random glucose, HbA1c per national criteria.",
+   "tool": "Use ADA/WHO/Indian guideline diagnostic thresholds.",
+   "alt": "Type 1 diabetes, diabetes insipidus, hypercalcaemia"
+  },
+  {
+   "id": "di",
+   "name": "Diabetes insipidus",
+   "cm": false,
+   "triggers": [
+    "c_increased_thirst",
+    "c_frequent_urination"
+   ],
+   "f": {
+    "th_di": 5
+   },
+   "inv": "Urine and serum osmolality, water deprivation test by specialist.",
+   "tool": "None applied.",
+   "alt": "Diabetes mellitus, primary polydipsia, hypercalcaemia"
+  },
+  {
+   "id": "hypercalc",
+   "name": "Hypercalcaemia / hyperparathyroidism",
+   "cm": false,
+   "triggers": [
+    "c_increased_thirst",
+    "c_bone_pain",
+    "c_constipation"
+   ],
+   "f": {
+    "th_calc": 4
+   },
+   "inv": "Serum calcium, PTH, vitamin D, creatinine.",
+   "tool": "None applied.",
+   "alt": "Malignancy, vitamin D excess, myeloma"
+  },
+  {
+   "id": "graves",
+   "name": "Hyperthyroidism (e.g. Graves disease)",
+   "cm": false,
+   "triggers": [
+    "c_heat_intolerance",
+    "c_weight_loss",
+    "c_tremor",
+    "c_neck_swelling",
+    "c_excessive_sweating",
+    "c_palpitations"
+   ],
+   "f": {
+    "ty_hyper": 4,
+    "ex_goitre": 2,
+    "ex_eye_signs": 3
+   },
+   "inv": "TSH, free T4/T3, TSH-receptor antibodies, thyroid scan if indicated.",
+   "tool": "None applied.",
+   "alt": "Thyroiditis, anxiety, diabetes, malignancy"
+  },
+  {
+   "id": "hypothy",
+   "name": "Hypothyroidism",
+   "cm": false,
+   "triggers": [
+    "c_cold_intolerance",
+    "c_weight_gain",
+    "c_dry_skin_and_constipation",
+    "c_fatigue_or_weakness",
+    "hair_loss"
+   ],
+   "f": {
+    "ty_hypo": 4,
+    "ex_goitre": 1
+   },
+   "inv": "TSH, free T4, anti-TPO antibodies.",
+   "tool": "None applied.",
+   "alt": "Depression, anaemia, Cushing syndrome, PCOS"
+  },
+  {
+   "id": "thyca",
+   "name": "Thyroid nodule / cancer",
+   "cm": true,
+   "triggers": [
+    "c_neck_swelling"
+   ],
+   "f": {
+    "ty_nodule": 4,
+    "ex_goitre": 1
+   },
+   "inv": "Thyroid ultrasound, FNAC, TSH.",
+   "tool": "None applied.",
+   "alt": "Multinodular goitre, thyroiditis, lymphadenopathy"
+  },
+  {
+   "id": "subthy",
+   "name": "Subacute thyroiditis",
+   "cm": false,
+   "triggers": [
+    "c_neck_swelling"
+   ],
+   "f": {
+    "ty_painful": 4
+   },
+   "inv": "ESR, TSH, free T4; thyroid uptake if needed.",
+   "tool": "None applied.",
+   "alt": "Thyroid abscess, Graves disease, thyroid cancer"
+  },
+  {
+   "id": "cushing",
+   "name": "Cushing syndrome",
+   "cm": false,
+   "triggers": [
+    "c_weight_gain",
+    "c_easy_bruising",
+    "c_muscle_weakness"
+   ],
+   "f": {
+    "cu_feat": 4
+   },
+   "inv": "Exclude exogenous steroids; late-night salivary cortisol or dexamethasone suppression test through specialist.",
+   "tool": "None applied.",
+   "alt": "Obesity, PCOS, hypothyroidism, depression"
+  },
+  {
+   "id": "addison",
+   "name": "Adrenal insufficiency",
+   "cm": true,
+   "triggers": [
+    "c_fatigue_or_weakness",
+    "c_weight_loss",
+    "c_muscle_weakness",
+    "c_dizziness"
+   ],
+   "f": {
+    "ai_feat": 4,
+    "sy_postural": 1
+   },
+   "inv": "Morning cortisol, short synacthen test, electrolytes, glucose; urgent treatment if unwell.",
+   "tool": "None applied.",
+   "alt": "Depression, TB, hypothyroidism, malignancy"
+  },
+  {
+   "id": "famss",
+   "name": "Familial short stature",
+   "cm": false,
+   "triggers": [
+    "c_short_stature"
+   ],
+   "f": {
+    "ss_fam": 4
+   },
+   "inv": "Growth chart and mid-parental height.",
+   "tool": "None applied.",
+   "alt": "Constitutional delay, endocrine disease, chronic illness"
+  },
+  {
+   "id": "ghd",
+   "name": "Hormone deficiency (e.g. growth hormone or thyroid)",
+   "cm": false,
+   "triggers": [
+    "c_short_stature"
+   ],
+   "f": {
+    "ss_slow": 4
+   },
+   "inv": "Bone age, TSH/free T4, IGF-1 and specialist testing.",
+   "tool": "None applied.",
+   "alt": "Familial short stature, chronic illness"
+  },
+  {
+   "id": "chronss",
+   "name": "Chronic illness / malnutrition",
+   "cm": false,
+   "triggers": [
+    "c_short_stature",
+    "c_delayed_puberty"
+   ],
+   "f": {
+    "ss_chronic": 3
+   },
+   "inv": "CBC, celiac and renal screen, nutritional assessment as indicated.",
+   "tool": "None applied.",
+   "alt": "Endocrine disease, constitutional delay"
+  },
+  {
+   "id": "cdgp",
+   "name": "Constitutional delay of growth and puberty",
+   "cm": false,
+   "triggers": [
+    "c_delayed_puberty",
+    "c_short_stature"
+   ],
+   "f": {
+    "ss_delay_fam": 4
+   },
+   "inv": "Clinical, bone age; exclude hypogonadism.",
+   "tool": "None applied.",
+   "alt": "Hypogonadism, chronic illness"
+  },
+  {
+   "id": "hyperprl",
+   "name": "Hyperprolactinaemia (drug-induced or prolactinoma)",
+   "cm": false,
+   "triggers": [
+    "c_milky_nipple_discharge"
+   ],
+   "f": {
+    "gl_drug": 3,
+    "gl_pit": 4
+   },
+   "inv": "Serum prolactin, pregnancy test, TSH; pituitary MRI if indicated.",
+   "tool": "None applied.",
+   "alt": "Pregnancy, hypothyroidism, renal disease"
+  },
+  {
+   "id": "edorg",
+   "name": "Erectile dysfunction: vascular / neuropathic",
+   "cm": false,
+   "triggers": [
+    "c_erectile_dysfunction"
+   ],
+   "f": {
+    "ed_vasc": 3
+   },
+   "inv": "Glucose, lipids, BP; testosterone if indicated.",
+   "tool": "None applied.",
+   "alt": "Psychogenic, hypogonadism, drug effect"
+  },
+  {
+   "id": "edpsy",
+   "name": "Erectile dysfunction: psychogenic",
+   "cm": false,
+   "triggers": [
+    "c_erectile_dysfunction"
+   ],
+   "f": {
+    "ed_psy": 4
+   },
+   "inv": "Clinical.",
+   "tool": "None applied.",
+   "alt": "Organic causes"
+  },
+  {
+   "id": "hypog",
+   "name": "Male hypogonadism",
+   "cm": false,
+   "triggers": [
+    "c_erectile_dysfunction"
+   ],
+   "f": {
+    "ed_hypog": 4
+   },
+   "inv": "Morning testosterone, LH/FSH, prolactin.",
+   "tool": "None applied.",
+   "alt": "Chronic illness, drugs, hyperprolactinaemia"
+  },
+  {
+   "id": "osteom",
+   "name": "Osteomalacia / vitamin D deficiency",
+   "cm": false,
+   "triggers": [
+    "c_bone_pain"
+   ],
+   "f": {
+    "bo_osteo": 4
+   },
+   "inv": "Vitamin D, calcium, phosphate, ALP, PTH, X-ray.",
+   "tool": "None applied.",
+   "alt": "Hyperparathyroidism, myeloma, fibromyalgia"
+  },
+  {
+   "id": "bonemet",
+   "name": "Bone metastasis or myeloma",
+   "cm": true,
+   "triggers": [
+    "c_bone_pain"
+   ],
+   "f": {
+    "bo_cancer": 4,
+    "c_weight_loss": 2
+   },
+   "inv": "X-ray, bone scan, CBC, calcium, protein electrophoresis.",
+   "tool": "None applied.",
+   "alt": "Osteomalacia, osteoporosis, infection"
+  },
+  {
+   "id": "itp",
+   "name": "Thrombocytopenia (e.g. ITP, dengue, marrow failure)",
+   "cm": true,
+   "triggers": [
+    "c_easy_bruising_or_bleeding",
+    "c_easy_bruising"
+   ],
+   "f": {
+    "eb_plt": 4,
+    "ex_petechiae": 3
+   },
+   "inv": "CBC with platelet count, peripheral smear; urgent review if very low.",
+   "tool": "None applied.",
+   "alt": "Leukaemia, dengue, liver disease, drug effect"
+  },
+  {
+   "id": "coagdis",
+   "name": "Clotting factor disorder (e.g. haemophilia, von Willebrand)",
+   "cm": false,
+   "triggers": [
+    "c_easy_bruising_or_bleeding",
+    "c_easy_bruising"
+   ],
+   "f": {
+    "eb_clot": 4
+   },
+   "inv": "PT, aPTT, factor assays.",
+   "tool": "None applied.",
+   "alt": "Platelet disorder, liver disease"
+  },
+  {
+   "id": "acqcoag",
+   "name": "Acquired clotting problem (liver disease or drugs)",
+   "cm": false,
+   "triggers": [
+    "c_easy_bruising_or_bleeding",
+    "c_easy_bruising"
+   ],
+   "f": {
+    "eb_liver": 4
+   },
+   "inv": "PT/INR, LFTs, drug review.",
+   "tool": "None applied.",
+   "alt": "Congenital disorders, vitamin K deficiency"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_dka",
+   "text": "Vomiting, abdominal pain, deep fast breathing or drowsiness with thirst/weight loss: possible DKA, emergency",
+   "all": [
+    "th_dka"
+   ]
+  },
+  {
+   "id": "rf_addison",
+   "text": "Adrenal insufficiency features with vomiting or low BP: possible adrenal crisis, urgent assessment",
+   "all": [
+    "ai_feat"
+   ],
+   "anyOf": [
+    "vomiting",
+    "sy_postural"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "pcos": {
+    "triggers": [
+     "c_excess_hair_growth",
+     "c_weight_gain"
+    ],
+    "f": {
+     "vb_pcos": 0
+    }
+   },
+   "crc": {
+    "triggers": [
+     "c_weight_loss"
+    ],
+    "f": {}
+   },
+   "oesca": {
+    "triggers": [
+     "c_weight_loss"
+    ],
+    "f": {}
+   },
+   "panca": {
+    "triggers": [
+     "c_weight_loss"
+    ],
+    "f": {}
+   }
+  },
+  "exam": {},
+  "questions": {}
+ }
+}

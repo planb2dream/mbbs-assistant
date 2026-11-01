@@ -1,0 +1,218 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "lu_soft",
+   "lbl": "Soft, slow-growing, mobile lump",
+   "text": "Is the lump soft, slow-growing, painless and mobile?",
+   "why": "Lipoma pattern.",
+   "sys": "General",
+   "when": [
+    "c_lump_or_swelling"
+   ]
+  },
+  {
+   "id": "lu_cystic",
+   "lbl": "Fluctuant lump, transilluminates, or punctum",
+   "text": "Is the lump fluctuant, lit by a torch, or with a central dot?",
+   "why": "Cystic lesion.",
+   "sys": "General",
+   "when": [
+    "c_lump_or_swelling"
+   ]
+  },
+  {
+   "id": "lu_abs",
+   "lbl": "Hot, red, tender, fluctuant",
+   "text": "Is the lump hot, red, tender and fluctuant?",
+   "why": "Abscess.",
+   "sys": "General",
+   "when": [
+    "c_lump_or_swelling"
+   ]
+  },
+  {
+   "id": "lu_hard",
+   "lbl": "Hard, fixed, irregular, growing, weight loss",
+   "text": "Is the lump hard, fixed, irregular and growing, with weight loss?",
+   "why": "Malignancy.",
+   "sys": "General",
+   "when": [
+    "c_lump_or_swelling"
+   ]
+  },
+  {
+   "id": "lu_fast",
+   "lbl": "Rapid growth over weeks, deep to muscle, over 5 cm",
+   "text": "Fast growth over weeks, deep to muscle, or larger than 5 cm?",
+   "why": "Possible soft-tissue sarcoma.",
+   "sys": "General",
+   "when": [
+    "c_lump_or_swelling"
+   ]
+  }
+ ],
+ "exam": [],
+ "diseases": [
+  {
+   "id": "lipoma",
+   "name": "Lipoma",
+   "cm": false,
+   "triggers": [
+    "c_lump_or_swelling"
+   ],
+   "f": {
+    "lu_soft": 4
+   },
+   "inv": "Clinical; ultrasound if deep, large or atypical.",
+   "tool": "None applied.",
+   "alt": "Sarcoma, cyst, lymph node"
+  },
+  {
+   "id": "cystlump",
+   "name": "Epidermal / sebaceous cyst",
+   "cm": false,
+   "triggers": [
+    "c_lump_or_swelling"
+   ],
+   "f": {
+    "lu_cystic": 4,
+    "lump_punctum": 3
+   },
+   "inv": "Clinical; ultrasound if uncertain.",
+   "tool": "None applied.",
+   "alt": "Abscess, lipoma, tumour"
+  },
+  {
+   "id": "abscess",
+   "name": "Abscess",
+   "cm": false,
+   "triggers": [
+    "c_lump_or_swelling"
+   ],
+   "f": {
+    "lu_abs": 5,
+    "fever": 1
+   },
+   "inv": "Clinical; ultrasound to confirm collection; drainage by trained clinician; glucose check.",
+   "tool": "None applied.",
+   "alt": "Cellulitis, infected cyst, tumour with necrosis"
+  },
+  {
+   "id": "malignlump",
+   "name": "Malignant lump (carcinoma, lymphoma or sarcoma)",
+   "cm": true,
+   "triggers": [
+    "c_lump_or_swelling"
+   ],
+   "f": {
+    "lu_hard": 4,
+    "lu_fast": 3,
+    "c_weight_loss": 2
+   },
+   "inv": "Imaging (ultrasound, then CT/MRI as indicated) and biopsy before any removal.",
+   "tool": "Suspected sarcoma should be imaged and biopsied by a specialist team before excision.",
+   "alt": "Benign lump, lymph node, abscess"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_lumpmal",
+   "text": "Hard, fixed, growing lump with weight loss: needs urgent imaging and biopsy",
+   "all": [
+    "lu_hard"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "tblymph": {
+    "triggers": [
+     "c_lump_or_swelling"
+    ],
+    "f": {}
+   },
+   "lymphoma": {
+    "triggers": [
+     "c_lump_or_swelling"
+    ],
+    "f": {}
+   },
+   "reactlymph": {
+    "triggers": [
+     "c_lump_or_swelling"
+    ],
+    "f": {}
+   },
+   "thyroidneck": {
+    "triggers": [
+     "c_lump_or_swelling"
+    ],
+    "f": {}
+   },
+   "skinca": {
+    "triggers": [
+     "c_lump_or_swelling"
+    ],
+    "f": {}
+   },
+   "fracture": {
+    "triggers": [
+     "c_injury_or_trauma"
+    ],
+    "f": {}
+   },
+   "compsyn": {
+    "triggers": [
+     "c_injury_or_trauma"
+    ],
+    "f": {}
+   },
+   "openfx": {
+    "triggers": [
+     "c_injury_or_trauma"
+    ],
+    "f": {}
+   },
+   "nvcomp": {
+    "triggers": [
+     "c_injury_or_trauma"
+    ],
+    "f": {}
+   }
+  },
+  "exam": {},
+  "questions": {
+   "sg_tb": [
+    "c_lump_or_swelling"
+   ],
+   "sg_hard": [
+    "c_lump_or_swelling"
+   ],
+   "sg_reactive": [
+    "c_lump_or_swelling"
+   ],
+   "lump_changing_mole": [
+    "c_lump_or_swelling"
+   ],
+   "ns_midline": [
+    "c_lump_or_swelling"
+   ],
+   "g_injury": [
+    "c_injury_or_trauma"
+   ],
+   "fx_def": [
+    "c_injury_or_trauma"
+   ],
+   "fx_nv": [
+    "c_injury_or_trauma"
+   ],
+   "fx_open": [
+    "c_injury_or_trauma"
+   ],
+   "fx_comp": [
+    "c_injury_or_trauma"
+   ]
+  }
+ }
+}

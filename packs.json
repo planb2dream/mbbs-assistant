@@ -1,7 +1,26 @@
 {
  "packs": [
   "pack-complaints.json",
-  "pack-dermatology.json"
+  "pack-dermatology.json",
+  "pack-cardiology.json",
+  "pack-neurology.json",
+  "pack-gastroenterology.json",
+  "pack-obgyn.json",
+  "pack-paediatrics.json",
+  "pack-pulmonology.json",
+  "pack-nephrology.json",
+  "pack-endocrinology.json",
+  "pack-rheumatology.json",
+  "pack-infectious.json",
+  "pack-ent.json",
+  "pack-ophthalmology.json",
+  "pack-orthopaedics.json",
+  "pack-psychiatry.json",
+  "pack-neurosurgery.json",
+  "pack-emergency.json",
+  "pack-urology.json",
+  "pack-radiology.json",
+  "pack-gaps.json"
  ],
  "note": "Add one file per department here. Each pack has symptoms, questions, exam, diseases, flags."
 }

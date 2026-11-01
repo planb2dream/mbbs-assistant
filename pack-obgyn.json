@@ -1,0 +1,490 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "vb_late",
+   "lbl": "Period late or positive pregnancy test",
+   "text": "Is the period late, or is a pregnancy test positive?",
+   "why": "Pregnancy must be excluded in any woman of reproductive age with bleeding or pain.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_vaginal_bleeding",
+    "c_missed_period",
+    "c_bleeding_in_pregnancy",
+    "c_heavy_periods"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "vb_postmeno",
+   "lbl": "Bleeding after menopause",
+   "text": "Is there bleeding 12 months or more after the last period?",
+   "why": "Postmenopausal bleeding needs cancer exclusion.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_vaginal_bleeding"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "vb_postcoital",
+   "lbl": "Bleeding between periods or after sex",
+   "text": "Bleeding between periods or after intercourse?",
+   "why": "Cervical pathology.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_vaginal_bleeding"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "vb_pcos",
+   "lbl": "Irregular cycles with acne, excess hair or weight gain",
+   "text": "Irregular cycles with acne, excess facial/body hair or weight gain?",
+   "why": "PCOS pattern.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_heavy_periods",
+    "c_irregular_periods",
+    "c_missed_period"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "vb_flooding",
+   "lbl": "Heavy flow with clots or soaking pads hourly",
+   "text": "Soaking pads hourly or passing large clots?",
+   "why": "Heavy menstrual bleeding.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_heavy_periods",
+    "c_vaginal_bleeding"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "vb_fibroid",
+   "lbl": "Pelvic pressure, lump or frequent urination with heavy periods",
+   "text": "Pelvic heaviness, a lower abdominal lump or frequent urination with heavy periods?",
+   "why": "Fibroid pattern.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_heavy_periods"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "vb_pid",
+   "lbl": "Lower abdominal pain, fever and foul discharge",
+   "text": "Lower abdominal pain with fever and foul-smelling discharge?",
+   "why": "Pelvic inflammatory disease.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_vaginal_discharge",
+    "c_vaginal_bleeding"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "bp_painless",
+   "lbl": "Painless fresh bleeding in late pregnancy",
+   "text": "Painless, fresh red bleeding in the second half of pregnancy?",
+   "why": "Placenta praevia.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_bleeding_in_pregnancy"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "bp_painful",
+   "lbl": "Painful bleeding with hard tender uterus, trauma or high BP",
+   "text": "Bleeding with constant pain and a hard tender uterus, after trauma, or with high BP?",
+   "why": "Placental abruption.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_bleeding_in_pregnancy"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "bp_early",
+   "lbl": "Bleeding with cramping in first 20 weeks",
+   "text": "Bleeding with cramping pain in the first 20 weeks?",
+   "why": "Miscarriage.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_bleeding_in_pregnancy"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "vd_candida",
+   "lbl": "Thick white curdy discharge with itching",
+   "text": "Thick white curdy discharge with itching?",
+   "why": "Candidiasis.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_vaginal_discharge",
+    "c_vaginal_itching"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "vd_bv",
+   "lbl": "Thin grey discharge with fishy odour",
+   "text": "Thin grey discharge with a fishy smell?",
+   "why": "Bacterial vaginosis.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_vaginal_discharge"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "vd_trich",
+   "lbl": "Frothy yellow-green discharge with irritation",
+   "text": "Frothy yellow-green discharge with irritation?",
+   "why": "Trichomoniasis.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_vaginal_discharge"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "pe_bp",
+   "lbl": "Known high BP or facial/hand swelling in pregnancy",
+   "text": "Raised BP recorded in pregnancy, or sudden swelling of face or hands?",
+   "why": "Pre-eclampsia feature.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_headache_or_visual_disturbance_in_pregnancy",
+    "c_swelling_in_pregnancy"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "pe_visual",
+   "lbl": "Blurred vision or flashing lights",
+   "text": "Blurred vision or flashing lights?",
+   "why": "Severe pre-eclampsia feature.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_headache_or_visual_disturbance_in_pregnancy"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "pe_epigastric",
+   "lbl": "Upper abdominal pain",
+   "text": "Upper abdominal or right-sided pain?",
+   "why": "Severe pre-eclampsia or HELLP.",
+   "sys": "Obstetric / Gynaecological",
+   "when": [
+    "c_headache_or_visual_disturbance_in_pregnancy",
+    "c_swelling_in_pregnancy"
+   ],
+   "sex": "F"
+  }
+ ],
+ "exam": [],
+ "diseases": [
+  {
+   "id": "preg",
+   "name": "Pregnancy (confirm with test)",
+   "cm": false,
+   "triggers": [
+    "c_missed_period"
+   ],
+   "f": {
+    "vb_late": 4,
+    "c_nausea_and_vomiting_in_pregnancy": 2
+   },
+   "inv": "Urine pregnancy test; ultrasound for location and dating.",
+   "tool": "None applied.",
+   "alt": "PCOS, thyroid disease, stress, ectopic pregnancy",
+   "sex": "F"
+  },
+  {
+   "id": "miscarr",
+   "name": "Miscarriage",
+   "cm": false,
+   "triggers": [
+    "c_bleeding_in_pregnancy",
+    "c_vaginal_bleeding"
+   ],
+   "f": {
+    "bp_early": 4,
+    "vb_late": 2
+   },
+   "inv": "Ultrasound, β-hCG, blood group and Rh.",
+   "tool": "None applied.",
+   "alt": "Ectopic pregnancy, molar pregnancy, cervical lesion",
+   "sex": "F"
+  },
+  {
+   "id": "praevia",
+   "name": "Placenta praevia",
+   "cm": true,
+   "triggers": [
+    "c_bleeding_in_pregnancy"
+   ],
+   "f": {
+    "bp_painless": 5
+   },
+   "inv": "Urgent ultrasound; do NOT perform a digital vaginal examination.",
+   "tool": "None applied.",
+   "alt": "Placental abruption, vasa praevia",
+   "sex": "F"
+  },
+  {
+   "id": "abruption",
+   "name": "Placental abruption",
+   "cm": true,
+   "triggers": [
+    "c_bleeding_in_pregnancy"
+   ],
+   "f": {
+    "bp_painful": 5,
+    "pe_bp": 2
+   },
+   "inv": "Urgent obstetric assessment, CTG, CBC, coagulation, blood group.",
+   "tool": "None applied.",
+   "alt": "Placenta praevia, preterm labour",
+   "sex": "F"
+  },
+  {
+   "id": "endomca",
+   "name": "Endometrial hyperplasia / cancer",
+   "cm": true,
+   "triggers": [
+    "c_vaginal_bleeding"
+   ],
+   "f": {
+    "vb_postmeno": 5
+   },
+   "inv": "Transvaginal ultrasound, endometrial sampling.",
+   "tool": "None applied.",
+   "alt": "Atrophic vaginitis, polyp, cervical cancer",
+   "sex": "F"
+  },
+  {
+   "id": "cervca",
+   "name": "Cervical pathology (including cervical cancer)",
+   "cm": true,
+   "triggers": [
+    "c_vaginal_bleeding"
+   ],
+   "f": {
+    "vb_postcoital": 4
+   },
+   "inv": "Speculum examination, Pap smear/HPV test, colposcopy.",
+   "tool": "None applied.",
+   "alt": "Cervicitis, polyp, ectropion",
+   "sex": "F"
+  },
+  {
+   "id": "pcos",
+   "name": "Polycystic ovary syndrome",
+   "cm": false,
+   "triggers": [
+    "c_heavy_periods",
+    "c_irregular_periods",
+    "c_missed_period"
+   ],
+   "f": {
+    "vb_pcos": 4
+   },
+   "inv": "Pelvic ultrasound, androgens, TSH, prolactin; Rotterdam criteria apply to adult women.",
+   "tool": "Rotterdam criteria define PCOS in adults; apply separately.",
+   "alt": "Thyroid disease, hyperprolactinaemia, congenital adrenal hyperplasia",
+   "sex": "F"
+  },
+  {
+   "id": "fibroid",
+   "name": "Uterine fibroids",
+   "cm": false,
+   "triggers": [
+    "c_heavy_periods"
+   ],
+   "f": {
+    "vb_fibroid": 4,
+    "vb_flooding": 2
+   },
+   "inv": "Pelvic ultrasound, haemoglobin.",
+   "tool": "None applied.",
+   "alt": "Adenomyosis, polyp, endometrial hyperplasia",
+   "sex": "F"
+  },
+  {
+   "id": "hmb",
+   "name": "Heavy menstrual bleeding (hormonal, structural or bleeding disorder)",
+   "cm": false,
+   "triggers": [
+    "c_heavy_periods",
+    "c_vaginal_bleeding"
+   ],
+   "f": {
+    "vb_flooding": 3,
+    "pallor": 1
+   },
+   "inv": "Haemoglobin, ferritin, TSH, ultrasound; bleeding disorder screen if suggestive.",
+   "tool": "None applied.",
+   "alt": "Fibroid, PCOS, endometrial pathology, coagulopathy",
+   "sex": "F"
+  },
+  {
+   "id": "pid",
+   "name": "Pelvic inflammatory disease",
+   "cm": false,
+   "triggers": [
+    "c_vaginal_discharge",
+    "c_vaginal_bleeding"
+   ],
+   "f": {
+    "vb_pid": 4,
+    "fever": 1
+   },
+   "inv": "Pregnancy test, swabs, ultrasound; STI screening.",
+   "tool": "None applied.",
+   "alt": "Ectopic pregnancy, appendicitis, endometriosis",
+   "sex": "F"
+  },
+  {
+   "id": "candida",
+   "name": "Vulvovaginal candidiasis",
+   "cm": false,
+   "triggers": [
+    "c_vaginal_discharge",
+    "c_vaginal_itching"
+   ],
+   "f": {
+    "vd_candida": 4
+   },
+   "inv": "Clinical; high vaginal swab if recurrent. Check glucose.",
+   "tool": "None applied.",
+   "alt": "Bacterial vaginosis, trichomoniasis, dermatitis",
+   "sex": "F"
+  },
+  {
+   "id": "bv",
+   "name": "Bacterial vaginosis",
+   "cm": false,
+   "triggers": [
+    "c_vaginal_discharge"
+   ],
+   "f": {
+    "vd_bv": 4
+   },
+   "inv": "Clinical (Amsel criteria) or vaginal swab.",
+   "tool": "None applied.",
+   "alt": "Candidiasis, trichomoniasis",
+   "sex": "F"
+  },
+  {
+   "id": "trich",
+   "name": "Trichomoniasis",
+   "cm": false,
+   "triggers": [
+    "c_vaginal_discharge"
+   ],
+   "f": {
+    "vd_trich": 4
+   },
+   "inv": "Wet mount / NAAT; treat partner; STI screen.",
+   "tool": "None applied.",
+   "alt": "Bacterial vaginosis, cervicitis",
+   "sex": "F"
+  },
+  {
+   "id": "preecl",
+   "name": "Pre-eclampsia / eclampsia",
+   "cm": true,
+   "triggers": [
+    "c_headache_or_visual_disturbance_in_pregnancy",
+    "c_swelling_in_pregnancy"
+   ],
+   "f": {
+    "pe_bp": 4,
+    "pe_visual": 2,
+    "pe_epigastric": 2,
+    "pregnant": 2
+   },
+   "inv": "Urgent BP measurement, urine protein, liver and kidney tests, platelets; obstetric review.",
+   "tool": "None applied.",
+   "alt": "Migraine, hypertension, renal disease, HELLP",
+   "sex": "F"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_aph",
+   "text": "Painful bleeding in pregnancy with hard tender uterus: possible abruption, obstetric emergency",
+   "all": [
+    "bp_painful"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "rf_praevia",
+   "text": "Painless fresh bleeding in late pregnancy: possible placenta praevia, no vaginal examination, urgent care",
+   "all": [
+    "bp_painless"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "rf_pregbleed",
+   "text": "Bleeding in pregnancy: needs urgent assessment",
+   "all": [
+    "c_bleeding_in_pregnancy"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "rf_pph",
+   "text": "Bleeding after delivery: possible postpartum haemorrhage, emergency",
+   "all": [
+    "c_bleeding_after_delivery"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "rf_preecl",
+   "text": "Raised BP or swelling in pregnancy with visual disturbance or upper abdominal pain: possible severe pre-eclampsia",
+   "all": [
+    "pe_bp"
+   ],
+   "anyOf": [
+    "pe_visual",
+    "pe_epigastric"
+   ],
+   "sex": "F"
+  },
+  {
+   "id": "rf_ectopic2",
+   "text": "Late period with bleeding or pain: exclude ectopic pregnancy",
+   "all": [
+    "vb_late",
+    "c_vaginal_bleeding"
+   ],
+   "sex": "F"
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "ectopic": {
+    "triggers": [
+     "c_vaginal_bleeding",
+     "c_missed_period",
+     "c_bleeding_in_pregnancy"
+    ],
+    "f": {
+     "vb_late": 3
+    }
+   }
+  },
+  "exam": {}
+ }
+}

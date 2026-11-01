@@ -1,0 +1,544 @@
+{
+ "symptoms": [],
+ "questions": [
+  {
+   "id": "hi_loc",
+   "lbl": "Loss of consciousness or amnesia",
+   "text": "Did the patient lose consciousness or have memory loss for the event?",
+   "why": "Marker of brain injury.",
+   "sys": "Neurological",
+   "when": [
+    "c_head_injury"
+   ]
+  },
+  {
+   "id": "hi_vomit",
+   "lbl": "Repeated vomiting",
+   "text": "Has there been repeated vomiting since the injury?",
+   "why": "Raised intracranial pressure sign.",
+   "sys": "Neurological",
+   "when": [
+    "c_head_injury"
+   ]
+  },
+  {
+   "id": "hi_worse",
+   "lbl": "Drowsy, confused or getting worse over hours",
+   "text": "Is the patient drowsy, confused or getting worse over hours?",
+   "why": "Deterioration suggests an expanding haematoma.",
+   "sys": "Neurological",
+   "when": [
+    "c_head_injury"
+   ]
+  },
+  {
+   "id": "hi_lucid",
+   "lbl": "Initially well, then deteriorated",
+   "text": "Was the patient well for a while after the injury and then deteriorated?",
+   "why": "Lucid interval of extradural haematoma.",
+   "sys": "Neurological",
+   "when": [
+    "c_head_injury"
+   ]
+  },
+  {
+   "id": "hi_skull",
+   "lbl": "Blood or clear fluid from nose or ears, bruising behind ears or around eyes, skull dent",
+   "text": "Blood or clear fluid from nose or ears, bruising behind the ears or around the eyes, or a dent in the skull?",
+   "why": "Skull base or depressed fracture.",
+   "sys": "Neurological",
+   "when": [
+    "c_head_injury"
+   ]
+  },
+  {
+   "id": "hi_chronic",
+   "lbl": "Elderly, minor injury weeks ago, slowly worsening confusion or headache",
+   "text": "Elderly patient with a minor head injury weeks ago and slowly worsening headache or confusion?",
+   "why": "Chronic subdural haematoma.",
+   "sys": "Neurological",
+   "when": [
+    "c_head_injury",
+    "headache",
+    "c_memory_problems",
+    "c_confusion"
+   ]
+  },
+  {
+   "id": "dz_gradual",
+   "lbl": "Gradual drowsiness with headache and vomiting",
+   "text": "Gradual drowsiness with headache and vomiting?",
+   "why": "Raised intracranial pressure.",
+   "sys": "Neurological",
+   "when": [
+    "c_drowsiness"
+   ]
+  },
+  {
+   "id": "dz_meta",
+   "lbl": "Diabetes, liver or kidney failure, sedatives or alcohol",
+   "text": "Diabetes, liver or kidney failure, sedative drugs or alcohol?",
+   "why": "Metabolic or toxic cause of drowsiness.",
+   "sys": "Neurological",
+   "when": [
+    "c_drowsiness"
+   ]
+  },
+  {
+   "id": "dz_triad",
+   "lbl": "Unsteady walking with memory change and urine leakage",
+   "text": "Unsteady walking with memory change and urine leakage?",
+   "why": "Normal pressure hydrocephalus triad.",
+   "sys": "Neurological",
+   "when": [
+    "c_drowsiness",
+    "c_difficulty_walking",
+    "c_memory_problems",
+    "c_memory_loss"
+   ]
+  },
+  {
+   "id": "lr_disc",
+   "lbl": "Pain from buttock to below the knee, worse on coughing or bending",
+   "text": "Pain from the buttock down below the knee, worse on coughing, sneezing or bending?",
+   "why": "Lumbar nerve root pain.",
+   "sys": "Neurological",
+   "when": [
+    "c_leg_pain_radiating_from_back"
+   ]
+  },
+  {
+   "id": "nt_baby",
+   "lbl": "Midline swelling over spine at birth",
+   "text": "Midline swelling or tuft of hair over the lower back at birth?",
+   "why": "Neural tube defect.",
+   "sys": "Neurological",
+   "when": [
+    "c_swelling_on_head_or_spine"
+   ]
+  },
+  {
+   "id": "eh_fontanelle",
+   "lbl": "Bulging fontanelle, sunsetting eyes, vomiting, rapid head growth",
+   "text": "Bulging soft spot, eyes looking downward, vomiting or rapid head growth in an infant?",
+   "why": "Hydrocephalus.",
+   "sys": "Paediatric",
+   "when": [
+    "c_enlarged_head_in_infant"
+   ]
+  },
+  {
+   "id": "eh_family",
+   "lbl": "Large head in the family, normal development",
+   "text": "Large heads in the family and normal development?",
+   "why": "Benign familial macrocephaly.",
+   "sys": "Paediatric",
+   "when": [
+    "c_enlarged_head_in_infant"
+   ]
+  },
+  {
+   "id": "dw_spastic",
+   "lbl": "Stiff legs, scissoring, clumsy hands",
+   "text": "Stiff legs, scissoring gait or clumsy hands?",
+   "why": "Upper motor neuron / myelopathy.",
+   "sys": "Neurological",
+   "when": [
+    "c_difficulty_walking"
+   ]
+  },
+  {
+   "id": "dw_ataxia",
+   "lbl": "Wide-based unsteady walking, heavy alcohol or cerebellar symptoms",
+   "text": "Wide-based unsteady walking, with heavy alcohol use, slurred speech or tremor on reaching?",
+   "why": "Cerebellar ataxia.",
+   "sys": "Neurological",
+   "when": [
+    "c_difficulty_walking"
+   ]
+  },
+  {
+   "id": "pk_rest",
+   "lbl": "Resting tremor, slowness, stiffness, shuffling, small handwriting",
+   "text": "Resting tremor, slowness, stiffness, shuffling steps or small handwriting?",
+   "why": "Parkinsonism.",
+   "sys": "Neurological",
+   "when": [
+    "c_tremor",
+    "c_slowness_of_movement",
+    "c_difficulty_walking"
+   ]
+  },
+  {
+   "id": "et_post",
+   "lbl": "Tremor on holding posture or action, family history, better with alcohol",
+   "text": "Tremor when holding a posture or reaching, family history, and better after alcohol?",
+   "why": "Essential tremor.",
+   "sys": "Neurological",
+   "when": [
+    "c_tremor"
+   ]
+  }
+ ],
+ "exam": [],
+ "diseases": [
+  {
+   "id": "edh",
+   "name": "Extradural haematoma",
+   "cm": true,
+   "triggers": [
+    "c_head_injury"
+   ],
+   "f": {
+    "hi_lucid": 5,
+    "hi_worse": 3,
+    "hi_skull": 2
+   },
+   "inv": "Emergency CT head and neurosurgical review.",
+   "tool": "NICE head injury guideline and Canadian CT Head Rule define CT indications in defined adults; apply the full rule.",
+   "alt": "Subdural haematoma, contusion, concussion"
+  },
+  {
+   "id": "sdh",
+   "name": "Subdural haematoma (acute or chronic)",
+   "cm": true,
+   "triggers": [
+    "c_head_injury",
+    "headache",
+    "c_memory_problems",
+    "c_confusion"
+   ],
+   "f": {
+    "hi_chronic": 4,
+    "ha_trauma_anticoag": 3,
+    "hi_worse": 2,
+    "age_over_60": 1
+   },
+   "inv": "CT head, coagulation profile, urgent neurosurgical review.",
+   "tool": "None applied.",
+   "alt": "Extradural haematoma, dementia, stroke"
+  },
+  {
+   "id": "skullfx",
+   "name": "Skull base or depressed skull fracture",
+   "cm": true,
+   "triggers": [
+    "c_head_injury"
+   ],
+   "f": {
+    "hi_skull": 5
+   },
+   "inv": "CT head including bone windows; neurosurgical review; watch for CSF leak and meningitis.",
+   "tool": "None applied.",
+   "alt": "Scalp haematoma, concussion"
+  },
+  {
+   "id": "concuss",
+   "name": "Concussion / mild traumatic brain injury",
+   "cm": false,
+   "triggers": [
+    "c_head_injury"
+   ],
+   "f": {
+    "hi_loc": 3,
+    "hi_vomit": 1
+   },
+   "inv": "Neurological observation, CT if criteria met; advice on return-to-activity.",
+   "tool": "None applied.",
+   "alt": "Intracranial haemorrhage, skull fracture"
+  },
+  {
+   "id": "nph",
+   "name": "Normal pressure hydrocephalus",
+   "cm": false,
+   "triggers": [
+    "c_difficulty_walking",
+    "c_memory_problems",
+    "c_memory_loss"
+   ],
+   "f": {
+    "dz_triad": 5
+   },
+   "inv": "CT/MRI brain showing ventricular enlargement, specialist assessment.",
+   "tool": "None applied.",
+   "alt": "Dementia, Parkinson disease, vascular dementia"
+  },
+  {
+   "id": "metenceph",
+   "name": "Metabolic or toxic encephalopathy (e.g. hypoglycaemia)",
+   "cm": true,
+   "triggers": [
+    "c_drowsiness"
+   ],
+   "f": {
+    "dz_meta": 4
+   },
+   "inv": "Immediate glucose, electrolytes, urea, LFTs, blood gas, toxicology.",
+   "tool": "None applied.",
+   "alt": "Raised ICP, stroke, infection, post-ictal state"
+  },
+  {
+   "id": "discprol",
+   "name": "Lumbar disc prolapse / radiculopathy",
+   "cm": false,
+   "triggers": [
+    "c_leg_pain_radiating_from_back"
+   ],
+   "f": {
+    "lr_disc": 4,
+    "slr_pos": 3,
+    "back_radiation": 2
+   },
+   "inv": "Clinical; MRI if persistent or red flags.",
+   "tool": "None applied.",
+   "alt": "Cauda equina syndrome, spinal stenosis, hip pathology"
+  },
+  {
+   "id": "ntd",
+   "name": "Neural tube defect (spina bifida)",
+   "cm": true,
+   "triggers": [
+    "c_swelling_on_head_or_spine"
+   ],
+   "f": {
+    "nt_baby": 5
+   },
+   "inv": "Urgent neurosurgical and paediatric review; keep sac covered and moist; ultrasound/MRI.",
+   "tool": "None applied.",
+   "alt": "Sacral dimple, lipoma, teratoma"
+  },
+  {
+   "id": "hydroceph",
+   "name": "Infant hydrocephalus",
+   "cm": true,
+   "triggers": [
+    "c_enlarged_head_in_infant"
+   ],
+   "f": {
+    "eh_fontanelle": 5
+   },
+   "inv": "Head circumference chart, cranial ultrasound, urgent neurosurgical review.",
+   "tool": "None applied.",
+   "alt": "Benign macrocephaly, subdural collection, tumour"
+  },
+  {
+   "id": "macro",
+   "name": "Benign familial macrocephaly",
+   "cm": false,
+   "triggers": [
+    "c_enlarged_head_in_infant"
+   ],
+   "f": {
+    "eh_family": 4
+   },
+   "inv": "Head circumference trend, parents' head size; ultrasound if doubt.",
+   "tool": "None applied.",
+   "alt": "Hydrocephalus, subdural collection"
+  },
+  {
+   "id": "myelwalk",
+   "name": "Spastic gait from cord or brain disease",
+   "cm": true,
+   "triggers": [
+    "c_difficulty_walking"
+   ],
+   "f": {
+    "dw_spastic": 4
+   },
+   "inv": "Neurological examination, MRI brain and spine, B12.",
+   "tool": "None applied.",
+   "alt": "Cervical myelopathy, MS, stroke, cord tumour"
+  },
+  {
+   "id": "cereb",
+   "name": "Cerebellar ataxia",
+   "cm": false,
+   "triggers": [
+    "c_difficulty_walking"
+   ],
+   "f": {
+    "dw_ataxia": 4
+   },
+   "inv": "MRI brain, alcohol history, B12, thyroid, drug review.",
+   "tool": "None applied.",
+   "alt": "Sensory ataxia, vestibular disease, stroke"
+  },
+  {
+   "id": "parkin",
+   "name": "Parkinson disease / parkinsonism",
+   "cm": false,
+   "triggers": [
+    "c_tremor",
+    "c_slowness_of_movement",
+    "c_difficulty_walking"
+   ],
+   "f": {
+    "pk_rest": 5,
+    "age_over_60": 1
+   },
+   "inv": "Clinical diagnosis; review drugs (antipsychotics, metoclopramide).",
+   "tool": "UK Brain Bank / MDS criteria are used by specialists; apply separately.",
+   "alt": "Essential tremor, drug-induced parkinsonism, vascular parkinsonism"
+  },
+  {
+   "id": "esstrem",
+   "name": "Essential tremor",
+   "cm": false,
+   "triggers": [
+    "c_tremor"
+   ],
+   "f": {
+    "et_post": 4
+   },
+   "inv": "Clinical; check TSH and drug causes.",
+   "tool": "None applied.",
+   "alt": "Parkinson disease, thyrotoxicosis, drug-induced tremor"
+  }
+ ],
+ "flags": [
+  {
+   "id": "rf_hi_worse",
+   "text": "Head injury with worsening drowsiness or confusion: emergency CT and neurosurgical review",
+   "all": [
+    "hi_worse"
+   ]
+  },
+  {
+   "id": "rf_hi_lucid",
+   "text": "Head injury with a lucid interval then deterioration: possible extradural haematoma, emergency",
+   "all": [
+    "hi_lucid"
+   ]
+  },
+  {
+   "id": "rf_hi_skull",
+   "text": "Signs of skull base or depressed fracture after head injury: urgent CT and neurosurgical review",
+   "all": [
+    "hi_skull"
+   ]
+  },
+  {
+   "id": "rf_hi_anticoag",
+   "text": "Head injury in a patient on blood thinners: needs urgent CT even if well",
+   "all": [
+    "c_head_injury",
+    "ha_trauma_anticoag"
+   ]
+  },
+  {
+   "id": "rf_drowsy",
+   "text": "Reduced alertness: check airway, glucose, GCS and pupils now",
+   "all": [
+    "c_drowsiness"
+   ]
+  },
+  {
+   "id": "rf_hydro",
+   "text": "Infant with bulging fontanelle and sunsetting eyes: possible hydrocephalus, urgent",
+   "all": [
+    "eh_fontanelle"
+   ]
+  },
+  {
+   "id": "rf_ntd",
+   "text": "Open spinal swelling in a newborn: keep covered and moist, urgent neurosurgical review",
+   "all": [
+    "nt_baby"
+   ]
+  }
+ ],
+ "patch": {
+  "diseases": {
+   "sol": {
+    "triggers": [
+     "c_drowsiness"
+    ],
+    "f": {
+     "dz_gradual": 3
+    }
+   },
+   "meningitis": {
+    "triggers": [
+     "c_drowsiness"
+    ],
+    "f": {}
+   },
+   "lbp": {
+    "triggers": [
+     "c_leg_pain_radiating_from_back"
+    ],
+    "f": {}
+   },
+   "cauda": {
+    "triggers": [
+     "c_leg_pain_radiating_from_back",
+     "c_bladder_or_bowel_disturbance",
+     "c_difficulty_walking"
+    ],
+    "f": {}
+   },
+   "cord": {
+    "triggers": [
+     "c_bladder_or_bowel_disturbance",
+     "c_difficulty_walking",
+     "c_limb_weakness"
+    ],
+    "f": {}
+   },
+   "stroke": {
+    "triggers": [
+     "c_difficulty_walking"
+    ],
+    "f": {}
+   },
+   "gbs": {
+    "triggers": [
+     "c_difficulty_walking"
+    ],
+    "f": {}
+   },
+   "cervmyel": {
+    "triggers": [
+     "c_difficulty_walking",
+     "c_limb_weakness"
+    ],
+    "f": {}
+   },
+   "graves": {
+    "triggers": [
+     "c_tremor"
+    ],
+    "f": {}
+   }
+  },
+  "exam": {},
+  "questions": {
+   "saddle_bladder": [
+    "c_bladder_or_bowel_disturbance",
+    "c_leg_pain_radiating_from_back",
+    "c_limb_weakness"
+   ],
+   "wk_both_legs": [
+    "c_limb_weakness",
+    "c_difficulty_walking"
+   ],
+   "wk_ascending": [
+    "c_limb_weakness",
+    "c_difficulty_walking"
+   ],
+   "ha_trauma_anticoag": [
+    "c_head_injury"
+   ],
+   "g_injury": [
+    "c_head_injury"
+   ],
+   "wk_proximal": [
+    "c_limb_weakness"
+   ],
+   "np_myel": [
+    "c_limb_weakness",
+    "c_difficulty_walking"
+   ]
+  }
+ }
+}
